@@ -1,0 +1,1632 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L synkie_symbols:Opamp_Dual_Generic U5
+U 3 1 5F4E7D01
+P 9500 5650
+F 0 "U5" H 9458 5696 50  0000 L CNN
+F 1 "LMH6643" H 9458 5605 50  0000 L CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 9500 5650 50  0001 C CNN
+F 3 "~" H 9500 5650 50  0001 C CNN
+	3    9500 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0114
+U 1 1 5F4E9052
+P 9400 5350
+F 0 "#PWR0114" H 9400 5200 50  0001 C CNN
+F 1 "+5V" H 9415 5523 50  0000 C CNN
+F 2 "" H 9400 5350 50  0001 C CNN
+F 3 "" H 9400 5350 50  0001 C CNN
+	1    9400 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0115
+U 1 1 5F4E98B0
+P 9400 5950
+F 0 "#PWR0115" H 9400 6050 50  0001 C CNN
+F 1 "-5V" H 9415 6123 50  0000 C CNN
+F 2 "" H 9400 5950 50  0001 C CNN
+F 3 "" H 9400 5950 50  0001 C CNN
+	1    9400 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0116
+U 1 1 5F4E9F25
+P 8950 5350
+F 0 "#PWR0116" H 8950 5200 50  0001 C CNN
+F 1 "+5V" H 8965 5523 50  0000 C CNN
+F 2 "" H 8950 5350 50  0001 C CNN
+F 3 "" H 8950 5350 50  0001 C CNN
+	1    8950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5F4EA4BB
+P 8950 5500
+F 0 "C14" H 9065 5546 50  0000 L CNN
+F 1 "100n" H 9065 5455 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8988 5350 50  0001 C CNN
+F 3 "~" H 8950 5500 50  0001 C CNN
+	1    8950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 5F4EA9D9
+P 8950 5800
+F 0 "C15" H 9065 5846 50  0000 L CNN
+F 1 "100n" H 9065 5755 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8988 5650 50  0001 C CNN
+F 3 "~" H 8950 5800 50  0001 C CNN
+	1    8950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0117
+U 1 1 5F4EAD29
+P 8950 5950
+F 0 "#PWR0117" H 8950 6050 50  0001 C CNN
+F 1 "-5V" H 8965 6123 50  0000 C CNN
+F 2 "" H 8950 5950 50  0001 C CNN
+F 3 "" H 8950 5950 50  0001 C CNN
+	1    8950 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5F4EB2A6
+P 8950 5650
+F 0 "#PWR0118" H 8950 5400 50  0001 C CNN
+F 1 "GND" V 8955 5522 50  0000 R CNN
+F 2 "" H 8950 5650 50  0001 C CNN
+F 3 "" H 8950 5650 50  0001 C CNN
+	1    8950 5650
+	0    1    1    0   
+$EndComp
+Connection ~ 8950 5650
+$Comp
+L 4xxx:4053 U6
+U 1 1 5F3A7078
+P 8700 2750
+F 0 "U6" H 8500 3500 50  0000 C CNN
+F 1 "4053" H 8900 3500 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8700 2750 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 8700 2750 50  0001 C CNN
+	1    8700 2750
+	1    0    0    -1  
+$EndComp
+Text Label 8200 3250 2    50   ~ 0
+hsync
+Text Label 8200 3150 2    50   ~ 0
+porch
+$Comp
+L synkie_symbols:Opamp_Dual_Generic U1
+U 2 1 5CEFE5D2
+P 2350 5100
+F 0 "U1" H 2350 5467 50  0000 C CNN
+F 1 "LMH6643" H 2350 5376 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 2350 5100 50  0001 C CNN
+F 3 "~" H 2350 5100 50  0001 C CNN
+	2    2350 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:Opamp_Dual_Generic U1
+U 1 1 5CEFF9E5
+P 2300 7000
+F 0 "U1" H 2300 7367 50  0000 C CNN
+F 1 "LMH6643" H 2300 7276 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 2300 7000 50  0001 C CNN
+F 3 "~" H 2300 7000 50  0001 C CNN
+	1    2300 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:Opamp_Dual_Generic U1
+U 3 1 5CF016E8
+P 5050 5700
+F 0 "U1" H 5008 5746 50  0000 L CNN
+F 1 "LMH6643" H 5008 5655 50  0000 L CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 5700 50  0001 C CNN
+F 3 "~" H 5050 5700 50  0001 C CNN
+	3    5050 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:R R1
+U 1 1 5CF0371B
+P 1650 5750
+F 0 "R1" V 1443 5750 50  0000 C CNN
+F 1 "220" V 1534 5750 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 5750 50  0001 C CNN
+F 3 "~" H 1650 5750 50  0001 C CNN
+	1    1650 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R3
+U 1 1 5CF077C1
+P 2300 5750
+F 0 "R3" V 2093 5750 50  0000 C CNN
+F 1 "220" V 2184 5750 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2230 5750 50  0001 C CNN
+F 3 "~" H 2300 5750 50  0001 C CNN
+	1    2300 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R2
+U 1 1 5CF07F29
+P 1650 7700
+F 0 "R2" V 1443 7700 50  0000 C CNN
+F 1 "220" V 1534 7700 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 7700 50  0001 C CNN
+F 3 "~" H 1650 7700 50  0001 C CNN
+	1    1650 7700
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R4
+U 1 1 5CF09288
+P 2200 7700
+F 0 "R4" V 1993 7700 50  0000 C CNN
+F 1 "220" V 2084 7700 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2130 7700 50  0001 C CNN
+F 3 "~" H 2200 7700 50  0001 C CNN
+	1    2200 7700
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:C_Small C1
+U 1 1 5CF09A6F
+P 1700 5250
+F 0 "C1" H 1815 5296 50  0000 L CNN
+F 1 "10p" H 1815 5205 50  0000 L CNN
+F 2 "synkie_footprints:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1738 5100 50  0001 C CNN
+F 3 "~" H 1700 5250 50  0001 C CNN
+	1    1700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:C_Small C2
+U 1 1 5CF0BC3B
+P 1700 7200
+F 0 "C2" H 1815 7246 50  0000 L CNN
+F 1 "10p" H 1815 7155 50  0000 L CNN
+F 2 "synkie_footprints:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1738 7050 50  0001 C CNN
+F 3 "~" H 1700 7200 50  0001 C CNN
+	1    1700 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5CF13127
+P 1700 5400
+F 0 "#PWR0101" H 1700 5150 50  0001 C CNN
+F 1 "GND" H 1705 5227 50  0000 C CNN
+F 2 "" H 1700 5400 50  0001 C CNN
+F 3 "" H 1700 5400 50  0001 C CNN
+	1    1700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CF13ABB
+P 1700 7350
+F 0 "#PWR0102" H 1700 7100 50  0001 C CNN
+F 1 "GND" H 1705 7177 50  0000 C CNN
+F 2 "" H 1700 7350 50  0001 C CNN
+F 3 "" H 1700 7350 50  0001 C CNN
+	1    1700 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5CF16C13
+P 4950 5250
+F 0 "#PWR0103" H 4950 5100 50  0001 C CNN
+F 1 "+5V" H 4965 5423 50  0000 C CNN
+F 2 "" H 4950 5250 50  0001 C CNN
+F 3 "" H 4950 5250 50  0001 C CNN
+	1    4950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0104
+U 1 1 5CF17585
+P 4950 6200
+F 0 "#PWR0104" H 4950 6300 50  0001 C CNN
+F 1 "-5V" H 4965 6373 50  0000 C CNN
+F 2 "" H 4950 6200 50  0001 C CNN
+F 3 "" H 4950 6200 50  0001 C CNN
+	1    4950 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 5250 4950 5400
+$Comp
+L power:GND #PWR0105
+U 1 1 5CF1D48A
+P 4650 6200
+F 0 "#PWR0105" H 4650 5950 50  0001 C CNN
+F 1 "GND" H 4655 6027 50  0000 C CNN
+F 2 "" H 4650 6200 50  0001 C CNN
+F 3 "" H 4650 6200 50  0001 C CNN
+	1    4650 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:C_Small C3
+U 1 1 5CF1DF6E
+P 4800 5400
+F 0 "C3" V 4548 5400 50  0000 C CNN
+F 1 "100n" V 4639 5400 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4838 5250 50  0001 C CNN
+F 3 "~" H 4800 5400 50  0001 C CNN
+	1    4800 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 5100 2700 5100
+Wire Wire Line
+	850  5000 1000 5000
+Wire Wire Line
+	2050 5000 1700 5000
+Connection ~ 1700 5000
+Wire Wire Line
+	2450 5750 2700 5750
+Wire Wire Line
+	2700 5750 2700 5100
+Connection ~ 2700 5100
+Wire Wire Line
+	2700 5100 2850 5100
+Wire Wire Line
+	2050 5200 2050 5750
+Wire Wire Line
+	1800 5750 2050 5750
+Connection ~ 2050 5750
+Wire Wire Line
+	2050 5750 2150 5750
+Wire Wire Line
+	2600 7000 2650 7000
+Wire Wire Line
+	2000 6900 1850 6900
+Wire Wire Line
+	1800 7700 2000 7700
+Wire Wire Line
+	2350 7700 2650 7700
+Wire Wire Line
+	2650 7700 2650 7000
+Connection ~ 2650 7000
+Wire Wire Line
+	2650 7000 2800 7000
+Wire Wire Line
+	2000 7100 2000 7700
+Connection ~ 2000 7700
+Wire Wire Line
+	2000 7700 2050 7700
+Wire Wire Line
+	4950 6000 4950 6050
+Wire Wire Line
+	4650 5400 4650 6050
+Wire Wire Line
+	1700 5000 1700 5150
+Wire Wire Line
+	1700 5350 1700 5400
+Wire Wire Line
+	4650 5400 4700 5400
+Wire Wire Line
+	4900 5400 4950 5400
+Connection ~ 4950 5400
+Wire Wire Line
+	4700 6050 4650 6050
+Connection ~ 4650 6050
+Wire Wire Line
+	4650 6050 4650 6200
+Wire Wire Line
+	4900 6050 4950 6050
+Connection ~ 4950 6050
+Wire Wire Line
+	4950 6050 4950 6200
+Wire Wire Line
+	1700 6900 1700 7100
+Wire Wire Line
+	1700 7300 1700 7350
+$Comp
+L Device:R_POT_Dual RV1
+U 1 1 5DD36098
+P 1450 6200
+F 0 "RV1" V 1496 6012 50  0000 R CNN
+F 1 "R_POT_Dual" V 1405 6012 50  0000 R CNN
+F 2 "synkie_footprints:RK12L123" H 1700 6125 50  0001 C CNN
+F 3 "~" H 1700 6125 50  0001 C CNN
+	1    1450 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5750 1500 5750
+Wire Wire Line
+	1200 6100 1200 6000
+Wire Wire Line
+	1200 6000 1000 6000
+Wire Wire Line
+	1000 6000 1000 6300
+Wire Wire Line
+	1000 6300 1050 6300
+Wire Wire Line
+	1000 5750 1000 6000
+Connection ~ 1000 6000
+Wire Wire Line
+	1350 6300 1350 5000
+Wire Wire Line
+	1350 5000 1700 5000
+Wire Wire Line
+	2850 5100 2850 6450
+Wire Wire Line
+	2850 6450 1550 6450
+Wire Wire Line
+	1550 6450 1550 6300
+Wire Wire Line
+	1550 6300 1550 6100
+Wire Wire Line
+	1550 6100 1700 6100
+Connection ~ 1550 6300
+Wire Wire Line
+	1850 6300 1850 6900
+Connection ~ 1850 6900
+Wire Wire Line
+	1850 6900 1700 6900
+Wire Wire Line
+	1550 6450 1300 6450
+Wire Wire Line
+	1300 6450 1300 7700
+Connection ~ 1550 6450
+Wire Wire Line
+	1300 7700 1500 7700
+$Comp
+L power:GND #PWR0132
+U 1 1 5F415753
+P 8700 3650
+F 0 "#PWR0132" H 8700 3400 50  0001 C CNN
+F 1 "GND" H 8705 3477 50  0000 C CNN
+F 2 "" H 8700 3650 50  0001 C CNN
+F 3 "" H 8700 3650 50  0001 C CNN
+	1    8700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0133
+U 1 1 5F416014
+P 8800 3650
+F 0 "#PWR0133" H 8800 3750 50  0001 C CNN
+F 1 "-5V" H 8815 3823 50  0000 C CNN
+F 2 "" H 8800 3650 50  0001 C CNN
+F 3 "" H 8800 3650 50  0001 C CNN
+	1    8800 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0134
+U 1 1 5F416759
+P 8700 1850
+F 0 "#PWR0134" H 8700 1700 50  0001 C CNN
+F 1 "+5V" H 8715 2023 50  0000 C CNN
+F 2 "" H 8700 1850 50  0001 C CNN
+F 3 "" H 8700 1850 50  0001 C CNN
+	1    8700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 2150 9350 2150
+$Comp
+L power:GND #PWR0135
+U 1 1 5F41B5E4
+P 8200 3050
+F 0 "#PWR0135" H 8200 2800 50  0001 C CNN
+F 1 "GND" H 8205 2877 50  0000 C CNN
+F 2 "" H 8200 3050 50  0001 C CNN
+F 3 "" H 8200 3050 50  0001 C CNN
+	1    8200 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:Opamp_Dual_Generic U7
+U 2 1 5F446E30
+P 9900 2850
+F 0 "U7" H 9900 3217 50  0000 C CNN
+F 1 "LMH6643" H 9900 3126 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 9900 2850 50  0001 C CNN
+F 3 "~" H 9900 2850 50  0001 C CNN
+	2    9900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5F4608AF
+P 7300 3900
+F 0 "J6" H 7218 4117 50  0000 C CNN
+F 1 "Switch" H 7218 4026 50  0000 C CNN
+F 2 "synkie_footprints:PinHeader_1x02_P2.54mm_Vertical" H 7300 3900 50  0001 C CNN
+F 3 "~" H 7300 3900 50  0001 C CNN
+	1    7300 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3350 7500 3350
+Wire Wire Line
+	7500 3350 7500 3900
+$Comp
+L Device:R R13
+U 1 1 5F465DB0
+P 7500 3200
+F 0 "R13" V 7707 3200 50  0000 C CNN
+F 1 "4k7" V 7616 3200 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7430 3200 50  0001 C CNN
+F 3 "~" H 7500 3200 50  0001 C CNN
+	1    7500 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7500 3350
+$Comp
+L power:+5V #PWR0140
+U 1 1 5F4665BB
+P 7500 3050
+F 0 "#PWR0140" H 7500 2900 50  0001 C CNN
+F 1 "+5V" H 7515 3223 50  0000 C CNN
+F 2 "" H 7500 3050 50  0001 C CNN
+F 3 "" H 7500 3050 50  0001 C CNN
+	1    7500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0141
+U 1 1 5F466D50
+P 7500 4000
+F 0 "#PWR0141" H 7500 3750 50  0001 C CNN
+F 1 "GND" H 7505 3827 50  0000 C CNN
+F 2 "" H 7500 4000 50  0001 C CNN
+F 3 "" H 7500 4000 50  0001 C CNN
+	1    7500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 5F4699E1
+P 7900 5600
+F 0 "J4" H 7818 5917 50  0000 C CNN
+F 1 "Conn_01x04" H 7818 5826 50  0000 C CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 7900 5600 50  0001 C CNN
+F 3 "~" H 7900 5600 50  0001 C CNN
+	1    7900 5600
+	-1   0    0    -1  
+$EndComp
+Text Label 8100 5500 0    50   ~ 0
+hsync
+Text Label 8100 5600 0    50   ~ 0
+vsync
+Text Label 8100 5700 0    50   ~ 0
+porch
+Text Label 8100 5800 0    50   ~ 0
+oe
+Wire Wire Line
+	9200 2750 9600 2750
+$Comp
+L Device:R R19
+U 1 1 5F479323
+P 9900 3250
+F 0 "R19" V 9693 3250 50  0000 C CNN
+F 1 "220" V 9784 3250 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9830 3250 50  0001 C CNN
+F 3 "~" H 9900 3250 50  0001 C CNN
+	1    9900 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5F4796A1
+P 9750 3400
+F 0 "R18" H 9680 3354 50  0000 R CNN
+F 1 "220" H 9680 3445 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9680 3400 50  0001 C CNN
+F 3 "~" H 9750 3400 50  0001 C CNN
+	1    9750 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9600 2950 9600 3250
+Wire Wire Line
+	9600 3250 9750 3250
+Connection ~ 9750 3250
+Wire Wire Line
+	10050 3250 10200 3250
+Wire Wire Line
+	10200 3250 10200 2850
+$Comp
+L power:GND #PWR0145
+U 1 1 5F4842CE
+P 9750 3550
+F 0 "#PWR0145" H 9750 3300 50  0001 C CNN
+F 1 "GND" H 9755 3377 50  0000 C CNN
+F 2 "" H 9750 3550 50  0001 C CNN
+F 3 "" H 9750 3550 50  0001 C CNN
+	1    9750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5F4849C0
+P 10350 2850
+F 0 "R20" V 10557 2850 50  0000 C CNN
+F 1 "75" V 10466 2850 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10280 2850 50  0001 C CNN
+F 3 "~" H 10350 2850 50  0001 C CNN
+	1    10350 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10200 2850
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5F48530D
+P 10700 2850
+F 0 "J7" H 10618 3067 50  0000 C CNN
+F 1 "VIDEO_OUT" H 10618 2976 50  0000 C CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 10700 2850 50  0001 C CNN
+F 3 "~" H 10700 2850 50  0001 C CNN
+	1    10700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 5F48F072
+P 10500 2950
+F 0 "#PWR0146" H 10500 2700 50  0001 C CNN
+F 1 "GND" H 10505 2777 50  0000 C CNN
+F 2 "" H 10500 2950 50  0001 C CNN
+F 3 "" H 10500 2950 50  0001 C CNN
+	1    10500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:Opamp_Dual_Generic U7
+U 3 1 5F56B8B3
+P 10700 5650
+F 0 "U7" H 10658 5696 50  0000 L CNN
+F 1 "LMH6643" H 10658 5605 50  0000 L CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 10700 5650 50  0001 C CNN
+F 3 "~" H 10700 5650 50  0001 C CNN
+	3    10700 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0153
+U 1 1 5F56B8BD
+P 10600 5350
+F 0 "#PWR0153" H 10600 5200 50  0001 C CNN
+F 1 "+5V" H 10615 5523 50  0000 C CNN
+F 2 "" H 10600 5350 50  0001 C CNN
+F 3 "" H 10600 5350 50  0001 C CNN
+	1    10600 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0154
+U 1 1 5F56B8C7
+P 10600 5950
+F 0 "#PWR0154" H 10600 6050 50  0001 C CNN
+F 1 "-5V" H 10615 6123 50  0000 C CNN
+F 2 "" H 10600 5950 50  0001 C CNN
+F 3 "" H 10600 5950 50  0001 C CNN
+	1    10600 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0155
+U 1 1 5F56B8D1
+P 10150 5350
+F 0 "#PWR0155" H 10150 5200 50  0001 C CNN
+F 1 "+5V" H 10165 5523 50  0000 C CNN
+F 2 "" H 10150 5350 50  0001 C CNN
+F 3 "" H 10150 5350 50  0001 C CNN
+	1    10150 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 5F56B8DB
+P 10150 5500
+F 0 "C16" H 10265 5546 50  0000 L CNN
+F 1 "100n" H 10265 5455 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10188 5350 50  0001 C CNN
+F 3 "~" H 10150 5500 50  0001 C CNN
+	1    10150 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 5F56B8E5
+P 10150 5800
+F 0 "C17" H 10265 5846 50  0000 L CNN
+F 1 "100n" H 10265 5755 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10188 5650 50  0001 C CNN
+F 3 "~" H 10150 5800 50  0001 C CNN
+	1    10150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0156
+U 1 1 5F56B8EF
+P 10150 5950
+F 0 "#PWR0156" H 10150 6050 50  0001 C CNN
+F 1 "-5V" H 10165 6123 50  0000 C CNN
+F 2 "" H 10150 5950 50  0001 C CNN
+F 3 "" H 10150 5950 50  0001 C CNN
+	1    10150 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5F56B8F9
+P 10150 5650
+F 0 "#PWR0157" H 10150 5400 50  0001 C CNN
+F 1 "GND" V 10155 5522 50  0000 R CNN
+F 2 "" H 10150 5650 50  0001 C CNN
+F 3 "" H 10150 5650 50  0001 C CNN
+	1    10150 5650
+	0    1    1    0   
+$EndComp
+Connection ~ 10150 5650
+$Comp
+L power:+5V #PWR0164
+U 1 1 5F6547A6
+P 6300 4150
+F 0 "#PWR0164" H 6300 4000 50  0001 C CNN
+F 1 "+5V" H 6315 4323 50  0000 C CNN
+F 2 "" H 6300 4150 50  0001 C CNN
+F 3 "" H 6300 4150 50  0001 C CNN
+	1    6300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 5F6547BA
+P 4800 6050
+F 0 "C21" H 4915 6096 50  0000 L CNN
+F 1 "100n" H 4915 6005 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4838 5900 50  0001 C CNN
+F 3 "~" H 4800 6050 50  0001 C CNN
+	1    4800 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-5V #PWR0165
+U 1 1 5F6547C4
+P 6300 4750
+F 0 "#PWR0165" H 6300 4850 50  0001 C CNN
+F 1 "-5V" H 6315 4923 50  0000 C CNN
+F 2 "" H 6300 4750 50  0001 C CNN
+F 3 "" H 6300 4750 50  0001 C CNN
+	1    6300 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0166
+U 1 1 5F6547CE
+P 6300 4450
+F 0 "#PWR0166" H 6300 4200 50  0001 C CNN
+F 1 "GND" V 6305 4322 50  0000 R CNN
+F 2 "" H 6300 4450 50  0001 C CNN
+F 3 "" H 6300 4450 50  0001 C CNN
+	1    6300 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0167
+U 1 1 5F664319
+P 5700 4150
+F 0 "#PWR0167" H 5700 4000 50  0001 C CNN
+F 1 "+5V" H 5715 4323 50  0000 C CNN
+F 2 "" H 5700 4150 50  0001 C CNN
+F 3 "" H 5700 4150 50  0001 C CNN
+	1    5700 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 5F664323
+P 5700 4300
+F 0 "C18" H 5815 4346 50  0000 L CNN
+F 1 "100n" H 5815 4255 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5738 4150 50  0001 C CNN
+F 3 "~" H 5700 4300 50  0001 C CNN
+	1    5700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 5F66432D
+P 5700 4600
+F 0 "C19" H 5815 4646 50  0000 L CNN
+F 1 "100n" H 5815 4555 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5738 4450 50  0001 C CNN
+F 3 "~" H 5700 4600 50  0001 C CNN
+	1    5700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0168
+U 1 1 5F664337
+P 5700 4750
+F 0 "#PWR0168" H 5700 4850 50  0001 C CNN
+F 1 "-5V" H 5715 4923 50  0000 C CNN
+F 2 "" H 5700 4750 50  0001 C CNN
+F 3 "" H 5700 4750 50  0001 C CNN
+	1    5700 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0169
+U 1 1 5F664341
+P 5700 4450
+F 0 "#PWR0169" H 5700 4200 50  0001 C CNN
+F 1 "GND" V 5705 4322 50  0000 R CNN
+F 2 "" H 5700 4450 50  0001 C CNN
+F 3 "" H 5700 4450 50  0001 C CNN
+	1    5700 4450
+	0    1    1    0   
+$EndComp
+Connection ~ 5700 4450
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5F4BB6FB
+P 650 5000
+F 0 "J1" H 568 5217 50  0000 C CNN
+F 1 "BURST_IN" H 568 5126 50  0000 C CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 650 5000 50  0001 C CNN
+F 3 "~" H 650 5000 50  0001 C CNN
+	1    650  5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5F4C5CF1
+P 850 5100
+F 0 "#PWR0112" H 850 4850 50  0001 C CNN
+F 1 "GND" H 855 4927 50  0000 C CNN
+F 2 "" H 850 5100 50  0001 C CNN
+F 3 "" H 850 5100 50  0001 C CNN
+	1    850  5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:Conn_01x02 J8
+U 1 1 5F4C6C33
+P 3000 7000
+F 0 "J8" H 3080 6992 50  0000 L CNN
+F 1 "BURST_DELAYED" H 3080 6901 50  0000 L CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 3000 7000 50  0001 C CNN
+F 3 "~" H 3000 7000 50  0001 C CNN
+	1    3000 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5F4C7344
+P 2800 7100
+F 0 "#PWR0113" H 2800 6850 50  0001 C CNN
+F 1 "GND" H 2805 6927 50  0000 C CNN
+F 2 "" H 2800 7100 50  0001 C CNN
+F 3 "" H 2800 7100 50  0001 C CNN
+	1    2800 7100
+	1    0    0    -1  
+$EndComp
+Text Label 8200 2150 2    50   ~ 0
+colorburst
+$Comp
+L synkie_symbols:Conn_01x02 J9
+U 1 1 5F3B3A56
+P 4300 7300
+F 0 "J9" H 4380 7292 50  0000 L CNN
+F 1 "Colorburst" H 4380 7201 50  0000 L CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4300 7300 50  0001 C CNN
+F 3 "~" H 4300 7300 50  0001 C CNN
+	1    4300 7300
+	-1   0    0    -1  
+$EndComp
+Text Label 4500 7300 0    50   ~ 0
+colorburst
+$Comp
+L power:GND #PWR0119
+U 1 1 5F3B702F
+P 4500 7400
+F 0 "#PWR0119" H 4500 7150 50  0001 C CNN
+F 1 "GND" H 4505 7227 50  0000 C CNN
+F 2 "" H 4500 7400 50  0001 C CNN
+F 3 "" H 4500 7400 50  0001 C CNN
+	1    4500 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5F3B7D93
+P 10000 1050
+F 0 "R7" V 10207 1050 50  0000 C CNN
+F 1 "300" V 10116 1050 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9930 1050 50  0001 C CNN
+F 3 "~" H 10000 1050 50  0001 C CNN
+	1    10000 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5F3B8F9B
+P 10000 900
+F 0 "#PWR0120" H 10000 650 50  0001 C CNN
+F 1 "GND" H 10005 727 50  0000 C CNN
+F 2 "" H 10000 900 50  0001 C CNN
+F 3 "" H 10000 900 50  0001 C CNN
+	1    10000 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5F3B9CDD
+P 10000 1350
+F 0 "R8" V 10207 1350 50  0000 C CNN
+F 1 "4k7" V 10116 1350 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9930 1350 50  0001 C CNN
+F 3 "~" H 10000 1350 50  0001 C CNN
+	1    10000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0121
+U 1 1 5F3BA37C
+P 10000 1500
+F 0 "#PWR0121" H 10000 1600 50  0001 C CNN
+F 1 "-5V" H 10015 1673 50  0000 C CNN
+F 2 "" H 10000 1500 50  0001 C CNN
+F 3 "" H 10000 1500 50  0001 C CNN
+	1    10000 1500
+	-1   0    0    1   
+$EndComp
+Text Label 10450 1200 0    50   ~ 0
+synctip
+Wire Wire Line
+	10000 1200 10450 1200
+Connection ~ 10000 1200
+Text Label 8200 2550 2    50   ~ 0
+clipper_out
+Text Label 8200 2450 2    50   ~ 0
+synctip
+Wire Wire Line
+	9200 2450 9550 2450
+Wire Wire Line
+	9550 2450 9550 1600
+Wire Wire Line
+	9550 1600 7800 1600
+Wire Wire Line
+	7800 1600 7800 2250
+Wire Wire Line
+	7800 2250 8200 2250
+$Comp
+L synkie_symbols:Opamp_Dual_Generic U7
+U 1 1 5F3C95EC
+P 6650 2700
+F 0 "U7" H 6650 3067 50  0000 C CNN
+F 1 "LMH6643" H 6650 2976 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 6650 2700 50  0001 C CNN
+F 3 "~" H 6650 2700 50  0001 C CNN
+	1    6650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:Conn_01x02 J2
+U 1 1 5F3CAF60
+P 5950 2600
+F 0 "J2" H 6030 2592 50  0000 L CNN
+F 1 "GENLOCK" H 6030 2501 50  0000 L CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 5950 2600 50  0001 C CNN
+F 3 "~" H 5950 2600 50  0001 C CNN
+	1    5950 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5F3CAF6B
+P 6150 2700
+F 0 "#PWR0122" H 6150 2450 50  0001 C CNN
+F 1 "GND" H 6155 2527 50  0000 C CNN
+F 2 "" H 6150 2700 50  0001 C CNN
+F 3 "" H 6150 2700 50  0001 C CNN
+	1    6150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2800 6350 3000
+Wire Wire Line
+	6350 3000 6950 3000
+Wire Wire Line
+	6950 3000 6950 2750
+Wire Wire Line
+	9350 2150 9350 1350
+Wire Wire Line
+	9350 1350 7550 1350
+Wire Wire Line
+	8200 2850 7550 2850
+Wire Wire Line
+	7550 1350 7550 2850
+Wire Wire Line
+	-14800 5500 -14800 -9700
+Wire Wire Line
+	-14800 -9700 -13300 -9700
+$Comp
+L synkie_symbols:R R?
+U 1 1 5F4DC2DD
+P 1000 5450
+F 0 "R?" V 793 5450 50  0000 C CNN
+F 1 "75" V 884 5450 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 930 5450 50  0001 C CNN
+F 3 "~" H 1000 5450 50  0001 C CNN
+	1    1000 5450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 5600 1000 5750
+Connection ~ 1000 5750
+Wire Wire Line
+	1000 5000 1000 5300
+$Comp
+L synkie_symbols:CP_Small C1
+U 1 1 5DCABC45
+P 1150 1150
+F 0 "C1" V 925 1150 50  0000 C CNN
+F 1 "10u" V 1016 1150 50  0000 C CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 1150 1150 50  0001 C CNN
+F 3 "~" H 1150 1150 50  0001 C CNN
+	1    1150 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:Ferrite_Bead FB2
+U 1 1 5DCAD10D
+P 1400 1350
+F 0 "FB2" V 1550 1350 50  0000 C CNN
+F 1 "330u" V 1650 1350 50  0000 C CNN
+F 2 "synkie_footprints:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1330 1350 50  0001 C CNN
+F 3 "~" H 1400 1350 50  0001 C CNN
+	1    1400 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:Ferrite_Bead FB1
+U 1 1 5DCAC6DA
+P 1400 1150
+F 0 "FB1" V 1126 1150 50  0000 C CNN
+F 1 "330u" V 1217 1150 50  0000 C CNN
+F 2 "synkie_footprints:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1330 1150 50  0001 C CNN
+F 3 "~" H 1400 1150 50  0001 C CNN
+	1    1400 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:CP_Small C2
+U 1 1 5DCB0A0D
+P 1150 1350
+F 0 "C2" V 1000 1350 50  0000 C CNN
+F 1 "10u" V 900 1350 50  0000 C CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 1150 1350 50  0001 C CNN
+F 3 "~" H 1150 1350 50  0001 C CNN
+	1    1150 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 1150 1050 1250
+Wire Wire Line
+	1550 1250 1050 1250
+Connection ~ 1050 1250
+Wire Wire Line
+	1050 1250 1050 1350
+$Comp
+L synkie_symbols:GND #PWR02
+U 1 1 5DCB53A6
+P 950 1250
+F 0 "#PWR02" H 950 1000 50  0001 C CNN
+F 1 "GND" H 955 1077 50  0000 C CNN
+F 2 "" H 950 1250 50  0001 C CNN
+F 3 "" H 950 1250 50  0001 C CNN
+	1    950  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:-5V #PWR03
+U 1 1 5DCB6075
+P 1250 1650
+F 0 "#PWR03" H 1250 1750 50  0001 C CNN
+F 1 "-5V" H 1250 1800 50  0000 C CNN
+F 2 "" H 1250 1650 50  0001 C CNN
+F 3 "" H 1250 1650 50  0001 C CNN
+	1    1250 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:PWR_FLAG #FLG03
+U 1 1 5DCB6C6B
+P 1350 1650
+F 0 "#FLG03" H 1350 1725 50  0001 C CNN
+F 1 "PWR_FLAG" H 1150 1800 50  0000 C CNN
+F 2 "" H 1350 1650 50  0001 C CNN
+F 3 "~" H 1350 1650 50  0001 C CNN
+	1    1350 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1050 1250 950  1250
+Connection ~ 950  1250
+Wire Wire Line
+	1250 1650 1350 1650
+Wire Wire Line
+	1250 1650 1250 1350
+Connection ~ 1250 1650
+Connection ~ 1250 1350
+Connection ~ 1250 1150
+Connection ~ 1250 800 
+Wire Wire Line
+	1250 800  1250 1150
+Wire Wire Line
+	1250 800  1350 800 
+$Comp
+L synkie_symbols:PWR_FLAG #FLG01
+U 1 1 5DCB6B02
+P 1350 800
+F 0 "#FLG01" H 1350 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 1550 950 50  0000 C CNN
+F 2 "" H 1350 800 50  0001 C CNN
+F 3 "~" H 1350 800 50  0001 C CNN
+	1    1350 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR01
+U 1 1 5DCB58DB
+P 1250 800
+F 0 "#PWR01" H 1250 650 50  0001 C CNN
+F 1 "+5V" H 1250 950 50  0000 C CNN
+F 2 "" H 1250 800 50  0001 C CNN
+F 3 "" H 1250 800 50  0001 C CNN
+	1    1250 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:PWR_FLAG #FLG02
+U 1 1 5DCB666B
+P 950 1250
+F 0 "#FLG02" H 950 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 850 1450 50  0000 C CNN
+F 2 "" H 950 1250 50  0001 C CNN
+F 3 "~" H 950 1250 50  0001 C CNN
+	1    950  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:Conn_01x03 J1
+U 1 1 5DCAB59D
+P 1750 1250
+F 0 "J1" H 1668 925 50  0000 C CNN
+F 1 "Power" H 1668 1016 50  0000 C CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 1750 1250 50  0001 C CNN
+F 3 "~" H 1750 1250 50  0001 C CNN
+	1    1750 1250
+	1    0    0    1   
+$EndComp
+Connection ~ 650  4150
+Wire Wire Line
+	650  4150 650  4350
+Wire Wire Line
+	650  3400 650  4150
+Wire Wire Line
+	4550 2750 4800 2750
+Connection ~ 4550 2750
+Connection ~ 4500 2750
+Wire Wire Line
+	4500 2750 4550 2750
+Wire Wire Line
+	4500 3050 4500 2750
+Wire Wire Line
+	3900 3050 4500 3050
+Wire Wire Line
+	3900 2850 3900 3050
+Connection ~ 3650 2650
+Wire Wire Line
+	3650 2650 3900 2650
+Connection ~ 3100 2650
+Connection ~ 2800 2650
+Wire Wire Line
+	2800 2950 2800 2650
+Wire Wire Line
+	2150 2950 2800 2950
+Connection ~ 2000 2550
+Wire Wire Line
+	2200 2550 2000 2550
+Wire Wire Line
+	750  4150 650  4150
+Wire Wire Line
+	750  3400 650  3400
+Wire Wire Line
+	1000 4150 1000 4350
+Connection ~ 1000 4150
+Wire Wire Line
+	950  4150 1000 4150
+Wire Wire Line
+	1000 3400 1000 3450
+Connection ~ 1000 3400
+Wire Wire Line
+	950  3400 1000 3400
+$Comp
+L synkie_symbols:C_Small C3
+U 1 1 5F444718
+P 850 3400
+F 0 "C3" V 621 3400 50  0000 C CNN
+F 1 "100n" V 712 3400 50  0000 C CNN
+F 2 "synkie_footprints:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 850 3400 50  0001 C CNN
+F 3 "~" H 850 3400 50  0001 C CNN
+	1    850  3400
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:C_Small C4
+U 1 1 5F44307A
+P 850 4150
+F 0 "C4" V 621 4150 50  0000 C CNN
+F 1 "100n" V 712 4150 50  0000 C CNN
+F 2 "synkie_footprints:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 850 4150 50  0001 C CNN
+F 3 "~" H 850 4150 50  0001 C CNN
+	1    850  4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1000 4050 1000 4150
+Wire Wire Line
+	1000 3250 1000 3400
+$Comp
+L synkie_symbols:-5V #PWR013
+U 1 1 5F43CCC1
+P 1000 4350
+F 0 "#PWR013" H 1000 4450 50  0001 C CNN
+F 1 "-5V" H 1000 4500 50  0000 C CNN
+F 2 "" H 1000 4350 50  0001 C CNN
+F 3 "" H 1000 4350 50  0001 C CNN
+	1    1000 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR011
+U 1 1 5F43C441
+P 1000 3250
+F 0 "#PWR011" H 1000 3100 50  0001 C CNN
+F 1 "+5V" H 1000 3400 50  0000 C CNN
+F 2 "" H 1000 3250 50  0001 C CNN
+F 3 "" H 1000 3250 50  0001 C CNN
+	1    1000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR012
+U 1 1 5F43BA6A
+P 650 4350
+F 0 "#PWR012" H 650 4100 50  0001 C CNN
+F 1 "GND" H 655 4177 50  0000 C CNN
+F 2 "" H 650 4350 50  0001 C CNN
+F 3 "" H 650 4350 50  0001 C CNN
+	1    650  4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1300 4050 1400
+Wire Wire Line
+	3650 1300 4050 1300
+Wire Wire Line
+	3650 1400 3650 1300
+$Comp
+L synkie_symbols:-5V #PWR05
+U 1 1 5F434310
+P 4050 1400
+F 0 "#PWR05" H 4050 1500 50  0001 C CNN
+F 1 "-5V" H 4050 1550 50  0000 C CNN
+F 2 "" H 4050 1400 50  0001 C CNN
+F 3 "" H 4050 1400 50  0001 C CNN
+	1    4050 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 2650 3100 2650
+Wire Wire Line
+	3650 1800 3650 2650
+Wire Wire Line
+	3400 1600 3450 1600
+Connection ~ 3400 1600
+Wire Wire Line
+	3100 1850 3100 1950
+Connection ~ 3100 1850
+Wire Wire Line
+	3400 1850 3400 1600
+Wire Wire Line
+	3100 1850 3400 1850
+Wire Wire Line
+	3100 1800 3100 1850
+Wire Wire Line
+	3100 2250 3100 2300
+$Comp
+L synkie_symbols:R R2
+U 1 1 5F41B095
+P 3100 2100
+F 0 "R2" H 3030 2054 50  0000 R CNN
+F 1 "5k6" H 3030 2145 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3030 2100 50  0001 C CNN
+F 3 "~" H 3100 2100 50  0001 C CNN
+	1    3100 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 1600 3400 1600
+Wire Wire Line
+	2650 1300 2650 1500
+Connection ~ 2650 1300
+Wire Wire Line
+	3100 1300 2650 1300
+Wire Wire Line
+	3100 1400 3100 1300
+Wire Wire Line
+	2650 1800 2650 1950
+Wire Wire Line
+	2650 1200 2650 1300
+Wire Wire Line
+	2650 750  2650 900 
+$Comp
+L synkie_symbols:-5V #PWR07
+U 1 1 5F412C82
+P 3100 2300
+F 0 "#PWR07" H 3100 2400 50  0001 C CNN
+F 1 "-5V" H 3100 2450 50  0000 C CNN
+F 2 "" H 3100 2300 50  0001 C CNN
+F 3 "" H 3100 2300 50  0001 C CNN
+	1    3100 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR06
+U 1 1 5F4121BE
+P 2650 1950
+F 0 "#PWR06" H 2650 1700 50  0001 C CNN
+F 1 "GND" H 2655 1777 50  0000 C CNN
+F 2 "" H 2650 1950 50  0001 C CNN
+F 3 "" H 2650 1950 50  0001 C CNN
+	1    2650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR04
+U 1 1 5F411DBE
+P 2650 750
+F 0 "#PWR04" H 2650 600 50  0001 C CNN
+F 1 "+5V" H 2650 900 50  0000 C CNN
+F 2 "" H 2650 750 50  0001 C CNN
+F 3 "" H 2650 750 50  0001 C CNN
+	1    2650 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:R R1
+U 1 1 5F410A07
+P 2650 1050
+F 0 "R1" H 2580 1004 50  0000 R CNN
+F 1 "120" H 2580 1095 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2580 1050 50  0001 C CNN
+F 3 "~" H 2650 1050 50  0001 C CNN
+	1    2650 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:D D1
+U 1 1 5F40DC4F
+P 2650 1650
+F 0 "D1" V 2696 1570 50  0000 R CNN
+F 1 "D" V 2605 1570 50  0000 R CNN
+F 2 "synkie_footprints:D_MiniMELF_Handsoldering" H 2650 1650 50  0001 C CNN
+F 3 "~" H 2650 1650 50  0001 C CNN
+	1    2650 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L synkie_symbols:PMBT3906YS Q1
+U 1 1 5F3F9C4A
+P 3150 1600
+F 0 "Q1" H 3288 1554 50  0000 L CNN
+F 1 "PMBT3906YS" H 3288 1645 50  0000 L CNN
+F 2 "synkie_footprints:SOT-363_SC-70-6_Handsoldering" H 3050 1625 50  0001 C CNN
+F 3 "" H 3050 1625 50  0001 C CNN
+	1    3150 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:PMBT3906YS Q1
+U 2 1 5F3F8435
+P 3600 1600
+F 0 "Q1" H 3738 1646 50  0000 L CNN
+F 1 "PMBT3906YS" H 3738 1555 50  0000 L CNN
+F 2 "synkie_footprints:SOT-363_SC-70-6_Handsoldering" H 3500 1625 50  0001 C CNN
+F 3 "" H 3500 1625 50  0001 C CNN
+	2    3600 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4000 3650 4150
+$Comp
+L synkie_symbols:GND #PWR010
+U 1 1 5F3F729A
+P 3650 4150
+F 0 "#PWR010" H 3650 3900 50  0001 C CNN
+F 1 "GND" H 3655 3977 50  0000 C CNN
+F 2 "" H 3650 4150 50  0001 C CNN
+F 3 "" H 3650 4150 50  0001 C CNN
+	1    3650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3000 3650 3100
+$Comp
+L synkie_symbols:+5V #PWR08
+U 1 1 5F3F605F
+P 3650 3000
+F 0 "#PWR08" H 3650 2850 50  0001 C CNN
+F 1 "+5V" H 3650 3150 50  0000 C CNN
+F 2 "" H 3650 3000 50  0001 C CNN
+F 3 "" H 3650 3000 50  0001 C CNN
+	1    3650 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3500 3650 3600
+Connection ~ 3650 3500
+Wire Wire Line
+	3400 3800 3450 3800
+Connection ~ 3400 3800
+Wire Wire Line
+	3400 3500 3650 3500
+Wire Wire Line
+	3400 3800 3400 3500
+Wire Wire Line
+	3650 3400 3650 3500
+Wire Wire Line
+	3100 2650 3100 3600
+$Comp
+L synkie_symbols:R R3
+U 1 1 5F3E73A4
+P 2950 2650
+F 0 "R3" V 2743 2650 50  0000 C CNN
+F 1 "330" V 2834 2650 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2880 2650 50  0001 C CNN
+F 3 "~" H 2950 2650 50  0001 C CNN
+	1    2950 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R4
+U 1 1 5F3E2990
+P 3650 3250
+F 0 "R4" H 3720 3296 50  0000 L CNN
+F 1 "4k7" H 3720 3205 50  0000 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3580 3250 50  0001 C CNN
+F 3 "~" H 3650 3250 50  0001 C CNN
+	1    3650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3800 3400 3800
+Wire Wire Line
+	3100 4300 3100 4000
+Wire Wire Line
+	2900 4300 3100 4300
+Wire Wire Line
+	2900 4150 2900 4300
+$Comp
+L synkie_symbols:+5V #PWR09
+U 1 1 5F3E074A
+P 2900 4150
+F 0 "#PWR09" H 2900 4000 50  0001 C CNN
+F 1 "+5V" H 2900 4300 50  0000 C CNN
+F 2 "" H 2900 4150 50  0001 C CNN
+F 3 "" H 2900 4150 50  0001 C CNN
+	1    2900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:PEMX1 Q2
+U 2 1 5F3DAC6B
+P 3600 3800
+F 0 "Q2" H 3738 3846 50  0000 L CNN
+F 1 "PEMX1" H 3738 3755 50  0000 L CNN
+F 2 "synkie_footprints:SOT-666" H 3500 3825 50  0001 C CNN
+F 3 "" H 3500 3825 50  0001 C CNN
+	2    3600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:PEMX1 Q2
+U 1 1 5F3D8FC7
+P 3150 3800
+F 0 "Q2" H 3288 3754 50  0000 L CNN
+F 1 "PEMX1" H 3288 3845 50  0000 L CNN
+F 2 "synkie_footprints:SOT-666" H 3050 3825 50  0001 C CNN
+F 3 "" H 3050 3825 50  0001 C CNN
+	1    3150 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 2750 2200 2750
+Wire Wire Line
+	2150 2950 2150 2750
+$Comp
+L synkie_symbols:Opamp_Dual_Generic U1
+U 3 1 5F3C8CDE
+P 1100 3750
+F 0 "U1" H 1058 3796 50  0000 L CNN
+F 1 "lmh6643" H 1058 3705 50  0000 L CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 1100 3750 50  0001 C CNN
+F 3 "~" H 1100 3750 50  0001 C CNN
+	3    1100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:Opamp_Dual_Generic U1
+U 2 1 5F3C82F3
+P 4200 2750
+F 0 "U1" H 4200 3117 50  0000 C CNN
+F 1 "lmh6643" H 4200 3026 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 4200 2750 50  0001 C CNN
+F 3 "~" H 4200 2750 50  0001 C CNN
+	2    4200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:Opamp_Dual_Generic U1
+U 1 1 5F3C76DF
+P 2500 2650
+F 0 "U1" H 2500 3017 50  0000 C CNN
+F 1 "lmh6643" H 2500 2926 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 2500 2650 50  0001 C CNN
+F 3 "~" H 2500 2650 50  0001 C CNN
+	1    2500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F3AD2B4
+P 4550 2750
+F 0 "TP1" H 4608 2868 50  0000 L CNN
+F 1 "TestPoint" H 4500 3000 50  0000 L CNN
+F 2 "synkie_footprints:Solderpad_1mm" H 4750 2750 50  0001 C CNN
+F 3 "~" H 4750 2750 50  0001 C CNN
+	1    4550 2750
+	1    0    0    -1  
+$EndComp
+Text Label 4800 2750 0    50   ~ 0
+clipper_out
+$Comp
+L power:-5V #PWR0139
+U 1 1 5F44CED7
+P 2000 2850
+F 0 "#PWR0139" H 2000 2950 50  0001 C CNN
+F 1 "-5V" H 2015 3023 50  0000 C CNN
+F 2 "" H 2000 2850 50  0001 C CNN
+F 3 "" H 2000 2850 50  0001 C CNN
+	1    2000 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0138
+U 1 1 5F44CECD
+P 2000 2250
+F 0 "#PWR0138" H 2000 2100 50  0001 C CNN
+F 1 "+5V" H 2015 2423 50  0000 C CNN
+F 2 "" H 2000 2250 50  0001 C CNN
+F 3 "" H 2000 2250 50  0001 C CNN
+	1    2000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2550 2000 2550
+$Comp
+L synkie_symbols:BAT54S D2
+U 1 1 5F44CEC2
+P 2000 2550
+F 0 "D2" V 2046 2472 50  0000 R CNN
+F 1 "BAT54S" V 1450 2700 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2075 2675 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 1880 2550 50  0001 C CNN
+	1    2000 2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1550 2550
+$Comp
+L Device:R R11
+U 1 1 5F44CEB7
+P 1700 2550
+F 0 "R11" V 1907 2550 50  0000 C CNN
+F 1 "75" V 1816 2550 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1630 2550 50  0001 C CNN
+F 3 "~" H 1700 2550 50  0001 C CNN
+	1    1700 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 2550 1550 2550
+$Comp
+L power:GND #PWR0137
+U 1 1 5F44CEAC
+P 1550 2850
+F 0 "#PWR0137" H 1550 2600 50  0001 C CNN
+F 1 "GND" H 1555 2677 50  0000 C CNN
+F 2 "" H 1550 2850 50  0001 C CNN
+F 3 "" H 1550 2850 50  0001 C CNN
+	1    1550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5F44CEA2
+P 1550 2700
+F 0 "R10" H 1480 2654 50  0000 R CNN
+F 1 "47k" H 1480 2745 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1480 2700 50  0001 C CNN
+F 3 "~" H 1550 2700 50  0001 C CNN
+	1    1550 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5F44CE98
+P 1300 2650
+F 0 "#PWR0136" H 1300 2400 50  0001 C CNN
+F 1 "GND" H 1305 2477 50  0000 C CNN
+F 2 "" H 1300 2650 50  0001 C CNN
+F 3 "" H 1300 2650 50  0001 C CNN
+	1    1300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5F44CE8E
+P 1100 2550
+F 0 "J3" H 1018 2767 50  0000 C CNN
+F 1 "SIFF_IN" H 1018 2676 50  0000 C CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1100 2550 50  0001 C CNN
+F 3 "~" H 1100 2550 50  0001 C CNN
+	1    1100 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2750 6950 2750
+Connection ~ 6950 2750
+Wire Wire Line
+	6950 2750 6950 2700
+Wire Wire Line
+	6150 2600 6350 2600
+$EndSCHEMATC

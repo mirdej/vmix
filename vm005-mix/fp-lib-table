@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name synkie_footprints)(type KiCad)(uri "/Users/me/Documents/development/synkie(github)/kicad/synkie_footprints.pretty")(options "")(descr ""))
+)

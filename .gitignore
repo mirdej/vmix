@@ -1,0 +1,13 @@
+*.b#*
+*.s#*
+*.l#*
+.DS_Store
+*.lck
+kicad/**/fp-info-cache
+kicad/**/*-bak
+kicad/**/*-B_Cu.*
+kicad/**/*-F_Cu.*
+.~lock.*
+*-bak
+*.ps
+bom/**
