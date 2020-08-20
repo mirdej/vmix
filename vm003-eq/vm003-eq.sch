@@ -460,8 +460,6 @@ compa_out
 Wire Notes Line
 	1050 1350 5100 1350
 Wire Notes Line
-	5100 1350 5100 3550
-Wire Notes Line
 	5100 3550 1050 3550
 Wire Notes Line
 	1050 3550 1050 1350
@@ -536,7 +534,7 @@ Wire Wire Line
 	8550 1650 8600 1650
 Text Label 5950 2250 2    50   ~ 0
 compa_cv
-Text Label 4750 2050 0    50   ~ 0
+Text Label 5050 2050 0    50   ~ 0
 eq_out
 Text Label 8100 4450 2    50   ~ 0
 eq_out
@@ -1540,4 +1538,38 @@ Text Notes 2400 1800 0    50   ~ 0
 We dont have 2k5. Use 2k2 ??
 Text Notes 9150 4900 0    50   ~ 0
 Footprint seems a tad too wide
+$Comp
+L Device:R R?
+U 1 1 5F433476
+P 4900 2050
+F 0 "R?" V 4693 2050 50  0000 C CNN
+F 1 "75" V 4784 2050 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 2050 50  0001 C CNN
+F 3 "~" H 4900 2050 50  0001 C CNN
+	1    4900 2050
+	0    1    1    0   
+$EndComp
+Connection ~ 4750 2050
+$Comp
+L Device:R R?
+U 1 1 5F433B86
+P 5050 2200
+F 0 "R?" V 4843 2200 50  0000 C CNN
+F 1 "75" V 4934 2200 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4980 2200 50  0001 C CNN
+F 3 "~" H 5050 2200 50  0001 C CNN
+	1    5050 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F43421D
+P 5050 2350
+F 0 "#PWR?" H 5050 2100 50  0001 C CNN
+F 1 "GND" H 5055 2177 50  0000 C CNN
+F 2 "" H 5050 2350 50  0001 C CNN
+F 3 "" H 5050 2350 50  0001 C CNN
+	1    5050 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

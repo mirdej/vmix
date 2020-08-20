@@ -815,4 +815,30 @@ F 3 "~" H 5100 4900 50  0001 C CNN
 	1    5100 4900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 5F42AC3B
+P 7850 1900
+F 0 "R?" H 7920 1946 50  0000 L CNN
+F 1 "560" H 7920 1855 50  0000 L CNN
+F 2 "" V 7780 1900 50  0001 C CNN
+F 3 "~" H 7850 1900 50  0001 C CNN
+	1    7850 1900
+	1    0    0    -1  
+$EndComp
+Text Label 7850 1750 2    50   ~ 0
+output
+$Comp
+L power:GND #PWR?
+U 1 1 5F42B53D
+P 7850 2050
+F 0 "#PWR?" H 7850 1800 50  0001 C CNN
+F 1 "GND" V 7855 1922 50  0000 R CNN
+F 2 "" H 7850 2050 50  0001 C CNN
+F 3 "" H 7850 2050 50  0001 C CNN
+	1    7850 2050
+	1    0    0    -1  
+$EndComp
+Text Notes 8100 1950 0    50   ~ 0
+only once per bus\n
 $EndSCHEMATC

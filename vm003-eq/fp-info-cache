@@ -1,4 +1,4 @@
-17874772057956510
+17877992083571510
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75530,6 +75530,13 @@ Diode Mini-MELF Handsoldering
 2
 2
 synkie_footprints
+D_SOT-23_ANK
+SOT-23, Single Diode
+SOT-23
+0
+3
+2
+synkie_footprints
 IDC-Header_2x05_P2.54mm_Vertical
 Through hole straight IDC box header, 2x05, 2.54mm pitch, double rows
 Through hole IDC box header THT 2x05 2.54mm double row
@@ -75788,6 +75795,13 @@ SOT-23, BEC
 0
 3
 3
+synkie_footprints
+SOT-363_SC-70-6_Handsoldering
+SOT-363, SC-70-6, Handsoldering
+SOT-363 SC-70-6 Handsoldering
+0
+6
+6
 synkie_footprints
 SOT-666
 SOT666
