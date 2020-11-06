@@ -1,4 +1,4 @@
-17874772057956510
+17900491937080510
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75271,6 +75271,13 @@ anyma_footprints
 17
 17
 anyma_footprints
+502-35RASMT4BHNTRX
+
+
+0
+5
+5
+anyma_footprints
 AnymaPOGO-ISP
 
 
@@ -75362,6 +75369,13 @@ Pam-Module
 9
 9
 anyma_footprints
+Pinhead-10pin-SMD-2.54
+
+
+0
+10
+10
+anyma_footprints
 Pinhead_SMD_6
 
 
@@ -75383,6 +75397,13 @@ RND200
 8
 8
 anyma_footprints
+SCHD3A0100
+
+
+0
+14
+13
+anyma_footprints
 SLIDESWITCH
 
 
@@ -75390,12 +75411,33 @@ SLIDESWITCH
 6
 6
 anyma_footprints
+SOIC-16_3.9x9.9mm_P1.27mm
+SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+16
+16
+anyma_footprints
+SOIC-16_EP_3.9x9.9mm_P1.27mm
+SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+17
+17
+anyma_footprints
 TinyAudio18
 
 
 0
 14
 14
+anyma_footprints
+VandalButtonMount
+
+
+0
+1
+1
 anyma_footprints
 logo_aetz_box
 
@@ -75460,12 +75502,33 @@ pinhead-6-1.27mm-smd
 6
 6
 anyma_footprints
+smd-1pin
+
+
+0
+1
+1
+anyma_footprints
 smd-2pin
 
 
 0
 2
 2
+anyma_footprints
+smd-3pin
+
+
+0
+3
+3
+anyma_footprints
+smd-4pin
+
+
+0
+4
+4
 anyma_footprints
 solderpad_1.27mm_3
 
@@ -75523,11 +75586,32 @@ capacitor handsolder
 2
 2
 synkie_footprints
+Coilcraft142
+
+
+0
+2
+2
+synkie_footprints
+Crystal_SMD_HC49-SD
+SMD Crystal HC-49-SD http://cdn-reichelt.de/documents/datenblatt/B400/xxx-HC49-SMD.pdf, 11.4x4.7mm^2 package
+SMD SMT crystal
+0
+2
+2
+synkie_footprints
 D_MiniMELF_Handsoldering
 Diode Mini-MELF Handsoldering
 Diode Mini-MELF Handsoldering
 0
 2
+2
+synkie_footprints
+D_SOT-23_ANK
+SOT-23, Single Diode
+SOT-23
+0
+3
 2
 synkie_footprints
 IDC-Header_2x05_P2.54mm_Vertical
@@ -75613,6 +75697,13 @@ mounting hole 3.2mm m3 din965
 0
 1
 1
+synkie_footprints
+PTL20
+
+
+0
+6
+6
 synkie_footprints
 PinHeader_1x01_P2.54mm_Vertical
 Through hole straight pin header, 1x01, 2.54mm pitch, single row
@@ -75726,6 +75817,13 @@ Potentiometer vertical Bourns 3296Y
 3
 3
 synkie_footprints
+Potentiometer_Uwe_100k
+Potentiometer_Uwe_100k
+Potentiometer Uwe 100k
+0
+3
+3
+synkie_footprints
 RK12L123
 
 
@@ -75768,6 +75866,13 @@ SOIC 1.27
 8
 8
 synkie_footprints
+SOIC-16_3.9x9.9mm_P1.27mm
+SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+16
+16
+synkie_footprints
 SOT-23
 SOT-23, Standard
 SOT-23
@@ -75788,6 +75893,13 @@ SOT-23, BEC
 0
 3
 3
+synkie_footprints
+SOT-363_SC-70-6_Handsoldering
+SOT-363, SC-70-6, Handsoldering
+SOT-363 SC-70-6 Handsoldering
+0
+6
+6
 synkie_footprints
 SOT-666
 SOT666

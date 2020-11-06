@@ -1462,12 +1462,12 @@ bias_cv
 $Comp
 L synkie_symbols:Conn_01x03 J107
 U 1 1 5E6738D1
-P 1200 2900
-F 0 "J107" H 1118 2575 50  0000 C CNN
-F 1 "Supply" H 1118 2666 50  0000 C CNN
-F 2 "synkie_footprints:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 1200 2900 50  0001 C CNN
-F 3 "~" H 1200 2900 50  0001 C CNN
-	1    1200 2900
+P 1500 2900
+F 0 "J107" H 1418 2575 50  0000 C CNN
+F 1 "Supply" H 1418 2666 50  0000 C CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 1500 2900 50  0001 C CNN
+F 3 "~" H 1500 2900 50  0001 C CNN
+	1    1500 2900
 	1    0    0    1   
 $EndComp
 $Comp
@@ -1511,8 +1511,6 @@ Wire Wire Line
 	1000 3000 950  3000
 Wire Wire Line
 	950  3000 950  3050
-Wire Wire Line
-	1000 2900 850  2900
 Wire Wire Line
 	850  2900 850  2950
 $Comp
@@ -2679,4 +2677,140 @@ Wire Notes Line
 	650  2200 650  750 
 Text Notes 700  850  0    50   ~ 0
 1) EDGES
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 5FA646AE
+P 1150 2800
+F 0 "FB1" V 876 2800 50  0000 C CNN
+F 1 "Ferrite_Bead" V 967 2800 50  0000 C CNN
+F 2 "synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1080 2800 50  0001 C CNN
+F 3 "~" H 1150 2800 50  0001 C CNN
+	1    1150 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB2
+U 1 1 5FA6548F
+P 1150 3000
+F 0 "FB2" V 876 3000 50  0000 C CNN
+F 1 "Ferrite_Bead" V 967 3000 50  0000 C CNN
+F 2 "synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1080 3000 50  0001 C CNN
+F 3 "~" H 1150 3000 50  0001 C CNN
+	1    1150 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  2900 1300 2900
+$Comp
+L synkie_symbols:+5V #PWR0150
+U 1 1 5FA6EB26
+P 4150 -1050
+F 0 "#PWR0150" H 4150 -1200 50  0001 C CNN
+F 1 "+5V" H 4165 -877 50  0000 C CNN
+F 2 "" H 4150 -1050 50  0001 C CNN
+F 3 "" H 4150 -1050 50  0001 C CNN
+	1    4150 -1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C16
+U 1 1 5FA7097D
+P 4150 -900
+F 0 "C16" H 4268 -854 50  0000 L CNN
+F 1 "10u" H 4268 -945 50  0000 L CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 4188 -1050 50  0001 C CNN
+F 3 "~" H 4150 -900 50  0001 C CNN
+	1    4150 -900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C18
+U 1 1 5FA713A0
+P 4150 -600
+F 0 "C18" H 4268 -554 50  0000 L CNN
+F 1 "10u" H 4268 -645 50  0000 L CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 4188 -750 50  0001 C CNN
+F 3 "~" H 4150 -600 50  0001 C CNN
+	1    4150 -600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0173
+U 1 1 5FA72618
+P 4150 -450
+F 0 "#PWR0173" H 4150 -350 50  0001 C CNN
+F 1 "-5V" H 4165 -277 50  0000 C CNN
+F 2 "" H 4150 -450 50  0001 C CNN
+F 3 "" H 4150 -450 50  0001 C CNN
+	1    4150 -450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0174
+U 1 1 5FA741A5
+P 4150 -750
+F 0 "#PWR0174" H 4150 -1000 50  0001 C CNN
+F 1 "GND" V 4155 -878 50  0000 R CNN
+F 2 "" H 4150 -750 50  0001 C CNN
+F 3 "" H 4150 -750 50  0001 C CNN
+	1    4150 -750
+	0    1    1    0   
+$EndComp
+Connection ~ 4150 -750
+$Comp
+L synkie_symbols:+5V #PWR0175
+U 1 1 5FA757D9
+P 4800 -1050
+F 0 "#PWR0175" H 4800 -1200 50  0001 C CNN
+F 1 "+5V" H 4815 -877 50  0000 C CNN
+F 2 "" H 4800 -1050 50  0001 C CNN
+F 3 "" H 4800 -1050 50  0001 C CNN
+	1    4800 -1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C17
+U 1 1 5FA757E3
+P 4800 -900
+F 0 "C17" H 4918 -854 50  0000 L CNN
+F 1 "10u" H 4918 -945 50  0000 L CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 4838 -1050 50  0001 C CNN
+F 3 "~" H 4800 -900 50  0001 C CNN
+	1    4800 -900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C19
+U 1 1 5FA757ED
+P 4800 -600
+F 0 "C19" H 4918 -554 50  0000 L CNN
+F 1 "10u" H 4918 -645 50  0000 L CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 4838 -750 50  0001 C CNN
+F 3 "~" H 4800 -600 50  0001 C CNN
+	1    4800 -600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR0176
+U 1 1 5FA757F7
+P 4800 -450
+F 0 "#PWR0176" H 4800 -350 50  0001 C CNN
+F 1 "-5V" H 4815 -277 50  0000 C CNN
+F 2 "" H 4800 -450 50  0001 C CNN
+F 3 "" H 4800 -450 50  0001 C CNN
+	1    4800 -450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0177
+U 1 1 5FA75801
+P 4800 -750
+F 0 "#PWR0177" H 4800 -1000 50  0001 C CNN
+F 1 "GND" V 4805 -878 50  0000 R CNN
+F 2 "" H 4800 -750 50  0001 C CNN
+F 3 "" H 4800 -750 50  0001 C CNN
+	1    4800 -750
+	0    1    1    0   
+$EndComp
+Connection ~ 4800 -750
 $EndSCHEMATC
