@@ -1,4 +1,4 @@
-update=2020 August 04, Tuesday 14:57:12
+update=2020 November 08, Sunday 13:44:58
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -38,15 +38,15 @@ MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=0.6096
+TrackWidth1=0.5
 TrackWidth2=0.2
 TrackWidth3=0.254
 TrackWidth4=0.4064
 TrackWidth5=0.6096
 TrackWidth6=0.8128
 TrackWidth7=1.016
-ViaDiameter1=1.524
-ViaDrill1=0.8
+ViaDiameter1=0.8
+ViaDrill1=0.4
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -81,11 +81,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -243,10 +243,10 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.6096
-TrackWidth=0.6096
-ViaDiameter=1.524
-ViaDrill=0.8
+Clearance=0.2
+TrackWidth=0.5
+ViaDiameter=0.8
+ViaDrill=0.4
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
@@ -265,9 +265,9 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=Power
-Clearance=0.4
-TrackWidth=0.8128
-ViaDiameter=1.524
+Clearance=0.2
+TrackWidth=0.8
+ViaDiameter=1.3
 ViaDrill=0.8
 uViaDiameter=0.3
 uViaDrill=0.1
