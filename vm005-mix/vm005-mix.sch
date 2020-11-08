@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -14,983 +14,532 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L vm005-mix-rescue:CP_Small-synkie_symbols-sk161-modular-mixer-channel-rescue C2
-U 1 1 5DCABC45
-P 2850 1350
-F 0 "C2" V 2625 1350 50  0000 C CNN
-F 1 "10u" V 2716 1350 50  0000 C CNN
-F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 2850 1350 50  0001 C CNN
-F 3 "~" H 2850 1350 50  0001 C CNN
-	1    2850 1350
+L synkie_symbols:CP_Small C2
+U 1 1 5FA6FE65
+P 2600 4650
+F 0 "C2" V 2375 4650 50  0000 C CNN
+F 1 "10u" V 2466 4650 50  0000 C CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 2600 4650 50  0001 C CNN
+F 3 "~" H 2600 4650 50  0001 C CNN
+	1    2600 4650
 	0    -1   1    0   
 $EndComp
 $Comp
-L vm005-mix-rescue:Ferrite_Bead-synkie_symbols-sk161-modular-mixer-channel-rescue FB2
+L synkie_symbols:Ferrite_Bead FB2
 U 1 1 5DCE4D3A
-P 2600 1550
-F 0 "FB2" V 2750 1550 50  0000 C CNN
-F 1 "330u" V 2850 1550 50  0000 C CNN
-F 2 "synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2530 1550 50  0001 C CNN
-F 3 "~" H 2600 1550 50  0001 C CNN
-	1    2600 1550
+P 2350 4850
+F 0 "FB2" V 2500 4850 50  0000 C CNN
+F 1 "330u" V 2600 4850 50  0000 C CNN
+F 2 "synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2280 4850 50  0001 C CNN
+F 3 "~" H 2350 4850 50  0001 C CNN
+	1    2350 4850
 	0    -1   1    0   
 $EndComp
 $Comp
-L vm005-mix-rescue:Ferrite_Bead-synkie_symbols-sk161-modular-mixer-channel-rescue FB1
+L synkie_symbols:Ferrite_Bead FB1
 U 1 1 5DCE4D39
-P 2600 1350
-F 0 "FB1" V 2326 1350 50  0000 C CNN
-F 1 "330u" V 2417 1350 50  0000 C CNN
-F 2 "synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2530 1350 50  0001 C CNN
-F 3 "~" H 2600 1350 50  0001 C CNN
-	1    2600 1350
+P 2350 4650
+F 0 "FB1" V 2076 4650 50  0000 C CNN
+F 1 "330u" V 2167 4650 50  0000 C CNN
+F 2 "synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2280 4650 50  0001 C CNN
+F 3 "~" H 2350 4650 50  0001 C CNN
+	1    2350 4650
 	0    -1   1    0   
 $EndComp
 $Comp
-L vm005-mix-rescue:GND-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR09
-U 1 1 5DCB53A6
-P 3150 1450
-F 0 "#PWR09" H 3150 1200 50  0001 C CNN
-F 1 "GND" H 3155 1277 50  0000 C CNN
-F 2 "" H 3150 1450 50  0001 C CNN
-F 3 "" H 3150 1450 50  0001 C CNN
-	1    3150 1450
+L synkie_symbols:GND #PWR09
+U 1 1 5FA6FE67
+P 2900 4750
+F 0 "#PWR09" H 2900 4500 50  0001 C CNN
+F 1 "GND" H 2905 4577 50  0000 C CNN
+F 2 "" H 2900 4750 50  0001 C CNN
+F 3 "" H 2900 4750 50  0001 C CNN
+	1    2900 4750
 	-1   0    0    -1  
 $EndComp
 $Comp
-L vm005-mix-rescue:-5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR013
+L synkie_symbols:-5V #PWR013
 U 1 1 5DCE4D3F
-P 2750 1900
-F 0 "#PWR013" H 2750 2000 50  0001 C CNN
-F 1 "-5V" H 2750 2050 50  0000 C CNN
-F 2 "" H 2750 1900 50  0001 C CNN
-F 3 "" H 2750 1900 50  0001 C CNN
-	1    2750 1900
+P 2500 5200
+F 0 "#PWR013" H 2500 5300 50  0001 C CNN
+F 1 "-5V" H 2500 5350 50  0000 C CNN
+F 2 "" H 2500 5200 50  0001 C CNN
+F 3 "" H 2500 5200 50  0001 C CNN
+	1    2500 5200
 	1    0    0    1   
 $EndComp
 $Comp
-L vm005-mix-rescue:PWR_FLAG-synkie_symbols-sk161-modular-mixer-channel-rescue #FLG03
-U 1 1 5DCB6C6B
-P 2650 1900
-F 0 "#FLG03" H 2650 1975 50  0001 C CNN
-F 1 "PWR_FLAG" H 2450 2050 50  0000 C CNN
-F 2 "" H 2650 1900 50  0001 C CNN
-F 3 "~" H 2650 1900 50  0001 C CNN
-	1    2650 1900
-	1    0    0    1   
-$EndComp
-$Comp
-L vm005-mix-rescue:PWR_FLAG-synkie_symbols-sk161-modular-mixer-channel-rescue #FLG01
-U 1 1 5DCB6B02
-P 2650 1050
-F 0 "#FLG01" H 2650 1125 50  0001 C CNN
-F 1 "PWR_FLAG" H 2850 1200 50  0000 C CNN
-F 2 "" H 2650 1050 50  0001 C CNN
-F 3 "~" H 2650 1050 50  0001 C CNN
-	1    2650 1050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L vm005-mix-rescue:+5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR02
+L synkie_symbols:+5V #PWR02
 U 1 1 5DCB58DB
-P 2750 1050
-F 0 "#PWR02" H 2750 900 50  0001 C CNN
-F 1 "+5V" H 2750 1200 50  0000 C CNN
-F 2 "" H 2750 1050 50  0001 C CNN
-F 3 "" H 2750 1050 50  0001 C CNN
-	1    2750 1050
+P 2500 4350
+F 0 "#PWR02" H 2500 4200 50  0001 C CNN
+F 1 "+5V" H 2500 4500 50  0000 C CNN
+F 2 "" H 2500 4350 50  0001 C CNN
+F 3 "" H 2500 4350 50  0001 C CNN
+	1    2500 4350
 	-1   0    0    -1  
 $EndComp
 $Comp
-L vm005-mix-rescue:PWR_FLAG-synkie_symbols-sk161-modular-mixer-channel-rescue #FLG02
+L synkie_symbols:PWR_FLAG #FLG02
 U 1 1 5DCB666B
-P 3150 1450
-F 0 "#FLG02" H 3150 1525 50  0001 C CNN
-F 1 "PWR_FLAG" H 3050 1650 50  0000 C CNN
-F 2 "" H 3150 1450 50  0001 C CNN
-F 3 "~" H 3150 1450 50  0001 C CNN
-	1    3150 1450
+P 2900 4750
+F 0 "#FLG02" H 2900 4825 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 4950 50  0000 C CNN
+F 2 "" H 2900 4750 50  0001 C CNN
+F 3 "~" H 2900 4750 50  0001 C CNN
+	1    2900 4750
 	-1   0    0    -1  
 $EndComp
 $Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R14
-U 1 1 5DCC6769
-P 2850 6000
-F 0 "R14" V 2643 6000 50  0000 C CNN
-F 1 "100" V 2734 6000 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2780 6000 50  0001 C CNN
-F 3 "~" H 2850 6000 50  0001 C CNN
-	1    2850 6000
-	0    1    1    0   
-$EndComp
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R16
-U 1 1 5DCC7045
-P 2650 6200
-F 0 "R16" H 2580 6154 50  0000 R CNN
-F 1 "47k" H 2580 6245 50  0000 R CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2580 6200 50  0001 C CNN
-F 3 "~" H 2650 6200 50  0001 C CNN
-	1    2650 6200
-	-1   0    0    1   
-$EndComp
-$Comp
-L vm005-mix-rescue:GND-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR023
-U 1 1 5DCC82F8
-P 2650 6350
-F 0 "#PWR023" H 2650 6100 50  0001 C CNN
-F 1 "GND" H 2655 6177 50  0000 C CNN
-F 2 "" H 2650 6350 50  0001 C CNN
-F 3 "" H 2650 6350 50  0001 C CNN
-	1    2650 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L vm005-mix-rescue:BAT54S-synkie_symbols-sk161-modular-mixer-channel-rescue D2
-U 1 1 5DCE4D47
-P 3100 6000
-F 0 "D2" V 2950 5850 50  0000 L CNN
-F 1 "BAT54S" V 2850 5700 50  0000 L CNN
-F 2 "synkie_footprints:SOT-23" H 3175 6125 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 2980 6000 50  0001 C CNN
-	1    3100 6000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L vm005-mix-rescue:+5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR017
-U 1 1 5DCE4D48
-P 3100 5700
-F 0 "#PWR017" H 3100 5550 50  0001 C CNN
-F 1 "+5V" H 3100 5850 50  0000 C CNN
-F 2 "" H 3100 5700 50  0001 C CNN
-F 3 "" H 3100 5700 50  0001 C CNN
-	1    3100 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L vm005-mix-rescue:-5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR022
-U 1 1 5DCE4D49
-P 3100 6300
-F 0 "#PWR022" H 3100 6400 50  0001 C CNN
-F 1 "-5V" H 3100 6450 50  0000 C CNN
-F 2 "" H 3100 6300 50  0001 C CNN
-F 3 "" H 3100 6300 50  0001 C CNN
-	1    3100 6300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2600 6000 2650 6000
-Wire Wire Line
-	2650 6050 2650 6000
-Connection ~ 2650 6000
-Wire Wire Line
-	2650 6000 2700 6000
-Wire Wire Line
-	3000 6000 3100 6000
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R15
-U 1 1 5DCE4D3B
-P 3450 6000
-F 0 "R15" V 3243 6000 50  0000 C CNN
-F 1 "22k" V 3334 6000 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3380 6000 50  0001 C CNN
-F 3 "~" H 3450 6000 50  0001 C CNN
-	1    3450 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3300 6000 3100 6000
-Connection ~ 3100 6000
-$Comp
-L vm005-mix-rescue:Opamp_Dual_Generic-synkie_symbols-sk161-modular-mixer-channel-rescue U2
-U 3 1 5DCB71E3
-P 6700 5050
-F 0 "U2" H 6658 5096 50  0000 L CNN
-F 1 "LMH6643" H 6658 5005 50  0000 L CNN
-F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 6700 5050 50  0001 C CNN
-F 3 "~" H 6700 5050 50  0001 C CNN
-	3    6700 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R13
-U 1 1 5DCFB76E
-P 4250 5850
-F 0 "R13" V 4043 5850 50  0000 C CNN
-F 1 "20k" V 4134 5850 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4180 5850 50  0001 C CNN
-F 3 "~" H 4250 5850 50  0001 C CNN
-	1    4250 5850
-	0    1    1    0   
-$EndComp
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R12
-U 1 1 5DCFBE0A
-P 3700 5650
-F 0 "R12" V 3493 5650 50  0000 C CNN
-F 1 "22k" V 3584 5650 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 5650 50  0001 C CNN
-F 3 "~" H 3700 5650 50  0001 C CNN
-	1    3700 5650
-	-1   0    0    1   
-$EndComp
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R7
-U 1 1 5DD01004
-P 5350 2650
-F 0 "R7" H 5550 2600 50  0000 R CNN
-F 1 "100" H 5550 2700 50  0000 R CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5280 2650 50  0001 C CNN
-F 3 "~" H 5350 2650 50  0001 C CNN
-	1    5350 2650
-	-1   0    0    1   
-$EndComp
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R8
-U 1 1 5DD016EB
-P 5550 2650
-F 0 "R8" H 5480 2604 50  0000 R CNN
-F 1 "100" H 5480 2695 50  0000 R CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5480 2650 50  0001 C CNN
-F 3 "~" H 5550 2650 50  0001 C CNN
-	1    5550 2650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5550 2500 5850 2500
-Wire Wire Line
-	5850 2400 5350 2400
-Wire Wire Line
-	5350 2400 5350 2500
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R2
-U 1 1 5DD09E42
-P 5150 1650
-F 0 "R2" V 4943 1650 50  0000 C CNN
-F 1 "1k" V 5034 1650 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5080 1650 50  0001 C CNN
-F 3 "~" H 5150 1650 50  0001 C CNN
-	1    5150 1650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5300 1650 5550 1650
-Wire Wire Line
-	5550 1650 5550 2500
-Connection ~ 5550 2500
-$Comp
-L vm005-mix-rescue:Trans_PNP_Generic-synkie_symbols-sk161-modular-mixer-channel-rescue Q1
-U 1 1 5DCB5482
-P 4750 6100
-F 0 "Q1" H 4888 6146 50  0000 L CNN
-F 1 "PNP" H 4888 6055 50  0000 L CNN
-F 2 "synkie_footprints:SOT-23_BEC" H 4750 6100 50  0001 C CNN
-F 3 "" H 4750 6100 50  0001 C CNN
-	1    4750 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 6000 3700 6000
-Wire Wire Line
-	3700 6000 3700 5850
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R11
-U 1 1 5DCE719B
-P 4800 5600
-F 0 "R11" H 4730 5554 50  0000 R CNN
-F 1 "2k2" H 4730 5645 50  0000 R CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4730 5600 50  0001 C CNN
-F 3 "~" H 4800 5600 50  0001 C CNN
-	1    4800 5600
-	-1   0    0    1   
-$EndComp
-$Comp
-L vm005-mix-rescue:+5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR015
-U 1 1 5DCE76FE
-P 4800 5400
-F 0 "#PWR015" H 4800 5250 50  0001 C CNN
-F 1 "+5V" H 4800 5550 50  0000 C CNN
-F 2 "" H 4800 5400 50  0001 C CNN
-F 3 "" H 4800 5400 50  0001 C CNN
-	1    4800 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 5400 4800 5450
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R10
-U 1 1 5DCEACBF
-P 5800 2900
-F 0 "R10" V 5593 2900 50  0000 C CNN
-F 1 "1k" V 5684 2900 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5730 2900 50  0001 C CNN
-F 3 "~" H 5800 2900 50  0001 C CNN
-	1    5800 2900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3900 6000 3700 6000
-Connection ~ 3700 6000
-$Comp
-L vm005-mix-rescue:GND-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR021
-U 1 1 5DCF050F
-P 3850 6250
-F 0 "#PWR021" H 3850 6000 50  0001 C CNN
-F 1 "GND" H 3855 6077 50  0000 C CNN
-F 2 "" H 3850 6250 50  0001 C CNN
-F 3 "" H 3850 6250 50  0001 C CNN
-	1    3850 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 6250 3850 6200
-Wire Wire Line
-	3850 6200 3900 6200
-Wire Wire Line
-	5800 2750 5800 2650
-Wire Wire Line
-	5800 2650 5850 2650
-$Comp
-L vm005-mix-rescue:LT1228-synkie_symbols-sk161-modular-mixer-channel-rescue U1
-U 1 1 5DCFCF56
-P 6350 2500
-F 0 "U1" H 6050 2950 50  0000 C CNN
-F 1 "LT1228" H 6100 2850 50  0000 C CNN
-F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 6800 2800 50  0001 C CNN
-F 3 "" H 6800 2800 50  0001 C CNN
-	1    6350 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 6300 4800 6400
-Wire Wire Line
-	4800 6400 5800 6400
-$Comp
-L vm005-mix-rescue:CP_Small-synkie_symbols-sk161-modular-mixer-channel-rescue C6
-U 1 1 5DD2079F
-P 6500 3000
-F 0 "C6" V 6275 3000 50  0000 C CNN
-F 1 "4u7" V 6366 3000 50  0000 C CNN
-F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 6500 3000 50  0001 C CNN
-F 3 "~" H 6500 3000 50  0001 C CNN
-	1    6500 3000
-	0    1    1    0   
-$EndComp
-$Comp
-L vm005-mix-rescue:CP_Small-synkie_symbols-sk161-modular-mixer-channel-rescue C3
-U 1 1 5DD211D3
-P 6500 1900
-F 0 "C3" V 6275 1900 50  0000 C CNN
-F 1 "4u7" V 6366 1900 50  0000 C CNN
-F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 6500 1900 50  0001 C CNN
-F 3 "~" H 6500 1900 50  0001 C CNN
-	1    6500 1900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L vm005-mix-rescue:C_Small-synkie_symbols-sk161-modular-mixer-channel-rescue C1
-U 1 1 5DD22C0C
-P 6500 1750
-F 0 "C1" V 6271 1750 50  0000 C CNN
-F 1 "100n" V 6362 1750 50  0000 C CNN
-F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6500 1750 50  0001 C CNN
-F 3 "~" H 6500 1750 50  0001 C CNN
-	1    6500 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L vm005-mix-rescue:C_Small-synkie_symbols-sk161-modular-mixer-channel-rescue C7
-U 1 1 5DD2340B
-P 6500 3150
-F 0 "C7" V 6600 3150 50  0000 C CNN
-F 1 "100n" V 6700 3150 50  0000 C CNN
-F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6500 3150 50  0001 C CNN
-F 3 "~" H 6500 3150 50  0001 C CNN
-	1    6500 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L vm005-mix-rescue:+5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR03
-U 1 1 5DD23A8F
-P 6350 1700
-F 0 "#PWR03" H 6350 1550 50  0001 C CNN
-F 1 "+5V" H 6350 1850 50  0000 C CNN
-F 2 "" H 6350 1700 50  0001 C CNN
-F 3 "" H 6350 1700 50  0001 C CNN
-	1    6350 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 1700 6350 1750
-Wire Wire Line
-	6400 1750 6350 1750
-Connection ~ 6350 1750
-Wire Wire Line
-	6350 1750 6350 1900
-Wire Wire Line
-	6400 1900 6350 1900
-Connection ~ 6350 1900
-Wire Wire Line
-	6350 1900 6350 2100
-$Comp
-L vm005-mix-rescue:GND-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR011
-U 1 1 5DD2E7D2
-P 6650 2000
-F 0 "#PWR011" H 6650 1750 50  0001 C CNN
-F 1 "GND" H 6700 1850 50  0000 C CNN
-F 2 "" H 6650 2000 50  0001 C CNN
-F 3 "" H 6650 2000 50  0001 C CNN
-	1    6650 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 1900 6650 1900
-Wire Wire Line
-	6650 1900 6650 2000
-Wire Wire Line
-	6600 1750 6650 1750
-Wire Wire Line
-	6650 1750 6650 1900
-Connection ~ 6650 1900
-$Comp
-L vm005-mix-rescue:-5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR019
-U 1 1 5DD3999C
-P 6350 3200
-F 0 "#PWR019" H 6350 3300 50  0001 C CNN
-F 1 "-5V" H 6350 3350 50  0000 C CNN
-F 2 "" H 6350 3200 50  0001 C CNN
-F 3 "" H 6350 3200 50  0001 C CNN
-	1    6350 3200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6350 2850 6350 3000
-Wire Wire Line
-	6400 3000 6350 3000
-Connection ~ 6350 3000
-Wire Wire Line
-	6350 3000 6350 3150
-Wire Wire Line
-	6400 3150 6350 3150
-Connection ~ 6350 3150
-Wire Wire Line
-	6350 3150 6350 3200
-$Comp
-L vm005-mix-rescue:GND-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR020
-U 1 1 5DD3E0A3
-P 6650 3200
-F 0 "#PWR020" H 6650 2950 50  0001 C CNN
-F 1 "GND" H 6700 3050 50  0000 C CNN
-F 2 "" H 6650 3200 50  0001 C CNN
-F 3 "" H 6650 3200 50  0001 C CNN
-	1    6650 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 3150 6650 3150
-Wire Wire Line
-	6650 3150 6650 3200
-Wire Wire Line
-	6600 3000 6650 3000
-Wire Wire Line
-	6650 3000 6650 3150
-Connection ~ 6650 3150
-$Comp
-L vm005-mix-rescue:GND-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR012
-U 1 1 5DD426CE
-P 7750 2300
-F 0 "#PWR012" H 7750 2050 50  0001 C CNN
-F 1 "GND" H 7755 2127 50  0000 C CNN
-F 2 "" H 7750 2300 50  0001 C CNN
-F 3 "" H 7750 2300 50  0001 C CNN
-	1    7750 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 2250 7750 2250
-Wire Wire Line
-	7750 2250 7750 2300
-Wire Wire Line
-	4500 6100 4550 6100
-$Comp
-L vm005-mix-rescue:-5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR024
-U 1 1 5DE341EF
-P 3700 6400
-F 0 "#PWR024" H 3700 6500 50  0001 C CNN
-F 1 "-5V" H 3700 6550 50  0000 C CNN
-F 2 "" H 3700 6400 50  0001 C CNN
-F 3 "" H 3700 6400 50  0001 C CNN
-	1    3700 6400
-	-1   0    0    1   
-$EndComp
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R17
-U 1 1 5DE34830
-P 3700 6200
-F 0 "R17" H 3850 6250 50  0000 R CNN
-F 1 "22k" H 3850 6350 50  0000 R CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 6200 50  0001 C CNN
-F 3 "~" H 3700 6200 50  0001 C CNN
-	1    3700 6200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3700 6050 3700 6000
-Wire Wire Line
-	3700 6350 3700 6400
-Wire Wire Line
-	4100 5850 3700 5850
-Wire Wire Line
-	3700 5800 3700 5850
-Connection ~ 3700 5850
-Wire Wire Line
-	3700 5400 3700 5500
-Wire Wire Line
-	2800 5400 3700 5400
-$Comp
-L vm005-mix-rescue:-5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR028
-U 1 1 5E06D678
-P 6600 5350
-F 0 "#PWR028" H 6600 5450 50  0001 C CNN
-F 1 "-5V" H 6600 5500 50  0000 C CNN
-F 2 "" H 6600 5350 50  0001 C CNN
-F 3 "" H 6600 5350 50  0001 C CNN
-	1    6600 5350
-	-1   0    0    1   
-$EndComp
-$Comp
-L vm005-mix-rescue:+5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR026
-U 1 1 5E06DC21
-P 6600 4750
-F 0 "#PWR026" H 6600 4600 50  0001 C CNN
-F 1 "+5V" H 6600 4900 50  0000 C CNN
-F 2 "" H 6600 4750 50  0001 C CNN
-F 3 "" H 6600 4750 50  0001 C CNN
-	1    6600 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L vm005-mix-rescue:C_Small-synkie_symbols-sk161-modular-mixer-channel-rescue C9
-U 1 1 5E06FF97
-P 6500 5350
-F 0 "C9" V 6600 5350 50  0000 C CNN
-F 1 "100n" V 6700 5350 50  0000 C CNN
-F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6500 5350 50  0001 C CNN
-F 3 "~" H 6500 5350 50  0001 C CNN
-	1    6500 5350
-	0    1    1    0   
-$EndComp
-Connection ~ 6600 5350
-$Comp
-L vm005-mix-rescue:C_Small-synkie_symbols-sk161-modular-mixer-channel-rescue C8
-U 1 1 5E073355
-P 6500 4750
-F 0 "C8" V 6600 4750 50  0000 C CNN
-F 1 "100n" V 6700 4750 50  0000 C CNN
-F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6500 4750 50  0001 C CNN
-F 3 "~" H 6500 4750 50  0001 C CNN
-	1    6500 4750
-	0    1    1    0   
-$EndComp
-Connection ~ 6600 4750
-$Comp
-L vm005-mix-rescue:GND-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR027
-U 1 1 5E07399C
-P 6400 5350
-F 0 "#PWR027" H 6400 5100 50  0001 C CNN
-F 1 "GND" H 6300 5200 50  0000 C CNN
-F 2 "" H 6400 5350 50  0001 C CNN
-F 3 "" H 6400 5350 50  0001 C CNN
-	1    6400 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 4750 6400 5350
-Connection ~ 6400 5350
-Wire Wire Line
-	4800 5750 4800 5900
-Wire Wire Line
-	4400 5850 4550 5850
-Wire Wire Line
-	4550 5850 4550 6100
-Connection ~ 4550 6100
-Wire Wire Line
-	4550 6100 4600 6100
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R4
-U 1 1 5DD6272C
-P 7550 2250
-F 0 "R4" V 7343 2250 50  0000 C CNN
-F 1 "120" V 7434 2250 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7480 2250 50  0001 C CNN
-F 3 "~" H 7550 2250 50  0001 C CNN
-	1    7550 2250
-	0    -1   1    0   
-$EndComp
-$Comp
-L vm005-mix-rescue:Opamp_Dual_Generic-synkie_symbols-sk161-modular-mixer-channel-rescue U2
-U 1 1 5DCB59FF
-P 4200 6100
-F 0 "U2" H 4200 6467 50  0000 C CNN
-F 1 "LMH6643" H 4200 6376 50  0000 C CNN
-F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 4200 6100 50  0001 C CNN
-F 3 "~" H 4200 6100 50  0001 C CNN
-	1    4200 6100
-	1    0    0    1   
-$EndComp
-$Comp
-L vm005-mix-rescue:Opamp_Dual_Generic-synkie_symbols-sk161-modular-mixer-channel-rescue U2
-U 2 1 5DFA5C9B
-P 4200 3900
-F 0 "U2" H 4200 4267 50  0000 C CNN
-F 1 "LMH6643" H 4200 4176 50  0000 C CNN
-F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 4200 3900 50  0001 C CNN
-F 3 "~" H 4200 3900 50  0001 C CNN
-	2    4200 3900
-	1    0    0    1   
-$EndComp
-$Comp
-L vm005-mix-rescue:-5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR029
-U 1 1 5DD6D5AB
-P 3450 4550
-F 0 "#PWR029" H 3450 4650 50  0001 C CNN
-F 1 "-5V" H 3450 4700 50  0000 C CNN
-F 2 "" H 3450 4550 50  0001 C CNN
-F 3 "" H 3450 4550 50  0001 C CNN
-	1    3450 4550
-	-1   0    0    1   
-$EndComp
-$Comp
-L vm005-mix-rescue:+5V-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR025
-U 1 1 5DD6DF03
-P 3450 3450
-F 0 "#PWR025" H 3450 3300 50  0001 C CNN
-F 1 "+5V" H 3450 3600 50  0000 C CNN
-F 2 "" H 3450 3450 50  0001 C CNN
-F 3 "" H 3450 3450 50  0001 C CNN
-	1    3450 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 3800 3850 3800
-Wire Wire Line
-	3850 3800 3850 3600
-$Comp
-L vm005-mix-rescue:R_POT-synkie_symbols-sk161-modular-mixer-channel-rescue RV2
-U 1 1 5DD8D848
-P 3450 4000
-F 0 "RV2" H 3381 4046 50  0000 R CNN
-F 1 "500" H 3381 3955 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3006P_Horizontal" H 3450 4000 50  0001 C CNN
-F 3 "~" H 3450 4000 50  0001 C CNN
-	1    3450 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 4000 3750 4000
-$Comp
-L vm005-mix-rescue:GND-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR018
-U 1 1 5DD0318B
-P 5550 2900
-F 0 "#PWR018" H 5550 2650 50  0001 C CNN
-F 1 "GND" H 5555 2727 50  0000 C CNN
-F 2 "" H 5550 2900 50  0001 C CNN
-F 3 "" H 5550 2900 50  0001 C CNN
-	1    5550 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 2800 5550 2850
-Connection ~ 5550 2850
-Wire Wire Line
-	5550 2850 5550 2900
-Wire Wire Line
-	5350 2800 5350 2850
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R18
-U 1 1 5DE3508C
-P 3450 3650
-F 0 "R18" H 3600 3700 50  0000 R CNN
-F 1 "3k" H 3600 3800 50  0000 R CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3380 3650 50  0001 C CNN
-F 3 "~" H 3450 3650 50  0001 C CNN
-	1    3450 3650
-	-1   0    0    1   
-$EndComp
-$Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R19
-U 1 1 5DE3583B
-P 3450 4350
-F 0 "R19" H 3600 4400 50  0000 R CNN
-F 1 "3k" H 3600 4500 50  0000 R CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3380 4350 50  0001 C CNN
-F 3 "~" H 3450 4350 50  0001 C CNN
-	1    3450 4350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3450 3450 3450 3500
-Wire Wire Line
-	3450 4200 3450 4150
-Wire Wire Line
-	3450 3800 3450 3850
-$Comp
-L vm005-mix-rescue:CP_Small-synkie_symbols-sk161-modular-mixer-channel-rescue C4
-U 1 1 5DCB0A0D
-P 2850 1550
-F 0 "C4" V 2700 1550 50  0000 C CNN
-F 1 "10u" V 2600 1550 50  0000 C CNN
-F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 2850 1550 50  0001 C CNN
-F 3 "~" H 2850 1550 50  0001 C CNN
-	1    2850 1550
+L synkie_symbols:CP_Small C4
+U 1 1 5FA6FE66
+P 2600 4850
+F 0 "C4" V 2450 4850 50  0000 C CNN
+F 1 "10u" V 2350 4850 50  0000 C CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 2600 4850 50  0001 C CNN
+F 3 "~" H 2600 4850 50  0001 C CNN
+	1    2600 4850
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	2750 1050 2750 1350
-Connection ~ 2750 1350
+	2500 4350 2500 4650
+Connection ~ 2500 4650
+Connection ~ 2900 4750
 Wire Wire Line
-	2650 1050 2750 1050
-Connection ~ 2750 1050
-Connection ~ 3150 1450
+	2700 4650 2700 4750
 Wire Wire Line
-	2950 1350 2950 1450
+	2900 4750 2700 4750
+Connection ~ 2700 4750
 Wire Wire Line
-	3150 1450 2950 1450
-Connection ~ 2950 1450
+	2700 4850 2700 4750
 Wire Wire Line
-	2950 1550 2950 1450
-Wire Wire Line
-	2750 1900 2750 1550
-Connection ~ 2750 1550
-Wire Wire Line
-	2650 1900 2750 1900
-Connection ~ 2750 1900
-Wire Wire Line
-	3450 4500 3450 4550
-Wire Wire Line
-	5350 2850 5550 2850
-Connection ~ 5350 2400
-Wire Wire Line
-	5000 2400 5050 2400
-Wire Wire Line
-	4600 2400 4600 3600
-Wire Wire Line
-	4600 2400 4700 2400
+	2500 5200 2500 4850
+Connection ~ 2500 4850
+Text Label 2200 4650 2    50   ~ 0
+supply+
+Text Label 2200 4850 2    50   ~ 0
+supply-
+Text Label 2900 4750 0    50   ~ 0
+supply_gnd
 $Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R20
-U 1 1 5DD15203
-P 4850 2400
-F 0 "R20" V 4643 2400 50  0000 C CNN
-F 1 "3k" V 4734 2400 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4780 2400 50  0001 C CNN
-F 3 "~" H 4850 2400 50  0001 C CNN
-	1    4850 2400
+L synkie_symbols:ADR510 U201
+U 1 1 5FA6FE70
+P 3450 6200
+F 0 "U201" H 3678 6246 50  0000 L CNN
+F 1 "ADR510" H 3678 6155 50  0000 L CNN
+F 2 "synkie_footprints:SOT-23" H 3000 6100 50  0001 C CNN
+F 3 "" H 3000 6100 50  0001 C CNN
+	1    3450 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:MAX5741 U200
+U 1 1 5FA6FE71
+P 2550 6750
+F 0 "U200" H 2150 6400 50  0000 C CNN
+F 1 "MAX5741" H 2900 6400 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 2550 6050 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX5741.pdf" H 3300 7400 50  0001 C CNN
+	1    2550 6750
+	1    0    0    -1  
+$EndComp
+Text Label 2050 6750 2    50   ~ 0
+sck
+Text Label 2050 6850 2    50   ~ 0
+mosi
+Text Label 2050 6550 2    50   ~ 0
+dac_select
+$Comp
+L power:+5V #PWR0140
+U 1 1 5FA6FE72
+P 2550 6350
+F 0 "#PWR0140" H 2550 6200 50  0001 C CNN
+F 1 "+5V" H 2565 6523 50  0000 C CNN
+F 2 "" H 2550 6350 50  0001 C CNN
+F 3 "" H 2550 6350 50  0001 C CNN
+	1    2550 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6100 2450 6350
+$Comp
+L power:+5V #PWR0141
+U 1 1 5FA6FE73
+P 2450 5800
+F 0 "#PWR0141" H 2450 5650 50  0001 C CNN
+F 1 "+5V" H 2465 5973 50  0000 C CNN
+F 2 "" H 2450 5800 50  0001 C CNN
+F 3 "" H 2450 5800 50  0001 C CNN
+	1    2450 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R200
+U 1 1 5FA6FE74
+P 2450 5950
+F 0 "R200" H 2520 5996 50  0000 L CNN
+F 1 "560" H 2520 5905 50  0000 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2380 5950 50  0001 C CNN
+F 3 "~" H 2450 5950 50  0001 C CNN
+	1    2450 5950
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 6100
+Wire Wire Line
+	2450 6100 3150 6100
+$Sheet
+S 7850 1450 500  300 
+U 5FA6FAA9
+F0 "MixUnit" 50
+F1 "vm005-unit.sch" 50
+F2 "DAC" I L 7850 1500 50 
+F3 "CV" I L 7850 1600 50 
+F4 "Input" I L 7850 1700 50 
+F5 "Output" O R 8350 1600 50 
+$EndSheet
+Text Label 3050 6550 0    50   ~ 0
+dac_a
+Text Label 7850 1600 2    50   ~ 0
+cv_a
+Text Label 7850 2200 2    50   ~ 0
+cv_b
+Text Label 3050 6650 0    50   ~ 0
+dac_b
+$Comp
+L power:GND #PWR0124
+U 1 1 5FA8A697
+P 2550 7150
+F 0 "#PWR0124" H 2550 6900 50  0001 C CNN
+F 1 "GND" H 2555 6977 50  0000 C CNN
+F 2 "" H 2550 7150 50  0001 C CNN
+F 3 "" H 2550 7150 50  0001 C CNN
+	1    2550 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5FA8AEE8
+P 3150 6200
+F 0 "#PWR0125" H 3150 5950 50  0001 C CNN
+F 1 "GND" H 3155 6027 50  0000 C CNN
+F 2 "" H 3150 6200 50  0001 C CNN
+F 3 "" H 3150 6200 50  0001 C CNN
+	1    3150 6200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4500 3900 4600 3900
-Wire Wire Line
-	3850 3600 4600 3600
-Connection ~ 4600 3600
-Wire Wire Line
-	4600 3600 4600 3900
-$Comp
-L vm005-mix-rescue:C_Small-synkie_symbols-sk161-modular-mixer-channel-rescue C5
-U 1 1 5DDA6AA4
-P 5050 2700
-F 0 "C5" V 5150 2700 50  0000 C CNN
-F 1 "1u" V 5250 2700 50  0000 C CNN
-F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5050 2700 50  0001 C CNN
-F 3 "~" H 5050 2700 50  0001 C CNN
-	1    5050 2700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5050 2800 5050 2850
-Wire Wire Line
-	5050 2850 5350 2850
-Connection ~ 5350 2850
-Wire Wire Line
-	5050 2600 5050 2400
-Connection ~ 5050 2400
-Wire Wire Line
-	5050 2400 5350 2400
-$Comp
-L vm005-mix-rescue:C_Small-synkie_symbols-sk161-modular-mixer-channel-rescue C10
-U 1 1 5DDC04F7
-P 3750 4200
-F 0 "C10" V 3850 4200 50  0000 C CNN
-F 1 "1u" V 3950 4200 50  0000 C CNN
-F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3750 4200 50  0001 C CNN
-F 3 "~" H 3750 4200 50  0001 C CNN
-	1    3750 4200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3750 4100 3750 4000
-Connection ~ 3750 4000
-Wire Wire Line
-	3750 4000 3900 4000
-$Comp
-L vm005-mix-rescue:GND-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR0102
-U 1 1 5DDC7D47
-P 3750 4400
-F 0 "#PWR0102" H 3750 4150 50  0001 C CNN
-F 1 "GND" H 3650 4250 50  0000 C CNN
-F 2 "" H 3750 4400 50  0001 C CNN
-F 3 "" H 3750 4400 50  0001 C CNN
-	1    3750 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 4300 3750 4400
-Wire Notes Line
-	3150 3050 4750 3050
-Wire Notes Line
-	4750 3050 4750 4800
-Wire Notes Line
-	4750 4800 3150 4800
-Wire Notes Line
-	3150 4800 3150 3050
-Text Notes 4300 4750 0    50   ~ 0
-black level
-Wire Notes Line
-	2100 4900 5100 4900
-Wire Notes Line
-	5100 4900 5100 6750
-Wire Notes Line
-	5100 6750 2100 6750
-Wire Notes Line
-	2100 6750 2100 4900
-Text Notes 4600 6700 0    50   ~ 0
-gain control
-Wire Notes Line
-	3750 1100 3750 2950
-Wire Notes Line
-	3750 2950 5400 2950
-Wire Notes Line
-	8100 1100 3750 1100
-Wire Notes Line
-	8100 3600 8100 1100
-Wire Notes Line
-	5400 3600 8100 3600
-Wire Notes Line
-	5400 2950 5400 3600
-Wire Wire Line
-	5800 6400 5800 3050
-Text Notes 7850 3550 0    50   ~ 0
-video
-Text Label 5000 1650 2    50   ~ 0
+Text Label 3050 6750 0    50   ~ 0
+dac_c
+Text Label 3050 6850 0    50   ~ 0
+dac_d
+Text Label 7850 1500 2    50   ~ 0
+dac_a
+Text Label 7850 2100 2    50   ~ 0
+dac_b
+Text Label 7850 1700 2    50   ~ 0
 input
-Text Label 5850 2250 2    50   ~ 0
-output
-Text Label 2450 1350 2    50   ~ 0
-supply+
-Text Label 2450 1550 2    50   ~ 0
-supply-
-Text Label 3150 1450 0    50   ~ 0
-supply_gnd
-Text Label 2800 5400 2    50   ~ 0
-dac
-Text Label 2600 6000 2    50   ~ 0
-cv
-Text Label 1500 4200 2    50   ~ 0
-supply-
-Text Label 1500 4100 2    50   ~ 0
-supply-
-$Comp
-L Connector_Generic:Conn_01x16 J1
-U 1 1 5DD7EF6F
-P 1700 3400
-F 0 "J1" H 1780 3392 50  0000 L CNN
-F 1 "Conn_01x16" H 1780 3301 50  0000 L CNN
-F 2 "Connector_PCBEdge:Samtec_MECF-08-0_-L-DV_2x08_P1.27mm_Polarized_Edge" H 1700 3400 50  0001 C CNN
-F 3 "~" H 1700 3400 50  0001 C CNN
-	1    1700 3400
-	1    0    0    -1  
-$EndComp
-Text Label 1500 4000 2    50   ~ 0
-supply_gnd
-Text Label 1500 3900 2    50   ~ 0
-supply_gnd
-Text Label 1500 3800 2    50   ~ 0
-supply+
-Text Label 1500 3700 2    50   ~ 0
-supply+
-Text Label 1500 2700 2    50   ~ 0
+Text Label 7850 2300 2    50   ~ 0
 input
-Text Label 1500 2800 2    50   ~ 0
-supply_gnd
-Text Label 1500 2900 2    50   ~ 0
-output
-Text Label 1500 3000 2    50   ~ 0
-output
-Text Label 1500 3400 2    50   ~ 0
-dac
-Text Label 1500 3300 2    50   ~ 0
-dac
-Text Label 1500 3500 2    50   ~ 0
-cv
-Text Label 1500 3600 2    50   ~ 0
-cv
-Wire Wire Line
-	6850 2250 7250 2250
+Text Label 8350 1600 0    50   ~ 0
+out_a
+Text Label 8350 2200 0    50   ~ 0
+out_b
+Text Label 7850 2850 2    50   ~ 0
+cv_c
+Text Label 7850 2750 2    50   ~ 0
+dac_c
+Text Label 7850 2950 2    50   ~ 0
+input
+Text Label 8350 2850 0    50   ~ 0
+out_c
+Text Label 7850 3650 2    50   ~ 0
+cv_d
+Text Label 7850 3550 2    50   ~ 0
+dac_d
+Text Label 7850 3750 2    50   ~ 0
+input
+Text Label 8350 3650 0    50   ~ 0
+out_d
 $Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R1
-U 1 1 5F29A28B
-P 7100 2500
-F 0 "R1" V 6893 2500 50  0000 C CNN
-F 1 "560" V 6984 2500 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7030 2500 50  0001 C CNN
-F 3 "~" H 7100 2500 50  0001 C CNN
-	1    7100 2500
-	0    -1   1    0   
+L Connector:DB15_Female_HighDensity J5
+U 1 1 5FA9A304
+P 5600 5750
+F 0 "J5" H 5600 6617 50  0000 C CNN
+F 1 "DB15_Female_HighDensity" H 5600 6526 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 4650 6150 50  0001 C CNN
+F 3 " ~" H 4650 6150 50  0001 C CNN
+	1    5600 5750
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7250 2500 7250 2250
-Connection ~ 7250 2250
-Wire Wire Line
-	7250 2250 7400 2250
-Wire Wire Line
-	6850 2500 6900 2500
+Text Label 5300 5350 2    50   ~ 0
+input
+Text Label 5300 5550 2    50   ~ 0
+cv_a
+Text Label 5300 5750 2    50   ~ 0
+cv_b
+Text Label 5900 5750 0    50   ~ 0
+cv_c
+Text Label 5900 5950 0    50   ~ 0
+cv_d
 $Comp
-L vm005-mix-rescue:R-synkie_symbols-sk161-modular-mixer-channel-rescue R3
-U 1 1 5F2A4E42
-P 7100 2800
-F 0 "R3" V 6893 2800 50  0000 C CNN
-F 1 "75" V 6984 2800 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7030 2800 50  0001 C CNN
-F 3 "~" H 7100 2800 50  0001 C CNN
-	1    7100 2800
-	0    -1   1    0   
+L power:GND #PWR0148
+U 1 1 5FAA0FE0
+P 5300 6150
+F 0 "#PWR0148" H 5300 5900 50  0001 C CNN
+F 1 "GND" V 5305 6022 50  0000 R CNN
+F 2 "" H 5300 6150 50  0001 C CNN
+F 3 "" H 5300 6150 50  0001 C CNN
+	1    5300 6150
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6900 2500 6900 2800
-Wire Wire Line
-	6900 2800 6950 2800
-Connection ~ 6900 2500
-Wire Wire Line
-	6900 2500 6950 2500
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5F2BB73C
-P 7450 2800
-F 0 "J2" H 7530 2792 50  0000 L CNN
-F 1 "Conn_01x02" H 7530 2701 50  0000 L CNN
-F 2 "synkie_footprints:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 7450 2800 50  0001 C CNN
-F 3 "~" H 7450 2800 50  0001 C CNN
-	1    7450 2800
+L power:GND #PWR0149
+U 1 1 5FAA24CA
+P 5300 5250
+F 0 "#PWR0149" H 5300 5000 50  0001 C CNN
+F 1 "GND" V 5305 5122 50  0000 R CNN
+F 2 "" H 5300 5250 50  0001 C CNN
+F 3 "" H 5300 5250 50  0001 C CNN
+	1    5300 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 5FAA2E59
+P 5300 5450
+F 0 "#PWR0150" H 5300 5200 50  0001 C CNN
+F 1 "GND" V 5305 5322 50  0000 R CNN
+F 2 "" H 5300 5450 50  0001 C CNN
+F 3 "" H 5300 5450 50  0001 C CNN
+	1    5300 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0151
+U 1 1 5FAA3155
+P 5300 5650
+F 0 "#PWR0151" H 5300 5400 50  0001 C CNN
+F 1 "GND" V 5305 5522 50  0000 R CNN
+F 2 "" H 5300 5650 50  0001 C CNN
+F 3 "" H 5300 5650 50  0001 C CNN
+	1    5300 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0152
+U 1 1 5FAA38A4
+P 5300 6050
+F 0 "#PWR0152" H 5300 5800 50  0001 C CNN
+F 1 "GND" V 5305 5922 50  0000 R CNN
+F 2 "" H 5300 6050 50  0001 C CNN
+F 3 "" H 5300 6050 50  0001 C CNN
+	1    5300 6050
+	0    1    1    0   
+$EndComp
+Text Label 5900 6150 0    50   ~ 0
+sck
+Text Label 5900 5550 0    50   ~ 0
+mosi
+Text Label 5300 5850 2    50   ~ 0
+dac_select
+$Comp
+L Anyma_Library:Conn_EDGE J1
+U 1 1 5FAB23B3
+P 2750 2150
+F 0 "J1" H 2830 2142 50  0000 L CNN
+F 1 "Conn_EDGE" H 2830 2051 50  0000 L CNN
+F 2 "Connector_PCBEdge:Samtec_MECF-08-0_-L-DV_2x08_P1.27mm_Polarized_Edge" H 2750 2150 50  0001 C CNN
+F 3 "~" H 2750 2150 50  0001 C CNN
+	1    2750 2150
+	1    0    0    -1  
+$EndComp
+Text Label 2550 1450 2    50   ~ 0
+supply+
+Text Label 2550 1550 2    50   ~ 0
+supply+
+$Comp
+L power:GND #PWR0173
+U 1 1 5FAB4417
+P 2550 1750
+F 0 "#PWR0173" H 2550 1500 50  0001 C CNN
+F 1 "GND" V 2555 1622 50  0000 R CNN
+F 2 "" H 2550 1750 50  0001 C CNN
+F 3 "" H 2550 1750 50  0001 C CNN
+	1    2550 1750
+	0    1    1    0   
+$EndComp
+Text Label 2550 1650 2    50   ~ 0
+out_a
+Text Label 2550 2050 2    50   ~ 0
+out_b
+$Comp
+L power:GND #PWR0174
+U 1 1 5FAB53B9
+P 2550 2150
+F 0 "#PWR0174" H 2550 1900 50  0001 C CNN
+F 1 "GND" V 2555 2022 50  0000 R CNN
+F 2 "" H 2550 2150 50  0001 C CNN
+F 3 "" H 2550 2150 50  0001 C CNN
+	1    2550 2150
+	0    1    1    0   
+$EndComp
+Text Label 2550 2650 2    50   ~ 0
+supply-
+Text Label 2550 2750 2    50   ~ 0
+supply-
+$Comp
+L power:GND #PWR0175
+U 1 1 5FAB5F93
+P 2550 2250
+F 0 "#PWR0175" H 2550 2000 50  0001 C CNN
+F 1 "GND" V 2555 2122 50  0000 R CNN
+F 2 "" H 2550 2250 50  0001 C CNN
+F 3 "" H 2550 2250 50  0001 C CNN
+	1    2550 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0176
+U 1 1 5FAB6131
+P 2550 2350
+F 0 "#PWR0176" H 2550 2100 50  0001 C CNN
+F 1 "GND" V 2555 2222 50  0000 R CNN
+F 2 "" H 2550 2350 50  0001 C CNN
+F 3 "" H 2550 2350 50  0001 C CNN
+	1    2550 2350
+	0    1    1    0   
+$EndComp
+Text Label 2550 2450 2    50   ~ 0
+out_c
+$Comp
+L power:GND #PWR0177
+U 1 1 5FAB6CE3
+P 2550 2550
+F 0 "#PWR0177" H 2550 2300 50  0001 C CNN
+F 1 "GND" V 2555 2422 50  0000 R CNN
+F 2 "" H 2550 2550 50  0001 C CNN
+F 3 "" H 2550 2550 50  0001 C CNN
+	1    2550 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0178
+U 1 1 5FAB7243
+P 2550 2950
+F 0 "#PWR0178" H 2550 2700 50  0001 C CNN
+F 1 "GND" V 2555 2822 50  0000 R CNN
+F 2 "" H 2550 2950 50  0001 C CNN
+F 3 "" H 2550 2950 50  0001 C CNN
+	1    2550 2950
+	0    1    1    0   
+$EndComp
+Text Label 2550 2850 2    50   ~ 0
+out_d
+$Comp
+L synkie_symbols:CP_Small C35
+U 1 1 5FAC0268
+P 3750 4600
+F 0 "C35" V 3525 4600 50  0000 C CNN
+F 1 "10u" V 3616 4600 50  0000 C CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 3750 4600 50  0001 C CNN
+F 3 "~" H 3750 4600 50  0001 C CNN
+	1    3750 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:CP_Small C36
+U 1 1 5FAC1380
+P 3750 4800
+F 0 "C36" V 3525 4800 50  0000 C CNN
+F 1 "10u" V 3616 4800 50  0000 C CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 3750 4800 50  0001 C CNN
+F 3 "~" H 3750 4800 50  0001 C CNN
+	1    3750 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR0179
+U 1 1 5FAC1980
+P 3750 4700
+F 0 "#PWR0179" H 3750 4450 50  0001 C CNN
+F 1 "GND" H 3755 4527 50  0000 C CNN
+F 2 "" H 3750 4700 50  0001 C CNN
+F 3 "" H 3750 4700 50  0001 C CNN
+	1    3750 4700
+	0    1    -1   0   
+$EndComp
+Connection ~ 3750 4700
+$Comp
+L synkie_symbols:+5V #PWR0180
+U 1 1 5FAC2177
+P 3750 4500
+F 0 "#PWR0180" H 3750 4350 50  0001 C CNN
+F 1 "+5V" H 3750 4650 50  0000 C CNN
+F 2 "" H 3750 4500 50  0001 C CNN
+F 3 "" H 3750 4500 50  0001 C CNN
+	1    3750 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:-5V #PWR0181
+U 1 1 5FAC27A1
+P 3750 4900
+F 0 "#PWR0181" H 3750 5000 50  0001 C CNN
+F 1 "-5V" H 3750 5050 50  0000 C CNN
+F 2 "" H 3750 4900 50  0001 C CNN
+F 3 "" H 3750 4900 50  0001 C CNN
+	1    3750 4900
+	1    0    0    1   
+$EndComp
+$Sheet
+S 7850 2050 500  300 
+U 5FA7E734
+F0 "MixUnit2" 50
+F1 "vm005-unit.sch" 50
+F2 "DAC" I L 7850 2100 50 
+F3 "CV" I L 7850 2200 50 
+F4 "Input" I L 7850 2300 50 
+F5 "Output" O R 8350 2200 50 
+$EndSheet
+$Sheet
+S 7850 2700 500  300 
+U 5FA82020
+F0 "MixUnit3" 50
+F1 "vm005-unit.sch" 50
+F2 "DAC" I L 7850 2750 50 
+F3 "CV" I L 7850 2850 50 
+F4 "Input" I L 7850 2950 50 
+F5 "Output" O R 8350 2850 50 
+$EndSheet
+$Sheet
+S 7850 3500 500  300 
+U 5FA8A96F
+F0 "MixUnit4" 50
+F1 "vm005-unit.sch" 50
+F2 "DAC" I L 7850 3550 50 
+F3 "CV" I L 7850 3650 50 
+F4 "Input" I L 7850 3750 50 
+F5 "Output" O R 8350 3650 50 
+$EndSheet
+$Comp
+L Connector:TestPoint TP101
+U 1 1 5FB05585
+P 4450 2450
+F 0 "TP101" H 4508 2568 50  0000 L CNN
+F 1 "TestPoint" H 4508 2477 50  0000 L CNN
+F 2 "synkie_footprints:Solderpad_1mm" H 4650 2450 50  0001 C CNN
+F 3 "~" H 4650 2450 50  0001 C CNN
+	1    4450 2450
 	1    0    0    -1  
 $EndComp
 $Comp
-L vm005-mix-rescue:GND-synkie_symbols-sk161-modular-mixer-channel-rescue #PWR0101
-U 1 1 5F2BBDAC
-P 7250 2900
-F 0 "#PWR0101" H 7250 2650 50  0001 C CNN
-F 1 "GND" H 7255 2727 50  0000 C CNN
-F 2 "" H 7250 2900 50  0001 C CNN
-F 3 "" H 7250 2900 50  0001 C CNN
-	1    7250 2900
+L power:GND #PWR0182
+U 1 1 5FB05BE6
+P 4450 2450
+F 0 "#PWR0182" H 4450 2200 50  0001 C CNN
+F 1 "GND" V 4455 2322 50  0000 R CNN
+F 2 "" H 4450 2450 50  0001 C CNN
+F 3 "" H 4450 2450 50  0001 C CNN
+	1    4450 2450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -1,0 +1,1489 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L synkie_symbols:R R14
+U 1 1 5DCC6769
+P 2900 6000
+AR Path="/5FA6FAA9/5DCC6769" Ref="R14"  Part="1" 
+AR Path="/5FA6A4E8/5DCC6769" Ref="R31"  Part="1" 
+AR Path="/5FA97FCE/5DCC6769" Ref="R51"  Part="1" 
+AR Path="/5FA999AE/5DCC6769" Ref="R69"  Part="1" 
+AR Path="/5FA8FC53/5DCC6769" Ref="R115"  Part="1" 
+AR Path="/5FA9040E/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCC6769" Ref="R215"  Part="1" 
+AR Path="/5FA81498/5DCC6769" Ref="R46"  Part="1" 
+AR Path="/5DCC6769" Ref="R14"  Part="1" 
+AR Path="/5FA7E734/5DCC6769" Ref="R315"  Part="1" 
+AR Path="/5FA82020/5DCC6769" Ref="R415"  Part="1" 
+AR Path="/5FA8A96F/5DCC6769" Ref="R515"  Part="1" 
+F 0 "R515" V 2693 6000 50  0000 C CNN
+F 1 "100" V 2784 6000 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 6000 50  0001 C CNN
+F 3 "~" H 2900 6000 50  0001 C CNN
+	1    2900 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R16
+U 1 1 5DCC7045
+P 2700 6200
+AR Path="/5FA6FAA9/5DCC7045" Ref="R16"  Part="1" 
+AR Path="/5FA6A4E8/5DCC7045" Ref="R33"  Part="1" 
+AR Path="/5FA97FCE/5DCC7045" Ref="R53"  Part="1" 
+AR Path="/5FA999AE/5DCC7045" Ref="R71"  Part="1" 
+AR Path="/5FA8FC53/5DCC7045" Ref="R117"  Part="1" 
+AR Path="/5FA9040E/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCC7045" Ref="R217"  Part="1" 
+AR Path="/5FA81498/5DCC7045" Ref="R48"  Part="1" 
+AR Path="/5DCC7045" Ref="R16"  Part="1" 
+AR Path="/5FA7E734/5DCC7045" Ref="R317"  Part="1" 
+AR Path="/5FA82020/5DCC7045" Ref="R417"  Part="1" 
+AR Path="/5FA8A96F/5DCC7045" Ref="R517"  Part="1" 
+F 0 "R517" H 2630 6154 50  0000 R CNN
+F 1 "47k" H 2630 6245 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2630 6200 50  0001 C CNN
+F 3 "~" H 2700 6200 50  0001 C CNN
+	1    2700 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR023
+U 1 1 5DCC82F8
+P 2700 6350
+AR Path="/5FA6FAA9/5DCC82F8" Ref="#PWR023"  Part="1" 
+AR Path="/5FA6A4E8/5DCC82F8" Ref="#PWR0103"  Part="1" 
+AR Path="/5FA97FCE/5DCC82F8" Ref="#PWR0126"  Part="1" 
+AR Path="/5FA999AE/5DCC82F8" Ref="#PWR0153"  Part="1" 
+AR Path="/5FA8FC53/5DCC82F8" Ref="#PWR0103"  Part="1" 
+AR Path="/5FA9040E/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DCC82F8" Ref="#PWR0126"  Part="1" 
+AR Path="/5FA81498/5DCC82F8" Ref="#PWR0153"  Part="1" 
+AR Path="/5DCC82F8" Ref="#PWR023"  Part="1" 
+AR Path="/5FA7E734/5DCC82F8" Ref="#PWR0103"  Part="1" 
+AR Path="/5FA82020/5DCC82F8" Ref="#PWR0126"  Part="1" 
+AR Path="/5FA8A96F/5DCC82F8" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 2700 6100 50  0001 C CNN
+F 1 "GND" H 2705 6177 50  0000 C CNN
+F 2 "" H 2700 6350 50  0001 C CNN
+F 3 "" H 2700 6350 50  0001 C CNN
+	1    2700 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:BAT54S D2
+U 1 1 5DCE4D47
+P 3150 6000
+AR Path="/5FA6FAA9/5DCE4D47" Ref="D2"  Part="1" 
+AR Path="/5FA6A4E8/5DCE4D47" Ref="D1"  Part="1" 
+AR Path="/5FA97FCE/5DCE4D47" Ref="D3"  Part="1" 
+AR Path="/5FA999AE/5DCE4D47" Ref="D4"  Part="1" 
+AR Path="/5FA8FC53/5DCE4D47" Ref="D101"  Part="1" 
+AR Path="/5FA9040E/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FA7B673/5DCE4D47" Ref="D201"  Part="1" 
+AR Path="/5FA81498/5DCE4D47" Ref="D31"  Part="1" 
+AR Path="/5DCE4D47" Ref="D2"  Part="1" 
+AR Path="/5FA7E734/5DCE4D47" Ref="D301"  Part="1" 
+AR Path="/5FA82020/5DCE4D47" Ref="D401"  Part="1" 
+AR Path="/5FA8A96F/5DCE4D47" Ref="D501"  Part="1" 
+F 0 "D501" V 3000 5850 50  0000 L CNN
+F 1 "BAT54S" V 2900 5700 50  0000 L CNN
+F 2 "synkie_footprints:SOT-23" H 3225 6125 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 3030 6000 50  0001 C CNN
+	1    3150 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR017
+U 1 1 5DCE4D48
+P 3150 5700
+AR Path="/5FA6FAA9/5DCE4D48" Ref="#PWR017"  Part="1" 
+AR Path="/5FA6A4E8/5DCE4D48" Ref="#PWR0104"  Part="1" 
+AR Path="/5FA97FCE/5DCE4D48" Ref="#PWR0127"  Part="1" 
+AR Path="/5FA999AE/5DCE4D48" Ref="#PWR0154"  Part="1" 
+AR Path="/5FA8FC53/5DCE4D48" Ref="#PWR0104"  Part="1" 
+AR Path="/5FA9040E/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DCE4D48" Ref="#PWR0127"  Part="1" 
+AR Path="/5FA81498/5DCE4D48" Ref="#PWR0154"  Part="1" 
+AR Path="/5DCE4D48" Ref="#PWR017"  Part="1" 
+AR Path="/5FA7E734/5DCE4D48" Ref="#PWR0104"  Part="1" 
+AR Path="/5FA82020/5DCE4D48" Ref="#PWR0127"  Part="1" 
+AR Path="/5FA8A96F/5DCE4D48" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 3150 5550 50  0001 C CNN
+F 1 "+5V" H 3150 5850 50  0000 C CNN
+F 2 "" H 3150 5700 50  0001 C CNN
+F 3 "" H 3150 5700 50  0001 C CNN
+	1    3150 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:-5V #PWR022
+U 1 1 5DCE4D49
+P 3150 6300
+AR Path="/5FA6FAA9/5DCE4D49" Ref="#PWR022"  Part="1" 
+AR Path="/5FA6A4E8/5DCE4D49" Ref="#PWR0105"  Part="1" 
+AR Path="/5FA97FCE/5DCE4D49" Ref="#PWR0128"  Part="1" 
+AR Path="/5FA999AE/5DCE4D49" Ref="#PWR0155"  Part="1" 
+AR Path="/5FA8FC53/5DCE4D49" Ref="#PWR0105"  Part="1" 
+AR Path="/5FA9040E/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DCE4D49" Ref="#PWR0128"  Part="1" 
+AR Path="/5FA81498/5DCE4D49" Ref="#PWR0155"  Part="1" 
+AR Path="/5DCE4D49" Ref="#PWR022"  Part="1" 
+AR Path="/5FA7E734/5DCE4D49" Ref="#PWR0105"  Part="1" 
+AR Path="/5FA82020/5DCE4D49" Ref="#PWR0128"  Part="1" 
+AR Path="/5FA8A96F/5DCE4D49" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 3150 6400 50  0001 C CNN
+F 1 "-5V" H 3150 6450 50  0000 C CNN
+F 2 "" H 3150 6300 50  0001 C CNN
+F 3 "" H 3150 6300 50  0001 C CNN
+	1    3150 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 6000 2700 6000
+Wire Wire Line
+	2700 6050 2700 6000
+Connection ~ 2700 6000
+Wire Wire Line
+	2700 6000 2750 6000
+Wire Wire Line
+	3050 6000 3150 6000
+$Comp
+L synkie_symbols:R R15
+U 1 1 5DCE4D3B
+P 3500 6000
+AR Path="/5FA6FAA9/5DCE4D3B" Ref="R15"  Part="1" 
+AR Path="/5FA6A4E8/5DCE4D3B" Ref="R32"  Part="1" 
+AR Path="/5FA97FCE/5DCE4D3B" Ref="R52"  Part="1" 
+AR Path="/5FA999AE/5DCE4D3B" Ref="R70"  Part="1" 
+AR Path="/5FA8FC53/5DCE4D3B" Ref="R116"  Part="1" 
+AR Path="/5FA9040E/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCE4D3B" Ref="R216"  Part="1" 
+AR Path="/5FA81498/5DCE4D3B" Ref="R47"  Part="1" 
+AR Path="/5DCE4D3B" Ref="R15"  Part="1" 
+AR Path="/5FA7E734/5DCE4D3B" Ref="R316"  Part="1" 
+AR Path="/5FA82020/5DCE4D3B" Ref="R416"  Part="1" 
+AR Path="/5FA8A96F/5DCE4D3B" Ref="R516"  Part="1" 
+F 0 "R516" V 3293 6000 50  0000 C CNN
+F 1 "22k" V 3384 6000 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3430 6000 50  0001 C CNN
+F 3 "~" H 3500 6000 50  0001 C CNN
+	1    3500 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 6000 3150 6000
+Connection ~ 3150 6000
+$Comp
+L synkie_symbols:LMH6643 U2
+U 3 1 5DCB71E3
+P 6750 5050
+AR Path="/5FA6FAA9/5DCB71E3" Ref="U2"  Part="3" 
+AR Path="/5FA6A4E8/5DCB71E3" Ref="U4"  Part="2" 
+AR Path="/5FA97FCE/5DCB71E3" Ref="U6"  Part="2" 
+AR Path="/5FA999AE/5DCB71E3" Ref="U8"  Part="2" 
+AR Path="/5DCB71E3" Ref="U?"  Part="2" 
+AR Path="/5FA8FC53/5DCB71E3" Ref="U102"  Part="2" 
+AR Path="/5FA9040E/5DCB71E3" Ref="U?"  Part="3" 
+AR Path="/5FA7B673/5DCB71E3" Ref="U203"  Part="2" 
+AR Path="/5FA81498/5DCB71E3" Ref="U32"  Part="2" 
+AR Path="/5FA7E734/5DCB71E3" Ref="U302"  Part="3" 
+AR Path="/5FA82020/5DCB71E3" Ref="U402"  Part="3" 
+AR Path="/5FA8A96F/5DCB71E3" Ref="U502"  Part="3" 
+F 0 "U502" H 6708 5096 50  0000 L CNN
+F 1 "LMH6643" H 6708 5005 50  0000 L CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 6750 5050 50  0001 C CNN
+F 3 "~" H 6750 5050 50  0001 C CNN
+	3    6750 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:R R13
+U 1 1 5DCFB76E
+P 4300 5850
+AR Path="/5FA6FAA9/5DCFB76E" Ref="R13"  Part="1" 
+AR Path="/5FA6A4E8/5DCFB76E" Ref="R30"  Part="1" 
+AR Path="/5FA97FCE/5DCFB76E" Ref="R50"  Part="1" 
+AR Path="/5FA999AE/5DCFB76E" Ref="R68"  Part="1" 
+AR Path="/5FA8FC53/5DCFB76E" Ref="R114"  Part="1" 
+AR Path="/5FA9040E/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCFB76E" Ref="R214"  Part="1" 
+AR Path="/5FA81498/5DCFB76E" Ref="R45"  Part="1" 
+AR Path="/5DCFB76E" Ref="R13"  Part="1" 
+AR Path="/5FA7E734/5DCFB76E" Ref="R314"  Part="1" 
+AR Path="/5FA82020/5DCFB76E" Ref="R414"  Part="1" 
+AR Path="/5FA8A96F/5DCFB76E" Ref="R514"  Part="1" 
+F 0 "R514" V 4093 5850 50  0000 C CNN
+F 1 "20k" V 4184 5850 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4230 5850 50  0001 C CNN
+F 3 "~" H 4300 5850 50  0001 C CNN
+	1    4300 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R12
+U 1 1 5DCFBE0A
+P 3750 5650
+AR Path="/5FA6FAA9/5DCFBE0A" Ref="R12"  Part="1" 
+AR Path="/5FA6A4E8/5DCFBE0A" Ref="R29"  Part="1" 
+AR Path="/5FA97FCE/5DCFBE0A" Ref="R49"  Part="1" 
+AR Path="/5FA999AE/5DCFBE0A" Ref="R67"  Part="1" 
+AR Path="/5FA8FC53/5DCFBE0A" Ref="R113"  Part="1" 
+AR Path="/5FA9040E/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCFBE0A" Ref="R213"  Part="1" 
+AR Path="/5FA81498/5DCFBE0A" Ref="R44"  Part="1" 
+AR Path="/5DCFBE0A" Ref="R12"  Part="1" 
+AR Path="/5FA7E734/5DCFBE0A" Ref="R313"  Part="1" 
+AR Path="/5FA82020/5DCFBE0A" Ref="R413"  Part="1" 
+AR Path="/5FA8A96F/5DCFBE0A" Ref="R513"  Part="1" 
+F 0 "R513" V 3543 5650 50  0000 C CNN
+F 1 "22k" V 3634 5650 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3680 5650 50  0001 C CNN
+F 3 "~" H 3750 5650 50  0001 C CNN
+	1    3750 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R7
+U 1 1 5DD01004
+P 5400 2650
+AR Path="/5FA6FAA9/5DD01004" Ref="R7"  Part="1" 
+AR Path="/5FA6A4E8/5DD01004" Ref="R22"  Part="1" 
+AR Path="/5FA97FCE/5DD01004" Ref="R42"  Part="1" 
+AR Path="/5FA999AE/5DD01004" Ref="R60"  Part="1" 
+AR Path="/5FA8FC53/5DD01004" Ref="R106"  Part="1" 
+AR Path="/5FA9040E/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DD01004" Ref="R206"  Part="1" 
+AR Path="/5FA81498/5DD01004" Ref="R37"  Part="1" 
+AR Path="/5DD01004" Ref="R7"  Part="1" 
+AR Path="/5FA7E734/5DD01004" Ref="R306"  Part="1" 
+AR Path="/5FA82020/5DD01004" Ref="R406"  Part="1" 
+AR Path="/5FA8A96F/5DD01004" Ref="R506"  Part="1" 
+F 0 "R506" H 5600 2600 50  0000 R CNN
+F 1 "100" H 5600 2700 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5330 2650 50  0001 C CNN
+F 3 "~" H 5400 2650 50  0001 C CNN
+	1    5400 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R8
+U 1 1 5DD016EB
+P 5600 2650
+AR Path="/5FA6FAA9/5DD016EB" Ref="R8"  Part="1" 
+AR Path="/5FA6A4E8/5DD016EB" Ref="R23"  Part="1" 
+AR Path="/5FA97FCE/5DD016EB" Ref="R43"  Part="1" 
+AR Path="/5FA999AE/5DD016EB" Ref="R61"  Part="1" 
+AR Path="/5FA8FC53/5DD016EB" Ref="R107"  Part="1" 
+AR Path="/5FA9040E/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DD016EB" Ref="R207"  Part="1" 
+AR Path="/5FA81498/5DD016EB" Ref="R38"  Part="1" 
+AR Path="/5DD016EB" Ref="R8"  Part="1" 
+AR Path="/5FA7E734/5DD016EB" Ref="R307"  Part="1" 
+AR Path="/5FA82020/5DD016EB" Ref="R407"  Part="1" 
+AR Path="/5FA8A96F/5DD016EB" Ref="R507"  Part="1" 
+F 0 "R507" H 5530 2604 50  0000 R CNN
+F 1 "100" H 5530 2695 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5530 2650 50  0001 C CNN
+F 3 "~" H 5600 2650 50  0001 C CNN
+	1    5600 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 2500 5900 2500
+Wire Wire Line
+	5900 2400 5400 2400
+Wire Wire Line
+	5400 2400 5400 2500
+$Comp
+L synkie_symbols:R R2
+U 1 1 5DD09E42
+P 5200 1650
+AR Path="/5FA6FAA9/5DD09E42" Ref="R2"  Part="1" 
+AR Path="/5FA6A4E8/5DD09E42" Ref="R5"  Part="1" 
+AR Path="/5FA97FCE/5DD09E42" Ref="R37"  Part="1" 
+AR Path="/5FA999AE/5DD09E42" Ref="R55"  Part="1" 
+AR Path="/5FA8FC53/5DD09E42" Ref="R101"  Part="1" 
+AR Path="/5FA9040E/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DD09E42" Ref="R201"  Part="1" 
+AR Path="/5FA81498/5DD09E42" Ref="R31"  Part="1" 
+AR Path="/5DD09E42" Ref="R2"  Part="1" 
+AR Path="/5FA7E734/5DD09E42" Ref="R301"  Part="1" 
+AR Path="/5FA82020/5DD09E42" Ref="R401"  Part="1" 
+AR Path="/5FA8A96F/5DD09E42" Ref="R501"  Part="1" 
+F 0 "R501" V 4993 1650 50  0000 C CNN
+F 1 "1k" V 5084 1650 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5130 1650 50  0001 C CNN
+F 3 "~" H 5200 1650 50  0001 C CNN
+	1    5200 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 1650 5600 1650
+Wire Wire Line
+	5600 1650 5600 2500
+Connection ~ 5600 2500
+$Comp
+L synkie_symbols:Trans_PNP_Generic Q1
+U 1 1 5DCB5482
+P 4800 6100
+AR Path="/5FA6FAA9/5DCB5482" Ref="Q1"  Part="1" 
+AR Path="/5FA6A4E8/5DCB5482" Ref="Q2"  Part="1" 
+AR Path="/5FA97FCE/5DCB5482" Ref="Q3"  Part="1" 
+AR Path="/5FA999AE/5DCB5482" Ref="Q4"  Part="1" 
+AR Path="/5FA8FC53/5DCB5482" Ref="Q101"  Part="1" 
+AR Path="/5FA9040E/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FA7B673/5DCB5482" Ref="Q201"  Part="1" 
+AR Path="/5FA81498/5DCB5482" Ref="Q31"  Part="1" 
+AR Path="/5DCB5482" Ref="Q1"  Part="1" 
+AR Path="/5FA7E734/5DCB5482" Ref="Q301"  Part="1" 
+AR Path="/5FA82020/5DCB5482" Ref="Q401"  Part="1" 
+AR Path="/5FA8A96F/5DCB5482" Ref="Q501"  Part="1" 
+F 0 "Q501" H 4938 6146 50  0000 L CNN
+F 1 "PNP" H 4938 6055 50  0000 L CNN
+F 2 "synkie_footprints:SOT-23_BEC" H 4800 6100 50  0001 C CNN
+F 3 "" H 4800 6100 50  0001 C CNN
+	1    4800 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 6000 3750 6000
+Wire Wire Line
+	3750 6000 3750 5850
+$Comp
+L synkie_symbols:R R11
+U 1 1 5DCE719B
+P 4850 5600
+AR Path="/5FA6FAA9/5DCE719B" Ref="R11"  Part="1" 
+AR Path="/5FA6A4E8/5DCE719B" Ref="R28"  Part="1" 
+AR Path="/5FA97FCE/5DCE719B" Ref="R48"  Part="1" 
+AR Path="/5FA999AE/5DCE719B" Ref="R66"  Part="1" 
+AR Path="/5FA8FC53/5DCE719B" Ref="R112"  Part="1" 
+AR Path="/5FA9040E/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCE719B" Ref="R212"  Part="1" 
+AR Path="/5FA81498/5DCE719B" Ref="R43"  Part="1" 
+AR Path="/5DCE719B" Ref="R11"  Part="1" 
+AR Path="/5FA7E734/5DCE719B" Ref="R312"  Part="1" 
+AR Path="/5FA82020/5DCE719B" Ref="R412"  Part="1" 
+AR Path="/5FA8A96F/5DCE719B" Ref="R512"  Part="1" 
+F 0 "R512" H 4780 5554 50  0000 R CNN
+F 1 "2k2" H 4780 5645 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4780 5600 50  0001 C CNN
+F 3 "~" H 4850 5600 50  0001 C CNN
+	1    4850 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR015
+U 1 1 5DCE76FE
+P 4850 5400
+AR Path="/5FA6FAA9/5DCE76FE" Ref="#PWR015"  Part="1" 
+AR Path="/5FA6A4E8/5DCE76FE" Ref="#PWR0106"  Part="1" 
+AR Path="/5FA97FCE/5DCE76FE" Ref="#PWR0129"  Part="1" 
+AR Path="/5FA999AE/5DCE76FE" Ref="#PWR0156"  Part="1" 
+AR Path="/5FA8FC53/5DCE76FE" Ref="#PWR0106"  Part="1" 
+AR Path="/5FA9040E/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DCE76FE" Ref="#PWR0129"  Part="1" 
+AR Path="/5FA81498/5DCE76FE" Ref="#PWR0156"  Part="1" 
+AR Path="/5DCE76FE" Ref="#PWR015"  Part="1" 
+AR Path="/5FA7E734/5DCE76FE" Ref="#PWR0106"  Part="1" 
+AR Path="/5FA82020/5DCE76FE" Ref="#PWR0129"  Part="1" 
+AR Path="/5FA8A96F/5DCE76FE" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR0156" H 4850 5250 50  0001 C CNN
+F 1 "+5V" H 4850 5550 50  0000 C CNN
+F 2 "" H 4850 5400 50  0001 C CNN
+F 3 "" H 4850 5400 50  0001 C CNN
+	1    4850 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5400 4850 5450
+$Comp
+L synkie_symbols:R R10
+U 1 1 5DCEACBF
+P 5850 2900
+AR Path="/5FA6FAA9/5DCEACBF" Ref="R10"  Part="1" 
+AR Path="/5FA6A4E8/5DCEACBF" Ref="R25"  Part="1" 
+AR Path="/5FA97FCE/5DCEACBF" Ref="R45"  Part="1" 
+AR Path="/5FA999AE/5DCEACBF" Ref="R63"  Part="1" 
+AR Path="/5FA8FC53/5DCEACBF" Ref="R109"  Part="1" 
+AR Path="/5FA9040E/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCEACBF" Ref="R209"  Part="1" 
+AR Path="/5FA81498/5DCEACBF" Ref="R40"  Part="1" 
+AR Path="/5DCEACBF" Ref="R10"  Part="1" 
+AR Path="/5FA7E734/5DCEACBF" Ref="R309"  Part="1" 
+AR Path="/5FA82020/5DCEACBF" Ref="R409"  Part="1" 
+AR Path="/5FA8A96F/5DCEACBF" Ref="R509"  Part="1" 
+F 0 "R509" V 5643 2900 50  0000 C CNN
+F 1 "1k" V 5734 2900 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5780 2900 50  0001 C CNN
+F 3 "~" H 5850 2900 50  0001 C CNN
+	1    5850 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 6000 3750 6000
+Connection ~ 3750 6000
+$Comp
+L synkie_symbols:GND #PWR021
+U 1 1 5DCF050F
+P 3900 6250
+AR Path="/5FA6FAA9/5DCF050F" Ref="#PWR021"  Part="1" 
+AR Path="/5FA6A4E8/5DCF050F" Ref="#PWR0107"  Part="1" 
+AR Path="/5FA97FCE/5DCF050F" Ref="#PWR0130"  Part="1" 
+AR Path="/5FA999AE/5DCF050F" Ref="#PWR0157"  Part="1" 
+AR Path="/5FA8FC53/5DCF050F" Ref="#PWR0107"  Part="1" 
+AR Path="/5FA9040E/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DCF050F" Ref="#PWR0130"  Part="1" 
+AR Path="/5FA81498/5DCF050F" Ref="#PWR0157"  Part="1" 
+AR Path="/5DCF050F" Ref="#PWR021"  Part="1" 
+AR Path="/5FA7E734/5DCF050F" Ref="#PWR0107"  Part="1" 
+AR Path="/5FA82020/5DCF050F" Ref="#PWR0130"  Part="1" 
+AR Path="/5FA8A96F/5DCF050F" Ref="#PWR0157"  Part="1" 
+F 0 "#PWR0157" H 3900 6000 50  0001 C CNN
+F 1 "GND" H 3905 6077 50  0000 C CNN
+F 2 "" H 3900 6250 50  0001 C CNN
+F 3 "" H 3900 6250 50  0001 C CNN
+	1    3900 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 6250 3900 6200
+Wire Wire Line
+	3900 6200 3950 6200
+Wire Wire Line
+	5850 2750 5850 2650
+Wire Wire Line
+	5850 2650 5900 2650
+$Comp
+L synkie_symbols:LT1228 U1
+U 1 1 5DCFCF56
+P 6400 2500
+AR Path="/5FA6FAA9/5DCFCF56" Ref="U1"  Part="1" 
+AR Path="/5FA6A4E8/5DCFCF56" Ref="U3"  Part="1" 
+AR Path="/5FA97FCE/5DCFCF56" Ref="U5"  Part="1" 
+AR Path="/5FA999AE/5DCFCF56" Ref="U7"  Part="1" 
+AR Path="/5FA8FC53/5DCFCF56" Ref="U101"  Part="1" 
+AR Path="/5FA9040E/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FA7B673/5DCFCF56" Ref="U202"  Part="1" 
+AR Path="/5FA81498/5DCFCF56" Ref="U31"  Part="1" 
+AR Path="/5DCFCF56" Ref="U1"  Part="1" 
+AR Path="/5FA7E734/5DCFCF56" Ref="U301"  Part="1" 
+AR Path="/5FA82020/5DCFCF56" Ref="U401"  Part="1" 
+AR Path="/5FA8A96F/5DCFCF56" Ref="U501"  Part="1" 
+F 0 "U501" H 6100 2950 50  0000 C CNN
+F 1 "LT1228" H 6150 2850 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 6850 2800 50  0001 C CNN
+F 3 "" H 6850 2800 50  0001 C CNN
+	1    6400 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6300 4850 6400
+Wire Wire Line
+	4850 6400 5850 6400
+$Comp
+L synkie_symbols:CP_Small C6
+U 1 1 5DD2079F
+P 6550 3000
+AR Path="/5FA6FAA9/5DD2079F" Ref="C6"  Part="1" 
+AR Path="/5FA6A4E8/5DD2079F" Ref="C14"  Part="1" 
+AR Path="/5FA97FCE/5DD2079F" Ref="C22"  Part="1" 
+AR Path="/5FA999AE/5DD2079F" Ref="C30"  Part="1" 
+AR Path="/5FA8FC53/5DD2079F" Ref="C104"  Part="1" 
+AR Path="/5FA9040E/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DD2079F" Ref="C204"  Part="1" 
+AR Path="/5FA81498/5DD2079F" Ref="C34"  Part="1" 
+AR Path="/5DD2079F" Ref="C6"  Part="1" 
+AR Path="/5FA7E734/5DD2079F" Ref="C304"  Part="1" 
+AR Path="/5FA82020/5DD2079F" Ref="C404"  Part="1" 
+AR Path="/5FA8A96F/5DD2079F" Ref="C504"  Part="1" 
+F 0 "C504" V 6325 3000 50  0000 C CNN
+F 1 "4u7" V 6416 3000 50  0000 C CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 6550 3000 50  0001 C CNN
+F 3 "~" H 6550 3000 50  0001 C CNN
+	1    6550 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:CP_Small C3
+U 1 1 5DD211D3
+P 6550 1900
+AR Path="/5FA6FAA9/5DD211D3" Ref="C3"  Part="1" 
+AR Path="/5FA6A4E8/5DD211D3" Ref="C12"  Part="1" 
+AR Path="/5FA97FCE/5DD211D3" Ref="C20"  Part="1" 
+AR Path="/5FA999AE/5DD211D3" Ref="C28"  Part="1" 
+AR Path="/5FA8FC53/5DD211D3" Ref="C102"  Part="1" 
+AR Path="/5FA9040E/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DD211D3" Ref="C202"  Part="1" 
+AR Path="/5FA81498/5DD211D3" Ref="C32"  Part="1" 
+AR Path="/5DD211D3" Ref="C3"  Part="1" 
+AR Path="/5FA7E734/5DD211D3" Ref="C302"  Part="1" 
+AR Path="/5FA82020/5DD211D3" Ref="C402"  Part="1" 
+AR Path="/5FA8A96F/5DD211D3" Ref="C502"  Part="1" 
+F 0 "C502" V 6325 1900 50  0000 C CNN
+F 1 "4u7" V 6416 1900 50  0000 C CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 6550 1900 50  0001 C CNN
+F 3 "~" H 6550 1900 50  0001 C CNN
+	1    6550 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L synkie_symbols:C_Small C1
+U 1 1 5DD22C0C
+P 6550 1750
+AR Path="/5FA6FAA9/5DD22C0C" Ref="C1"  Part="1" 
+AR Path="/5FA6A4E8/5DD22C0C" Ref="C11"  Part="1" 
+AR Path="/5FA97FCE/5DD22C0C" Ref="C19"  Part="1" 
+AR Path="/5FA999AE/5DD22C0C" Ref="C27"  Part="1" 
+AR Path="/5FA8FC53/5DD22C0C" Ref="C101"  Part="1" 
+AR Path="/5FA9040E/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DD22C0C" Ref="C201"  Part="1" 
+AR Path="/5FA81498/5DD22C0C" Ref="C31"  Part="1" 
+AR Path="/5DD22C0C" Ref="C1"  Part="1" 
+AR Path="/5FA7E734/5DD22C0C" Ref="C301"  Part="1" 
+AR Path="/5FA82020/5DD22C0C" Ref="C401"  Part="1" 
+AR Path="/5FA8A96F/5DD22C0C" Ref="C501"  Part="1" 
+F 0 "C501" V 6321 1750 50  0000 C CNN
+F 1 "100n" V 6412 1750 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6550 1750 50  0001 C CNN
+F 3 "~" H 6550 1750 50  0001 C CNN
+	1    6550 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:C_Small C7
+U 1 1 5DD2340B
+P 6550 3150
+AR Path="/5FA6FAA9/5DD2340B" Ref="C7"  Part="1" 
+AR Path="/5FA6A4E8/5DD2340B" Ref="C15"  Part="1" 
+AR Path="/5FA97FCE/5DD2340B" Ref="C23"  Part="1" 
+AR Path="/5FA999AE/5DD2340B" Ref="C31"  Part="1" 
+AR Path="/5FA8FC53/5DD2340B" Ref="C105"  Part="1" 
+AR Path="/5FA9040E/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DD2340B" Ref="C205"  Part="1" 
+AR Path="/5FA81498/5DD2340B" Ref="C37"  Part="1" 
+AR Path="/5DD2340B" Ref="C7"  Part="1" 
+AR Path="/5FA7E734/5DD2340B" Ref="C305"  Part="1" 
+AR Path="/5FA82020/5DD2340B" Ref="C405"  Part="1" 
+AR Path="/5FA8A96F/5DD2340B" Ref="C505"  Part="1" 
+F 0 "C505" V 6650 3150 50  0000 C CNN
+F 1 "100n" V 6750 3150 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6550 3150 50  0001 C CNN
+F 3 "~" H 6550 3150 50  0001 C CNN
+	1    6550 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR03
+U 1 1 5DD23A8F
+P 6400 1700
+AR Path="/5FA6FAA9/5DD23A8F" Ref="#PWR03"  Part="1" 
+AR Path="/5FA6A4E8/5DD23A8F" Ref="#PWR0108"  Part="1" 
+AR Path="/5FA97FCE/5DD23A8F" Ref="#PWR0131"  Part="1" 
+AR Path="/5FA999AE/5DD23A8F" Ref="#PWR0158"  Part="1" 
+AR Path="/5FA8FC53/5DD23A8F" Ref="#PWR0108"  Part="1" 
+AR Path="/5FA9040E/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD23A8F" Ref="#PWR0131"  Part="1" 
+AR Path="/5FA81498/5DD23A8F" Ref="#PWR0158"  Part="1" 
+AR Path="/5DD23A8F" Ref="#PWR03"  Part="1" 
+AR Path="/5FA7E734/5DD23A8F" Ref="#PWR0108"  Part="1" 
+AR Path="/5FA82020/5DD23A8F" Ref="#PWR0131"  Part="1" 
+AR Path="/5FA8A96F/5DD23A8F" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 6400 1550 50  0001 C CNN
+F 1 "+5V" H 6400 1850 50  0000 C CNN
+F 2 "" H 6400 1700 50  0001 C CNN
+F 3 "" H 6400 1700 50  0001 C CNN
+	1    6400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1700 6400 1750
+Wire Wire Line
+	6450 1750 6400 1750
+Connection ~ 6400 1750
+Wire Wire Line
+	6400 1750 6400 1900
+Wire Wire Line
+	6450 1900 6400 1900
+Connection ~ 6400 1900
+Wire Wire Line
+	6400 1900 6400 2100
+$Comp
+L synkie_symbols:GND #PWR011
+U 1 1 5DD2E7D2
+P 6700 2000
+AR Path="/5FA6FAA9/5DD2E7D2" Ref="#PWR011"  Part="1" 
+AR Path="/5FA6A4E8/5DD2E7D2" Ref="#PWR0109"  Part="1" 
+AR Path="/5FA97FCE/5DD2E7D2" Ref="#PWR0132"  Part="1" 
+AR Path="/5FA999AE/5DD2E7D2" Ref="#PWR0159"  Part="1" 
+AR Path="/5FA8FC53/5DD2E7D2" Ref="#PWR0109"  Part="1" 
+AR Path="/5FA9040E/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD2E7D2" Ref="#PWR0132"  Part="1" 
+AR Path="/5FA81498/5DD2E7D2" Ref="#PWR0159"  Part="1" 
+AR Path="/5DD2E7D2" Ref="#PWR011"  Part="1" 
+AR Path="/5FA7E734/5DD2E7D2" Ref="#PWR0109"  Part="1" 
+AR Path="/5FA82020/5DD2E7D2" Ref="#PWR0132"  Part="1" 
+AR Path="/5FA8A96F/5DD2E7D2" Ref="#PWR0159"  Part="1" 
+F 0 "#PWR0159" H 6700 1750 50  0001 C CNN
+F 1 "GND" H 6750 1850 50  0000 C CNN
+F 2 "" H 6700 2000 50  0001 C CNN
+F 3 "" H 6700 2000 50  0001 C CNN
+	1    6700 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1900 6700 1900
+Wire Wire Line
+	6700 1900 6700 2000
+Wire Wire Line
+	6650 1750 6700 1750
+Wire Wire Line
+	6700 1750 6700 1900
+Connection ~ 6700 1900
+$Comp
+L synkie_symbols:-5V #PWR019
+U 1 1 5DD3999C
+P 6400 3200
+AR Path="/5FA6FAA9/5DD3999C" Ref="#PWR019"  Part="1" 
+AR Path="/5FA6A4E8/5DD3999C" Ref="#PWR0110"  Part="1" 
+AR Path="/5FA97FCE/5DD3999C" Ref="#PWR0133"  Part="1" 
+AR Path="/5FA999AE/5DD3999C" Ref="#PWR0160"  Part="1" 
+AR Path="/5FA8FC53/5DD3999C" Ref="#PWR0110"  Part="1" 
+AR Path="/5FA9040E/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD3999C" Ref="#PWR0133"  Part="1" 
+AR Path="/5FA81498/5DD3999C" Ref="#PWR0160"  Part="1" 
+AR Path="/5DD3999C" Ref="#PWR019"  Part="1" 
+AR Path="/5FA7E734/5DD3999C" Ref="#PWR0110"  Part="1" 
+AR Path="/5FA82020/5DD3999C" Ref="#PWR0133"  Part="1" 
+AR Path="/5FA8A96F/5DD3999C" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 6400 3300 50  0001 C CNN
+F 1 "-5V" H 6400 3350 50  0000 C CNN
+F 2 "" H 6400 3200 50  0001 C CNN
+F 3 "" H 6400 3200 50  0001 C CNN
+	1    6400 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 2850 6400 3000
+Wire Wire Line
+	6450 3000 6400 3000
+Connection ~ 6400 3000
+Wire Wire Line
+	6400 3000 6400 3150
+Wire Wire Line
+	6450 3150 6400 3150
+Connection ~ 6400 3150
+Wire Wire Line
+	6400 3150 6400 3200
+$Comp
+L synkie_symbols:GND #PWR020
+U 1 1 5DD3E0A3
+P 6700 3200
+AR Path="/5FA6FAA9/5DD3E0A3" Ref="#PWR020"  Part="1" 
+AR Path="/5FA6A4E8/5DD3E0A3" Ref="#PWR0111"  Part="1" 
+AR Path="/5FA97FCE/5DD3E0A3" Ref="#PWR0134"  Part="1" 
+AR Path="/5FA999AE/5DD3E0A3" Ref="#PWR0161"  Part="1" 
+AR Path="/5FA8FC53/5DD3E0A3" Ref="#PWR0111"  Part="1" 
+AR Path="/5FA9040E/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD3E0A3" Ref="#PWR0134"  Part="1" 
+AR Path="/5FA81498/5DD3E0A3" Ref="#PWR0161"  Part="1" 
+AR Path="/5DD3E0A3" Ref="#PWR020"  Part="1" 
+AR Path="/5FA7E734/5DD3E0A3" Ref="#PWR0111"  Part="1" 
+AR Path="/5FA82020/5DD3E0A3" Ref="#PWR0134"  Part="1" 
+AR Path="/5FA8A96F/5DD3E0A3" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 6700 2950 50  0001 C CNN
+F 1 "GND" H 6750 3050 50  0000 C CNN
+F 2 "" H 6700 3200 50  0001 C CNN
+F 3 "" H 6700 3200 50  0001 C CNN
+	1    6700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3150 6700 3150
+Wire Wire Line
+	6700 3150 6700 3200
+Wire Wire Line
+	6650 3000 6700 3000
+Wire Wire Line
+	6700 3000 6700 3150
+Connection ~ 6700 3150
+$Comp
+L synkie_symbols:GND #PWR012
+U 1 1 5DD426CE
+P 7800 2300
+AR Path="/5FA6FAA9/5DD426CE" Ref="#PWR012"  Part="1" 
+AR Path="/5FA6A4E8/5DD426CE" Ref="#PWR0112"  Part="1" 
+AR Path="/5FA97FCE/5DD426CE" Ref="#PWR0135"  Part="1" 
+AR Path="/5FA999AE/5DD426CE" Ref="#PWR0162"  Part="1" 
+AR Path="/5FA8FC53/5DD426CE" Ref="#PWR0112"  Part="1" 
+AR Path="/5FA9040E/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD426CE" Ref="#PWR0135"  Part="1" 
+AR Path="/5FA81498/5DD426CE" Ref="#PWR0162"  Part="1" 
+AR Path="/5DD426CE" Ref="#PWR012"  Part="1" 
+AR Path="/5FA7E734/5DD426CE" Ref="#PWR0112"  Part="1" 
+AR Path="/5FA82020/5DD426CE" Ref="#PWR0135"  Part="1" 
+AR Path="/5FA8A96F/5DD426CE" Ref="#PWR0162"  Part="1" 
+F 0 "#PWR0162" H 7800 2050 50  0001 C CNN
+F 1 "GND" H 7805 2127 50  0000 C CNN
+F 2 "" H 7800 2300 50  0001 C CNN
+F 3 "" H 7800 2300 50  0001 C CNN
+	1    7800 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2250 7800 2250
+Wire Wire Line
+	7800 2250 7800 2300
+Wire Wire Line
+	4550 6100 4600 6100
+$Comp
+L synkie_symbols:-5V #PWR024
+U 1 1 5DE341EF
+P 3750 6400
+AR Path="/5FA6FAA9/5DE341EF" Ref="#PWR024"  Part="1" 
+AR Path="/5FA6A4E8/5DE341EF" Ref="#PWR0113"  Part="1" 
+AR Path="/5FA97FCE/5DE341EF" Ref="#PWR0136"  Part="1" 
+AR Path="/5FA999AE/5DE341EF" Ref="#PWR0163"  Part="1" 
+AR Path="/5FA8FC53/5DE341EF" Ref="#PWR0113"  Part="1" 
+AR Path="/5FA9040E/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DE341EF" Ref="#PWR0136"  Part="1" 
+AR Path="/5FA81498/5DE341EF" Ref="#PWR0163"  Part="1" 
+AR Path="/5DE341EF" Ref="#PWR024"  Part="1" 
+AR Path="/5FA7E734/5DE341EF" Ref="#PWR0113"  Part="1" 
+AR Path="/5FA82020/5DE341EF" Ref="#PWR0136"  Part="1" 
+AR Path="/5FA8A96F/5DE341EF" Ref="#PWR0163"  Part="1" 
+F 0 "#PWR0163" H 3750 6500 50  0001 C CNN
+F 1 "-5V" H 3750 6550 50  0000 C CNN
+F 2 "" H 3750 6400 50  0001 C CNN
+F 3 "" H 3750 6400 50  0001 C CNN
+	1    3750 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R17
+U 1 1 5DE34830
+P 3750 6200
+AR Path="/5FA6FAA9/5DE34830" Ref="R17"  Part="1" 
+AR Path="/5FA6A4E8/5DE34830" Ref="R34"  Part="1" 
+AR Path="/5FA97FCE/5DE34830" Ref="R54"  Part="1" 
+AR Path="/5FA999AE/5DE34830" Ref="R72"  Part="1" 
+AR Path="/5FA8FC53/5DE34830" Ref="R118"  Part="1" 
+AR Path="/5FA9040E/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DE34830" Ref="R218"  Part="1" 
+AR Path="/5FA81498/5DE34830" Ref="R49"  Part="1" 
+AR Path="/5DE34830" Ref="R17"  Part="1" 
+AR Path="/5FA7E734/5DE34830" Ref="R318"  Part="1" 
+AR Path="/5FA82020/5DE34830" Ref="R418"  Part="1" 
+AR Path="/5FA8A96F/5DE34830" Ref="R518"  Part="1" 
+F 0 "R518" H 3900 6250 50  0000 R CNN
+F 1 "22k" H 3900 6350 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3680 6200 50  0001 C CNN
+F 3 "~" H 3750 6200 50  0001 C CNN
+	1    3750 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 6050 3750 6000
+Wire Wire Line
+	3750 6350 3750 6400
+Wire Wire Line
+	4150 5850 3750 5850
+Wire Wire Line
+	3750 5800 3750 5850
+Connection ~ 3750 5850
+Wire Wire Line
+	3750 5400 3750 5500
+Wire Wire Line
+	2850 5400 3750 5400
+$Comp
+L synkie_symbols:-5V #PWR028
+U 1 1 5E06D678
+P 6650 5350
+AR Path="/5FA6FAA9/5E06D678" Ref="#PWR028"  Part="1" 
+AR Path="/5FA6A4E8/5E06D678" Ref="#PWR0114"  Part="1" 
+AR Path="/5FA97FCE/5E06D678" Ref="#PWR0137"  Part="1" 
+AR Path="/5FA999AE/5E06D678" Ref="#PWR0164"  Part="1" 
+AR Path="/5FA8FC53/5E06D678" Ref="#PWR0114"  Part="1" 
+AR Path="/5FA9040E/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5E06D678" Ref="#PWR0137"  Part="1" 
+AR Path="/5FA81498/5E06D678" Ref="#PWR0164"  Part="1" 
+AR Path="/5E06D678" Ref="#PWR028"  Part="1" 
+AR Path="/5FA7E734/5E06D678" Ref="#PWR0114"  Part="1" 
+AR Path="/5FA82020/5E06D678" Ref="#PWR0137"  Part="1" 
+AR Path="/5FA8A96F/5E06D678" Ref="#PWR0164"  Part="1" 
+F 0 "#PWR0164" H 6650 5450 50  0001 C CNN
+F 1 "-5V" H 6650 5500 50  0000 C CNN
+F 2 "" H 6650 5350 50  0001 C CNN
+F 3 "" H 6650 5350 50  0001 C CNN
+	1    6650 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR026
+U 1 1 5E06DC21
+P 6650 4750
+AR Path="/5FA6FAA9/5E06DC21" Ref="#PWR026"  Part="1" 
+AR Path="/5FA6A4E8/5E06DC21" Ref="#PWR0115"  Part="1" 
+AR Path="/5FA97FCE/5E06DC21" Ref="#PWR0138"  Part="1" 
+AR Path="/5FA999AE/5E06DC21" Ref="#PWR0165"  Part="1" 
+AR Path="/5FA8FC53/5E06DC21" Ref="#PWR0115"  Part="1" 
+AR Path="/5FA9040E/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5E06DC21" Ref="#PWR0138"  Part="1" 
+AR Path="/5FA81498/5E06DC21" Ref="#PWR0165"  Part="1" 
+AR Path="/5E06DC21" Ref="#PWR026"  Part="1" 
+AR Path="/5FA7E734/5E06DC21" Ref="#PWR0115"  Part="1" 
+AR Path="/5FA82020/5E06DC21" Ref="#PWR0138"  Part="1" 
+AR Path="/5FA8A96F/5E06DC21" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 6650 4600 50  0001 C CNN
+F 1 "+5V" H 6650 4900 50  0000 C CNN
+F 2 "" H 6650 4750 50  0001 C CNN
+F 3 "" H 6650 4750 50  0001 C CNN
+	1    6650 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:C_Small C9
+U 1 1 5E06FF97
+P 6550 5350
+AR Path="/5FA6FAA9/5E06FF97" Ref="C9"  Part="1" 
+AR Path="/5FA6A4E8/5E06FF97" Ref="C18"  Part="1" 
+AR Path="/5FA97FCE/5E06FF97" Ref="C26"  Part="1" 
+AR Path="/5FA999AE/5E06FF97" Ref="C34"  Part="1" 
+AR Path="/5FA8FC53/5E06FF97" Ref="C108"  Part="1" 
+AR Path="/5FA9040E/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5E06FF97" Ref="C208"  Part="1" 
+AR Path="/5FA81498/5E06FF97" Ref="C40"  Part="1" 
+AR Path="/5E06FF97" Ref="C9"  Part="1" 
+AR Path="/5FA7E734/5E06FF97" Ref="C308"  Part="1" 
+AR Path="/5FA82020/5E06FF97" Ref="C408"  Part="1" 
+AR Path="/5FA8A96F/5E06FF97" Ref="C508"  Part="1" 
+F 0 "C508" V 6650 5350 50  0000 C CNN
+F 1 "100n" V 6750 5350 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6550 5350 50  0001 C CNN
+F 3 "~" H 6550 5350 50  0001 C CNN
+	1    6550 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:C_Small C8
+U 1 1 5E073355
+P 6550 4750
+AR Path="/5FA6FAA9/5E073355" Ref="C8"  Part="1" 
+AR Path="/5FA6A4E8/5E073355" Ref="C17"  Part="1" 
+AR Path="/5FA97FCE/5E073355" Ref="C25"  Part="1" 
+AR Path="/5FA999AE/5E073355" Ref="C33"  Part="1" 
+AR Path="/5FA8FC53/5E073355" Ref="C107"  Part="1" 
+AR Path="/5FA9040E/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5E073355" Ref="C207"  Part="1" 
+AR Path="/5FA81498/5E073355" Ref="C39"  Part="1" 
+AR Path="/5E073355" Ref="C8"  Part="1" 
+AR Path="/5FA7E734/5E073355" Ref="C307"  Part="1" 
+AR Path="/5FA82020/5E073355" Ref="C407"  Part="1" 
+AR Path="/5FA8A96F/5E073355" Ref="C507"  Part="1" 
+F 0 "C507" V 6650 4750 50  0000 C CNN
+F 1 "100n" V 6750 4750 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6550 4750 50  0001 C CNN
+F 3 "~" H 6550 4750 50  0001 C CNN
+	1    6550 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR027
+U 1 1 5E07399C
+P 6450 5350
+AR Path="/5FA6FAA9/5E07399C" Ref="#PWR027"  Part="1" 
+AR Path="/5FA6A4E8/5E07399C" Ref="#PWR0116"  Part="1" 
+AR Path="/5FA97FCE/5E07399C" Ref="#PWR0139"  Part="1" 
+AR Path="/5FA999AE/5E07399C" Ref="#PWR0166"  Part="1" 
+AR Path="/5FA8FC53/5E07399C" Ref="#PWR0116"  Part="1" 
+AR Path="/5FA9040E/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5E07399C" Ref="#PWR0139"  Part="1" 
+AR Path="/5FA81498/5E07399C" Ref="#PWR0166"  Part="1" 
+AR Path="/5E07399C" Ref="#PWR027"  Part="1" 
+AR Path="/5FA7E734/5E07399C" Ref="#PWR0116"  Part="1" 
+AR Path="/5FA82020/5E07399C" Ref="#PWR0139"  Part="1" 
+AR Path="/5FA8A96F/5E07399C" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 6450 5100 50  0001 C CNN
+F 1 "GND" H 6350 5200 50  0000 C CNN
+F 2 "" H 6450 5350 50  0001 C CNN
+F 3 "" H 6450 5350 50  0001 C CNN
+	1    6450 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 5350
+Wire Wire Line
+	4850 5750 4850 5900
+Wire Wire Line
+	4450 5850 4600 5850
+Wire Wire Line
+	4600 5850 4600 6100
+Connection ~ 4600 6100
+Wire Wire Line
+	4600 6100 4650 6100
+$Comp
+L synkie_symbols:R R4
+U 1 1 5DD6272C
+P 7600 2250
+AR Path="/5FA6FAA9/5DD6272C" Ref="R4"  Part="1" 
+AR Path="/5FA6A4E8/5DD6272C" Ref="R6"  Part="1" 
+AR Path="/5FA97FCE/5DD6272C" Ref="R39"  Part="1" 
+AR Path="/5FA999AE/5DD6272C" Ref="R57"  Part="1" 
+AR Path="/5FA8FC53/5DD6272C" Ref="R103"  Part="1" 
+AR Path="/5FA9040E/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DD6272C" Ref="R203"  Part="1" 
+AR Path="/5FA81498/5DD6272C" Ref="R33"  Part="1" 
+AR Path="/5DD6272C" Ref="R4"  Part="1" 
+AR Path="/5FA7E734/5DD6272C" Ref="R303"  Part="1" 
+AR Path="/5FA82020/5DD6272C" Ref="R403"  Part="1" 
+AR Path="/5FA8A96F/5DD6272C" Ref="R503"  Part="1" 
+F 0 "R503" V 7393 2250 50  0000 C CNN
+F 1 "120" V 7484 2250 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7530 2250 50  0001 C CNN
+F 3 "~" H 7600 2250 50  0001 C CNN
+	1    7600 2250
+	0    -1   1    0   
+$EndComp
+$Comp
+L synkie_symbols:LMH6643 U2
+U 1 1 5DCB59FF
+P 4250 3900
+AR Path="/5FA6FAA9/5DCB59FF" Ref="U2"  Part="1" 
+AR Path="/5FA6A4E8/5DCB59FF" Ref="U4"  Part="3" 
+AR Path="/5FA97FCE/5DCB59FF" Ref="U6"  Part="3" 
+AR Path="/5FA999AE/5DCB59FF" Ref="U8"  Part="3" 
+AR Path="/5DCB59FF" Ref="U?"  Part="3" 
+AR Path="/5FA8FC53/5DCB59FF" Ref="U102"  Part="1" 
+AR Path="/5FA9040E/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FA7B673/5DCB59FF" Ref="U203"  Part="1" 
+AR Path="/5FA81498/5DCB59FF" Ref="U32"  Part="1" 
+AR Path="/5FA7E734/5DCB59FF" Ref="U302"  Part="1" 
+AR Path="/5FA82020/5DCB59FF" Ref="U402"  Part="1" 
+AR Path="/5FA8A96F/5DCB59FF" Ref="U502"  Part="1" 
+F 0 "U502" H 4250 4267 50  0000 C CNN
+F 1 "LMH6643" H 4250 4176 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 4250 3900 50  0001 C CNN
+F 3 "~" H 4250 3900 50  0001 C CNN
+	1    4250 3900
+	1    0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:LMH6643 U2
+U 2 1 5DFA5C9B
+P 4250 6100
+AR Path="/5FA6FAA9/5DFA5C9B" Ref="U2"  Part="2" 
+AR Path="/5FA6A4E8/5DFA5C9B" Ref="U4"  Part="1" 
+AR Path="/5FA97FCE/5DFA5C9B" Ref="U6"  Part="1" 
+AR Path="/5FA999AE/5DFA5C9B" Ref="U8"  Part="1" 
+AR Path="/5FA8FC53/5DFA5C9B" Ref="U102"  Part="3" 
+AR Path="/5FA9040E/5DFA5C9B" Ref="U?"  Part="2" 
+AR Path="/5FA7B673/5DFA5C9B" Ref="U203"  Part="3" 
+AR Path="/5FA81498/5DFA5C9B" Ref="U32"  Part="3" 
+AR Path="/5DFA5C9B" Ref="U2"  Part="2" 
+AR Path="/5FA7E734/5DFA5C9B" Ref="U302"  Part="2" 
+AR Path="/5FA82020/5DFA5C9B" Ref="U402"  Part="2" 
+AR Path="/5FA8A96F/5DFA5C9B" Ref="U502"  Part="2" 
+F 0 "U502" H 4250 6467 50  0000 C CNN
+F 1 "LMH6643" H 4250 6376 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 4250 6100 50  0001 C CNN
+F 3 "~" H 4250 6100 50  0001 C CNN
+	2    4250 6100
+	1    0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:-5V #PWR029
+U 1 1 5DD6D5AB
+P 3500 4550
+AR Path="/5FA6FAA9/5DD6D5AB" Ref="#PWR029"  Part="1" 
+AR Path="/5FA6A4E8/5DD6D5AB" Ref="#PWR0117"  Part="1" 
+AR Path="/5FA97FCE/5DD6D5AB" Ref="#PWR0142"  Part="1" 
+AR Path="/5FA999AE/5DD6D5AB" Ref="#PWR0167"  Part="1" 
+AR Path="/5FA8FC53/5DD6D5AB" Ref="#PWR0117"  Part="1" 
+AR Path="/5FA9040E/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD6D5AB" Ref="#PWR0142"  Part="1" 
+AR Path="/5FA81498/5DD6D5AB" Ref="#PWR0167"  Part="1" 
+AR Path="/5DD6D5AB" Ref="#PWR029"  Part="1" 
+AR Path="/5FA7E734/5DD6D5AB" Ref="#PWR0117"  Part="1" 
+AR Path="/5FA82020/5DD6D5AB" Ref="#PWR0142"  Part="1" 
+AR Path="/5FA8A96F/5DD6D5AB" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 3500 4650 50  0001 C CNN
+F 1 "-5V" H 3500 4700 50  0000 C CNN
+F 2 "" H 3500 4550 50  0001 C CNN
+F 3 "" H 3500 4550 50  0001 C CNN
+	1    3500 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR025
+U 1 1 5DD6DF03
+P 3500 3450
+AR Path="/5FA6FAA9/5DD6DF03" Ref="#PWR025"  Part="1" 
+AR Path="/5FA6A4E8/5DD6DF03" Ref="#PWR0118"  Part="1" 
+AR Path="/5FA97FCE/5DD6DF03" Ref="#PWR0143"  Part="1" 
+AR Path="/5FA999AE/5DD6DF03" Ref="#PWR0168"  Part="1" 
+AR Path="/5FA8FC53/5DD6DF03" Ref="#PWR0118"  Part="1" 
+AR Path="/5FA9040E/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD6DF03" Ref="#PWR0143"  Part="1" 
+AR Path="/5FA81498/5DD6DF03" Ref="#PWR0168"  Part="1" 
+AR Path="/5DD6DF03" Ref="#PWR025"  Part="1" 
+AR Path="/5FA7E734/5DD6DF03" Ref="#PWR0118"  Part="1" 
+AR Path="/5FA82020/5DD6DF03" Ref="#PWR0143"  Part="1" 
+AR Path="/5FA8A96F/5DD6DF03" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H 3500 3300 50  0001 C CNN
+F 1 "+5V" H 3500 3600 50  0000 C CNN
+F 2 "" H 3500 3450 50  0001 C CNN
+F 3 "" H 3500 3450 50  0001 C CNN
+	1    3500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3800 3900 3800
+Wire Wire Line
+	3900 3800 3900 3600
+$Comp
+L synkie_symbols:R_POT RV2
+U 1 1 5DD8D848
+P 3500 4000
+AR Path="/5FA6FAA9/5DD8D848" Ref="RV2"  Part="1" 
+AR Path="/5FA6A4E8/5DD8D848" Ref="RV1"  Part="1" 
+AR Path="/5FA97FCE/5DD8D848" Ref="RV3"  Part="1" 
+AR Path="/5FA999AE/5DD8D848" Ref="RV4"  Part="1" 
+AR Path="/5FA8FC53/5DD8D848" Ref="RV101"  Part="1" 
+AR Path="/5FA9040E/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FA7B673/5DD8D848" Ref="RV201"  Part="1" 
+AR Path="/5FA81498/5DD8D848" Ref="RV31"  Part="1" 
+AR Path="/5DD8D848" Ref="RV2"  Part="1" 
+AR Path="/5FA7E734/5DD8D848" Ref="RV301"  Part="1" 
+AR Path="/5FA82020/5DD8D848" Ref="RV401"  Part="1" 
+AR Path="/5FA8A96F/5DD8D848" Ref="RV501"  Part="1" 
+F 0 "RV501" H 3431 4046 50  0000 R CNN
+F 1 "500" H 3431 3955 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3006P_Horizontal" H 3500 4000 50  0001 C CNN
+F 3 "~" H 3500 4000 50  0001 C CNN
+	1    3500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4000 3800 4000
+$Comp
+L synkie_symbols:GND #PWR018
+U 1 1 5DD0318B
+P 5600 2900
+AR Path="/5FA6FAA9/5DD0318B" Ref="#PWR018"  Part="1" 
+AR Path="/5FA6A4E8/5DD0318B" Ref="#PWR0119"  Part="1" 
+AR Path="/5FA97FCE/5DD0318B" Ref="#PWR0144"  Part="1" 
+AR Path="/5FA999AE/5DD0318B" Ref="#PWR0169"  Part="1" 
+AR Path="/5FA8FC53/5DD0318B" Ref="#PWR0119"  Part="1" 
+AR Path="/5FA9040E/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD0318B" Ref="#PWR0144"  Part="1" 
+AR Path="/5FA81498/5DD0318B" Ref="#PWR0169"  Part="1" 
+AR Path="/5DD0318B" Ref="#PWR018"  Part="1" 
+AR Path="/5FA7E734/5DD0318B" Ref="#PWR0119"  Part="1" 
+AR Path="/5FA82020/5DD0318B" Ref="#PWR0144"  Part="1" 
+AR Path="/5FA8A96F/5DD0318B" Ref="#PWR0169"  Part="1" 
+F 0 "#PWR0169" H 5600 2650 50  0001 C CNN
+F 1 "GND" H 5605 2727 50  0000 C CNN
+F 2 "" H 5600 2900 50  0001 C CNN
+F 3 "" H 5600 2900 50  0001 C CNN
+	1    5600 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2800 5600 2850
+Connection ~ 5600 2850
+Wire Wire Line
+	5600 2850 5600 2900
+Wire Wire Line
+	5400 2800 5400 2850
+$Comp
+L synkie_symbols:R R18
+U 1 1 5DE3508C
+P 3500 3650
+AR Path="/5FA6FAA9/5DE3508C" Ref="R18"  Part="1" 
+AR Path="/5FA6A4E8/5DE3508C" Ref="R26"  Part="1" 
+AR Path="/5FA97FCE/5DE3508C" Ref="R46"  Part="1" 
+AR Path="/5FA999AE/5DE3508C" Ref="R64"  Part="1" 
+AR Path="/5FA8FC53/5DE3508C" Ref="R110"  Part="1" 
+AR Path="/5FA9040E/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DE3508C" Ref="R210"  Part="1" 
+AR Path="/5FA81498/5DE3508C" Ref="R41"  Part="1" 
+AR Path="/5DE3508C" Ref="R18"  Part="1" 
+AR Path="/5FA7E734/5DE3508C" Ref="R310"  Part="1" 
+AR Path="/5FA82020/5DE3508C" Ref="R410"  Part="1" 
+AR Path="/5FA8A96F/5DE3508C" Ref="R510"  Part="1" 
+F 0 "R510" H 3650 3700 50  0000 R CNN
+F 1 "3k" H 3650 3800 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3430 3650 50  0001 C CNN
+F 3 "~" H 3500 3650 50  0001 C CNN
+	1    3500 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R19
+U 1 1 5DE3583B
+P 3500 4350
+AR Path="/5FA6FAA9/5DE3583B" Ref="R19"  Part="1" 
+AR Path="/5FA6A4E8/5DE3583B" Ref="R27"  Part="1" 
+AR Path="/5FA97FCE/5DE3583B" Ref="R47"  Part="1" 
+AR Path="/5FA999AE/5DE3583B" Ref="R65"  Part="1" 
+AR Path="/5FA8FC53/5DE3583B" Ref="R111"  Part="1" 
+AR Path="/5FA9040E/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DE3583B" Ref="R211"  Part="1" 
+AR Path="/5FA81498/5DE3583B" Ref="R42"  Part="1" 
+AR Path="/5DE3583B" Ref="R19"  Part="1" 
+AR Path="/5FA7E734/5DE3583B" Ref="R311"  Part="1" 
+AR Path="/5FA82020/5DE3583B" Ref="R411"  Part="1" 
+AR Path="/5FA8A96F/5DE3583B" Ref="R511"  Part="1" 
+F 0 "R511" H 3650 4400 50  0000 R CNN
+F 1 "3k" H 3650 4500 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3430 4350 50  0001 C CNN
+F 3 "~" H 3500 4350 50  0001 C CNN
+	1    3500 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 3450 3500 3500
+Wire Wire Line
+	3500 4200 3500 4150
+Wire Wire Line
+	3500 3800 3500 3850
+Wire Wire Line
+	3500 4500 3500 4550
+Wire Wire Line
+	5400 2850 5600 2850
+Connection ~ 5400 2400
+Wire Wire Line
+	5050 2400 5100 2400
+Wire Wire Line
+	4650 2400 4650 3600
+Wire Wire Line
+	4650 2400 4750 2400
+$Comp
+L synkie_symbols:R R20
+U 1 1 5DD15203
+P 4900 2400
+AR Path="/5FA6FAA9/5DD15203" Ref="R20"  Part="1" 
+AR Path="/5FA6A4E8/5DD15203" Ref="R9"  Part="1" 
+AR Path="/5FA97FCE/5DD15203" Ref="R40"  Part="1" 
+AR Path="/5FA999AE/5DD15203" Ref="R58"  Part="1" 
+AR Path="/5FA8FC53/5DD15203" Ref="R104"  Part="1" 
+AR Path="/5FA9040E/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DD15203" Ref="R204"  Part="1" 
+AR Path="/5FA81498/5DD15203" Ref="R34"  Part="1" 
+AR Path="/5DD15203" Ref="R20"  Part="1" 
+AR Path="/5FA7E734/5DD15203" Ref="R304"  Part="1" 
+AR Path="/5FA82020/5DD15203" Ref="R404"  Part="1" 
+AR Path="/5FA8A96F/5DD15203" Ref="R504"  Part="1" 
+F 0 "R504" V 4693 2400 50  0000 C CNN
+F 1 "3k" V 4784 2400 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 2400 50  0001 C CNN
+F 3 "~" H 4900 2400 50  0001 C CNN
+	1    4900 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 3900 4650 3900
+Connection ~ 4650 3600
+Wire Wire Line
+	4650 3600 4650 3900
+$Comp
+L synkie_symbols:C_Small C5
+U 1 1 5DDA6AA4
+P 5100 2700
+AR Path="/5FA6FAA9/5DDA6AA4" Ref="C5"  Part="1" 
+AR Path="/5FA6A4E8/5DDA6AA4" Ref="C13"  Part="1" 
+AR Path="/5FA97FCE/5DDA6AA4" Ref="C21"  Part="1" 
+AR Path="/5FA999AE/5DDA6AA4" Ref="C29"  Part="1" 
+AR Path="/5FA8FC53/5DDA6AA4" Ref="C103"  Part="1" 
+AR Path="/5FA9040E/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DDA6AA4" Ref="C203"  Part="1" 
+AR Path="/5FA81498/5DDA6AA4" Ref="C33"  Part="1" 
+AR Path="/5DDA6AA4" Ref="C5"  Part="1" 
+AR Path="/5FA7E734/5DDA6AA4" Ref="C303"  Part="1" 
+AR Path="/5FA82020/5DDA6AA4" Ref="C403"  Part="1" 
+AR Path="/5FA8A96F/5DDA6AA4" Ref="C503"  Part="1" 
+F 0 "C503" V 5200 2700 50  0000 C CNN
+F 1 "1u" V 5300 2700 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5100 2700 50  0001 C CNN
+F 3 "~" H 5100 2700 50  0001 C CNN
+	1    5100 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 2800 5100 2850
+Wire Wire Line
+	5100 2850 5400 2850
+Connection ~ 5400 2850
+Wire Wire Line
+	5100 2600 5100 2400
+Connection ~ 5100 2400
+Wire Wire Line
+	5100 2400 5400 2400
+$Comp
+L synkie_symbols:C_Small C10
+U 1 1 5DDC04F7
+P 3800 4200
+AR Path="/5FA6FAA9/5DDC04F7" Ref="C10"  Part="1" 
+AR Path="/5FA6A4E8/5DDC04F7" Ref="C16"  Part="1" 
+AR Path="/5FA97FCE/5DDC04F7" Ref="C24"  Part="1" 
+AR Path="/5FA999AE/5DDC04F7" Ref="C32"  Part="1" 
+AR Path="/5FA8FC53/5DDC04F7" Ref="C106"  Part="1" 
+AR Path="/5FA9040E/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DDC04F7" Ref="C206"  Part="1" 
+AR Path="/5FA81498/5DDC04F7" Ref="C38"  Part="1" 
+AR Path="/5DDC04F7" Ref="C10"  Part="1" 
+AR Path="/5FA7E734/5DDC04F7" Ref="C306"  Part="1" 
+AR Path="/5FA82020/5DDC04F7" Ref="C406"  Part="1" 
+AR Path="/5FA8A96F/5DDC04F7" Ref="C506"  Part="1" 
+F 0 "C506" V 3900 4200 50  0000 C CNN
+F 1 "1u" V 4000 4200 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3800 4200 50  0001 C CNN
+F 3 "~" H 3800 4200 50  0001 C CNN
+	1    3800 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 4100 3800 4000
+Connection ~ 3800 4000
+Wire Wire Line
+	3800 4000 3950 4000
+$Comp
+L synkie_symbols:GND #PWR0102
+U 1 1 5DDC7D47
+P 3800 4400
+AR Path="/5FA6FAA9/5DDC7D47" Ref="#PWR0102"  Part="1" 
+AR Path="/5FA6A4E8/5DDC7D47" Ref="#PWR0120"  Part="1" 
+AR Path="/5FA97FCE/5DDC7D47" Ref="#PWR0145"  Part="1" 
+AR Path="/5FA999AE/5DDC7D47" Ref="#PWR0170"  Part="1" 
+AR Path="/5FA8FC53/5DDC7D47" Ref="#PWR0120"  Part="1" 
+AR Path="/5FA9040E/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DDC7D47" Ref="#PWR0145"  Part="1" 
+AR Path="/5FA81498/5DDC7D47" Ref="#PWR0170"  Part="1" 
+AR Path="/5DDC7D47" Ref="#PWR0102"  Part="1" 
+AR Path="/5FA7E734/5DDC7D47" Ref="#PWR0120"  Part="1" 
+AR Path="/5FA82020/5DDC7D47" Ref="#PWR0145"  Part="1" 
+AR Path="/5FA8A96F/5DDC7D47" Ref="#PWR0170"  Part="1" 
+F 0 "#PWR0170" H 3800 4150 50  0001 C CNN
+F 1 "GND" H 3700 4250 50  0000 C CNN
+F 2 "" H 3800 4400 50  0001 C CNN
+F 3 "" H 3800 4400 50  0001 C CNN
+	1    3800 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4300 3800 4400
+Wire Notes Line
+	3200 3050 4800 3050
+Wire Notes Line
+	4800 3050 4800 4800
+Wire Notes Line
+	4800 4800 3200 4800
+Wire Notes Line
+	3200 4800 3200 3050
+Text Notes 4350 4750 0    50   ~ 0
+black level
+Wire Notes Line
+	2150 4900 5150 4900
+Wire Notes Line
+	5150 4900 5150 6750
+Wire Notes Line
+	5150 6750 2150 6750
+Wire Notes Line
+	2150 6750 2150 4900
+Text Notes 4650 6700 0    50   ~ 0
+gain control
+Wire Notes Line
+	3800 1100 3800 2950
+Wire Notes Line
+	3800 2950 5450 2950
+Wire Notes Line
+	8150 1100 3800 1100
+Wire Notes Line
+	8150 3600 8150 1100
+Wire Notes Line
+	5450 3600 8150 3600
+Wire Notes Line
+	5450 2950 5450 3600
+Wire Wire Line
+	5850 6400 5850 3050
+Text Notes 7900 3550 0    50   ~ 0
+video
+Wire Wire Line
+	6900 2250 7300 2250
+$Comp
+L synkie_symbols:R R1
+U 1 1 5F29A28B
+P 7150 2500
+AR Path="/5FA6FAA9/5F29A28B" Ref="R1"  Part="1" 
+AR Path="/5FA6A4E8/5F29A28B" Ref="R21"  Part="1" 
+AR Path="/5FA97FCE/5F29A28B" Ref="R41"  Part="1" 
+AR Path="/5FA999AE/5F29A28B" Ref="R59"  Part="1" 
+AR Path="/5FA8FC53/5F29A28B" Ref="R105"  Part="1" 
+AR Path="/5FA9040E/5F29A28B" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5F29A28B" Ref="R205"  Part="1" 
+AR Path="/5FA81498/5F29A28B" Ref="R36"  Part="1" 
+AR Path="/5F29A28B" Ref="R1"  Part="1" 
+AR Path="/5FA7E734/5F29A28B" Ref="R305"  Part="1" 
+AR Path="/5FA82020/5F29A28B" Ref="R405"  Part="1" 
+AR Path="/5FA8A96F/5F29A28B" Ref="R505"  Part="1" 
+F 0 "R505" V 6943 2500 50  0000 C CNN
+F 1 "(560)" V 7034 2500 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7080 2500 50  0001 C CNN
+F 3 "~" H 7150 2500 50  0001 C CNN
+	1    7150 2500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7300 2500 7300 2250
+Connection ~ 7300 2250
+Wire Wire Line
+	7300 2250 7450 2250
+Wire Wire Line
+	6900 2500 6950 2500
+$Comp
+L synkie_symbols:R R3
+U 1 1 5F2A4E42
+P 7150 2800
+AR Path="/5FA6FAA9/5F2A4E42" Ref="R3"  Part="1" 
+AR Path="/5FA6A4E8/5F2A4E42" Ref="R24"  Part="1" 
+AR Path="/5FA97FCE/5F2A4E42" Ref="R44"  Part="1" 
+AR Path="/5FA999AE/5F2A4E42" Ref="R62"  Part="1" 
+AR Path="/5FA8FC53/5F2A4E42" Ref="R108"  Part="1" 
+AR Path="/5FA9040E/5F2A4E42" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5F2A4E42" Ref="R208"  Part="1" 
+AR Path="/5FA81498/5F2A4E42" Ref="R39"  Part="1" 
+AR Path="/5F2A4E42" Ref="R3"  Part="1" 
+AR Path="/5FA7E734/5F2A4E42" Ref="R308"  Part="1" 
+AR Path="/5FA82020/5F2A4E42" Ref="R408"  Part="1" 
+AR Path="/5FA8A96F/5F2A4E42" Ref="R508"  Part="1" 
+F 0 "R508" V 6943 2800 50  0000 C CNN
+F 1 "(75)" V 7034 2800 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7080 2800 50  0001 C CNN
+F 3 "~" H 7150 2800 50  0001 C CNN
+	1    7150 2800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6950 2500 6950 2800
+Wire Wire Line
+	6950 2800 7000 2800
+Connection ~ 6950 2500
+Wire Wire Line
+	6950 2500 7000 2500
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5F2BB73C
+P 7500 2800
+AR Path="/5FA6FAA9/5F2BB73C" Ref="J2"  Part="1" 
+AR Path="/5FA6A4E8/5F2BB73C" Ref="J3"  Part="1" 
+AR Path="/5FA97FCE/5F2BB73C" Ref="J4"  Part="1" 
+AR Path="/5FA999AE/5F2BB73C" Ref="J6"  Part="1" 
+AR Path="/5FA8FC53/5F2BB73C" Ref="J101"  Part="1" 
+AR Path="/5FA9040E/5F2BB73C" Ref="J?"  Part="1" 
+AR Path="/5FA7B673/5F2BB73C" Ref="J201"  Part="1" 
+AR Path="/5FA81498/5F2BB73C" Ref="J31"  Part="1" 
+AR Path="/5F2BB73C" Ref="J2"  Part="1" 
+AR Path="/5FA7E734/5F2BB73C" Ref="J301"  Part="1" 
+AR Path="/5FA82020/5F2BB73C" Ref="J401"  Part="1" 
+AR Path="/5FA8A96F/5F2BB73C" Ref="J501"  Part="1" 
+F 0 "J501" H 7580 2792 50  0000 L CNN
+F 1 "Conn_01x02" H 7580 2701 50  0000 L CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 7500 2800 50  0001 C CNN
+F 3 "~" H 7500 2800 50  0001 C CNN
+	1    7500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR0101
+U 1 1 5F2BBDAC
+P 7300 2900
+AR Path="/5FA6FAA9/5F2BBDAC" Ref="#PWR0101"  Part="1" 
+AR Path="/5FA6A4E8/5F2BBDAC" Ref="#PWR0121"  Part="1" 
+AR Path="/5FA97FCE/5F2BBDAC" Ref="#PWR0146"  Part="1" 
+AR Path="/5FA999AE/5F2BBDAC" Ref="#PWR0171"  Part="1" 
+AR Path="/5FA8FC53/5F2BBDAC" Ref="#PWR0121"  Part="1" 
+AR Path="/5FA9040E/5F2BBDAC" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5F2BBDAC" Ref="#PWR0146"  Part="1" 
+AR Path="/5FA81498/5F2BBDAC" Ref="#PWR0171"  Part="1" 
+AR Path="/5F2BBDAC" Ref="#PWR0101"  Part="1" 
+AR Path="/5FA7E734/5F2BBDAC" Ref="#PWR0121"  Part="1" 
+AR Path="/5FA82020/5F2BBDAC" Ref="#PWR0146"  Part="1" 
+AR Path="/5FA8A96F/5F2BBDAC" Ref="#PWR0171"  Part="1" 
+F 0 "#PWR0171" H 7300 2650 50  0001 C CNN
+F 1 "GND" H 7305 2727 50  0000 C CNN
+F 2 "" H 7300 2900 50  0001 C CNN
+F 3 "" H 7300 2900 50  0001 C CNN
+	1    7300 2900
+	1    0    0    -1  
+$EndComp
+Text HLabel 5050 1650 0    50   Input ~ 0
+Input
+Text HLabel 2850 5400 0    50   Input ~ 0
+DAC
+Text HLabel 2650 6000 0    50   Input ~ 0
+CV
+Text HLabel 5900 2250 0    50   Input ~ 0
+Output
+$Comp
+L synkie_symbols:R R35
+U 1 1 5FA833F1
+P 5900 2100
+AR Path="/5FA6FAA9/5FA833F1" Ref="R35"  Part="1" 
+AR Path="/5FA6A4E8/5FA833F1" Ref="R36"  Part="1" 
+AR Path="/5FA97FCE/5FA833F1" Ref="R38"  Part="1" 
+AR Path="/5FA999AE/5FA833F1" Ref="R56"  Part="1" 
+AR Path="/5FA8FC53/5FA833F1" Ref="R102"  Part="1" 
+AR Path="/5FA9040E/5FA833F1" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5FA833F1" Ref="R202"  Part="1" 
+AR Path="/5FA81498/5FA833F1" Ref="R32"  Part="1" 
+AR Path="/5FA833F1" Ref="R35"  Part="1" 
+AR Path="/5FA7E734/5FA833F1" Ref="R302"  Part="1" 
+AR Path="/5FA82020/5FA833F1" Ref="R402"  Part="1" 
+AR Path="/5FA8A96F/5FA833F1" Ref="R502"  Part="1" 
+F 0 "R502" V 5693 2100 50  0000 C CNN
+F 1 "(560)" V 5784 2100 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5830 2100 50  0001 C CNN
+F 3 "~" H 5900 2100 50  0001 C CNN
+	1    5900 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR0122
+U 1 1 5FA8481C
+P 5900 1950
+AR Path="/5FA6FAA9/5FA8481C" Ref="#PWR0122"  Part="1" 
+AR Path="/5FA6A4E8/5FA8481C" Ref="#PWR0123"  Part="1" 
+AR Path="/5FA97FCE/5FA8481C" Ref="#PWR0147"  Part="1" 
+AR Path="/5FA999AE/5FA8481C" Ref="#PWR0172"  Part="1" 
+AR Path="/5FA8FC53/5FA8481C" Ref="#PWR0123"  Part="1" 
+AR Path="/5FA9040E/5FA8481C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5FA8481C" Ref="#PWR0147"  Part="1" 
+AR Path="/5FA81498/5FA8481C" Ref="#PWR0172"  Part="1" 
+AR Path="/5FA8481C" Ref="#PWR0122"  Part="1" 
+AR Path="/5FA7E734/5FA8481C" Ref="#PWR0123"  Part="1" 
+AR Path="/5FA82020/5FA8481C" Ref="#PWR0147"  Part="1" 
+AR Path="/5FA8A96F/5FA8481C" Ref="#PWR0172"  Part="1" 
+F 0 "#PWR0172" H 5900 1700 50  0001 C CNN
+F 1 "GND" H 5905 1777 50  0000 C CNN
+F 2 "" H 5900 1950 50  0001 C CNN
+F 3 "" H 5900 1950 50  0001 C CNN
+	1    5900 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 3600 4650 3600
+Wire Wire Line
+	6450 4750 6450 5350
+$EndSCHEMATC
