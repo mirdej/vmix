@@ -2224,4 +2224,6 @@ Text Notes 1100 4550 0    50   ~ 0
 from vm003eq-scabi-out
 Wire Wire Line
 	2000 4850 1700 4850
+Text Notes 7200 1200 0    50   ~ 0
+dry out should also work for siff input. dry = clamped???
 $EndSCHEMATC

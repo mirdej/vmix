@@ -195,6 +195,7 @@ void update_leds(){
     digitalWrite(PIN_INVERT, inverter_on);
     digitalWrite(PIN_COMPA, compa_on);
     digitalWrite(PIN_EDGES, edges_on);
+    digitalWrite(PIN_PREVIEW, ~pfl_state);
 }
 
 //----------------------------------------------------------------------------------------
@@ -234,7 +235,7 @@ void check_btns() {
 
     for (int i = 0; i < 8; i++) {
         if (~buttons_raw & (1 << i)) {
-            if (old_buttons & (i << i)) {
+            if (old_buttons & (1 << i)) {
                 leds_changed = 1;
                 char bit = i -1 ;
                 switch (bit) {
@@ -343,6 +344,20 @@ void set_dac() {
         SPI.transfer16(sendval);
         digitalWrite(PIN_DAC0_CS,HIGH);
 	}
+
+  for (int i = 0; i < 4; i++) 	{
+        digitalWrite(PIN_DAC1_CS,LOW);
+        if (i < 3) {
+            sendval = (1023 -out_value[3]) << 2;    // Fader wrong way round
+        } else {
+            sendval =  out_value[4] << 2;           // Aux pot
+        }
+        sendval &= 1023 << 2;
+        sendval |= i << 12;
+
+        SPI.transfer16(sendval);
+        digitalWrite(PIN_DAC1_CS,HIGH);
+	}
     SPI.endTransaction();
 }
 
@@ -354,20 +369,26 @@ void power_on_dacs() {
 
 	sendval = 0xf010;	
 	
-	for (cs_pin=0; cs_pin < 2 ; cs_pin++) {
-		digitalWrite(cs_pin,LOW);
-		delay(1);
-		SPI.transfer16(sendval);
-		digitalWrite(cs_pin,HIGH);
-	} 
+    digitalWrite(PIN_DAC0_CS,LOW);
+    delay(1);
+    SPI.transfer16(sendval);
+    digitalWrite(PIN_DAC0_CS,HIGH);
+    digitalWrite(PIN_DAC1_CS,LOW);
+    delay(1);
+    SPI.transfer16(sendval);
+    digitalWrite(PIN_DAC1_CS,HIGH);
+
 	delay(100);
 	
-	for (cs_pin=0; cs_pin < 2 ; cs_pin++) {
-		digitalWrite(cs_pin,LOW);
-		delay(1);
-		SPI.transfer16(sendval);
-		digitalWrite(cs_pin,HIGH);
-	}
+    digitalWrite(PIN_DAC0_CS,LOW);
+    delay(1);
+    SPI.transfer16(sendval);
+    digitalWrite(PIN_DAC0_CS,HIGH);
+    digitalWrite(PIN_DAC1_CS,LOW);
+    delay(1);
+    SPI.transfer16(sendval);
+    digitalWrite(PIN_DAC1_CS,HIGH);
+
 	SPI.endTransaction();
 }
 
@@ -435,6 +456,7 @@ void setup() {
   	pinMode(PIN_INVERT, OUTPUT);
     pinMode(PIN_COMPA, OUTPUT);
     pinMode(PIN_EDGES, OUTPUT);
+    pinMode(PIN_PREVIEW, OUTPUT);
 
 	power_on_dacs();
   	
