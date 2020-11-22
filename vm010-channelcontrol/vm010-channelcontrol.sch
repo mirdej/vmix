@@ -310,11 +310,11 @@ F 3 "~" H 2500 5650 50  0001 C CNN
 $EndComp
 Text Label 2300 5450 2    50   ~ 0
 compa_cv
-Text Label 2300 5650 2    50   ~ 0
+Text Label 1800 5650 2    50   ~ 0
 edge_bypass
-Text Label 2300 5750 2    50   ~ 0
+Text Label 1800 5750 2    50   ~ 0
 compa_bypass
-Text Label 2300 5850 2    50   ~ 0
+Text Label 1800 5850 2    50   ~ 0
 inverter_bypass
 Text Label 7700 1600 0    50   ~ 0
 compa-level
@@ -403,17 +403,6 @@ Text Label 7700 2400 0    50   ~ 0
 mosi
 Text Label 8000 2300 0    50   ~ 0
 pix
-$Comp
-L Device:R R1
-U 1 1 5F43134E
-P 7850 2300
-F 0 "R1" V 7950 2300 50  0000 C CNN
-F 1 "100" V 7850 2300 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7780 2300 50  0001 C CNN
-F 3 "~" H 7850 2300 50  0001 C CNN
-	1    7850 2300
-	0    1    1    0   
-$EndComp
 Text Label 6500 1000 2    50   ~ 0
 reset
 Text Label 7700 3400 0    50   ~ 0
@@ -755,7 +744,7 @@ L Device:C C4
 U 1 1 5F43EC17
 P 6100 4100
 F 0 "C4" H 6215 4146 50  0000 L CNN
-F 1 "C" H 6215 4055 50  0000 L CNN
+F 1 "100n" H 6215 4055 50  0000 L CNN
 F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 3950 50  0001 C CNN
 F 3 "~" H 6100 4100 50  0001 C CNN
 	1    6100 4100
@@ -777,7 +766,7 @@ L Device:C C3
 U 1 1 5F43FBAB
 P 5000 4500
 F 0 "C3" H 5115 4546 50  0000 L CNN
-F 1 "C" H 5115 4455 50  0000 L CNN
+F 1 "100n" H 5115 4455 50  0000 L CNN
 F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5038 4350 50  0001 C CNN
 F 3 "~" H 5000 4500 50  0001 C CNN
 	1    5000 4500
@@ -803,17 +792,6 @@ F 1 "VCC" H 5017 4523 50  0000 C CNN
 F 2 "" H 5000 4350 50  0001 C CNN
 F 3 "" H 5000 4350 50  0001 C CNN
 	1    5000 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5F440B28
-P 4550 4500
-F 0 "C2" H 4665 4546 50  0000 L CNN
-F 1 "C" H 4665 4455 50  0000 L CNN
-F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4588 4350 50  0001 C CNN
-F 3 "~" H 4550 4500 50  0001 C CNN
-	1    4550 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -865,7 +843,7 @@ L Device:CP C1
 U 1 1 5F457A73
 P 4200 4500
 F 0 "C1" H 4318 4546 50  0000 L CNN
-F 1 "CP" H 4318 4455 50  0000 L CNN
+F 1 "10u" H 4318 4455 50  0000 L CNN
 F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 4238 4350 50  0001 C CNN
 F 3 "~" H 4200 4500 50  0001 C CNN
 	1    4200 4500
@@ -1109,7 +1087,7 @@ L Device:C C6
 U 1 1 5F493C5C
 P 5650 1000
 F 0 "C6" H 5765 1046 50  0000 L CNN
-F 1 "C" H 5765 955 50  0000 L CNN
+F 1 "10p" H 5765 955 50  0000 L CNN
 F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5688 850 50  0001 C CNN
 F 3 "~" H 5650 1000 50  0001 C CNN
 	1    5650 1000
@@ -1120,7 +1098,7 @@ L Device:C C7
 U 1 1 5F4941BB
 P 5650 1600
 F 0 "C7" H 5765 1646 50  0000 L CNN
-F 1 "C" H 5765 1555 50  0000 L CNN
+F 1 "10p" H 5765 1555 50  0000 L CNN
 F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5688 1450 50  0001 C CNN
 F 3 "~" H 5650 1600 50  0001 C CNN
 	1    5650 1600
@@ -1159,7 +1137,7 @@ L Device:C C5
 U 1 1 5F4A677A
 P 6350 1600
 F 0 "C5" H 6465 1646 50  0000 L CNN
-F 1 "C" H 6465 1555 50  0000 L CNN
+F 1 "100n" H 6465 1555 50  0000 L CNN
 F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6388 1450 50  0001 C CNN
 F 3 "~" H 6350 1600 50  0001 C CNN
 	1    6350 1600
@@ -1193,8 +1171,6 @@ F 3 "~" H 10500 5900 50  0001 C CNN
 	1    10500 5900
 	1    0    0    -1  
 $EndComp
-Text Label 10300 5800 2    50   ~ 0
-dac2_select
 Text Label 10300 5900 2    50   ~ 0
 sck
 Text Label 10300 6000 2    50   ~ 0
@@ -1368,7 +1344,7 @@ Text Label 7700 3700 0    50   ~ 0
 rx
 Text Label 7700 3800 0    50   ~ 0
 tx
-Text Label 8650 4300 2    50   ~ 0
+Text Label 8350 4300 2    50   ~ 0
 tx
 Text Label 8650 4400 2    50   ~ 0
 rx
@@ -1469,7 +1445,7 @@ L Device:C C102
 U 1 1 5FBB277C
 P 5000 5300
 F 0 "C102" H 5115 5346 50  0000 L CNN
-F 1 "C" H 5115 5255 50  0000 L CNN
+F 1 "100n" H 5115 5255 50  0000 L CNN
 F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5038 5150 50  0001 C CNN
 F 3 "~" H 5000 5300 50  0001 C CNN
 	1    5000 5300
@@ -1502,7 +1478,7 @@ L Device:C C101
 U 1 1 5FBB279A
 P 4550 5300
 F 0 "C101" H 4665 5346 50  0000 L CNN
-F 1 "C" H 4665 5255 50  0000 L CNN
+F 1 "100n" H 4665 5255 50  0000 L CNN
 F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4588 5150 50  0001 C CNN
 F 3 "~" H 4550 5300 50  0001 C CNN
 	1    4550 5300
@@ -1535,7 +1511,7 @@ L Device:C C104
 U 1 1 5FBB50B9
 P 5900 5300
 F 0 "C104" H 6015 5346 50  0000 L CNN
-F 1 "C" H 6015 5255 50  0000 L CNN
+F 1 "100n" H 6015 5255 50  0000 L CNN
 F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5938 5150 50  0001 C CNN
 F 3 "~" H 5900 5300 50  0001 C CNN
 	1    5900 5300
@@ -1568,7 +1544,7 @@ L Device:C C103
 U 1 1 5FBB50D7
 P 5450 5300
 F 0 "C103" H 5565 5346 50  0000 L CNN
-F 1 "C" H 5565 5255 50  0000 L CNN
+F 1 "100n" H 5565 5255 50  0000 L CNN
 F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5488 5150 50  0001 C CNN
 F 3 "~" H 5450 5300 50  0001 C CNN
 	1    5450 5300
@@ -1601,7 +1577,7 @@ L Device:C C106
 U 1 1 5FBEE5EA
 P 6050 2750
 F 0 "C106" H 6165 2796 50  0000 L CNN
-F 1 "C" H 6165 2705 50  0000 L CNN
+F 1 "100n" H 6165 2705 50  0000 L CNN
 F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6088 2600 50  0001 C CNN
 F 3 "~" H 6050 2750 50  0001 C CNN
 	1    6050 2750
@@ -1634,7 +1610,7 @@ L Device:C C105
 U 1 1 5FBEE608
 P 5600 2750
 F 0 "C105" H 5715 2796 50  0000 L CNN
-F 1 "C" H 5715 2705 50  0000 L CNN
+F 1 "100n" H 5715 2705 50  0000 L CNN
 F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5638 2600 50  0001 C CNN
 F 3 "~" H 5600 2750 50  0001 C CNN
 	1    5600 2750
@@ -1693,17 +1669,6 @@ F 1 "GND" V 2305 5422 50  0000 R CNN
 F 2 "" H 2300 5550 50  0001 C CNN
 F 3 "" H 2300 5550 50  0001 C CNN
 	1    2300 5550
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0149
-U 1 1 5FC0AFEE
-P 2300 5950
-F 0 "#PWR0149" H 2300 5700 50  0001 C CNN
-F 1 "GND" V 2305 5822 50  0000 R CNN
-F 2 "" H 2300 5950 50  0001 C CNN
-F 3 "" H 2300 5950 50  0001 C CNN
-	1    2300 5950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1828,5 +1793,94 @@ F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 1700 7550 50  0001 C CNN
 F 3 "" H 1700 7550 50  0001 C CNN
 	1    1700 7550
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R103
+U 1 1 5FBA480A
+P 2150 5650
+F 0 "R103" V 2100 5450 50  0000 C CNN
+F 1 "220" V 2150 5650 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2080 5650 50  0001 C CNN
+F 3 "~" H 2150 5650 50  0001 C CNN
+	1    2150 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R104
+U 1 1 5FBA5994
+P 2150 5750
+F 0 "R104" V 2100 5550 50  0000 C CNN
+F 1 "220" V 2150 5750 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2080 5750 50  0001 C CNN
+F 3 "~" H 2150 5750 50  0001 C CNN
+	1    2150 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R105
+U 1 1 5FBA5F97
+P 2150 5850
+F 0 "R105" V 2100 5650 50  0000 C CNN
+F 1 "220" V 2150 5850 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2080 5850 50  0001 C CNN
+F 3 "~" H 2150 5850 50  0001 C CNN
+	1    2150 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 5850 1800 5850
+Wire Wire Line
+	2000 5750 1800 5750
+Wire Wire Line
+	2000 5650 1800 5650
+$Comp
+L Device:R R106
+U 1 1 5FBAA5CD
+P 2150 5950
+F 0 "R106" V 2100 5750 50  0000 C CNN
+F 1 "220" V 2150 5950 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2080 5950 50  0001 C CNN
+F 3 "~" H 2150 5950 50  0001 C CNN
+	1    2150 5950
+	0    1    1    0   
+$EndComp
+Text Label 1800 5950 2    50   ~ 0
+preview_bypass
+Wire Wire Line
+	2000 5950 1800 5950
+$Comp
+L Device:R R102
+U 1 1 5FBAD4DF
+P 8500 4300
+F 0 "R102" V 8450 4100 50  0000 C CNN
+F 1 "220" V 8500 4300 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8430 4300 50  0001 C CNN
+F 3 "~" H 8500 4300 50  0001 C CNN
+	1    8500 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F440B28
+P 4550 4500
+F 0 "C2" H 4665 4546 50  0000 L CNN
+F 1 "100n" H 4665 4455 50  0000 L CNN
+F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4588 4350 50  0001 C CNN
+F 3 "~" H 4550 4500 50  0001 C CNN
+	1    4550 4500
+	1    0    0    -1  
+$EndComp
+Text Label 10300 5800 2    50   ~ 0
+dac2_select
+$Comp
+L Device:R R1
+U 1 1 5F43134E
+P 7850 2300
+F 0 "R1" V 7950 2300 50  0000 C CNN
+F 1 "220" V 7850 2300 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7780 2300 50  0001 C CNN
+F 3 "~" H 7850 2300 50  0001 C CNN
+	1    7850 2300
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
