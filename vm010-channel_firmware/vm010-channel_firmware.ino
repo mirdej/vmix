@@ -2,18 +2,14 @@
 //
 //	vm010  Firmware		
 //						
-//		Target MCU: ATMEGA88
+//		Target MCU: ATMEGA1284
 //		Copyright:	2020 Michael Egger, me@anyma.ch
 //		License: 	This is FREE software (as in free speech, not necessarily free beer)
 //					published under gnu GPL v.3
 //
 
-// add || defined(__AVR_ATmega88__) to line 198 of fasled/platforms/avr/fastpin_avr.h
-
 // ATTENTION the MAX5741 needs analog supply +5V which is seperate from VCC
-// As it is connected to SPI programming the Atmega88 will fail if the MAX is not powered.
-
-
+// As it is connected to SPI programming the Atmega will fail if the MAX is not powered.
 
 //----------------------------------------------------------------------------------------
 
@@ -44,8 +40,6 @@
     
 */
 
-
-
 #include <Timer.h>
 #include <SPI.h>
 
@@ -53,43 +47,60 @@
 
 
 const char	NUM_PIXELS				= 9;
-const char	NUM_BTNS				= 2;
+const char	NUM_BTNS				= 9;
 const char  NUM_POTS                = 5;
-const int  MAX_REC_SLOTS           = 100; // 25 frames/values per second -> max 4 second loop
+const int   MAX_REC_SLOTS           = 1000; // 25 frames/values per second -> max 40 second loop
 
-#define PIN_PIXELS      7
-#define PIN_EDGES       8
-#define PIN_COMPA       9
-#define PIN_INVERT    17
+#define PIN_LED_BUILTIN         0
+#define PIN_COMPA_OUT           1
+#define PIN_PREVIEW_OUT         2
+#define PIN_EDGES_OUT           3
+#define PIN_PIXELS              4
+#define PIN_MOSI                5
+#define PIN_MISO                6
+#define PIN_SCK                 7
 
-#define PIN_PREVIEW     10
-#define PIN_DAC0_CS     0
-#define PIN_DAC1_CS     1
-#define PIN_BTN_LATCH   4
-#define PIN_SCK 13
-#define PIN_MISO 12
-#define PIN_MOSI 11
+#define PIN_RX                  8
+#define PIN_TX                  9
+#define PIN_VSYNC               10
+#define PIN_BEAT                11
+#define PIN_BTN_EDGES           12
+#define PIN_BTN_BUS_C           13
+#define PIN_BTN_BUS_B           14
+#define PIN_BTN_BUS_A           15
 
-#define PIN_VSYNC 2
-#define PIN_BEAT 3
+#define PIN_SCL                 16
+#define PIN_SDA                 17
+#define PIN_ODDEVEN             18
+#define PIN_BTN_COMPA           19
+#define PIN_BTN_INVERT          20
+#define PIN_BTN_DRYWET          21
+#define PIN_BTN_REC             22
+#define PIN_BTN_STOP            23
+
+#define PIN_AD_SCALE            A0
+#define PIN_AD_MIX              A1
+#define PIN_AD_AUX              A2
+#define PIN_INVERT_OUT          27
+#define PIN_DAC0_CS             28
+#define PIN_DAC1_CS             29
+#define PIN_AD_COMPA            A6
+#define PIN_AD_BIAS             A7
 
 
-
-const char PIN_POT[] = {A6, A7, A0, A1, A2};
-const char PIN_BTN[NUM_BTNS] = {5,6};
-
+const char PIN_POT[NUM_POTS] = {PIN_AD_COMPA, PIN_AD_SCALE, PIN_AD_BIAS, PIN_AD_AUX, PIN_AD_MIX};
+const char PIN_BTN[NUM_BTNS] = {PIN_BTN_REC, PIN_BTN_STOP, PIN_BTN_BUS_C, PIN_BTN_BUS_B, PIN_BTN_BUS_A, PIN_BTN_DRYWET, PIN_BTN_INVERT, PIN_BTN_COMPA, PIN_BTN_EDGES };
 
 
-#define LOOP_STATE_EMPTY 0
-#define LOOP_STATE_REC  1
-#define LOOP_STATE_DUB  2
+#define LOOP_STATE_EMPTY    0
+#define LOOP_STATE_REC      1
+#define LOOP_STATE_DUB      2
 #define LOOP_STATE_PLAY     3
-#define LOOP_STATE_STOPPED 4
+#define LOOP_STATE_STOPPED  4
 
 
 Timer t;
 CRGB		pixels[NUM_PIXELS];
-char        old_state[NUM_BTNS];
 char        loop_state;
 char        pfl_state;
 char        inverter_on;
@@ -99,7 +110,7 @@ char        bus_a_on,bus_b_on,bus_c_on;
 
 int         pot_value[NUM_POTS];
 int         out_value[NUM_POTS];
-char         rec_buffer[NUM_POTS][MAX_REC_SLOTS];
+int         rec_buffer[NUM_POTS][MAX_REC_SLOTS];
 int         rec_idx, playback_idx;
 int         rec_length = MAX_REC_SLOTS;
 
@@ -192,10 +203,10 @@ void update_leds(){
     if (compa_on) {pixels[7] = CRGB::Yellow;}
     if (edges_on) {pixels[8] = CRGB::Yellow;}
     
-    digitalWrite(PIN_INVERT, inverter_on);
-    digitalWrite(PIN_COMPA, compa_on);
-    digitalWrite(PIN_EDGES, edges_on);
-    digitalWrite(PIN_PREVIEW, ~pfl_state);
+    digitalWrite(PIN_INVERT_OUT, inverter_on);
+    digitalWrite(PIN_COMPA_OUT, compa_on);
+    digitalWrite(PIN_EDGES_OUT, edges_on);
+    digitalWrite(PIN_PREVIEW_OUT, ~pfl_state);
 }
 
 //----------------------------------------------------------------------------------------
@@ -203,14 +214,14 @@ void update_leds(){
 
 void check_btns() {
     char state;
-    static char old_buttons;
-    char buttons_raw;
+    static char old_state[NUM_BTNS];
     
     char leds_changed = 0;
  	for (int i = 0; i < NUM_BTNS; i++) {
  	    state = digitalRead(PIN_BTN[i]);
  	    
  	    if (state != old_state[i]) {
+     	    leds_changed = 1;
  	        old_state[i] = state;
  	        if (!state) {
  	            switch (i) {
@@ -220,45 +231,26 @@ void check_btns() {
      	           case 1:
      	                handle_stop_click();
      	                break;
-     	        }
-     	       leds_changed = 1;
-            }
-        }
-     }   
-        
-    SPI.beginTransaction(SPISettings(80000, MSBFIRST, SPI_MODE1));
-    digitalWrite(PIN_BTN_LATCH,LOW);
-    delay(1);
-    digitalWrite(PIN_BTN_LATCH,HIGH);
-    buttons_raw = SPI.transfer(0x00);
-    SPI.endTransaction();
-
-    for (int i = 0; i < 8; i++) {
-        if (~buttons_raw & (1 << i)) {
-            if (old_buttons & (1 << i)) {
-                leds_changed = 1;
-                char bit = i -1 ;
-                switch (bit) {
-                    case 0:
-     	                pfl_state = ~pfl_state;
-                        break;
-                    case 1:
-     	                inverter_on = ~inverter_on;
-                        break;
-                    case 2:
-     	                compa_on = ~compa_on;
-     	                break;
-     	           case 3:
-     	                edges_on = ~edges_on;
-     	                break;
-     	           case 4:
+     	           case 2:
      	                bus_c_on = ~bus_c_on;
      	                break;
-     	           case 5:
+     	           case 3:
      	                bus_b_on = ~bus_b_on;
      	                break;
-     	           case 6:
+     	           case 4:
      	                bus_a_on = ~bus_a_on;
+     	                break;                    
+                    case 5:
+     	                pfl_state = ~pfl_state;
+                        break;
+                    case 6:
+     	                inverter_on = ~inverter_on;
+                        break;
+                    case 7:
+     	                compa_on = ~compa_on;
+     	                break;
+     	           case 8:
+     	                edges_on = ~edges_on;
      	                break;
      	           default:
      	                break;
@@ -267,7 +259,6 @@ void check_btns() {
         }
     }
     
-    old_buttons = buttons_raw; 	            
     if (leds_changed) update_leds();
 }
 
@@ -275,7 +266,7 @@ void check_btns() {
 //----------------------------------------------------------------------------------------
 //																				AD
 
-void check_ad() {
+void check_ad(void *context) {
     for (int i = 0; i < NUM_POTS; i++) {
         pot_value[i] = (3 * pot_value[i] + analogRead(PIN_POT[i])) / 4;
     }
@@ -412,13 +403,13 @@ void check_sync(){
             if (field) {
                 FastLED.show();
                 do_update_ad_out = true;
-                t.after(4,check_ad);
+                t.after(4,check_ad, (void*)0);
             } else {
                 set_dac();
                 check_btns();
                 update_leds();
                 do_update_ad_out = false;
-                t.after(2,check_ad);
+                t.after(2,check_ad, (void*)0);
             }
         }    
         last_vsync = vsync_timestamp;
@@ -450,13 +441,12 @@ void setup() {
   	
   	SPI.begin();
 
-  	pinMode(PIN_BTN_LATCH,OUTPUT);
   	pinMode(PIN_DAC0_CS,OUTPUT);
   	pinMode(PIN_DAC1_CS,OUTPUT);
-  	pinMode(PIN_INVERT, OUTPUT);
-    pinMode(PIN_COMPA, OUTPUT);
-    pinMode(PIN_EDGES, OUTPUT);
-    pinMode(PIN_PREVIEW, OUTPUT);
+  	pinMode(PIN_INVERT_OUT, OUTPUT);
+    pinMode(PIN_COMPA_OUT, OUTPUT);
+    pinMode(PIN_EDGES_OUT, OUTPUT);
+    pinMode(PIN_PREVIEW_OUT, OUTPUT);
 
 	power_on_dacs();
   	
