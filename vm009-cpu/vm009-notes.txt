@@ -1,0 +1,24 @@
+Nov 18 2020
+
+- cut out active video portion of genlock signal to prevent high freq spillover
+- sync/oe inputs need level shifting
+- built decent analog audio envelope follower for audio sync input
+
+
+Nov 29
+I2C Protocol
+- Master->General Call: Start / Stop Automation	-> One byte, 0xf0 = Start, 0xf1 = Stop
+- Master->General Call: Store / Recall Preset	-> Two bytes: 0xb0, 0x.. Store preset, 0xb1 0x.. Recall
+- Master->Slave Write: MIDI -> Channel Settings -> Six bytes: Main, Aux, Bias, Scale, Compa, Buttons
+
+- Master->Slave: Request (6 bytes)
+ -> Slave->Master: Channel Settings
+
+
+
+Slave: Set i2c address using buttons- store in eeprom
+press Rec and stop buttons for 2 secs -> address set mode
+press a/b/c/dry binary address
+press rec -> save
+or press stop -> cancel
+
