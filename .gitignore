@@ -11,3 +11,4 @@ kicad/**/*-F_Cu.*
 *-bak
 *.ps
 bom/**
+*.dxf
