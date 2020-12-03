@@ -1,4 +1,4 @@
-17902098409834510
+17900491937080510
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75319,13 +75319,6 @@ ESP32_Devboard
 0
 30
 30
-anyma_footprints
-ITR9608-F
-Gabellichtschranke
-
-0
-4
-4
 anyma_footprints
 Jack_3.5mm_SMD
 PJ311 6pin SMD 3.5mm stereo headphones jack.
