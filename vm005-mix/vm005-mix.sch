@@ -259,17 +259,6 @@ Text Label 7850 3750 2    50   ~ 0
 input
 Text Label 8350 3650 0    50   ~ 0
 out_d
-$Comp
-L Connector:DB15_Female_HighDensity J5
-U 1 1 5FA9A304
-P 5600 5750
-F 0 "J5" H 5600 6617 50  0000 C CNN
-F 1 "DB15_Female_HighDensity" H 5600 6526 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" H 4650 6150 50  0001 C CNN
-F 3 " ~" H 4650 6150 50  0001 C CNN
-	1    5600 5750
-	1    0    0    -1  
-$EndComp
 Text Label 5300 5350 2    50   ~ 0
 input
 Text Label 5300 5550 2    50   ~ 0
@@ -529,7 +518,7 @@ F 1 "TestPoint" H 4508 2477 50  0000 L CNN
 F 2 "synkie_footprints:Solderpad_1mm" H 4650 2450 50  0001 C CNN
 F 3 "~" H 4650 2450 50  0001 C CNN
 	1    4450 2450
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0182
@@ -540,6 +529,83 @@ F 1 "GND" V 4455 2322 50  0000 R CNN
 F 2 "" H 4450 2450 50  0001 C CNN
 F 3 "" H 4450 2450 50  0001 C CNN
 	1    4450 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5FC95E58
+P 4750 2650
+F 0 "TP2" H 4808 2768 50  0000 L CNN
+F 1 "TestPoint" H 4808 2677 50  0000 L CNN
+F 2 "synkie_footprints:Solderpad_1mm" H 4950 2650 50  0001 C CNN
+F 3 "~" H 4950 2650 50  0001 C CNN
+	1    4750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5FC97AB6
+P 4750 2250
+F 0 "TP1" H 4808 2368 50  0000 L CNN
+F 1 "TestPoint" H 4808 2277 50  0000 L CNN
+F 2 "synkie_footprints:Solderpad_1mm" H 4950 2250 50  0001 C CNN
+F 3 "~" H 4950 2250 50  0001 C CNN
+	1    4750 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR0183
+U 1 1 5FC98216
+P 4750 2250
+F 0 "#PWR0183" H 4750 2100 50  0001 C CNN
+F 1 "+5V" H 4750 2400 50  0000 C CNN
+F 2 "" H 4750 2250 50  0001 C CNN
+F 3 "" H 4750 2250 50  0001 C CNN
+	1    4750 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:-5V #PWR0184
+U 1 1 5FC98A9C
+P 4750 2650
+F 0 "#PWR0184" H 4750 2750 50  0001 C CNN
+F 1 "-5V" H 4750 2800 50  0000 C CNN
+F 2 "" H 4750 2650 50  0001 C CNN
+F 3 "" H 4750 2650 50  0001 C CNN
+	1    4750 2650
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:DB15_Female_HighDensity_MountingHoles J5
+U 1 1 5FCA2DB0
+P 5600 5750
+F 0 "J5" H 5600 6617 50  0000 C CNN
+F 1 "DB15_Female_HighDensity_MountingHoles" H 5600 6526 50  0000 C CNN
+F 2 "synkie_footprints:DSUB-15-FCI" H 4650 6150 50  0001 C CNN
+F 3 " ~" H 4650 6150 50  0001 C CNN
+	1    5600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR0185
+U 1 1 5FCA7485
+P 5600 6450
+F 0 "#PWR0185" H 5600 6200 50  0001 C CNN
+F 1 "GND" H 5605 6277 50  0000 C CNN
+F 2 "" H 5600 6450 50  0001 C CNN
+F 3 "" H 5600 6450 50  0001 C CNN
+	1    5600 6450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Anyma_Library:LOGO G1
+U 1 1 5FCA80BB
+P 4900 7000
+F 0 "G1" H 4978 7121 50  0000 L CNN
+F 1 "LOGO" H 4978 7030 50  0000 L CNN
+F 2 "anyma_footprints:logo_anyma" H 4900 7000 50  0001 C CNN
+F 3 "" H 4900 7000 50  0001 C CNN
+	1    4900 7000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

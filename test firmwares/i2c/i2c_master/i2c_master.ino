@@ -45,7 +45,7 @@ void send_settings(){
 void setup () {
     Serial.begin(115800);
     Wire.begin ();    
-    TWBR = 12;  // 400 kHz (maximum)
+//    TWBR = 12;  // 400 kHz (maximum)
 }
 
 //========================================================================================
@@ -57,8 +57,8 @@ void loop () {
     send_store();
     delay(2000);
     send_settings();
-    delay()
-    int bytes_received = (Wire.requestFrom (SLAVE_ADDRESS, 6);
+    delay(2000);
+    int bytes_received = (Wire.requestFrom (SLAVE_ADDRESS, 6));
     if (bytes_received == 6)  {
         volatile byte buf [32];
 
@@ -66,7 +66,7 @@ void loop () {
           buf [i] = Wire.read ();
         }
 
-        Serial.println("Received:")
+        Serial.println("Received:");
         for (byte i = 0; i < 6; i++) {
           Serial.print(buf [i], DEC);
           Serial.print(" ");
@@ -74,9 +74,9 @@ void loop () {
         
         
     } else {
-        Serial.print("Error on requestFrom, received ")
-        Serial.prin(bytes_received);
-        Serial.print(" Bytes")        
+        Serial.print("Error on requestFrom, received ");
+        Serial.print(bytes_received);
+        Serial.print(" Bytes");        
     }
     
 } 
