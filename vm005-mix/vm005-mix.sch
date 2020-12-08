@@ -510,28 +510,6 @@ F4 "Input" I L 7850 3750 50
 F5 "Output" O R 8350 3650 50 
 $EndSheet
 $Comp
-L Connector:TestPoint TP101
-U 1 1 5FB05585
-P 4450 2450
-F 0 "TP101" H 4508 2568 50  0000 L CNN
-F 1 "TestPoint" H 4508 2477 50  0000 L CNN
-F 2 "synkie_footprints:Solderpad_1mm" H 4650 2450 50  0001 C CNN
-F 3 "~" H 4650 2450 50  0001 C CNN
-	1    4450 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0182
-U 1 1 5FB05BE6
-P 4450 2450
-F 0 "#PWR0182" H 4450 2200 50  0001 C CNN
-F 1 "GND" V 4455 2322 50  0000 R CNN
-F 2 "" H 4450 2450 50  0001 C CNN
-F 3 "" H 4450 2450 50  0001 C CNN
-	1    4450 2450
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:TestPoint TP2
 U 1 1 5FC95E58
 P 4750 2650
@@ -581,7 +559,7 @@ U 1 1 5FCA2DB0
 P 5600 5750
 F 0 "J5" H 5600 6617 50  0000 C CNN
 F 1 "DB15_Female_HighDensity_MountingHoles" H 5600 6526 50  0000 C CNN
-F 2 "synkie_footprints:DSUB-15-FCI" H 4650 6150 50  0001 C CNN
+F 2 "synkie_footprints:DSUB-15-HD_Female_FCI" H 4650 6150 50  0001 C CNN
 F 3 " ~" H 4650 6150 50  0001 C CNN
 	1    5600 5750
 	1    0    0    -1  
@@ -606,6 +584,50 @@ F 1 "LOGO" H 4978 7030 50  0000 L CNN
 F 2 "anyma_footprints:logo_anyma" H 4900 7000 50  0001 C CNN
 F 3 "" H 4900 7000 50  0001 C CNN
 	1    4900 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FD1AE54
+P 9800 5250
+F 0 "H1" H 9900 5299 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9900 5208 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad" H 9800 5250 50  0001 C CNN
+F 3 "~" H 9800 5250 50  0001 C CNN
+	1    9800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0187
+U 1 1 5FD1AE5E
+P 9800 5350
+F 0 "#PWR0187" H 9800 5100 50  0001 C CNN
+F 1 "GND" H 9805 5177 50  0000 C CNN
+F 2 "" H 9800 5350 50  0001 C CNN
+F 3 "" H 9800 5350 50  0001 C CNN
+	1    9800 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5FD1BCB2
+P 9800 5900
+F 0 "H3" H 9900 5949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9900 5858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad" H 9800 5900 50  0001 C CNN
+F 3 "~" H 9800 5900 50  0001 C CNN
+	1    9800 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0189
+U 1 1 5FD1BCBC
+P 9800 6000
+F 0 "#PWR0189" H 9800 5750 50  0001 C CNN
+F 1 "GND" H 9805 5827 50  0000 C CNN
+F 2 "" H 9800 6000 50  0001 C CNN
+F 3 "" H 9800 6000 50  0001 C CNN
+	1    9800 6000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
