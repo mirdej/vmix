@@ -159,7 +159,7 @@ U 1 1 5FBE3FA4
 P 5600 1900
 F 0 "C207" H 5715 1946 50  0000 L CNN
 F 1 "100p" H 5715 1855 50  0000 L CNN
-F 2 "synkie_footprints:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5638 1750 50  0001 C CNN
+F 2 "synkie_footprints:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5638 1750 50  0001 C CNN
 F 3 "~" H 5600 1900 50  0001 C CNN
 	1    5600 1900
 	1    0    0    -1  

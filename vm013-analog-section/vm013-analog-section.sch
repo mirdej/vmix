@@ -98,7 +98,7 @@ compa_bypass
 Text GLabel 1300 3600 2    50   Input ~ 0
 inverter_bypass
 Text GLabel 1300 3700 2    50   Input ~ 0
-drywet
+dry~wet~
 Text GLabel 1300 3800 2    50   Input ~ 0
 bias_cv
 $Sheet
@@ -193,7 +193,7 @@ U 1 1 5DCAC6DA
 P 1850 2100
 F 0 "FB101" V 1576 2100 50  0000 C CNN
 F 1 "330u" V 1667 2100 50  0000 C CNN
-F 2 "synkie_footprints:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1780 2100 50  0001 C CNN
+F 2 "synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1780 2100 50  0001 C CNN
 F 3 "~" H 1850 2100 50  0001 C CNN
 	1    1850 2100
 	0    -1   1    0   
@@ -204,7 +204,7 @@ U 1 1 5DCAD10D
 P 1850 2300
 F 0 "FB102" V 2000 2300 50  0000 C CNN
 F 1 "330u" V 2100 2300 50  0000 C CNN
-F 2 "synkie_footprints:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1780 2300 50  0001 C CNN
+F 2 "synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1780 2300 50  0001 C CNN
 F 3 "~" H 1850 2300 50  0001 C CNN
 	1    1850 2300
 	0    -1   1    0   
@@ -622,4 +622,8 @@ F 3 "~" H 1200 2100 50  0001 C CNN
 	1    1200 2100
 	0    1    1    0   
 $EndComp
+Text Label 4650 2100 0    50   ~ 0
+clamp_to_eq
+Text Label 5600 2250 0    50   ~ 0
+eq_to_scabi
 $EndSCHEMATC

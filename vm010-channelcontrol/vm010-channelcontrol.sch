@@ -1209,7 +1209,7 @@ U 1 1 5F4D31A6
 P 2250 1050
 F 0 "H1" H 2350 1099 50  0000 L CNN
 F 1 "MountingHole_Pad" H 2350 1008 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 2250 1050 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad" H 2250 1050 50  0001 C CNN
 F 3 "~" H 2250 1050 50  0001 C CNN
 	1    2250 1050
 	1    0    0    -1  
@@ -1231,7 +1231,7 @@ U 1 1 5F4D3971
 P 2250 1650
 F 0 "H2" H 2350 1699 50  0000 L CNN
 F 1 "MountingHole_Pad" H 2350 1608 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 2250 1650 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad" H 2250 1650 50  0001 C CNN
 F 3 "~" H 2250 1650 50  0001 C CNN
 	1    2250 1650
 	1    0    0    -1  
@@ -1253,7 +1253,7 @@ U 1 1 5F4D404B
 P 2250 2250
 F 0 "H3" H 2350 2299 50  0000 L CNN
 F 1 "MountingHole_Pad" H 2350 2208 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 2250 2250 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad" H 2250 2250 50  0001 C CNN
 F 3 "~" H 2250 2250 50  0001 C CNN
 	1    2250 2250
 	1    0    0    -1  
@@ -1882,5 +1882,27 @@ F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7780 2300 
 F 3 "~" H 7850 2300 50  0001 C CNN
 	1    7850 2300
 	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5FD45ECA
+P 1800 1700
+F 0 "H5" H 1900 1749 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1900 1658 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad" H 1800 1700 50  0001 C CNN
+F 3 "~" H 1800 1700 50  0001 C CNN
+	1    1800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5FD45ED4
+P 1800 1800
+F 0 "#PWR0153" H 1800 1550 50  0001 C CNN
+F 1 "GND" H 1805 1627 50  0000 C CNN
+F 2 "" H 1800 1800 50  0001 C CNN
+F 3 "" H 1800 1800 50  0001 C CNN
+	1    1800 1800
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

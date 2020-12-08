@@ -7,10 +7,6 @@
 //		License: 	This is FREE software (as in free speech, not necessarily free beer)
 //					published under gnu GPL v.3
 //
-
-// ATTENTION the MAX5741 needs analog supply +5V which is seperate from VCC
-// As it is connected to SPI programming the Atmega will fail if the MAX is not powered.
-
 //----------------------------------------------------------------------------------------
 
 /*
@@ -89,7 +85,8 @@ const int   MAX_REC_SLOTS           = 1000; // 25 frames/values per second -> ma
 
 const int REC_THRESH = 4;
 
-const char PIN_POT[NUM_POTS] = {PIN_AD_COMPA, PIN_AD_SCALE, PIN_AD_BIAS, PIN_AD_AUX, PIN_AD_MIX};
+// scalke bias pots are inversed on board as of dec2020
+const char PIN_POT[NUM_POTS] = {PIN_AD_BIAS, PIN_AD_COMPA,  PIN_AD_SCALE, PIN_AD_AUX, PIN_AD_MIX};
 const char PIN_BTN[NUM_BTNS] = {PIN_BTN_REC, PIN_BTN_STOP, PIN_BTN_BUS_C, PIN_BTN_BUS_B, PIN_BTN_BUS_A, PIN_BTN_DRYWET, PIN_BTN_INVERT, PIN_BTN_COMPA, PIN_BTN_EDGES };
 
 
@@ -140,8 +137,11 @@ volatile int    beat_interrupt_flag;
 //																				AD
 
 void check_ad(void *context) {
+    int temp;
     for (int i = 0; i < NUM_POTS; i++) {
-        pot_value[i] = (3 * pot_value[i] + analogRead(PIN_POT[i])) / 4;
+        temp = analogRead(PIN_POT[i]);
+        if (i == 4) temp = 1023 - temp;
+        pot_value[i] = (3 * pot_value[i] + temp) / 4;
     }
     
     if (digitalRead(PIN_ODDEVEN)) {                 // only on 1 field
@@ -187,38 +187,30 @@ void check_ad(void *context) {
     }
 }
 
+void dac_send(int dac, int channel, int send_val) {
+    int dac_pin;
+    if (dac == 0) dac_pin = PIN_DAC0_CS; else dac_pin = PIN_DAC1_CS;
 
-void set_dac() {
-    int sendval;
+    digitalWrite(dac_pin,LOW);
+    send_val = send_val << 2;
+    send_val &= 1023 << 2;
+    send_val |= channel << 12;
+    SPI.transfer16(send_val);
+    digitalWrite(dac_pin,HIGH);
+}
 
+void set_dacs() {
 	SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE2));
+	
     for (int i = 0; i < 4; i++) 	{
-        digitalWrite(PIN_DAC0_CS,LOW);
-        if (i < 3) {
-            sendval = out_value[i] << 2;
-        } else {
-            sendval = (1023 - out_value[i]) << 2;
-        }
-        sendval &= 1023 << 2;
-        sendval |= i << 12;
-
-        SPI.transfer16(sendval);
-        digitalWrite(PIN_DAC0_CS,HIGH);
+        dac_send(0,i,out_value[i]);
 	}
 
-  for (int i = 0; i < 4; i++) 	{
-        digitalWrite(PIN_DAC1_CS,LOW);
-        if (i < 3) {
-            sendval = (1023 -out_value[3]) << 2;    // Fader wrong way round
-        } else {
-            sendval =  out_value[4] << 2;           // Aux pot
-        }
-        sendval &= 1023 << 2;
-        sendval |= i << 12;
+    if (bus_a_on) { dac_send (1, 0, out_value[4]);      } else { dac_send (1, 0, 0); }
+    if (bus_b_on) { dac_send (1, 1, out_value[4]);      } else { dac_send (1, 1, 0); }
+    if (bus_c_on) { dac_send (1, 2, out_value[4]);      } else { dac_send (1, 2, 0); }
+    dac_send(1, 3, out_value[3]);        
 
-        SPI.transfer16(sendval);
-        digitalWrite(PIN_DAC1_CS,HIGH);
-	}
     SPI.endTransaction();
 }
 
@@ -343,7 +335,7 @@ void check_sync(){
             if (field) {
                 FastLED.show();
             } else {
-                set_dac();
+                set_dacs();
                 check_btns();
                 update_leds();
             }
@@ -588,7 +580,7 @@ void check_btns() {
 
 void setup() {
     FastLED.addLeds<SK6812, PIN_PIXELS, GRB>(pixels, NUM_PIXELS);
- //   FastLED.setBrightness(50);
+    FastLED.setBrightness(20);
 
     for (int hue = 0; hue < 360; hue++) {
     	fill_rainbow( pixels, NUM_PIXELS, hue, 7);
@@ -625,5 +617,5 @@ void setup() {
 void loop() {
     t.update();
     check_sync();
-    check_beat();
+   // check_beat();
 }

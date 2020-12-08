@@ -113,12 +113,12 @@ Wire Wire Line
 $Comp
 L synkie_symbols:Opamp_Dual_Generic U401
 U 2 1 5FEA7A45
-P 3500 3300
-F 0 "U401" H 3500 3667 50  0000 C CNN
-F 1 "LMH6643" H 3500 3576 50  0000 C CNN
-F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 3500 3300 50  0001 C CNN
-F 3 "~" H 3500 3300 50  0001 C CNN
-	2    3500 3300
+P 2050 4100
+F 0 "U401" H 2050 4467 50  0000 C CNN
+F 1 "LMH6643" H 2050 4376 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 2050 4100 50  0001 C CNN
+F 3 "~" H 2050 4100 50  0001 C CNN
+	2    2050 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -200,17 +200,6 @@ F 3 "~" H 8750 3450 50  0001 C CNN
 $EndComp
 Connection ~ 8600 3450
 $Comp
-L synkie_symbols:GND #PWR0405
-U 1 1 5FEA7A83
-P 4850 2800
-F 0 "#PWR0405" H 4850 2550 50  0001 C CNN
-F 1 "GND" H 4855 2627 50  0000 C CNN
-F 2 "" H 4850 2800 50  0001 C CNN
-F 3 "" H 4850 2800 50  0001 C CNN
-	1    4850 2800
-	0    1    1    0   
-$EndComp
-$Comp
 L synkie_symbols:GND #PWR0408
 U 1 1 5FEA7A8B
 P 4850 3000
@@ -224,23 +213,23 @@ $EndComp
 $Comp
 L synkie_symbols:R R408
 U 1 1 5FEA7A92
-P 4200 3450
-F 0 "R408" V 4407 3450 50  0000 C CNN
-F 1 "560" V 4316 3450 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 3450 50  0001 C CNN
-F 3 "~" H 4200 3450 50  0001 C CNN
-	1    4200 3450
+P 2750 4250
+F 0 "R408" V 2957 4250 50  0000 C CNN
+F 1 "560" V 2866 4250 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2680 4250 50  0001 C CNN
+F 3 "~" H 2750 4250 50  0001 C CNN
+	1    2750 4250
 	-1   0    0    1   
 $EndComp
 $Comp
 L synkie_symbols:GND #PWR0411
 U 1 1 5FEA7A98
-P 4200 3600
-F 0 "#PWR0411" H 4200 3350 50  0001 C CNN
-F 1 "GND" H 4205 3427 50  0000 C CNN
-F 2 "" H 4200 3600 50  0001 C CNN
-F 3 "" H 4200 3600 50  0001 C CNN
-	1    4200 3600
+P 2750 4400
+F 0 "#PWR0411" H 2750 4150 50  0001 C CNN
+F 1 "GND" H 2755 4227 50  0000 C CNN
+F 2 "" H 2750 4400 50  0001 C CNN
+F 3 "" H 2750 4400 50  0001 C CNN
+	1    2750 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -275,13 +264,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 3100 4850 3100
 Wire Wire Line
-	4200 3300 4550 3300
-Wire Wire Line
-	4550 3300 4550 2700
-Wire Wire Line
-	4550 2700 4850 2700
-Connection ~ 4200 3300
-Wire Wire Line
 	2200 2650 2800 2650
 Wire Wire Line
 	5850 2700 6150 2700
@@ -306,11 +288,11 @@ $EndComp
 Wire Wire Line
 	7450 5000 7450 4700
 Wire Wire Line
-	3200 3400 3200 3600
+	1750 4200 1750 4400
 Wire Wire Line
-	3200 3600 3800 3600
+	1750 4400 2350 4400
 Wire Wire Line
-	3800 3600 3800 3300
+	2350 4400 2350 4100
 $Comp
 L synkie_symbols:Opamp_Dual_Generic U403
 U 2 1 5FEA7AFD
@@ -325,12 +307,12 @@ $EndComp
 $Comp
 L synkie_symbols:R R405
 U 1 1 5FEA7B03
-P 3050 3200
-F 0 "R405" V 3257 3200 50  0000 C CNN
-F 1 "75" V 3166 3200 50  0000 C CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2980 3200 50  0001 C CNN
-F 3 "~" H 3050 3200 50  0001 C CNN
-	1    3050 3200
+P 1600 4000
+F 0 "R405" V 1807 4000 50  0000 C CNN
+F 1 "75" V 1716 4000 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1530 4000 50  0001 C CNN
+F 3 "~" H 1600 4000 50  0001 C CNN
+	1    1600 4000
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -414,12 +396,12 @@ Wire Wire Line
 $Comp
 L synkie_symbols:C_Small C402
 U 1 1 5FEA7B48
-P 3950 3300
-F 0 "C402" V 3698 3300 50  0000 C CNN
-F 1 "68p" V 3789 3300 50  0000 C CNN
-F 2 "synkie_footprints:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3988 3150 50  0001 C CNN
-F 3 "~" H 3950 3300 50  0001 C CNN
-	1    3950 3300
+P 2500 4100
+F 0 "C402" V 2248 4100 50  0000 C CNN
+F 1 "68p" V 2339 4100 50  0000 C CNN
+F 2 "synkie_footprints:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2538 3950 50  0001 C CNN
+F 3 "~" H 2500 4100 50  0001 C CNN
+	1    2500 4100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -434,10 +416,10 @@ F 3 "~" H 4300 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4050 3300 4200 3300
+	2600 4100 2750 4100
 Wire Wire Line
-	3850 3300 3800 3300
-Connection ~ 3800 3300
+	2400 4100 2350 4100
+Connection ~ 2350 4100
 Wire Wire Line
 	4450 2750 4400 2750
 Connection ~ 4450 2750
@@ -445,7 +427,7 @@ Wire Wire Line
 	4450 2750 4450 3100
 Wire Wire Line
 	4000 2750 4200 2750
-Text GLabel 2900 3200 0    50   Input ~ 0
+Text GLabel 1450 4000 0    50   Input ~ 0
 genlock
 Wire Wire Line
 	8600 3450 8600 2850
@@ -455,7 +437,7 @@ Text GLabel 8750 2850 2    50   Input ~ 0
 dry
 Text HLabel 8900 3450 2    50   Input ~ 0
 OUTPUT
-Text GLabel 6450 2450 2    50   Input ~ 0
+Text GLabel 2750 4100 2    50   Input ~ 0
 colorburst
 $Comp
 L synkie_symbols:Opamp_Dual_Generic U?
@@ -715,8 +697,6 @@ F 3 "" H 4300 6450 50  0001 C CNN
 $EndComp
 Text GLabel 4850 3600 0    50   Input ~ 0
 hsync
-Text GLabel 4850 3500 0    50   Input ~ 0
-porch
 Text GLabel 4850 3400 0    50   Input ~ 0
 porch
 Text HLabel 1750 2650 0    50   Input ~ 0
@@ -811,4 +791,24 @@ Wire Wire Line
 	7550 3500 7550 4700
 Text HLabel 6200 4600 0    50   Input ~ 0
 INPUT-Siff
+Text GLabel 4850 3500 0    50   Input ~ 0
+dry~wet~
+Text GLabel 6450 2450 2    50   Input ~ 0
+preview_burst
+Text GLabel 4350 2100 0    50   Input ~ 0
+colorburst
+Wire Wire Line
+	4850 2700 4600 2700
+Wire Wire Line
+	4600 2700 4600 1950
+Wire Wire Line
+	4600 1950 4350 1950
+Text GLabel 4350 1950 0    50   Input ~ 0
+delayed_burst
+Wire Wire Line
+	4350 2100 4550 2100
+Wire Wire Line
+	4550 2100 4550 2800
+Wire Wire Line
+	4550 2800 4850 2800
 $EndSCHEMATC

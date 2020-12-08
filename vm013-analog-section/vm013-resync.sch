@@ -174,19 +174,6 @@ F 3 "" H 7650 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L synkie_symbols:GND #PWR?
-U 1 1 5FEF24E1
-P 7150 3850
-AR Path="/5FEF24E1" Ref="#PWR?"  Part="1" 
-AR Path="/5FED65BF/5FEF24E1" Ref="#PWR0509"  Part="1" 
-F 0 "#PWR0509" H 7150 3600 50  0001 C CNN
-F 1 "GND" H 7155 3677 50  0001 C CNN
-F 2 "" H 7150 3850 50  0001 C CNN
-F 3 "" H 7150 3850 50  0001 C CNN
-	1    7150 3850
-	0    1    1    0   
-$EndComp
-$Comp
 L synkie_symbols:Opamp_Dual_Generic U?
 U 2 1 5FEF24E7
 P 9300 3650
@@ -297,10 +284,6 @@ F 3 "" H 9600 3150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 9900 2850 0    50   ~ 0
-synctip
-Text Label 7150 3350 2    50   ~ 0
-clipper_out
-Text Label 7150 3250 2    50   ~ 0
 synctip
 Connection ~ 3150 3750
 Wire Wire Line
@@ -543,19 +526,6 @@ F 3 "~" H 2850 3750 50  0001 C CNN
 	1    2850 3750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5FEF25AD
-P 4900 5450
-AR Path="/5FEF25AD" Ref="TP?"  Part="1" 
-AR Path="/5FED65BF/5FEF25AD" Ref="TP501"  Part="1" 
-F 0 "TP501" H 4958 5568 50  0000 L CNN
-F 1 "TestPoint" H 4850 5700 50  0000 L CNN
-F 2 "synkie_footprints:Solderpad_1mm" H 5100 5450 50  0001 C CNN
-F 3 "~" H 5100 5450 50  0001 C CNN
-	1    4900 5450
-	1    0    0    -1  
-$EndComp
 Text Label 4550 3750 0    50   ~ 0
 clipper_out
 Wire Wire Line
@@ -614,8 +584,6 @@ Wire Wire Line
 	2000 5400 2400 5400
 Wire Wire Line
 	2000 6300 3300 6300
-Wire Wire Line
-	4800 5450 4900 5450
 Wire Wire Line
 	4200 5350 3950 5350
 Connection ~ 4800 5450
@@ -723,10 +691,6 @@ Wire Notes Line
 Text Notes 1300 2250 0    50   ~ 0
 CLIPPER
 Wire Wire Line
-	8150 2350 8150 2950
-Wire Wire Line
-	8200 3250 8200 2400
-Wire Wire Line
 	9150 4050 9000 4050
 Connection ~ 9000 4050
 Wire Wire Line
@@ -750,24 +714,6 @@ Wire Notes Line
 	5850 2150 5850 5000
 Wire Wire Line
 	1600 5800 1350 5800
-Text Label 5000 5450 0    49   ~ 0
-delayed_burst
-Text Label 7150 2950 2    49   ~ 0
-delayed_burst
-Wire Wire Line
-	6450 3650 6450 2350
-Wire Wire Line
-	6450 3650 7150 3650
-Wire Wire Line
-	6450 2350 8150 2350
-Wire Wire Line
-	6500 3050 6500 2400
-Wire Wire Line
-	6500 3050 7150 3050
-Wire Wire Line
-	6500 2400 8200 2400
-Wire Wire Line
-	8200 3250 8150 3250
 $Comp
 L synkie_symbols:R R?
 U 1 1 5FEF2634
@@ -789,7 +735,7 @@ AR Path="/5FEF263A" Ref="C?"  Part="1"
 AR Path="/5FED65BF/5FEF263A" Ref="C501"  Part="1" 
 F 0 "C501" H 8550 3650 50  0000 L CNN
 F 1 "120p" H 8200 3550 50  0000 L CNN
-F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8488 3500 50  0001 C CNN
+F 2 "synkie_footprints:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8488 3500 50  0001 C CNN
 F 3 "~" H 8450 3650 50  0001 C CNN
 	1    8450 3650
 	1    0    0    -1  
@@ -828,9 +774,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 4700 4000 4800
 Connection ~ 4000 4800
-Connection ~ 4900 5450
-Wire Wire Line
-	4900 5450 5000 5450
 Wire Wire Line
 	4000 3750 4550 3750
 Text Notes 1650 3350 0    50   ~ 0
@@ -1097,14 +1040,59 @@ Text HLabel 2250 3650 0    50   Input ~ 0
 INPUT
 Text GLabel 1350 5800 1    50   Input ~ 0
 colorburst
-Text GLabel 7150 4150 0    50   Input ~ 0
-drywet
-Text GLabel 7150 3950 0    50   Input ~ 0
-porch
-Text GLabel 7150 4050 0    50   Input ~ 0
-hsync
 Text HLabel 9600 3650 2    50   Input ~ 0
 OUTPUT
-Text GLabel 7150 3550 0    49   Input ~ 0
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 5FEF24E1
+P 7150 3850
+AR Path="/5FEF24E1" Ref="#PWR?"  Part="1" 
+AR Path="/5FED65BF/5FEF24E1" Ref="#PWR0509"  Part="1" 
+F 0 "#PWR0509" H 7150 3600 50  0001 C CNN
+F 1 "GND" H 7155 3677 50  0001 C CNN
+F 2 "" H 7150 3850 50  0001 C CNN
+F 3 "" H 7150 3850 50  0001 C CNN
+	1    7150 3850
+	0    1    1    0   
+$EndComp
+Text GLabel 7150 3950 0    50   Input ~ 0
+dry~wet~
+Text GLabel 7150 4050 0    50   Input ~ 0
+porch
+Text GLabel 7150 4150 0    50   Input ~ 0
+hsync
+Text GLabel 7150 3050 0    49   Input ~ 0
 dry
+Text Label 7150 3550 2    50   ~ 0
+synctip
+Text Label 7150 2950 2    50   ~ 0
+clipper_out
+Wire Wire Line
+	8150 3250 8400 3250
+Text GLabel 6500 3250 0    50   Input ~ 0
+preview_burst
+Text GLabel 5000 5450 2    50   Input ~ 0
+delayed_burst
+Wire Wire Line
+	8150 2950 8350 2950
+Wire Wire Line
+	8350 2950 8350 2350
+Wire Wire Line
+	8350 2350 6600 2350
+Wire Wire Line
+	6600 2350 6600 3350
+Wire Wire Line
+	6600 3350 7150 3350
+Wire Wire Line
+	7150 3250 6500 3250
+Wire Wire Line
+	8400 3250 8400 2300
+Wire Wire Line
+	8400 2300 6550 2300
+Wire Wire Line
+	6550 2300 6550 3650
+Wire Wire Line
+	6550 3650 7150 3650
+Wire Wire Line
+	4800 5450 5000 5450
 $EndSCHEMATC

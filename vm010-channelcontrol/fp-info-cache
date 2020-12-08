@@ -1,4 +1,4 @@
-17905312555582510
+17906953254130510
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75319,6 +75319,13 @@ ESP32_Devboard
 0
 30
 30
+anyma_footprints
+FCI-Microusb
+
+
+0
+11
+6
 anyma_footprints
 ITR9608-F
 Gabellichtschranke
