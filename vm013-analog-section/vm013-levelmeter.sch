@@ -384,8 +384,6 @@ Wire Wire Line
 	3300 2300 3450 2300
 Wire Wire Line
 	3450 2300 3450 2650
-Wire Wire Line
-	3450 2650 5250 2650
 $Comp
 L synkie_symbols:C_Small C702
 U 1 1 5FF6B4CC
@@ -397,7 +395,6 @@ F 3 "~" H 3450 2750 50  0001 C CNN
 	1    3450 2750
 	1    0    0    -1  
 $EndComp
-Connection ~ 3450 2650
 $Comp
 L power:GND #PWR0707
 U 1 1 5FF6B8F4
@@ -409,9 +406,6 @@ F 3 "" H 3450 2850 50  0001 C CNN
 	1    3450 2850
 	1    0    0    -1  
 $EndComp
-Connection ~ 3450 3100
-Wire Wire Line
-	3450 3100 4500 3100
 $Comp
 L synkie_symbols:R R702
 U 1 1 5FF6D4AB
@@ -506,4 +500,36 @@ Connection ~ 4750 2550
 Wire Wire Line
 	4750 2550 4600 2550
 Connection ~ 2200 4900
+$Comp
+L synkie_symbols:R R710
+U 1 1 5FD2660F
+P 4100 2650
+F 0 "R710" V 4000 2750 50  0000 C CNN
+F 1 "75" V 4100 2650 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 2650 50  0001 C CNN
+F 3 "~" H 4100 2650 50  0001 C CNN
+	1    4100 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 2650 5250 2650
+Wire Wire Line
+	3950 2650 3450 2650
+Connection ~ 3450 2650
+$Comp
+L synkie_symbols:R R711
+U 1 1 5FD284EF
+P 4100 3100
+F 0 "R711" V 4000 3200 50  0000 C CNN
+F 1 "75" V 4100 3100 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 3100 50  0001 C CNN
+F 3 "~" H 4100 3100 50  0001 C CNN
+	1    4100 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 3100 4250 3100
+Wire Wire Line
+	3950 3100 3450 3100
+Connection ~ 3450 3100
 $EndSCHEMATC

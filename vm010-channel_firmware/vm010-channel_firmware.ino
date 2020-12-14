@@ -83,6 +83,14 @@ const int   MAX_REC_SLOTS           = 1000; // 25 frames/values per second -> ma
 #define PIN_AD_COMPA            A6
 #define PIN_AD_BIAS             A7
 
+#define EEPROM_BUS_C     0
+#define EEPROM_BUS_B     1
+#define EEPROM_BUS_A     2
+#define EEPROM_INVERT    3
+#define EEPROM_COMPA     4
+#define EEPROM_PFL       5
+#define EEPROM_EDGES     6
+
 const int REC_THRESH = 4;
 
 // scalke bias pots are inversed on board as of dec2020
@@ -523,6 +531,16 @@ void update_leds(){
 //----------------------------------------------------------------------------------------
 //																				BUTTONS
 
+
+   
+   
+   
+  
+   
+     
+   
+
+
 void check_btns() {
     char state;
     static char old_state[NUM_BTNS];
@@ -544,24 +562,31 @@ void check_btns() {
      	                break;
      	           case 2:
      	                bus_c_on = ~bus_c_on;
+                        EEPROM.write(EEPROM_BUS_C, bus_c_on);
      	                break;
      	           case 3:
      	                bus_b_on = ~bus_b_on;
+                        EEPROM.write(EEPROM_BUS_B, bus_b_on);
      	                break;
      	           case 4:
      	                bus_a_on = ~bus_a_on;
+                        EEPROM.write(EEPROM_BUS_A, bus_c_on);
      	                break;                    
                     case 5:
      	                pfl_state = ~pfl_state;
+                        EEPROM.write(EEPROM_PFL, pfl_state);
                         break;
                     case 6:
      	                inverter_on = ~inverter_on;
+                        EEPROM.write(EEPROM_INVERT, inverter_on);
                         break;
                     case 7:
      	                compa_on = ~compa_on;
-     	                break;
+                        EEPROM.write(EEPROM_COMPA, compa_on);
+    	                break;
      	           case 8:
      	                edges_on = ~edges_on;
+                        EEPROM.write(EEPROM_EDGES, edges_on);
      	                break;
      	           default:
      	                break;
@@ -605,6 +630,14 @@ void setup() {
   	
   	fill_solid(pixels, NUM_PIXELS, CRGB::Red);      // Stays red if we dont have genlock
     FastLED.show(); 
+    
+    bus_c_on    = EEPROM.read(EEPROM_BUS_C);
+    bus_b_on    = EEPROM.read(EEPROM_BUS_B);
+    bus_a_on    = EEPROM.read(EEPROM_BUS_A);           
+    pfl_state   = EEPROM.read(EEPROM_PFL);
+    inverter_on = EEPROM.read(EEPROM_INVERT);
+    compa_on    = EEPROM.read(EEPROM_COMPA);
+    edges_on    = EEPROM.read(EEPROM_EDGES);
     
     attachInterrupt(digitalPinToInterrupt(PIN_VSYNC), v_sync_interrupt, FALLING);
     attachInterrupt(digitalPinToInterrupt(PIN_BEAT), beat_interrupt, RISING);

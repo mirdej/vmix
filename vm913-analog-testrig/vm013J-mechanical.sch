@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
-Title "vMIX20-Scale,Bias, Clip"
-Date "2020-11-23"
+Sheet 1 7
+Title ""
+Date ""
 Rev ""
-Comp "[ a n y m a ]"
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
