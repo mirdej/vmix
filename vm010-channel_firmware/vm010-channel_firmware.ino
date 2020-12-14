@@ -38,6 +38,8 @@
 
 #include <Timer.h>
 #include <SPI.h>
+#include <EEPROM.h>
+#include <Wire.h>
 
 #include "FastLED.h"
 
@@ -83,13 +85,14 @@ const int   MAX_REC_SLOTS           = 1000; // 25 frames/values per second -> ma
 #define PIN_AD_COMPA            A6
 #define PIN_AD_BIAS             A7
 
-#define EEPROM_BUS_C     0
-#define EEPROM_BUS_B     1
-#define EEPROM_BUS_A     2
-#define EEPROM_INVERT    3
-#define EEPROM_COMPA     4
-#define EEPROM_PFL       5
-#define EEPROM_EDGES     6
+#define EEPROM_BUS_C             0
+#define EEPROM_BUS_B             1
+#define EEPROM_BUS_A             2
+#define EEPROM_INVERT            3
+#define EEPROM_COMPA             4
+#define EEPROM_PFL               5
+#define EEPROM_EDGES             6
+#define EEPROM_I2C_ADDRESS       7
 
 const int REC_THRESH = 4;
 
@@ -107,6 +110,13 @@ const char PIN_BTN[NUM_BTNS] = {PIN_BTN_REC, PIN_BTN_STOP, PIN_BTN_BUS_C, PIN_BT
 #define ERROR_NONE          0
 #define ERROR_NO_BEAT       1
 #define ERROR_NO_SYNC       2
+
+
+#define I2C_CALL_START          0xF0
+#define I2C_CALL_STOP           0xF1
+#define I2C_CALL_STORE          0xB0
+#define I2C_CALL_RECALL         0xB1
+#define I2C_CALL_BRIGHTNESS     0xB2
 
 
 Timer t;
@@ -136,6 +146,9 @@ int         rec_enabled [NUM_POTS];
 
 int         error = ERROR_NONE;
 
+byte            i2c_address;
+volatile byte   i2c_new_bytes;
+volatile byte   i2c_buf[32];
 
 volatile int    v_sync_interrupt_flag;
 volatile int    beat_interrupt_flag;
@@ -531,16 +544,6 @@ void update_leds(){
 //----------------------------------------------------------------------------------------
 //																				BUTTONS
 
-
-   
-   
-   
-  
-   
-     
-   
-
-
 void check_btns() {
     char state;
     static char old_state[NUM_BTNS];
@@ -598,6 +601,83 @@ void check_btns() {
     if (leds_changed) update_leds();
 }
 
+//----------------------------------------------------------------------------------------
+//																				I2C
+/*
+Note that receiveEvent is called from an Interrupt Service Routine (ISR)!
+
+You should not:
+
+Do serial prints
+Use "delay"
+Do anything lengthy
+Do anything that requires interrupts to be active
+*/
+
+
+void receiveEvent (int howMany){
+  for (byte i = 0; i < howMany; i++) {
+        i2c_buf[i] = Wire.read ();
+    }
+    i2c_new_bytes =  howMany;
+}
+
+void requestEvent ()
+  {
+      byte buf [6] = { 9, 12, 13, 14,31,44 };
+      Wire.write (buf, sizeof buf);
+  } 
+  
+//----------------------------------------------------------------------------------------
+
+void check_i2c(){
+ //   if (i2c_new_bytes)  Serial.printf("Received %ld bytes\n", i2c_new_bytes);
+    if (i2c_new_bytes == 1) {
+        switch (i2c_buf[0]) {
+            case I2C_CALL_START:
+                Serial.println("Received: START");
+                break;
+            case I2C_CALL_STOP:
+                Serial.println("Received: STOP");
+                break;
+            default:
+                Serial.print("Strange Call Received: ");
+                Serial.println(i2c_buf[0], HEX);
+                break;
+        }
+        Serial.println();
+    }
+    if (i2c_new_bytes == 2) {
+        switch (i2c_buf[0]) {
+            case I2C_CALL_STORE:
+                Serial.print("Received: STORE ");
+                Serial.println(i2c_buf[1], DEC);
+                break;
+            case I2C_CALL_RECALL:
+                Serial.print("Received: RECALL ");
+                Serial.println(i2c_buf[1], DEC);
+                break;
+            case I2C_CALL_BRIGHTNESS:
+                FastLED.setBrightness(i2c_buf[1]);
+                FastLED.show();
+            default:
+                Serial.print("Strange Call Received: ");
+                Serial.println(i2c_buf[0], HEX);
+                break;
+        }
+        Serial.println();
+    }
+    if (i2c_new_bytes == 6) {
+        Serial.print("Received data: ");
+        for (int i=0; i<6; i++) {
+            Serial.print(i2c_buf[i], DEC);
+            Serial.print(" ");
+        }
+        Serial.println();
+        Serial.println();
+    }
+    i2c_new_bytes = 0;
+}
 
 //========================================================================================
 //----------------------------------------------------------------------------------------
@@ -638,7 +718,14 @@ void setup() {
     inverter_on = EEPROM.read(EEPROM_INVERT);
     compa_on    = EEPROM.read(EEPROM_COMPA);
     edges_on    = EEPROM.read(EEPROM_EDGES);
+    i2c_address = EEPROM.read(EEPROM_I2C_ADDRESS);
     
+    Wire.begin ();
+    
+    TWAR = (i2c_address << 1) | 1;  // enable broadcasts to be received
+    Wire.onReceive (receiveEvent); 
+    Wire.onRequest (requestEvent); 
+
     attachInterrupt(digitalPinToInterrupt(PIN_VSYNC), v_sync_interrupt, FALLING);
     attachInterrupt(digitalPinToInterrupt(PIN_BEAT), beat_interrupt, RISING);
 }
@@ -650,5 +737,6 @@ void setup() {
 void loop() {
     t.update();
     check_sync();
-   // check_beat();
+    check_beat();
+    check_i2c();
 }
