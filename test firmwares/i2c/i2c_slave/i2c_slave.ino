@@ -4,6 +4,7 @@
 #define I2C_CALL_STOP           0xF1
 #define I2C_CALL_STORE          0xB0
 #define I2C_CALL_RECALL         0xB1
+#define I2C_CALL_BRIGHTNESS     0xB2
 
 
 const byte MY_ADDRESS = 2;

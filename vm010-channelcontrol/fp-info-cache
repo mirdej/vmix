@@ -1,4 +1,4 @@
-17911776075473510
+17900491937080510
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75320,20 +75320,6 @@ ESP32_Devboard
 30
 30
 anyma_footprints
-FCI-Microusb
-
-
-0
-11
-6
-anyma_footprints
-ITR9608-F
-Gabellichtschranke
-
-0
-4
-4
-anyma_footprints
 Jack_3.5mm_SMD
 PJ311 6pin SMD 3.5mm stereo headphones jack.
 headphones jack plug stereo 3.5mm PJ311
@@ -75613,27 +75599,6 @@ SMD SMT crystal
 0
 2
 2
-synkie_footprints
-DSUB-15-FCI
-15-pin D-Sub connector, horizontal/angled (90 deg), THT-mount,
-15-pin D-Sub connector 
-0
-17
-16
-synkie_footprints
-DSUB-15-HD_Female_FCI
-DSUB-15-HD_Female_FCI
-15-pin D-Sub connector horizontal angled 90deg THT female pitch 
-0
-17
-16
-synkie_footprints
-DSUB-15-HD_Male_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm
-15-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, male, pitch 2.29x1.98mm, pin-PCB-offset 8.35mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 10.889999999999999mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf
-15-pin D-Sub connector horizontal angled 90deg THT male pitch 2.29x1.98mm pin-PCB-offset 8.35mm mounting-holes-distance 25mm mounting-hole-offset 25mm
-0
-17
-16
 synkie_footprints
 D_MiniMELF_Handsoldering
 Diode Mini-MELF Handsoldering
@@ -75950,13 +75915,6 @@ Solderpad_1mm
 1
 1
 synkie_footprints
-TEC
-
-
-0
-7
-7
-synkie_footprints
 Teensy32-light
 
 
@@ -75977,13 +75935,6 @@ Teensy35_36-light
 0
 48
 48
-synkie_footprints
-testpad-small
-
-
-0
-1
-1
 teensy
 Teensy1.0
 11

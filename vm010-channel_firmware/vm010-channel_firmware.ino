@@ -496,13 +496,15 @@ void handle_stop_click() {
 //																				LEDS
 
 void update_leds(){
-    switch (error) {
+    fill_solid(pixels, NUM_PIXELS, CRGB::Black);
+    
+    switch(error) {
         case ERROR_NO_BEAT:
-            fill_solid(pixels, NUM_PIXELS, CRGB::Navy);
+            pixels[0] = CRGB::Navy;
+            pixels[1] = CRGB::Navy;
             break;
             
         default:
-            fill_solid(pixels, NUM_PIXELS, CRGB::Black);
             switch (loop_state) { 
                 case LOOP_STATE_EMPTY:
                     break;
@@ -524,21 +526,21 @@ void update_leds(){
                     break;      
     
             }
-
-            if (bus_c_on) {pixels[2] = CRGB::Yellow;}
-            if (bus_b_on) {pixels[3] = CRGB::Green;}
-            if (bus_a_on) {pixels[4] = CRGB::Red;}
-    
-            if (pfl_state) {pixels[5] = CRGB::Yellow;}
-            if (inverter_on) {pixels[6] = CRGB::Yellow;}
-            if (compa_on) {pixels[7] = CRGB::Yellow;}
-            if (edges_on) {pixels[8] = CRGB::Yellow;}
-    
-            digitalWrite(PIN_INVERT_OUT, inverter_on);
-            digitalWrite(PIN_COMPA_OUT, compa_on);
-            digitalWrite(PIN_EDGES_OUT, edges_on);
-            digitalWrite(PIN_PREVIEW_OUT, ~pfl_state);
     }
+    
+    if (bus_c_on) {pixels[2] = CRGB::Yellow;}
+    if (bus_b_on) {pixels[3] = CRGB::Green;}
+    if (bus_a_on) {pixels[4] = CRGB::Red;}
+
+    if (pfl_state) {pixels[5] = CRGB::Yellow;}
+    if (inverter_on) {pixels[6] = CRGB::Yellow;}
+    if (compa_on) {pixels[7] = CRGB::Yellow;}
+    if (edges_on) {pixels[8] = CRGB::Yellow;}
+
+    digitalWrite(PIN_INVERT_OUT, inverter_on);
+    digitalWrite(PIN_COMPA_OUT, compa_on);
+    digitalWrite(PIN_EDGES_OUT, edges_on);
+    digitalWrite(PIN_PREVIEW_OUT, ~pfl_state);
 }
 
 //----------------------------------------------------------------------------------------
