@@ -534,10 +534,7 @@ F 3 "~" H 7850 4300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7650 3300 7650 4300
-Wire Wire Line
 	7650 4300 7700 4300
-Connection ~ 7650 3300
 $Comp
 L synkie_symbols:GND #PWR0114
 U 1 1 5FFB0DFF
@@ -575,11 +572,6 @@ F 3 "~" H 7850 4900 50  0001 C CNN
 	1    7850 4900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7650 4300 7650 4900
-Wire Wire Line
-	7650 4900 7700 4900
-Connection ~ 7650 4300
 Text GLabel 7400 5000 0    50   Input ~ 0
 COMPA-OUT
 Text GLabel 7400 5100 0    50   Input ~ 0
@@ -626,4 +618,143 @@ Text Label 4650 2100 0    50   ~ 0
 clamp_to_eq
 Text Label 5600 2250 0    50   ~ 0
 eq_to_scabi
+$Comp
+L synkie_symbols:MAX4392 U?
+U 1 1 5FEA124F
+P 6750 3950
+F 0 "U?" H 6750 4317 50  0000 C CNN
+F 1 "MAX4392" H 6750 4226 50  0000 C CNN
+F 2 "" H 6750 3950 50  0001 C CNN
+F 3 "~" H 6750 3950 50  0001 C CNN
+	1    6750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:MAX4392 U?
+U 2 1 5FEA2237
+P 6750 4550
+F 0 "U?" H 6750 4917 50  0000 C CNN
+F 1 "MAX4392" H 6750 4826 50  0000 C CNN
+F 2 "" H 6750 4550 50  0001 C CNN
+F 3 "~" H 6750 4550 50  0001 C CNN
+	2    6750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3950 7100 3950
+Wire Wire Line
+	7650 3950 7650 4300
+Wire Wire Line
+	7650 3300 6100 3300
+Wire Wire Line
+	6100 3300 6100 3850
+Wire Wire Line
+	6100 3850 6450 3850
+Connection ~ 7650 3300
+Wire Wire Line
+	6450 4050 6450 4250
+Wire Wire Line
+	6450 4250 7100 4250
+Wire Wire Line
+	7100 4250 7100 3950
+Connection ~ 7100 3950
+Wire Wire Line
+	7100 3950 7650 3950
+Wire Wire Line
+	6100 3850 6100 4450
+Wire Wire Line
+	6100 4450 6450 4450
+Connection ~ 6100 3850
+Wire Wire Line
+	6450 4650 6450 4850
+Wire Wire Line
+	6450 4850 7050 4850
+Wire Wire Line
+	7050 4850 7050 4550
+Wire Wire Line
+	7400 4900 7400 4550
+Wire Wire Line
+	7400 4550 7050 4550
+Wire Wire Line
+	7400 4900 7700 4900
+Connection ~ 7050 4550
+$Comp
+L synkie_symbols:MAX4392 U?
+U 3 1 5FEA72D9
+P 5750 4950
+F 0 "U?" H 5708 4996 50  0000 L CNN
+F 1 "MAX4392" H 5708 4905 50  0000 L CNN
+F 2 "" H 5750 4950 50  0001 C CNN
+F 3 "~" H 5750 4950 50  0001 C CNN
+	3    5750 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:-5V #PWR?
+U 1 1 5FEA7D95
+P 5650 5250
+F 0 "#PWR?" H 5650 5350 50  0001 C CNN
+F 1 "-5V" H 5650 5400 50  0000 C CNN
+F 2 "" H 5650 5250 50  0001 C CNN
+F 3 "" H 5650 5250 50  0001 C CNN
+	1    5650 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR?
+U 1 1 5FEA86BF
+P 5650 4650
+F 0 "#PWR?" H 5650 4500 50  0001 C CNN
+F 1 "+5V" H 5650 4800 50  0000 C CNN
+F 2 "" H 5650 4650 50  0001 C CNN
+F 3 "" H 5650 4650 50  0001 C CNN
+	1    5650 4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FEA924F
+P 5500 4650
+F 0 "C?" V 5752 4650 50  0000 C CNN
+F 1 "C" V 5661 4650 50  0000 C CNN
+F 2 "" H 5538 4500 50  0001 C CNN
+F 3 "~" H 5500 4650 50  0001 C CNN
+	1    5500 4650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 4650
+$Comp
+L Device:C C?
+U 1 1 5FEA9BE6
+P 5500 5250
+F 0 "C?" V 5752 5250 50  0000 C CNN
+F 1 "C" V 5661 5250 50  0000 C CNN
+F 2 "" H 5538 5100 50  0001 C CNN
+F 3 "~" H 5500 5250 50  0001 C CNN
+	1    5500 5250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 5250
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 5FEAACD1
+P 5350 4650
+F 0 "#PWR?" H 5350 4400 50  0001 C CNN
+F 1 "GND" H 5355 4477 50  0000 C CNN
+F 2 "" H 5350 4650 50  0001 C CNN
+F 3 "" H 5350 4650 50  0001 C CNN
+	1    5350 4650
+	0    1    -1   0   
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 5FEAB656
+P 5350 5250
+F 0 "#PWR?" H 5350 5000 50  0001 C CNN
+F 1 "GND" H 5355 5077 50  0000 C CNN
+F 2 "" H 5350 5250 50  0001 C CNN
+F 3 "" H 5350 5250 50  0001 C CNN
+	1    5350 5250
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC

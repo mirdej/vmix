@@ -1,0 +1,523 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x01 J101
+U 1 1 5FE9F46B
+P 1750 1500
+F 0 "J101" H 1668 1275 50  0000 C CNN
+F 1 "Conn" H 1668 1366 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm" H 1750 1500 50  0001 C CNN
+F 3 "~" H 1750 1500 50  0001 C CNN
+	1    1750 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J102
+U 1 1 5FEA052A
+P 1750 1900
+F 0 "J102" H 1668 1675 50  0000 C CNN
+F 1 "Conn" H 1668 1766 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm" H 1750 1900 50  0001 C CNN
+F 3 "~" H 1750 1900 50  0001 C CNN
+	1    1750 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J103
+U 1 1 5FEA0A81
+P 1750 2300
+F 0 "J103" H 1668 2075 50  0000 C CNN
+F 1 "Conn" H 1668 2166 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm" H 1750 2300 50  0001 C CNN
+F 3 "~" H 1750 2300 50  0001 C CNN
+	1    1750 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J104
+U 1 1 5FEA0A8B
+P 1750 2700
+F 0 "J104" H 1668 2475 50  0000 C CNN
+F 1 "Conn" H 1668 2566 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm" H 1750 2700 50  0001 C CNN
+F 3 "~" H 1750 2700 50  0001 C CNN
+	1    1750 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J105
+U 1 1 5FEA11D1
+P 1750 3150
+F 0 "J105" H 1668 2925 50  0000 C CNN
+F 1 "Conn" H 1668 3016 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm" H 1750 3150 50  0001 C CNN
+F 3 "~" H 1750 3150 50  0001 C CNN
+	1    1750 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J107
+U 1 1 5FEA11DB
+P 1750 3550
+F 0 "J107" H 1668 3325 50  0000 C CNN
+F 1 "Conn" H 1668 3416 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm" H 1750 3550 50  0001 C CNN
+F 3 "~" H 1750 3550 50  0001 C CNN
+	1    1750 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J109
+U 1 1 5FEA11E5
+P 1750 3950
+F 0 "J109" H 1668 3725 50  0000 C CNN
+F 1 "Conn" H 1668 3816 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm" H 1750 3950 50  0001 C CNN
+F 3 "~" H 1750 3950 50  0001 C CNN
+	1    1750 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J110
+U 1 1 5FEA11EF
+P 1750 4350
+F 0 "J110" H 1668 4125 50  0000 C CNN
+F 1 "Conn" H 1668 4216 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm" H 1750 4350 50  0001 C CNN
+F 3 "~" H 1750 4350 50  0001 C CNN
+	1    1750 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J111
+U 1 1 5FEA3801
+P 1750 4750
+F 0 "J111" H 1668 4525 50  0000 C CNN
+F 1 "Conn" H 1668 4616 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D4.0mm_Drill2.0mm" H 1750 4750 50  0001 C CNN
+F 3 "~" H 1750 4750 50  0001 C CNN
+	1    1750 4750
+	-1   0    0    1   
+$EndComp
+Text Label 1950 1500 0    50   ~ 0
+siff-in
+Text Label 1950 1900 0    50   ~ 0
+compa-out
+Text Label 1950 2300 0    50   ~ 0
+output
+Text Label 1950 2700 0    50   ~ 0
+scale
+Text Label 1950 3150 0    50   ~ 0
+aux
+Text Label 1950 3550 0    50   ~ 0
+bias
+Text Label 1950 3950 0    50   ~ 0
+a
+Text Label 1950 4350 0    50   ~ 0
+b
+Text Label 1950 4750 0    50   ~ 0
+c
+$Comp
+L Switch:SW_SPDT SW101
+U 1 1 5FEA4F71
+P 2250 5600
+F 0 "SW101" H 2250 5885 50  0000 C CNN
+F 1 "SW_SPDT" H 2250 5794 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2250 5600 50  0001 C CNN
+F 3 "~" H 2250 5600 50  0001 C CNN
+	1    2250 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW102
+U 1 1 5FEA5B04
+P 2200 6250
+F 0 "SW102" H 2200 6535 50  0000 C CNN
+F 1 "SW_SPDT" H 2200 6444 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2200 6250 50  0001 C CNN
+F 3 "~" H 2200 6250 50  0001 C CNN
+	1    2200 6250
+	1    0    0    -1  
+$EndComp
+Text Label 2450 5500 0    50   ~ 0
+lo_clip1
+Text Label 2050 5600 2    50   ~ 0
+lo_clip2
+Text Label 2400 6150 0    50   ~ 0
+hi_clip1
+Text Label 2000 6250 2    50   ~ 0
+hi_clip2
+$Comp
+L synkie_symbols:SK6812MINI D101
+U 1 1 5FEA6837
+P 4100 6400
+F 0 "D101" H 4444 6446 50  0000 L CNN
+F 1 "SK6812MINI" H 4444 6355 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 4150 6100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 4200 6025 50  0001 L TNN
+	1    4100 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D102
+U 1 1 5FEA6FC0
+P 4700 6400
+F 0 "D102" H 5044 6446 50  0000 L CNN
+F 1 "SK6812MINI" H 5044 6355 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 4750 6100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 4800 6025 50  0001 L TNN
+	1    4700 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0115
+U 1 1 5FEA7921
+P 4100 6100
+F 0 "#PWR0115" H 4100 5950 50  0001 C CNN
+F 1 "VCC" H 4117 6273 50  0000 C CNN
+F 2 "" H 4100 6100 50  0001 C CNN
+F 3 "" H 4100 6100 50  0001 C CNN
+	1    4100 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0116
+U 1 1 5FEA7C7D
+P 4700 6100
+F 0 "#PWR0116" H 4700 5950 50  0001 C CNN
+F 1 "VCC" H 4717 6273 50  0000 C CNN
+F 2 "" H 4700 6100 50  0001 C CNN
+F 3 "" H 4700 6100 50  0001 C CNN
+	1    4700 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5FEA830A
+P 4100 6700
+F 0 "#PWR0117" H 4100 6450 50  0001 C CNN
+F 1 "GND" H 4105 6527 50  0000 C CNN
+F 2 "" H 4100 6700 50  0001 C CNN
+F 3 "" H 4100 6700 50  0001 C CNN
+	1    4100 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5FEA86A9
+P 4700 6700
+F 0 "#PWR0118" H 4700 6450 50  0001 C CNN
+F 1 "GND" H 4705 6527 50  0000 C CNN
+F 2 "" H 4700 6700 50  0001 C CNN
+F 3 "" H 4700 6700 50  0001 C CNN
+	1    4700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5FEA8A2E
+P 3600 7200
+F 0 "#PWR0120" H 3600 6950 50  0001 C CNN
+F 1 "GND" H 3605 7027 50  0000 C CNN
+F 2 "" H 3600 7200 50  0001 C CNN
+F 3 "" H 3600 7200 50  0001 C CNN
+	1    3600 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0119
+U 1 1 5FEA8C32
+P 3600 6900
+F 0 "#PWR0119" H 3600 6750 50  0001 C CNN
+F 1 "VCC" H 3617 7073 50  0000 C CNN
+F 2 "" H 3600 6900 50  0001 C CNN
+F 3 "" H 3600 6900 50  0001 C CNN
+	1    3600 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C101
+U 1 1 5FEA92A9
+P 3600 7050
+F 0 "C101" H 3715 7096 50  0000 L CNN
+F 1 "C" H 3715 7005 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3638 6900 50  0001 C CNN
+F 3 "~" H 3600 7050 50  0001 C CNN
+	1    3600 7050
+	1    0    0    -1  
+$EndComp
+Text Label 3800 6400 2    50   ~ 0
+pixels
+$Comp
+L power:GND #PWR0101
+U 1 1 5FEA9EAD
+P 9000 2050
+F 0 "#PWR0101" H 9000 1800 50  0001 C CNN
+F 1 "GND" V 9005 1922 50  0000 R CNN
+F 2 "" H 9000 2050 50  0001 C CNN
+F 3 "" H 9000 2050 50  0001 C CNN
+	1    9000 2050
+	0    1    1    0   
+$EndComp
+Text Label 9000 2150 2    50   ~ 0
+compa-out
+$Comp
+L power:GND #PWR0102
+U 1 1 5FEAA98B
+P 9000 2250
+F 0 "#PWR0102" H 9000 2000 50  0001 C CNN
+F 1 "GND" V 9005 2122 50  0000 R CNN
+F 2 "" H 9000 2250 50  0001 C CNN
+F 3 "" H 9000 2250 50  0001 C CNN
+	1    9000 2250
+	0    1    1    0   
+$EndComp
+Text Label 9000 2750 2    50   ~ 0
+output
+Text Label 9000 2350 2    50   ~ 0
+lo_clip1
+Text Label 9000 2950 2    50   ~ 0
+hi_clip2
+Text Label 9000 3150 2    50   ~ 0
+hi_clip1
+Text Label 9000 3450 2    50   ~ 0
+pixels
+Text Label 9000 5150 2    50   ~ 0
+siff-in
+$Comp
+L power:GND #PWR0114
+U 1 1 5FEAC78F
+P 9000 5250
+F 0 "#PWR0114" H 9000 5000 50  0001 C CNN
+F 1 "GND" V 9005 5122 50  0000 R CNN
+F 2 "" H 9000 5250 50  0001 C CNN
+F 3 "" H 9000 5250 50  0001 C CNN
+	1    9000 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5FEB04D0
+P 9000 3650
+F 0 "#PWR0109" H 9000 3400 50  0001 C CNN
+F 1 "GND" V 9005 3522 50  0000 R CNN
+F 2 "" H 9000 3650 50  0001 C CNN
+F 3 "" H 9000 3650 50  0001 C CNN
+	1    9000 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5FEAF413
+P 9000 5050
+F 0 "#PWR0112" H 9000 4800 50  0001 C CNN
+F 1 "GND" V 9005 4922 50  0000 R CNN
+F 2 "" H 9000 5050 50  0001 C CNN
+F 3 "" H 9000 5050 50  0001 C CNN
+	1    9000 5050
+	0    1    1    0   
+$EndComp
+Text Label 9000 3750 2    50   ~ 0
+a
+Text Label 9000 3950 2    50   ~ 0
+b
+Text Label 9000 4150 2    50   ~ 0
+c
+Text Label 9000 4350 2    50   ~ 0
+aux
+$Comp
+L power:GND #PWR0104
+U 1 1 5FEB6220
+P 9000 2850
+F 0 "#PWR0104" H 9000 2600 50  0001 C CNN
+F 1 "GND" V 9005 2722 50  0000 R CNN
+F 2 "" H 9000 2850 50  0001 C CNN
+F 3 "" H 9000 2850 50  0001 C CNN
+	1    9000 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 5FEB85BB
+P 9000 3550
+F 0 "#PWR0108" H 9000 3400 50  0001 C CNN
+F 1 "VCC" V 9018 3677 50  0000 L CNN
+F 2 "" H 9000 3550 50  0001 C CNN
+F 3 "" H 9000 3550 50  0001 C CNN
+	1    9000 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5FEBA0F1
+P 9000 2650
+F 0 "#PWR0106" H 9000 2400 50  0001 C CNN
+F 1 "GND" V 9005 2522 50  0000 R CNN
+F 2 "" H 9000 2650 50  0001 C CNN
+F 3 "" H 9000 2650 50  0001 C CNN
+	1    9000 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FEC12C0
+P 9000 2450
+F 0 "#PWR0103" H 9000 2200 50  0001 C CNN
+F 1 "GND" V 9005 2322 50  0000 R CNN
+F 2 "" H 9000 2450 50  0001 C CNN
+F 3 "" H 9000 2450 50  0001 C CNN
+	1    9000 2450
+	0    1    1    0   
+$EndComp
+Text Label 9000 2550 2    50   ~ 0
+lo_clip2
+$Comp
+L power:GND #PWR0105
+U 1 1 5FEC22A1
+P 9000 3050
+F 0 "#PWR0105" H 9000 2800 50  0001 C CNN
+F 1 "GND" V 9005 2922 50  0000 R CNN
+F 2 "" H 9000 3050 50  0001 C CNN
+F 3 "" H 9000 3050 50  0001 C CNN
+	1    9000 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 5FEC278C
+P 9000 3350
+F 0 "#PWR0107" H 9000 3200 50  0001 C CNN
+F 1 "VCC" V 9018 3477 50  0000 L CNN
+F 2 "" H 9000 3350 50  0001 C CNN
+F 3 "" H 9000 3350 50  0001 C CNN
+	1    9000 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5FEBCFCB
+P 9000 4550
+F 0 "#PWR0110" H 9000 4300 50  0001 C CNN
+F 1 "GND" V 9005 4422 50  0000 R CNN
+F 2 "" H 9000 4550 50  0001 C CNN
+F 3 "" H 9000 4550 50  0001 C CNN
+	1    9000 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5FEAFDC7
+P 9000 4750
+F 0 "#PWR0111" H 9000 4500 50  0001 C CNN
+F 1 "GND" V 9005 4622 50  0000 R CNN
+F 2 "" H 9000 4750 50  0001 C CNN
+F 3 "" H 9000 4750 50  0001 C CNN
+	1    9000 4750
+	0    1    1    0   
+$EndComp
+Text Label 9000 4850 2    50   ~ 0
+bias
+Text Label 9000 4650 2    50   ~ 0
+scale
+$Comp
+L power:GND #PWR0113
+U 1 1 5FEC5C7E
+P 9000 3850
+F 0 "#PWR0113" H 9000 3600 50  0001 C CNN
+F 1 "GND" V 9005 3722 50  0000 R CNN
+F 2 "" H 9000 3850 50  0001 C CNN
+F 3 "" H 9000 3850 50  0001 C CNN
+	1    9000 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5FEC613C
+P 9000 4050
+F 0 "#PWR0121" H 9000 3800 50  0001 C CNN
+F 1 "GND" V 9005 3922 50  0000 R CNN
+F 2 "" H 9000 4050 50  0001 C CNN
+F 3 "" H 9000 4050 50  0001 C CNN
+	1    9000 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5FEC64A3
+P 9000 4250
+F 0 "#PWR0122" H 9000 4000 50  0001 C CNN
+F 1 "GND" V 9005 4122 50  0000 R CNN
+F 2 "" H 9000 4250 50  0001 C CNN
+F 3 "" H 9000 4250 50  0001 C CNN
+	1    9000 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5FEC7DC4
+P 9000 4950
+F 0 "#PWR0123" H 9000 4700 50  0001 C CNN
+F 1 "GND" V 9005 4822 50  0000 R CNN
+F 2 "" H 9000 4950 50  0001 C CNN
+F 3 "" H 9000 4950 50  0001 C CNN
+	1    9000 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5FEC8214
+P 9000 4450
+F 0 "#PWR0124" H 9000 4200 50  0001 C CNN
+F 1 "GND" V 9005 4322 50  0000 R CNN
+F 2 "" H 9000 4450 50  0001 C CNN
+F 3 "" H 9000 4450 50  0001 C CNN
+	1    9000 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5FECE462
+P 9000 3250
+F 0 "#PWR0125" H 9000 3000 50  0001 C CNN
+F 1 "GND" V 9005 3122 50  0000 R CNN
+F 2 "" H 9000 3250 50  0001 C CNN
+F 3 "" H 9000 3250 50  0001 C CNN
+	1    9000 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5FEDBB09
+P 9200 5450
+F 0 "#PWR0126" H 9200 5200 50  0001 C CNN
+F 1 "GND" V 9205 5322 50  0000 R CNN
+F 2 "" H 9200 5450 50  0001 C CNN
+F 3 "" H 9200 5450 50  0001 C CNN
+	1    9200 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_Shielded:Conn_01x33_Shielded J106
+U 1 1 5FEBCEF5
+P 9200 3650
+F 0 "J106" H 9288 3613 50  0000 L CNN
+F 1 "Conn_01x33_Shielded" H 9288 3522 50  0000 L CNN
+F 2 "Connector_FFC-FPC:Molex_502231-3300_1x33-1SH_P0.5mm_Vertical" H 9200 3650 50  0001 C CNN
+F 3 "~" H 9200 3650 50  0001 C CNN
+	1    9200 3650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
