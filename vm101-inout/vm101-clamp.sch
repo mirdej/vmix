@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 10
+Sheet 2 10
 Title "vMIX20-Input Conditioning"
 Date "2020-11-23"
 Rev ""
@@ -248,17 +248,6 @@ Wire Wire Line
 	3700 2750 3700 3000
 Wire Wire Line
 	3100 3000 3700 3000
-$Comp
-L Connector:TestPoint TP301
-U 1 1 5FEA7AA7
-P 6350 2450
-F 0 "TP301" H 6408 2568 50  0000 L CNN
-F 1 "TestPoint" H 6600 2600 50  0001 L CNN
-F 2 "synkie_footprints:Solderpad_1mm" H 6550 2450 50  0001 C CNN
-F 3 "~" H 6550 2450 50  0001 C CNN
-	1    6350 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4450 2400 4850 2400
 Wire Wire Line
@@ -269,11 +258,6 @@ Wire Wire Line
 	5850 2700 6150 2700
 Wire Wire Line
 	6150 2700 6150 2450
-Wire Wire Line
-	6150 2450 6350 2450
-Connection ~ 6350 2450
-Wire Wire Line
-	6350 2450 6450 2450
 $Comp
 L 4xxx:4053 U302
 U 1 1 5FEA7AC1
@@ -821,4 +805,6 @@ Wire Notes Line
 	2200 3600 3350 3600
 Text Notes 3000 3700 0    50   ~ 0
 ??????
+Wire Wire Line
+	6150 2450 6450 2450
 $EndSCHEMATC

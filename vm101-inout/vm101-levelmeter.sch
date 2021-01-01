@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 10
+Sheet 4 10
 Title "vMIX20-Levelmeter"
 Date "2020-11-23"
 Rev ""
@@ -52,7 +52,7 @@ U 1 1 5FF475BD
 P 6650 4500
 F 0 "U503" H 6978 4696 50  0000 L CNN
 F 1 "AnymaISP" H 6978 4605 50  0000 L CNN
-F 2 "synkie_footprints:PinHeader_1x06_P2.54mm_Vertical" H 6650 4500 50  0001 C CNN
+F 2 "anyma_footprints:Pinhead_SMD_6" H 6650 4500 50  0001 C CNN
 F 3 "" H 6650 4500 50  0001 C CNN
 	1    6650 4500
 	1    0    0    -1  
@@ -101,39 +101,6 @@ Text Label 4600 2450 2    50   ~ 0
 miso
 Text Label 5250 2850 2    50   ~ 0
 reset
-$Comp
-L power:VCC #PWR0509
-U 1 1 5FF4C2CF
-P 5350 4150
-F 0 "#PWR0509" H 5350 4000 50  0001 C CNN
-F 1 "VCC" H 5367 4323 50  0000 C CNN
-F 2 "" H 5350 4150 50  0001 C CNN
-F 3 "" H 5350 4150 50  0001 C CNN
-	1    5350 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L synkie_symbols:C_Small C504
-U 1 1 5FF4C6DF
-P 5350 4250
-F 0 "C504" H 5442 4296 50  0000 L CNN
-F 1 "100n" H 5442 4205 50  0000 L CNN
-F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5350 4250 50  0001 C CNN
-F 3 "~" H 5350 4250 50  0001 C CNN
-	1    5350 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0511
-U 1 1 5FF4CDE6
-P 5350 4350
-F 0 "#PWR0511" H 5350 4100 50  0001 C CNN
-F 1 "GND" H 5355 4177 50  0000 C CNN
-F 2 "" H 5350 4350 50  0001 C CNN
-F 3 "" H 5350 4350 50  0001 C CNN
-	1    5350 4350
-	1    0    0    -1  
-$EndComp
 $Comp
 L synkie_symbols:Opamp_Dual_Generic U501
 U 1 1 5FF4DE22

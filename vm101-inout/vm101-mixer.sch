@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 10
+Sheet 5 10
 Title ""
 Date ""
 Rev ""
@@ -13,114 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L synkie_symbols:CP_Small C602
-U 1 1 5FA6FE65
-P 2600 4650
-F 0 "C602" V 2375 4650 50  0000 C CNN
-F 1 "10u" V 2466 4650 50  0000 C CNN
-F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 2600 4650 50  0001 C CNN
-F 3 "~" H 2600 4650 50  0001 C CNN
-	1    2600 4650
-	0    -1   1    0   
-$EndComp
-$Comp
-L synkie_symbols:Ferrite_Bead FB602
-U 1 1 5DCE4D3A
-P 2350 4850
-F 0 "FB602" V 2500 4850 50  0000 C CNN
-F 1 "330u" V 2600 4850 50  0000 C CNN
-F 2 "synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2280 4850 50  0001 C CNN
-F 3 "~" H 2350 4850 50  0001 C CNN
-	1    2350 4850
-	0    -1   1    0   
-$EndComp
-$Comp
-L synkie_symbols:Ferrite_Bead FB601
-U 1 1 5DCE4D39
-P 2350 4650
-F 0 "FB601" V 2076 4650 50  0000 C CNN
-F 1 "330u" V 2167 4650 50  0000 C CNN
-F 2 "synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2280 4650 50  0001 C CNN
-F 3 "~" H 2350 4650 50  0001 C CNN
-	1    2350 4650
-	0    -1   1    0   
-$EndComp
-$Comp
-L synkie_symbols:GND #PWR0604
-U 1 1 5FA6FE67
-P 2900 4750
-F 0 "#PWR0604" H 2900 4500 50  0001 C CNN
-F 1 "GND" H 2905 4577 50  0000 C CNN
-F 2 "" H 2900 4750 50  0001 C CNN
-F 3 "" H 2900 4750 50  0001 C CNN
-	1    2900 4750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L synkie_symbols:-5V #PWR0606
-U 1 1 5DCE4D3F
-P 2500 5200
-F 0 "#PWR0606" H 2500 5300 50  0001 C CNN
-F 1 "-5V" H 2500 5350 50  0000 C CNN
-F 2 "" H 2500 5200 50  0001 C CNN
-F 3 "" H 2500 5200 50  0001 C CNN
-	1    2500 5200
-	1    0    0    1   
-$EndComp
-$Comp
-L synkie_symbols:+5V #PWR0601
-U 1 1 5DCB58DB
-P 2500 4350
-F 0 "#PWR0601" H 2500 4200 50  0001 C CNN
-F 1 "+5V" H 2500 4500 50  0000 C CNN
-F 2 "" H 2500 4350 50  0001 C CNN
-F 3 "" H 2500 4350 50  0001 C CNN
-	1    2500 4350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L synkie_symbols:PWR_FLAG #FLG0601
-U 1 1 5DCB666B
-P 2900 4750
-F 0 "#FLG0601" H 2900 4825 50  0001 C CNN
-F 1 "PWR_FLAG" H 2800 4950 50  0000 C CNN
-F 2 "" H 2900 4750 50  0001 C CNN
-F 3 "~" H 2900 4750 50  0001 C CNN
-	1    2900 4750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L synkie_symbols:CP_Small C604
-U 1 1 5FA6FE66
-P 2600 4850
-F 0 "C604" V 2450 4850 50  0000 C CNN
-F 1 "10u" V 2350 4850 50  0000 C CNN
-F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 2600 4850 50  0001 C CNN
-F 3 "~" H 2600 4850 50  0001 C CNN
-	1    2600 4850
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	2500 4350 2500 4650
-Connection ~ 2500 4650
-Connection ~ 2900 4750
-Wire Wire Line
-	2700 4650 2700 4750
-Wire Wire Line
-	2900 4750 2700 4750
-Connection ~ 2700 4750
-Wire Wire Line
-	2700 4850 2700 4750
-Wire Wire Line
-	2500 5200 2500 4850
-Connection ~ 2500 4850
-Text Label 2200 4650 2    50   ~ 0
-supply+
-Text Label 2200 4850 2    50   ~ 0
-supply-
-Text Label 2900 4750 0    50   ~ 0
-supply_gnd
 $Comp
 L synkie_symbols:ADR510 U601
 U 1 1 5FA6FE70

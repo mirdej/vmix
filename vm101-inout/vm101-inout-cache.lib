@@ -50,6 +50,18 @@ X MOSI 6 -100 -100 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# Anyma_Library_LOGO
+#
+DEF Anyma_Library_LOGO U 0 40 Y Y 1 F N
+F0 "U" 0 150 50 H V C CNN
+F1 "Anyma_Library_LOGO" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 100 50 50 0 1 0 N
+ENDDRAW
+ENDDEF
+#
 # Connector_Conn_01x01_Female
 #
 DEF Connector_Conn_01x01_Female J 0 40 Y N 1 F N
@@ -278,23 +290,6 @@ X Shield SH 0 -1800 150 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_TestPoint
-#
-DEF Connector_TestPoint TP 0 30 N N 1 F N
-F0 "TP" 0 270 50 H V C CNN
-F1 "Connector_TestPoint" 0 200 50 H V C CNN
-F2 "" 200 0 50 H I C CNN
-F3 "" 200 0 50 H I C CNN
-$FPLIST
- Pin*
- Test*
-$ENDFPLIST
-DRAW
-C 0 130 30 0 1 0 N
-X 1 1 0 0 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -427,6 +422,22 @@ C -80 0 20 0 0 0 N
 C 80 0 20 0 0 0 N
 X A 1 -200 0 100 R 50 50 1 1 P
 X B 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole_Pad
+#
+DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -965,19 +976,6 @@ X C 6 50 200 100 D 50 50 1 1 P
 X C 3 50 200 100 D 50 50 2 1 P
 X E 4 50 -200 100 U 50 50 2 1 P
 X B 5 -150 0 100 R 50 50 2 1 I
-ENDDRAW
-ENDDEF
-#
-# synkie_symbols_PWR_FLAG
-#
-DEF synkie_symbols_PWR_FLAG #FLG 0 0 N N 1 F P
-F0 "#FLG" 0 75 50 H I C CNN
-F1 "synkie_symbols_PWR_FLAG" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
-X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #

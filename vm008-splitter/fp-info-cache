@@ -1,4 +1,4 @@
-17910168544208510
+17913385080802510
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75901,6 +75901,13 @@ SOIC 1.27
 8
 8
 synkie_footprints
+SOIC-14_3.9x8.7mm_P1.27mm
+SOIC, 14 Pin (JEDEC MS-012AB, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_14.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+14
+14
+synkie_footprints
 SOIC-16_3.9x9.9mm_P1.27mm
 SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOIC SO
@@ -75949,6 +75956,13 @@ Solderpad_1mm
 0
 1
 1
+synkie_footprints
+TEC
+
+
+0
+7
+7
 synkie_footprints
 Teensy32-light
 
