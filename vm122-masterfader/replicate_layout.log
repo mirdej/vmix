@@ -1,0 +1,93 @@
+01-02 11:37:36 replicate_layout.action_replicate_layout 305:Plugin executed on: 'darwin'
+01-02 11:37:36 replicate_layout.action_replicate_layout 306:Plugin executed with python version: '2.7.16 (default, Nov 25 2019, 22:14:07) \n[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)]'
+01-02 11:37:36 replicate_layout.action_replicate_layout 307:KiCad build version: Unknown
+01-02 11:37:36 replicate_layout.action_replicate_layout 308:Replicate layout plugin version: 68 started
+01-02 11:37:36 replicate_layout.action_replicate_layout 319:wx top level windows: wxWindowList: [<wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x7fcbcc816000> >, <wx._windows.MiniFrame; proxy of <Swig Object of type 'wxMiniFrame *' at 0x7fcbcc51af90> >, <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x7fcbcd83ea00> >, <wx._windows.MiniFrame; proxy of <Swig Object of type 'wxMiniFrame *' at 0x7fcbd5c14520> >, <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x7fcbcdd3c600> >, <wx._windows.MiniFrame; proxy of <Swig Object of type 'wxMiniFrame *' at 0x7fcbc4644c80> >, <wx._windows.MiniFrame; proxy of <Swig Object of type 'wxMiniFrame *' at 0x7fcba6af5280> >]
+01-02 11:37:36 replicate_layout.action_replicate_layout 343:Preparing replicator with RV501 as a reference
+01-02 11:37:36 replicate_layout.replicatelayout 215:getting project hierarchy from schematics
+01-02 11:37:36 replicate_layout.replicatelayout 217:Project hierarchy looks like:
+{u'5FF0F904': [u'sheet5FF0F904', u'/Users/me/Documents/development/vmix/vm122-masterfader/vm122-phase.sch'], u'5FF0B688': [u'Phase1', u'/Users/me/Documents/development/vmix/vm122-masterfader/vm122-phase.sch'], u'5FF0F8E5': [u'sheet5FF0F8E5', u'/Users/me/Documents/development/vmix/vm122-masterfader/vm122-phase.sch'], u'5FF0F40B': [u'sheet5FF0F40B', u'/Users/me/Documents/development/vmix/vm122-masterfader/vm122-phase.sch']}
+01-02 11:37:36 replicate_layout.replicatelayout 225:getting a list of all footprints on board
+01-02 11:37:36 replicate_layout.action_replicate_layout 370:source anchor footprint is u'RV501'
+Located on:[u'Phase1']
+With filenames:[u'vm122-phase.sch']
+With sheet_id:[u'Phase1']
+01-02 11:37:36 replicate_layout.action_replicate_layout 374:Corresponding footprints are 
+[(u'RV502', [u'sheet5FF0F904']), (u'RV501', [u'Phase1']), (u'RV401', [u'sheet5FF0F8E5']), (u'RV301', [u'sheet5FF0F40B'])]
+01-02 11:37:36 replicate_layout.action_replicate_layout 387:Showing dialog
+01-02 11:37:36 replicate_layout.action_replicate_layout 391:Pcbnew position: wx.Point(0, 23)
+01-02 11:37:36 replicate_layout.action_replicate_layout 397:Display 0: wx.Rect(0, 0, 1792, 1120)
+01-02 11:37:36 replicate_layout.action_replicate_layout 401:Toolbar position: wx.Point(1545, 123)
+01-02 11:37:36 replicate_layout.action_replicate_layout 408:Dialog position: wx.Point(1232, 123)
+01-02 11:37:38 replicate_layout.replicatelayout 249:construcing a list of sheets suitable for replication on level:u'Phase1', file:u'vm122-phase.sch'
+01-02 11:37:38 replicate_layout.replicatelayout 256:Source sheet path up to the level:[u'Phase1']
+01-02 11:37:38 replicate_layout.replicatelayout 260:Footprints on the sheets:
+[u'RV502', u'RV501', u'RV401', u'RV301']
+01-02 11:37:38 replicate_layout.replicatelayout 263:Footprints raw sheet ids:
+[u'/5FF0F904/5FE92522', u'/5FF0B688/5FE92522', u'/5FF0F8E5/5FE92522', u'/5FF0F40B/5FE92522']
+01-02 11:37:38 replicate_layout.replicatelayout 279:All sheets to replicate:
+[[u'sheet5FF0F904'], [u'Phase1'], [u'sheet5FF0F8E5'], [u'sheet5FF0F40B']]
+01-02 11:37:38 replicate_layout.replicatelayout 284:All sheets to replicate sorted:
+[[u'Phase1'], [u'sheet5FF0F40B'], [u'sheet5FF0F8E5'], [u'sheet5FF0F904']]
+01-02 11:37:38 replicate_layout.replicatelayout 290:All sheets to replicate sorted and without source sheet:
+[[u'sheet5FF0F40B'], [u'sheet5FF0F8E5'], [u'sheet5FF0F904']]
+01-02 11:37:40 replicate_layout.replicatelayout 249:construcing a list of sheets suitable for replication on level:u'Phase1', file:u'vm122-phase.sch'
+01-02 11:37:40 replicate_layout.replicatelayout 256:Source sheet path up to the level:[u'Phase1']
+01-02 11:37:40 replicate_layout.replicatelayout 260:Footprints on the sheets:
+[u'RV502', u'RV501', u'RV401', u'RV301']
+01-02 11:37:40 replicate_layout.replicatelayout 263:Footprints raw sheet ids:
+[u'/5FF0F904/5FE92522', u'/5FF0B688/5FE92522', u'/5FF0F8E5/5FE92522', u'/5FF0F40B/5FE92522']
+01-02 11:37:40 replicate_layout.replicatelayout 279:All sheets to replicate:
+[[u'sheet5FF0F904'], [u'Phase1'], [u'sheet5FF0F8E5'], [u'sheet5FF0F40B']]
+01-02 11:37:40 replicate_layout.replicatelayout 284:All sheets to replicate sorted:
+[[u'Phase1'], [u'sheet5FF0F40B'], [u'sheet5FF0F8E5'], [u'sheet5FF0F904']]
+01-02 11:37:40 replicate_layout.replicatelayout 290:All sheets to replicate sorted and without source sheet:
+[[u'sheet5FF0F40B'], [u'sheet5FF0F8E5'], [u'sheet5FF0F904']]
+01-02 11:37:40 replicate_layout.action_replicate_layout 179:Replicating layout
+01-02 11:37:40 replicate_layout.replicatelayout 990:Starting replication of sheets: [[u'sheet5FF0F40B'], [u'sheet5FF0F8E5'], [u'sheet5FF0F904']]
+on level: [u'Phase1']
+with tracks=True, zone=True, text=True, containing=True, remove=False, locked=False
+01-02 11:37:40 root 261:updating GUI message: 'Preparing for replication'
+01-02 11:37:40 root 266:updating GUI with: 0
+01-02 11:37:40 replicate_layout.replicatelayout 556:Getting the list of source footprints
+01-02 11:37:40 root 266:updating GUI with: 0
+01-02 11:37:40 replicate_layout.replicatelayout 560:Getting the list of all the remaining footprints
+01-02 11:37:40 replicate_layout.replicatelayout 564:Getting nets local to source footprints
+01-02 11:37:40 replicate_layout.replicatelayout 568:Getting source bounding box
+01-02 11:37:40 root 266:updating GUI with: 37
+01-02 11:37:40 replicate_layout.replicatelayout 572:Getting source tracks
+01-02 11:37:40 replicate_layout.replicatelayout 576:Getting source zones
+01-02 11:37:40 replicate_layout.replicatelayout 580:Getting source text items
+01-02 11:37:40 replicate_layout.replicatelayout 584:Getting source text items
+01-02 11:37:40 root 261:updating GUI message: 'Replicating footprints'
+01-02 11:37:40 replicate_layout.replicatelayout 590:Replicating footprints
+01-02 11:37:40 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'sheet5FF0F40B']
+01-02 11:37:40 root 266:updating GUI with: 16
+01-02 11:37:40 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'sheet5FF0F8E5']
+01-02 11:37:40 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'sheet5FF0F904']
+01-02 11:37:40 root 266:updating GUI with: 70
+01-02 11:37:40 root 261:updating GUI message: 'Replicating tracks'
+01-02 11:37:40 replicate_layout.replicatelayout 716:Replicating tracks
+01-02 11:37:40 replicate_layout.replicatelayout 722:Replicating tracks on sheet [u'sheet5FF0F40B']
+01-02 11:37:40 root 266:updating GUI with: 0
+01-02 11:37:40 replicate_layout.replicatelayout 722:Replicating tracks on sheet [u'sheet5FF0F8E5']
+01-02 11:37:40 replicate_layout.replicatelayout 722:Replicating tracks on sheet [u'sheet5FF0F904']
+01-02 11:37:40 root 266:updating GUI with: 92
+01-02 11:37:40 root 261:updating GUI message: 'Replicating zones'
+01-02 11:37:40 replicate_layout.replicatelayout 767:Replicating zones
+01-02 11:37:40 replicate_layout.replicatelayout 774:Replicating zones on sheet [u'sheet5FF0F40B']
+01-02 11:37:40 replicate_layout.replicatelayout 774:Replicating zones on sheet [u'sheet5FF0F8E5']
+01-02 11:37:40 root 266:updating GUI with: 66
+01-02 11:37:40 replicate_layout.replicatelayout 774:Replicating zones on sheet [u'sheet5FF0F904']
+01-02 11:37:40 root 261:updating GUI message: 'Replicating text'
+01-02 11:37:40 replicate_layout.replicatelayout 833:Replicating text
+01-02 11:37:40 replicate_layout.replicatelayout 840:Replicating text on sheet [u'sheet5FF0F40B']
+01-02 11:37:40 replicate_layout.replicatelayout 840:Replicating text on sheet [u'sheet5FF0F8E5']
+01-02 11:37:40 replicate_layout.replicatelayout 840:Replicating text on sheet [u'sheet5FF0F904']
+01-02 11:37:40 root 261:updating GUI message: 'Replicating drawings'
+01-02 11:37:40 replicate_layout.replicatelayout 864:Replicating drawings
+01-02 11:37:40 root 266:updating GUI with: 0
+01-02 11:37:40 replicate_layout.replicatelayout 870:Replicating drawings on sheet [u'sheet5FF0F40B']
+01-02 11:37:40 replicate_layout.replicatelayout 870:Replicating drawings on sheet [u'sheet5FF0F8E5']
+01-02 11:37:40 replicate_layout.replicatelayout 870:Replicating drawings on sheet [u'sheet5FF0F904']
+01-02 11:37:40 replicate_layout.action_replicate_layout 201:Replication complete
