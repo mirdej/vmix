@@ -1906,14 +1906,62 @@ F 3 "" H 4200 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0157
 U 1 1 5FC8F6C6
 P 6550 1100
-F 0 "#PWR?" H 6550 850 50  0001 C CNN
+F 0 "#PWR0157" H 6550 850 50  0001 C CNN
 F 1 "GND" H 6555 927 50  0001 C CNN
 F 2 "" H 6550 1100 50  0001 C CNN
 F 3 "" H 6550 1100 50  0001 C CNN
 	1    6550 1100
 	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J119
+U 1 1 5FF18E48
+P 10700 2100
+F 0 "J119" H 10800 2075 50  0000 L CNN
+F 1 "Conn_Coaxial" H 10800 1984 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132291_Vertical" H 10700 2100 50  0001 C CNN
+F 3 " ~" H 10700 2100 50  0001 C CNN
+	1    10700 2100
+	1    0    0    -1  
+$EndComp
+Text Label 10500 2100 2    50   ~ 0
+genlock
+$Comp
+L synkie_symbols:GND #PWR0158
+U 1 1 5FF1974C
+P 10700 2300
+F 0 "#PWR0158" H 10700 2050 50  0001 C CNN
+F 1 "GND" H 10705 2127 50  0001 C CNN
+F 2 "" H 10700 2300 50  0001 C CNN
+F 3 "" H 10700 2300 50  0001 C CNN
+	1    10700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J120
+U 1 1 5FF20025
+P 10700 2600
+F 0 "J120" H 10800 2575 50  0000 L CNN
+F 1 "Conn_Coaxial" H 10800 2484 50  0000 L CNN
+F 2 "Connector_Coaxial:SMB_Jack_Vertical" H 10700 2600 50  0001 C CNN
+F 3 " ~" H 10700 2600 50  0001 C CNN
+	1    10700 2600
+	1    0    0    -1  
+$EndComp
+Text Label 10500 2600 2    50   ~ 0
+genlock
+$Comp
+L synkie_symbols:GND #PWR0159
+U 1 1 5FF20030
+P 10700 2800
+F 0 "#PWR0159" H 10700 2550 50  0001 C CNN
+F 1 "GND" H 10705 2627 50  0001 C CNN
+F 2 "" H 10700 2800 50  0001 C CNN
+F 3 "" H 10700 2800 50  0001 C CNN
+	1    10700 2800
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

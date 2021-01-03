@@ -1010,7 +1010,7 @@ U 1 1 5FF5D333
 P 9500 3150
 F 0 "JP102" H 9500 3414 50  0000 C CNN
 F 1 "Jumper" H 9500 3323 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 9500 3150 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 9500 3150 50  0001 C CNN
 F 3 "~" H 9500 3150 50  0001 C CNN
 	1    9500 3150
 	1    0    0    -1  
@@ -1527,4 +1527,56 @@ F 3 "" H 3300 6300 50  0001 C CNN
 $EndComp
 Connection ~ 3600 6300
 Connection ~ 3600 5700
+$Comp
+L synkie_symbols:TE_UMCC_2337019-1 J114
+U 1 1 6005673B
+P 3300 700
+F 0 "J114" H 3828 653 60  0000 L CNN
+F 1 "TE_UMCC_2337019-1" H 3100 850 60  0000 L CNN
+F 2 "synkie_footprints:TE_UMCC_2337019-1" H 3700 540 60  0001 C CNN
+F 3 "" H 3300 700 60  0000 C CNN
+	1    3300 700 
+	1    0    0    -1  
+$EndComp
+Text Label 3300 700  2    50   ~ 0
+to_eq
+$Comp
+L synkie_symbols:GND #PWR0152
+U 1 1 6005EB9E
+P 3300 800
+AR Path="/6005EB9E" Ref="#PWR0152"  Part="1" 
+AR Path="/5FED65BF/6005EB9E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0152" H 3300 550 50  0001 C CNN
+F 1 "GND" H 3305 627 50  0000 C CNN
+F 2 "" H 3300 800 50  0001 C CNN
+F 3 "" H 3300 800 50  0001 C CNN
+	1    3300 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR0153
+U 1 1 6005F306
+P 3300 900
+AR Path="/6005F306" Ref="#PWR0153"  Part="1" 
+AR Path="/5FED65BF/6005F306" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0153" H 3300 650 50  0001 C CNN
+F 1 "GND" H 3305 727 50  0000 C CNN
+F 2 "" H 3300 900 50  0001 C CNN
+F 3 "" H 3300 900 50  0001 C CNN
+	1    3300 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:TE_UMCC_2337019-1 J115
+U 1 1 60060007
+P 4050 1600
+F 0 "J115" H 4578 1553 60  0000 L CNN
+F 1 "TE_UMCC_2337019-1" H 3850 1750 60  0000 L CNN
+F 2 "synkie_footprints:TE_UMCC_2337019-1" H 4450 1440 60  0001 C CNN
+F 3 "" H 4050 1600 60  0000 C CNN
+	1    4050 1600
+	-1   0    0    -1  
+$EndComp
+Text Label 4050 1600 0    50   ~ 0
+from_eq
 $EndSCHEMATC

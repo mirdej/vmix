@@ -1,4 +1,4 @@
-17916603766630510
+17918249258046510
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75857,7 +75857,7 @@ Potentiometer_Alps_RS6011xP_Slide
 
 0
 8
-8
+7
 synkie_footprints
 Potentiometer_Bourns_3296Y_Vertical
 Potentiometer, vertical, Bourns 3296Y, https://www.bourns.com/pdfs/3296.pdf
@@ -75977,6 +75977,13 @@ TEC
 0
 7
 7
+synkie_footprints
+TE_UMCC_2337019-1
+
+
+0
+3
+3
 synkie_footprints
 Teensy32-light
 
