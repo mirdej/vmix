@@ -1,0 +1,3285 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx_IEEE:74LS597 U2
+U 1 1 5FDEA136
+P 2700 3750
+AR Path="/5FDEA136" Ref="U2"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA136" Ref="U?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA136" Ref="U?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA136" Ref="U2"  Part="1" 
+F 0 "U2" H 2700 4766 50  0000 C CNN
+F 1 "74LS597" H 2700 4675 50  0000 C CNN
+F 2 "Package_SO:SOP-16_4.4x10.4mm_P1.27mm" H 2700 3750 50  0001 C CNN
+F 3 "" H 2700 3750 50  0001 C CNN
+	1    2700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FDEA140
+P 2150 3050
+AR Path="/5E3A4CEA/5FDEA140" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA140" Ref="#PWR?"  Part="1" 
+AR Path="/5FDEA140" Ref="#PWR0127"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA140" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 2150 2900 50  0001 C CNN
+F 1 "VCC" H 2168 3223 50  0000 C CNN
+F 2 "" H 2150 3050 50  0001 C CNN
+F 3 "" H 2150 3050 50  0001 C CNN
+	1    2150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5FDEA14A
+P 950 3000
+AR Path="/5FDEA14A" Ref="SW5"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA14A" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA14A" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA14A" Ref="SW5"  Part="1" 
+F 0 "SW5" H 800 3050 50  0000 C CNN
+F 1 "SW_Push" H 950 3194 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 3200 50  0001 C CNN
+F 3 "" H 950 3200 50  0001 C CNN
+	1    950  3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FDEA154
+P 1300 3000
+AR Path="/5FDEA154" Ref="R5"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA154" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA154" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA154" Ref="R5"  Part="1" 
+F 0 "R5" V 1300 2950 50  0000 L CNN
+F 1 "R" H 1370 2955 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 3000 50  0001 C CNN
+F 3 "~" H 1300 3000 50  0001 C CNN
+	1    1300 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5FDEA15E
+P 750 3000
+AR Path="/5FDEA15E" Ref="#PWR0128"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA15E" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA15E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA15E" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 750 2750 50  0001 C CNN
+F 1 "GND" H 755 2827 50  0000 C CNN
+F 2 "" H 750 3000 50  0001 C CNN
+F 3 "" H 750 3000 50  0001 C CNN
+	1    750  3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0129
+U 1 1 5FDEA168
+P 1450 3000
+F 0 "#PWR0129" H 1450 2850 50  0001 C CNN
+F 1 "VCC" V 1467 3128 50  0000 L CNN
+F 2 "" H 1450 3000 50  0001 C CNN
+F 3 "" H 1450 3000 50  0001 C CNN
+	1    1450 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5FDEA172
+P 950 3200
+AR Path="/5FDEA172" Ref="SW6"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA172" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA172" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA172" Ref="SW6"  Part="1" 
+F 0 "SW6" H 800 3250 50  0000 C CNN
+F 1 "SW_Push" H 950 3394 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 3400 50  0001 C CNN
+F 3 "" H 950 3400 50  0001 C CNN
+	1    950  3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FDEA17C
+P 1300 3200
+AR Path="/5FDEA17C" Ref="R6"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA17C" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA17C" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA17C" Ref="R6"  Part="1" 
+F 0 "R6" V 1300 3150 50  0000 L CNN
+F 1 "R" H 1370 3155 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 3200 50  0001 C CNN
+F 3 "~" H 1300 3200 50  0001 C CNN
+	1    1300 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 5FDEA186
+P 750 3200
+AR Path="/5FDEA186" Ref="#PWR0130"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA186" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA186" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA186" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 750 2950 50  0001 C CNN
+F 1 "GND" H 755 3027 50  0000 C CNN
+F 2 "" H 750 3200 50  0001 C CNN
+F 3 "" H 750 3200 50  0001 C CNN
+	1    750  3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0131
+U 1 1 5FDEA190
+P 1450 3200
+F 0 "#PWR0131" H 1450 3050 50  0001 C CNN
+F 1 "VCC" V 1467 3328 50  0000 L CNN
+F 2 "" H 1450 3200 50  0001 C CNN
+F 3 "" H 1450 3200 50  0001 C CNN
+	1    1450 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5FDEA19A
+P 950 3400
+AR Path="/5FDEA19A" Ref="SW7"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA19A" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA19A" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA19A" Ref="SW7"  Part="1" 
+F 0 "SW7" H 800 3450 50  0000 C CNN
+F 1 "SW_Push" H 950 3594 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 3600 50  0001 C CNN
+F 3 "" H 950 3600 50  0001 C CNN
+	1    950  3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5FDEA1A4
+P 1300 3400
+AR Path="/5FDEA1A4" Ref="R7"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA1A4" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA1A4" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA1A4" Ref="R7"  Part="1" 
+F 0 "R7" V 1300 3350 50  0000 L CNN
+F 1 "R" H 1370 3355 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 3400 50  0001 C CNN
+F 3 "~" H 1300 3400 50  0001 C CNN
+	1    1300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5FDEA1AE
+P 750 3400
+AR Path="/5FDEA1AE" Ref="#PWR0132"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA1AE" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA1AE" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA1AE" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 750 3150 50  0001 C CNN
+F 1 "GND" H 755 3227 50  0000 C CNN
+F 2 "" H 750 3400 50  0001 C CNN
+F 3 "" H 750 3400 50  0001 C CNN
+	1    750  3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0133
+U 1 1 5FDEA1B8
+P 1450 3400
+F 0 "#PWR0133" H 1450 3250 50  0001 C CNN
+F 1 "VCC" V 1467 3528 50  0000 L CNN
+F 2 "" H 1450 3400 50  0001 C CNN
+F 3 "" H 1450 3400 50  0001 C CNN
+	1    1450 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5FDEA1C2
+P 950 3600
+AR Path="/5FDEA1C2" Ref="SW8"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA1C2" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA1C2" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA1C2" Ref="SW8"  Part="1" 
+F 0 "SW8" H 800 3650 50  0000 C CNN
+F 1 "SW_Push" H 950 3794 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 3800 50  0001 C CNN
+F 3 "" H 950 3800 50  0001 C CNN
+	1    950  3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5FDEA1CC
+P 1300 3600
+AR Path="/5FDEA1CC" Ref="R8"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA1CC" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA1CC" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA1CC" Ref="R8"  Part="1" 
+F 0 "R8" V 1300 3550 50  0000 L CNN
+F 1 "R" H 1370 3555 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 3600 50  0001 C CNN
+F 3 "~" H 1300 3600 50  0001 C CNN
+	1    1300 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 5FDEA1D6
+P 750 3600
+AR Path="/5FDEA1D6" Ref="#PWR0134"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA1D6" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA1D6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA1D6" Ref="#PWR0134"  Part="1" 
+F 0 "#PWR0134" H 750 3350 50  0001 C CNN
+F 1 "GND" H 755 3427 50  0000 C CNN
+F 2 "" H 750 3600 50  0001 C CNN
+F 3 "" H 750 3600 50  0001 C CNN
+	1    750  3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0135
+U 1 1 5FDEA1E0
+P 1450 3600
+F 0 "#PWR0135" H 1450 3450 50  0001 C CNN
+F 1 "VCC" V 1467 3728 50  0001 L CNN
+F 2 "" H 1450 3600 50  0001 C CNN
+F 3 "" H 1450 3600 50  0001 C CNN
+	1    1450 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5FDEA1EA
+P 950 3800
+AR Path="/5FDEA1EA" Ref="SW9"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA1EA" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA1EA" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA1EA" Ref="SW9"  Part="1" 
+F 0 "SW9" H 800 3850 50  0000 C CNN
+F 1 "SW_Push" H 950 3994 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 4000 50  0001 C CNN
+F 3 "" H 950 4000 50  0001 C CNN
+	1    950  3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5FDEA1F4
+P 1300 3800
+AR Path="/5FDEA1F4" Ref="R9"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA1F4" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA1F4" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA1F4" Ref="R9"  Part="1" 
+F 0 "R9" V 1300 3750 50  0000 L CNN
+F 1 "R" H 1370 3755 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 3800 50  0001 C CNN
+F 3 "~" H 1300 3800 50  0001 C CNN
+	1    1300 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5FDEA1FE
+P 750 3800
+AR Path="/5FDEA1FE" Ref="#PWR0136"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA1FE" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA1FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA1FE" Ref="#PWR0136"  Part="1" 
+F 0 "#PWR0136" H 750 3550 50  0001 C CNN
+F 1 "GND" H 755 3627 50  0000 C CNN
+F 2 "" H 750 3800 50  0001 C CNN
+F 3 "" H 750 3800 50  0001 C CNN
+	1    750  3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0137
+U 1 1 5FDEA208
+P 1450 3800
+F 0 "#PWR0137" H 1450 3650 50  0001 C CNN
+F 1 "VCC" V 1467 3928 50  0001 L CNN
+F 2 "" H 1450 3800 50  0001 C CNN
+F 3 "" H 1450 3800 50  0001 C CNN
+	1    1450 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 5FDEA212
+P 950 4000
+AR Path="/5FDEA212" Ref="SW10"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA212" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA212" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA212" Ref="SW10"  Part="1" 
+F 0 "SW10" H 800 4050 50  0000 C CNN
+F 1 "SW_Push" H 950 4194 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 4200 50  0001 C CNN
+F 3 "" H 950 4200 50  0001 C CNN
+	1    950  4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5FDEA21C
+P 1300 4000
+AR Path="/5FDEA21C" Ref="R10"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA21C" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA21C" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA21C" Ref="R10"  Part="1" 
+F 0 "R10" V 1300 3950 50  0000 L CNN
+F 1 "R" H 1370 3955 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 4000 50  0001 C CNN
+F 3 "~" H 1300 4000 50  0001 C CNN
+	1    1300 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 5FDEA226
+P 750 4000
+AR Path="/5FDEA226" Ref="#PWR0138"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA226" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA226" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA226" Ref="#PWR0138"  Part="1" 
+F 0 "#PWR0138" H 750 3750 50  0001 C CNN
+F 1 "GND" H 755 3827 50  0000 C CNN
+F 2 "" H 750 4000 50  0001 C CNN
+F 3 "" H 750 4000 50  0001 C CNN
+	1    750  4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0139
+U 1 1 5FDEA230
+P 1450 4000
+F 0 "#PWR0139" H 1450 3850 50  0001 C CNN
+F 1 "VCC" V 1467 4128 50  0001 L CNN
+F 2 "" H 1450 4000 50  0001 C CNN
+F 3 "" H 1450 4000 50  0001 C CNN
+	1    1450 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW11
+U 1 1 5FDEA23A
+P 950 4200
+AR Path="/5FDEA23A" Ref="SW11"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA23A" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA23A" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA23A" Ref="SW11"  Part="1" 
+F 0 "SW11" H 800 4250 50  0000 C CNN
+F 1 "SW_Push" H 950 4394 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 4400 50  0001 C CNN
+F 3 "" H 950 4400 50  0001 C CNN
+	1    950  4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5FDEA244
+P 1300 4200
+AR Path="/5FDEA244" Ref="R11"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA244" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA244" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA244" Ref="R11"  Part="1" 
+F 0 "R11" V 1300 4150 50  0000 L CNN
+F 1 "R" H 1370 4155 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 4200 50  0001 C CNN
+F 3 "~" H 1300 4200 50  0001 C CNN
+	1    1300 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0140
+U 1 1 5FDEA24E
+P 750 4200
+AR Path="/5FDEA24E" Ref="#PWR0140"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA24E" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA24E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA24E" Ref="#PWR0140"  Part="1" 
+F 0 "#PWR0140" H 750 3950 50  0001 C CNN
+F 1 "GND" H 755 4027 50  0000 C CNN
+F 2 "" H 750 4200 50  0001 C CNN
+F 3 "" H 750 4200 50  0001 C CNN
+	1    750  4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0141
+U 1 1 5FDEA258
+P 1450 4200
+F 0 "#PWR0141" H 1450 4050 50  0001 C CNN
+F 1 "VCC" V 1467 4328 50  0001 L CNN
+F 2 "" H 1450 4200 50  0001 C CNN
+F 3 "" H 1450 4200 50  0001 C CNN
+	1    1450 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 5FDEA262
+P 950 4400
+AR Path="/5FDEA262" Ref="SW12"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA262" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA262" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA262" Ref="SW12"  Part="1" 
+F 0 "SW12" H 800 4450 50  0000 C CNN
+F 1 "SW_Push" H 950 4594 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 4600 50  0001 C CNN
+F 3 "" H 950 4600 50  0001 C CNN
+	1    950  4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5FDEA26C
+P 1300 4400
+AR Path="/5FDEA26C" Ref="R12"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA26C" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA26C" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA26C" Ref="R12"  Part="1" 
+F 0 "R12" V 1300 4350 50  0000 L CNN
+F 1 "R" H 1370 4355 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 4400 50  0001 C CNN
+F 3 "~" H 1300 4400 50  0001 C CNN
+	1    1300 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5FDEA276
+P 750 4400
+AR Path="/5FDEA276" Ref="#PWR0142"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA276" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA276" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA276" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 750 4150 50  0001 C CNN
+F 1 "GND" H 755 4227 50  0000 C CNN
+F 2 "" H 750 4400 50  0001 C CNN
+F 3 "" H 750 4400 50  0001 C CNN
+	1    750  4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0143
+U 1 1 5FDEA280
+P 1450 4400
+F 0 "#PWR0143" H 1450 4250 50  0001 C CNN
+F 1 "VCC" V 1467 4528 50  0001 L CNN
+F 2 "" H 1450 4400 50  0001 C CNN
+F 3 "" H 1450 4400 50  0001 C CNN
+	1    1450 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 3700 1950 3700
+Wire Wire Line
+	1950 3700 1950 2900
+Wire Wire Line
+	1950 2900 1150 2900
+Wire Wire Line
+	1150 2900 1150 3000
+Connection ~ 1150 3000
+Wire Wire Line
+	2150 3800 1900 3800
+Wire Wire Line
+	1900 3800 1900 3100
+Wire Wire Line
+	1900 3100 1150 3100
+Wire Wire Line
+	1150 3100 1150 3200
+Connection ~ 1150 3200
+Wire Wire Line
+	2150 3900 1850 3900
+Wire Wire Line
+	1850 3900 1850 3300
+Wire Wire Line
+	1850 3300 1150 3300
+Wire Wire Line
+	1150 3300 1150 3400
+Connection ~ 1150 3400
+Wire Wire Line
+	2150 4000 1800 4000
+Wire Wire Line
+	1800 4000 1800 3500
+Wire Wire Line
+	1800 3500 1150 3500
+Wire Wire Line
+	1150 3500 1150 3600
+Connection ~ 1150 3600
+Wire Wire Line
+	2150 4100 1750 4100
+Wire Wire Line
+	1750 4100 1750 3700
+Wire Wire Line
+	1750 3700 1150 3700
+Wire Wire Line
+	1150 3700 1150 3800
+Connection ~ 1150 3800
+Wire Wire Line
+	2150 4200 1700 4200
+Wire Wire Line
+	1700 4200 1700 3900
+Wire Wire Line
+	1700 3900 1150 3900
+Wire Wire Line
+	1150 3900 1150 4000
+Connection ~ 1150 4000
+Wire Wire Line
+	2150 4300 1650 4300
+Wire Wire Line
+	1650 4300 1650 4100
+Wire Wire Line
+	1650 4100 1150 4100
+Wire Wire Line
+	1150 4100 1150 4200
+Connection ~ 1150 4200
+Wire Wire Line
+	2150 4400 1600 4400
+Wire Wire Line
+	1600 4400 1600 4300
+Wire Wire Line
+	1600 4300 1150 4300
+Wire Wire Line
+	1150 4300 1150 4400
+Connection ~ 1150 4400
+$Comp
+L 74xx_IEEE:74LS597 U5
+U 1 1 5FDEA2B5
+P 5600 3750
+AR Path="/5FDEA2B5" Ref="U5"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA2B5" Ref="U?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA2B5" Ref="U?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA2B5" Ref="U5"  Part="1" 
+F 0 "U5" H 5600 4766 50  0000 C CNN
+F 1 "74LS597" H 5600 4675 50  0000 C CNN
+F 2 "Package_SO:SOP-16_4.4x10.4mm_P1.27mm" H 5600 3750 50  0001 C CNN
+F 3 "" H 5600 3750 50  0001 C CNN
+	1    5600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FDEA2BF
+P 5050 3050
+AR Path="/5E3A4CEA/5FDEA2BF" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA2BF" Ref="#PWR?"  Part="1" 
+AR Path="/5FDEA2BF" Ref="#PWR0144"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA2BF" Ref="#PWR0144"  Part="1" 
+F 0 "#PWR0144" H 5050 2900 50  0001 C CNN
+F 1 "VCC" H 5068 3223 50  0000 C CNN
+F 2 "" H 5050 3050 50  0001 C CNN
+F 3 "" H 5050 3050 50  0001 C CNN
+	1    5050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW29
+U 1 1 5FDEA2C9
+P 3850 3000
+AR Path="/5FDEA2C9" Ref="SW29"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA2C9" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA2C9" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA2C9" Ref="SW29"  Part="1" 
+F 0 "SW29" H 3700 3050 50  0000 C CNN
+F 1 "SW_Push" H 3850 3194 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 3850 3200 50  0001 C CNN
+F 3 "" H 3850 3200 50  0001 C CNN
+	1    3850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R29
+U 1 1 5FDEA2D3
+P 4200 3000
+AR Path="/5FDEA2D3" Ref="R29"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA2D3" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA2D3" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA2D3" Ref="R29"  Part="1" 
+F 0 "R29" V 4200 2950 50  0000 L CNN
+F 1 "R" H 4270 2955 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 3000 50  0001 C CNN
+F 3 "~" H 4200 3000 50  0001 C CNN
+	1    4200 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0145
+U 1 1 5FDEA2DD
+P 3650 3000
+AR Path="/5FDEA2DD" Ref="#PWR0145"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA2DD" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA2DD" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA2DD" Ref="#PWR0145"  Part="1" 
+F 0 "#PWR0145" H 3650 2750 50  0001 C CNN
+F 1 "GND" H 3655 2827 50  0000 C CNN
+F 2 "" H 3650 3000 50  0001 C CNN
+F 3 "" H 3650 3000 50  0001 C CNN
+	1    3650 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0146
+U 1 1 5FDEA2E7
+P 4350 3000
+F 0 "#PWR0146" H 4350 2850 50  0001 C CNN
+F 1 "VCC" V 4367 3128 50  0000 L CNN
+F 2 "" H 4350 3000 50  0001 C CNN
+F 3 "" H 4350 3000 50  0001 C CNN
+	1    4350 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW30
+U 1 1 5FDEA2F1
+P 3850 3200
+AR Path="/5FDEA2F1" Ref="SW30"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA2F1" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA2F1" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA2F1" Ref="SW30"  Part="1" 
+F 0 "SW30" H 3700 3250 50  0000 C CNN
+F 1 "SW_Push" H 3850 3394 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 3850 3400 50  0001 C CNN
+F 3 "" H 3850 3400 50  0001 C CNN
+	1    3850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 5FDEA2FB
+P 4200 3200
+AR Path="/5FDEA2FB" Ref="R30"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA2FB" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA2FB" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA2FB" Ref="R30"  Part="1" 
+F 0 "R30" V 4200 3150 50  0000 L CNN
+F 1 "R" H 4270 3155 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 3200 50  0001 C CNN
+F 3 "~" H 4200 3200 50  0001 C CNN
+	1    4200 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0147
+U 1 1 5FDEA305
+P 3650 3200
+AR Path="/5FDEA305" Ref="#PWR0147"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA305" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA305" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA305" Ref="#PWR0147"  Part="1" 
+F 0 "#PWR0147" H 3650 2950 50  0001 C CNN
+F 1 "GND" H 3655 3027 50  0000 C CNN
+F 2 "" H 3650 3200 50  0001 C CNN
+F 3 "" H 3650 3200 50  0001 C CNN
+	1    3650 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0148
+U 1 1 5FDEA30F
+P 4350 3200
+F 0 "#PWR0148" H 4350 3050 50  0001 C CNN
+F 1 "VCC" V 4367 3328 50  0000 L CNN
+F 2 "" H 4350 3200 50  0001 C CNN
+F 3 "" H 4350 3200 50  0001 C CNN
+	1    4350 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW31
+U 1 1 5FDEA319
+P 3850 3400
+AR Path="/5FDEA319" Ref="SW31"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA319" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA319" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA319" Ref="SW31"  Part="1" 
+F 0 "SW31" H 3700 3450 50  0000 C CNN
+F 1 "SW_Push" H 3850 3594 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 3850 3600 50  0001 C CNN
+F 3 "" H 3850 3600 50  0001 C CNN
+	1    3850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R31
+U 1 1 5FDEA323
+P 4200 3400
+AR Path="/5FDEA323" Ref="R31"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA323" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA323" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA323" Ref="R31"  Part="1" 
+F 0 "R31" V 4200 3350 50  0000 L CNN
+F 1 "R" H 4270 3355 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 3400 50  0001 C CNN
+F 3 "~" H 4200 3400 50  0001 C CNN
+	1    4200 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0149
+U 1 1 5FDEA32D
+P 3650 3400
+AR Path="/5FDEA32D" Ref="#PWR0149"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA32D" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA32D" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA32D" Ref="#PWR0149"  Part="1" 
+F 0 "#PWR0149" H 3650 3150 50  0001 C CNN
+F 1 "GND" H 3655 3227 50  0000 C CNN
+F 2 "" H 3650 3400 50  0001 C CNN
+F 3 "" H 3650 3400 50  0001 C CNN
+	1    3650 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0150
+U 1 1 5FDEA337
+P 4350 3400
+F 0 "#PWR0150" H 4350 3250 50  0001 C CNN
+F 1 "VCC" V 4367 3528 50  0000 L CNN
+F 2 "" H 4350 3400 50  0001 C CNN
+F 3 "" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW32
+U 1 1 5FDEA341
+P 3850 3600
+AR Path="/5FDEA341" Ref="SW32"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA341" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA341" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA341" Ref="SW32"  Part="1" 
+F 0 "SW32" H 3700 3650 50  0000 C CNN
+F 1 "SW_Push" H 3850 3794 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 3850 3800 50  0001 C CNN
+F 3 "" H 3850 3800 50  0001 C CNN
+	1    3850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 5FDEA34B
+P 4200 3600
+AR Path="/5FDEA34B" Ref="R32"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA34B" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA34B" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA34B" Ref="R32"  Part="1" 
+F 0 "R32" V 4200 3550 50  0000 L CNN
+F 1 "R" H 4270 3555 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 3600 50  0001 C CNN
+F 3 "~" H 4200 3600 50  0001 C CNN
+	1    4200 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0151
+U 1 1 5FDEA355
+P 3650 3600
+AR Path="/5FDEA355" Ref="#PWR0151"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA355" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA355" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA355" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 3650 3350 50  0001 C CNN
+F 1 "GND" H 3655 3427 50  0000 C CNN
+F 2 "" H 3650 3600 50  0001 C CNN
+F 3 "" H 3650 3600 50  0001 C CNN
+	1    3650 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0152
+U 1 1 5FDEA35F
+P 4350 3600
+F 0 "#PWR0152" H 4350 3450 50  0001 C CNN
+F 1 "VCC" V 4367 3728 50  0001 L CNN
+F 2 "" H 4350 3600 50  0001 C CNN
+F 3 "" H 4350 3600 50  0001 C CNN
+	1    4350 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW33
+U 1 1 5FDEA369
+P 3850 3800
+AR Path="/5FDEA369" Ref="SW33"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA369" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA369" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA369" Ref="SW33"  Part="1" 
+F 0 "SW33" H 3700 3850 50  0000 C CNN
+F 1 "SW_Push" H 3850 3994 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 3850 4000 50  0001 C CNN
+F 3 "" H 3850 4000 50  0001 C CNN
+	1    3850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 5FDEA373
+P 4200 3800
+AR Path="/5FDEA373" Ref="R33"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA373" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA373" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA373" Ref="R33"  Part="1" 
+F 0 "R33" V 4200 3750 50  0000 L CNN
+F 1 "R" H 4270 3755 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 3800 50  0001 C CNN
+F 3 "~" H 4200 3800 50  0001 C CNN
+	1    4200 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5FDEA37D
+P 3650 3800
+AR Path="/5FDEA37D" Ref="#PWR0153"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA37D" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA37D" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA37D" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 3650 3550 50  0001 C CNN
+F 1 "GND" H 3655 3627 50  0000 C CNN
+F 2 "" H 3650 3800 50  0001 C CNN
+F 3 "" H 3650 3800 50  0001 C CNN
+	1    3650 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0154
+U 1 1 5FDEA387
+P 4350 3800
+F 0 "#PWR0154" H 4350 3650 50  0001 C CNN
+F 1 "VCC" V 4367 3928 50  0001 L CNN
+F 2 "" H 4350 3800 50  0001 C CNN
+F 3 "" H 4350 3800 50  0001 C CNN
+	1    4350 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW34
+U 1 1 5FDEA391
+P 3850 4000
+AR Path="/5FDEA391" Ref="SW34"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA391" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA391" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA391" Ref="SW34"  Part="1" 
+F 0 "SW34" H 3700 4050 50  0000 C CNN
+F 1 "SW_Push" H 3850 4194 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 3850 4200 50  0001 C CNN
+F 3 "" H 3850 4200 50  0001 C CNN
+	1    3850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R34
+U 1 1 5FDEA39B
+P 4200 4000
+AR Path="/5FDEA39B" Ref="R34"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA39B" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA39B" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA39B" Ref="R34"  Part="1" 
+F 0 "R34" V 4200 3950 50  0000 L CNN
+F 1 "R" H 4270 3955 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 4000 50  0001 C CNN
+F 3 "~" H 4200 4000 50  0001 C CNN
+	1    4200 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0155
+U 1 1 5FDEA3A5
+P 3650 4000
+AR Path="/5FDEA3A5" Ref="#PWR0155"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA3A5" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA3A5" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA3A5" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 3650 3750 50  0001 C CNN
+F 1 "GND" H 3655 3827 50  0000 C CNN
+F 2 "" H 3650 4000 50  0001 C CNN
+F 3 "" H 3650 4000 50  0001 C CNN
+	1    3650 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0156
+U 1 1 5FDEA3AF
+P 4350 4000
+F 0 "#PWR0156" H 4350 3850 50  0001 C CNN
+F 1 "VCC" V 4367 4128 50  0001 L CNN
+F 2 "" H 4350 4000 50  0001 C CNN
+F 3 "" H 4350 4000 50  0001 C CNN
+	1    4350 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW35
+U 1 1 5FDEA3B9
+P 3850 4200
+AR Path="/5FDEA3B9" Ref="SW35"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA3B9" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA3B9" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA3B9" Ref="SW35"  Part="1" 
+F 0 "SW35" H 3700 4250 50  0000 C CNN
+F 1 "SW_Push" H 3850 4394 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 3850 4400 50  0001 C CNN
+F 3 "" H 3850 4400 50  0001 C CNN
+	1    3850 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R35
+U 1 1 5FDEA3C3
+P 4200 4200
+AR Path="/5FDEA3C3" Ref="R35"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA3C3" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA3C3" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA3C3" Ref="R35"  Part="1" 
+F 0 "R35" V 4200 4150 50  0000 L CNN
+F 1 "R" H 4270 4155 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 4200 50  0001 C CNN
+F 3 "~" H 4200 4200 50  0001 C CNN
+	1    4200 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5FDEA3CD
+P 3650 4200
+AR Path="/5FDEA3CD" Ref="#PWR0157"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA3CD" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA3CD" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA3CD" Ref="#PWR0157"  Part="1" 
+F 0 "#PWR0157" H 3650 3950 50  0001 C CNN
+F 1 "GND" H 3655 4027 50  0000 C CNN
+F 2 "" H 3650 4200 50  0001 C CNN
+F 3 "" H 3650 4200 50  0001 C CNN
+	1    3650 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0158
+U 1 1 5FDEA3D7
+P 4350 4200
+F 0 "#PWR0158" H 4350 4050 50  0001 C CNN
+F 1 "VCC" V 4367 4328 50  0001 L CNN
+F 2 "" H 4350 4200 50  0001 C CNN
+F 3 "" H 4350 4200 50  0001 C CNN
+	1    4350 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW36
+U 1 1 5FDEA3E1
+P 3850 4400
+AR Path="/5FDEA3E1" Ref="SW36"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA3E1" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA3E1" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA3E1" Ref="SW36"  Part="1" 
+F 0 "SW36" H 3700 4450 50  0000 C CNN
+F 1 "SW_Push" H 3850 4594 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 3850 4600 50  0001 C CNN
+F 3 "" H 3850 4600 50  0001 C CNN
+	1    3850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 5FDEA3EB
+P 4200 4400
+AR Path="/5FDEA3EB" Ref="R36"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA3EB" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA3EB" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA3EB" Ref="R36"  Part="1" 
+F 0 "R36" V 4200 4350 50  0000 L CNN
+F 1 "R" H 4270 4355 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 4400 50  0001 C CNN
+F 3 "~" H 4200 4400 50  0001 C CNN
+	1    4200 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0159
+U 1 1 5FDEA3F5
+P 3650 4400
+AR Path="/5FDEA3F5" Ref="#PWR0159"  Part="1" 
+AR Path="/5E3A4CEA/5FDEA3F5" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FDEA3F5" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FDEA3F5" Ref="#PWR0159"  Part="1" 
+F 0 "#PWR0159" H 3650 4150 50  0001 C CNN
+F 1 "GND" H 3655 4227 50  0000 C CNN
+F 2 "" H 3650 4400 50  0001 C CNN
+F 3 "" H 3650 4400 50  0001 C CNN
+	1    3650 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0160
+U 1 1 5FDEA3FF
+P 4350 4400
+F 0 "#PWR0160" H 4350 4250 50  0001 C CNN
+F 1 "VCC" V 4367 4528 50  0001 L CNN
+F 2 "" H 4350 4400 50  0001 C CNN
+F 3 "" H 4350 4400 50  0001 C CNN
+	1    4350 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 3700 4850 3700
+Wire Wire Line
+	4850 3700 4850 2900
+Wire Wire Line
+	4850 2900 4050 2900
+Wire Wire Line
+	4050 2900 4050 3000
+Connection ~ 4050 3000
+Wire Wire Line
+	5050 3800 4800 3800
+Wire Wire Line
+	4800 3800 4800 3100
+Wire Wire Line
+	4800 3100 4050 3100
+Wire Wire Line
+	4050 3100 4050 3200
+Connection ~ 4050 3200
+Wire Wire Line
+	5050 3900 4750 3900
+Wire Wire Line
+	4750 3900 4750 3300
+Wire Wire Line
+	4750 3300 4050 3300
+Wire Wire Line
+	4050 3300 4050 3400
+Connection ~ 4050 3400
+Wire Wire Line
+	5050 4000 4700 4000
+Wire Wire Line
+	4700 4000 4700 3500
+Wire Wire Line
+	4700 3500 4050 3500
+Wire Wire Line
+	4050 3500 4050 3600
+Connection ~ 4050 3600
+Wire Wire Line
+	5050 4100 4650 4100
+Wire Wire Line
+	4650 4100 4650 3700
+Wire Wire Line
+	4650 3700 4050 3700
+Wire Wire Line
+	4050 3700 4050 3800
+Connection ~ 4050 3800
+Wire Wire Line
+	5050 4200 4600 4200
+Wire Wire Line
+	4600 4200 4600 3900
+Wire Wire Line
+	4600 3900 4050 3900
+Wire Wire Line
+	4050 3900 4050 4000
+Connection ~ 4050 4000
+Wire Wire Line
+	5050 4300 4550 4300
+Wire Wire Line
+	4550 4300 4550 4100
+Wire Wire Line
+	4550 4100 4050 4100
+Wire Wire Line
+	4050 4100 4050 4200
+Connection ~ 4050 4200
+Wire Wire Line
+	5050 4400 4500 4400
+Wire Wire Line
+	4500 4400 4500 4300
+Wire Wire Line
+	4500 4300 4050 4300
+Wire Wire Line
+	4050 4300 4050 4400
+Connection ~ 4050 4400
+$Comp
+L 74xx_IEEE:74LS597 U3
+U 1 1 5FE1C93E
+P 2700 5750
+AR Path="/5FE1C93E" Ref="U3"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C93E" Ref="U?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C93E" Ref="U?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C93E" Ref="U3"  Part="1" 
+F 0 "U3" H 2700 6766 50  0000 C CNN
+F 1 "74LS597" H 2700 6675 50  0000 C CNN
+F 2 "Package_SO:SOP-16_4.4x10.4mm_P1.27mm" H 2700 5750 50  0001 C CNN
+F 3 "" H 2700 5750 50  0001 C CNN
+	1    2700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FE1C948
+P 2150 5050
+AR Path="/5E3A4CEA/5FE1C948" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C948" Ref="#PWR?"  Part="1" 
+AR Path="/5FE1C948" Ref="#PWR0161"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C948" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 2150 4900 50  0001 C CNN
+F 1 "VCC" H 2168 5223 50  0000 C CNN
+F 2 "" H 2150 5050 50  0001 C CNN
+F 3 "" H 2150 5050 50  0001 C CNN
+	1    2150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW13
+U 1 1 5FE1C952
+P 950 5000
+AR Path="/5FE1C952" Ref="SW13"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C952" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C952" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C952" Ref="SW13"  Part="1" 
+F 0 "SW13" H 800 5050 50  0000 C CNN
+F 1 "SW_Push" H 950 5194 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 5200 50  0001 C CNN
+F 3 "" H 950 5200 50  0001 C CNN
+	1    950  5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5FE1C95C
+P 1300 5000
+AR Path="/5FE1C95C" Ref="R13"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C95C" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C95C" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C95C" Ref="R13"  Part="1" 
+F 0 "R13" V 1300 4950 50  0000 L CNN
+F 1 "R" H 1370 4955 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 5000 50  0001 C CNN
+F 3 "~" H 1300 5000 50  0001 C CNN
+	1    1300 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 5FE1C966
+P 750 5000
+AR Path="/5FE1C966" Ref="#PWR0162"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C966" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C966" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C966" Ref="#PWR0162"  Part="1" 
+F 0 "#PWR0162" H 750 4750 50  0001 C CNN
+F 1 "GND" H 755 4827 50  0000 C CNN
+F 2 "" H 750 5000 50  0001 C CNN
+F 3 "" H 750 5000 50  0001 C CNN
+	1    750  5000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0163
+U 1 1 5FE1C970
+P 1450 5000
+F 0 "#PWR0163" H 1450 4850 50  0001 C CNN
+F 1 "VCC" V 1467 5128 50  0000 L CNN
+F 2 "" H 1450 5000 50  0001 C CNN
+F 3 "" H 1450 5000 50  0001 C CNN
+	1    1450 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW14
+U 1 1 5FE1C97A
+P 950 5200
+AR Path="/5FE1C97A" Ref="SW14"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C97A" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C97A" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C97A" Ref="SW14"  Part="1" 
+F 0 "SW14" H 800 5250 50  0000 C CNN
+F 1 "SW_Push" H 950 5394 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 5400 50  0001 C CNN
+F 3 "" H 950 5400 50  0001 C CNN
+	1    950  5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5FE1C984
+P 1300 5200
+AR Path="/5FE1C984" Ref="R14"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C984" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C984" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C984" Ref="R14"  Part="1" 
+F 0 "R14" V 1300 5150 50  0000 L CNN
+F 1 "R" H 1370 5155 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 5200 50  0001 C CNN
+F 3 "~" H 1300 5200 50  0001 C CNN
+	1    1300 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0164
+U 1 1 5FE1C98E
+P 750 5200
+AR Path="/5FE1C98E" Ref="#PWR0164"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C98E" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C98E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C98E" Ref="#PWR0164"  Part="1" 
+F 0 "#PWR0164" H 750 4950 50  0001 C CNN
+F 1 "GND" H 755 5027 50  0000 C CNN
+F 2 "" H 750 5200 50  0001 C CNN
+F 3 "" H 750 5200 50  0001 C CNN
+	1    750  5200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0165
+U 1 1 5FE1C998
+P 1450 5200
+F 0 "#PWR0165" H 1450 5050 50  0001 C CNN
+F 1 "VCC" V 1467 5328 50  0000 L CNN
+F 2 "" H 1450 5200 50  0001 C CNN
+F 3 "" H 1450 5200 50  0001 C CNN
+	1    1450 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW15
+U 1 1 5FE1C9A2
+P 950 5400
+AR Path="/5FE1C9A2" Ref="SW15"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C9A2" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C9A2" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C9A2" Ref="SW15"  Part="1" 
+F 0 "SW15" H 800 5450 50  0000 C CNN
+F 1 "SW_Push" H 950 5594 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 5600 50  0001 C CNN
+F 3 "" H 950 5600 50  0001 C CNN
+	1    950  5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5FE1C9AC
+P 1300 5400
+AR Path="/5FE1C9AC" Ref="R15"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C9AC" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C9AC" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C9AC" Ref="R15"  Part="1" 
+F 0 "R15" V 1300 5350 50  0000 L CNN
+F 1 "R" H 1370 5355 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 5400 50  0001 C CNN
+F 3 "~" H 1300 5400 50  0001 C CNN
+	1    1300 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0166
+U 1 1 5FE1C9B6
+P 750 5400
+AR Path="/5FE1C9B6" Ref="#PWR0166"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C9B6" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C9B6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C9B6" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 750 5150 50  0001 C CNN
+F 1 "GND" H 755 5227 50  0000 C CNN
+F 2 "" H 750 5400 50  0001 C CNN
+F 3 "" H 750 5400 50  0001 C CNN
+	1    750  5400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0167
+U 1 1 5FE1C9C0
+P 1450 5400
+F 0 "#PWR0167" H 1450 5250 50  0001 C CNN
+F 1 "VCC" V 1467 5528 50  0000 L CNN
+F 2 "" H 1450 5400 50  0001 C CNN
+F 3 "" H 1450 5400 50  0001 C CNN
+	1    1450 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW16
+U 1 1 5FE1C9CA
+P 950 5600
+AR Path="/5FE1C9CA" Ref="SW16"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C9CA" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C9CA" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C9CA" Ref="SW16"  Part="1" 
+F 0 "SW16" H 800 5650 50  0000 C CNN
+F 1 "SW_Push" H 950 5794 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 5800 50  0001 C CNN
+F 3 "" H 950 5800 50  0001 C CNN
+	1    950  5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5FE1C9D4
+P 1300 5600
+AR Path="/5FE1C9D4" Ref="R16"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C9D4" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C9D4" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C9D4" Ref="R16"  Part="1" 
+F 0 "R16" V 1300 5550 50  0000 L CNN
+F 1 "R" H 1370 5555 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 5600 50  0001 C CNN
+F 3 "~" H 1300 5600 50  0001 C CNN
+	1    1300 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0168
+U 1 1 5FE1C9DE
+P 750 5600
+AR Path="/5FE1C9DE" Ref="#PWR0168"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C9DE" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C9DE" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C9DE" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H 750 5350 50  0001 C CNN
+F 1 "GND" H 755 5427 50  0000 C CNN
+F 2 "" H 750 5600 50  0001 C CNN
+F 3 "" H 750 5600 50  0001 C CNN
+	1    750  5600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0169
+U 1 1 5FE1C9E8
+P 1450 5600
+F 0 "#PWR0169" H 1450 5450 50  0001 C CNN
+F 1 "VCC" V 1467 5728 50  0001 L CNN
+F 2 "" H 1450 5600 50  0001 C CNN
+F 3 "" H 1450 5600 50  0001 C CNN
+	1    1450 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW17
+U 1 1 5FE1C9F2
+P 950 5800
+AR Path="/5FE1C9F2" Ref="SW17"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C9F2" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C9F2" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C9F2" Ref="SW17"  Part="1" 
+F 0 "SW17" H 800 5850 50  0000 C CNN
+F 1 "SW_Push" H 950 5994 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 6000 50  0001 C CNN
+F 3 "" H 950 6000 50  0001 C CNN
+	1    950  5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5FE1C9FC
+P 1300 5800
+AR Path="/5FE1C9FC" Ref="R17"  Part="1" 
+AR Path="/5E3A4CEA/5FE1C9FC" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1C9FC" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1C9FC" Ref="R17"  Part="1" 
+F 0 "R17" V 1300 5750 50  0000 L CNN
+F 1 "R" H 1370 5755 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 5800 50  0001 C CNN
+F 3 "~" H 1300 5800 50  0001 C CNN
+	1    1300 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0170
+U 1 1 5FE1CA06
+P 750 5800
+AR Path="/5FE1CA06" Ref="#PWR0170"  Part="1" 
+AR Path="/5E3A4CEA/5FE1CA06" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1CA06" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1CA06" Ref="#PWR0170"  Part="1" 
+F 0 "#PWR0170" H 750 5550 50  0001 C CNN
+F 1 "GND" H 755 5627 50  0000 C CNN
+F 2 "" H 750 5800 50  0001 C CNN
+F 3 "" H 750 5800 50  0001 C CNN
+	1    750  5800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0171
+U 1 1 5FE1CA10
+P 1450 5800
+F 0 "#PWR0171" H 1450 5650 50  0001 C CNN
+F 1 "VCC" V 1467 5928 50  0001 L CNN
+F 2 "" H 1450 5800 50  0001 C CNN
+F 3 "" H 1450 5800 50  0001 C CNN
+	1    1450 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW18
+U 1 1 5FE1CA1A
+P 950 6000
+AR Path="/5FE1CA1A" Ref="SW18"  Part="1" 
+AR Path="/5E3A4CEA/5FE1CA1A" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1CA1A" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1CA1A" Ref="SW18"  Part="1" 
+F 0 "SW18" H 800 6050 50  0000 C CNN
+F 1 "SW_Push" H 950 6194 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 6200 50  0001 C CNN
+F 3 "" H 950 6200 50  0001 C CNN
+	1    950  6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5FE1CA24
+P 1300 6000
+AR Path="/5FE1CA24" Ref="R18"  Part="1" 
+AR Path="/5E3A4CEA/5FE1CA24" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1CA24" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1CA24" Ref="R18"  Part="1" 
+F 0 "R18" V 1300 5950 50  0000 L CNN
+F 1 "R" H 1370 5955 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 6000 50  0001 C CNN
+F 3 "~" H 1300 6000 50  0001 C CNN
+	1    1300 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0172
+U 1 1 5FE1CA2E
+P 750 6000
+AR Path="/5FE1CA2E" Ref="#PWR0172"  Part="1" 
+AR Path="/5E3A4CEA/5FE1CA2E" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1CA2E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1CA2E" Ref="#PWR0172"  Part="1" 
+F 0 "#PWR0172" H 750 5750 50  0001 C CNN
+F 1 "GND" H 755 5827 50  0000 C CNN
+F 2 "" H 750 6000 50  0001 C CNN
+F 3 "" H 750 6000 50  0001 C CNN
+	1    750  6000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0173
+U 1 1 5FE1CA38
+P 1450 6000
+F 0 "#PWR0173" H 1450 5850 50  0001 C CNN
+F 1 "VCC" V 1467 6128 50  0001 L CNN
+F 2 "" H 1450 6000 50  0001 C CNN
+F 3 "" H 1450 6000 50  0001 C CNN
+	1    1450 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW19
+U 1 1 5FE1CA42
+P 950 6200
+AR Path="/5FE1CA42" Ref="SW19"  Part="1" 
+AR Path="/5E3A4CEA/5FE1CA42" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1CA42" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1CA42" Ref="SW19"  Part="1" 
+F 0 "SW19" H 800 6250 50  0000 C CNN
+F 1 "SW_Push" H 950 6394 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 6400 50  0001 C CNN
+F 3 "" H 950 6400 50  0001 C CNN
+	1    950  6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5FE1CA4C
+P 1300 6200
+AR Path="/5FE1CA4C" Ref="R19"  Part="1" 
+AR Path="/5E3A4CEA/5FE1CA4C" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1CA4C" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1CA4C" Ref="R19"  Part="1" 
+F 0 "R19" V 1300 6150 50  0000 L CNN
+F 1 "R" H 1370 6155 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 6200 50  0001 C CNN
+F 3 "~" H 1300 6200 50  0001 C CNN
+	1    1300 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0174
+U 1 1 5FE1CA56
+P 750 6200
+AR Path="/5FE1CA56" Ref="#PWR0174"  Part="1" 
+AR Path="/5E3A4CEA/5FE1CA56" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1CA56" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1CA56" Ref="#PWR0174"  Part="1" 
+F 0 "#PWR0174" H 750 5950 50  0001 C CNN
+F 1 "GND" H 755 6027 50  0000 C CNN
+F 2 "" H 750 6200 50  0001 C CNN
+F 3 "" H 750 6200 50  0001 C CNN
+	1    750  6200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0175
+U 1 1 5FE1CA60
+P 1450 6200
+F 0 "#PWR0175" H 1450 6050 50  0001 C CNN
+F 1 "VCC" V 1467 6328 50  0001 L CNN
+F 2 "" H 1450 6200 50  0001 C CNN
+F 3 "" H 1450 6200 50  0001 C CNN
+	1    1450 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW20
+U 1 1 5FE1CA6A
+P 950 6400
+AR Path="/5FE1CA6A" Ref="SW20"  Part="1" 
+AR Path="/5E3A4CEA/5FE1CA6A" Ref="SW?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1CA6A" Ref="SW?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1CA6A" Ref="SW20"  Part="1" 
+F 0 "SW20" H 800 6450 50  0000 C CNN
+F 1 "SW_Push" H 950 6594 50  0001 C CNN
+F 2 "synkie_footprints:Alps_Tactile_Switch" H 950 6600 50  0001 C CNN
+F 3 "" H 950 6600 50  0001 C CNN
+	1    950  6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5FE1CA74
+P 1300 6400
+AR Path="/5FE1CA74" Ref="R20"  Part="1" 
+AR Path="/5E3A4CEA/5FE1CA74" Ref="R?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1CA74" Ref="R?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1CA74" Ref="R20"  Part="1" 
+F 0 "R20" V 1300 6350 50  0000 L CNN
+F 1 "R" H 1370 6355 50  0001 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 6400 50  0001 C CNN
+F 3 "~" H 1300 6400 50  0001 C CNN
+	1    1300 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0176
+U 1 1 5FE1CA7E
+P 750 6400
+AR Path="/5FE1CA7E" Ref="#PWR0176"  Part="1" 
+AR Path="/5E3A4CEA/5FE1CA7E" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FE1CA7E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FE1CA7E" Ref="#PWR0176"  Part="1" 
+F 0 "#PWR0176" H 750 6150 50  0001 C CNN
+F 1 "GND" H 755 6227 50  0000 C CNN
+F 2 "" H 750 6400 50  0001 C CNN
+F 3 "" H 750 6400 50  0001 C CNN
+	1    750  6400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0177
+U 1 1 5FE1CA88
+P 1450 6400
+F 0 "#PWR0177" H 1450 6250 50  0001 C CNN
+F 1 "VCC" V 1467 6528 50  0001 L CNN
+F 2 "" H 1450 6400 50  0001 C CNN
+F 3 "" H 1450 6400 50  0001 C CNN
+	1    1450 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 5700 1950 5700
+Wire Wire Line
+	1950 5700 1950 4900
+Wire Wire Line
+	1950 4900 1150 4900
+Wire Wire Line
+	1150 4900 1150 5000
+Connection ~ 1150 5000
+Wire Wire Line
+	2150 5800 1900 5800
+Wire Wire Line
+	1900 5800 1900 5100
+Wire Wire Line
+	1900 5100 1150 5100
+Wire Wire Line
+	1150 5100 1150 5200
+Connection ~ 1150 5200
+Wire Wire Line
+	2150 5900 1850 5900
+Wire Wire Line
+	1850 5900 1850 5300
+Wire Wire Line
+	1850 5300 1150 5300
+Wire Wire Line
+	1150 5300 1150 5400
+Connection ~ 1150 5400
+Wire Wire Line
+	2150 6000 1800 6000
+Wire Wire Line
+	1800 6000 1800 5500
+Wire Wire Line
+	1800 5500 1150 5500
+Wire Wire Line
+	1150 5500 1150 5600
+Connection ~ 1150 5600
+Wire Wire Line
+	2150 6100 1750 6100
+Wire Wire Line
+	1750 6100 1750 5700
+Wire Wire Line
+	1750 5700 1150 5700
+Wire Wire Line
+	1150 5700 1150 5800
+Connection ~ 1150 5800
+Wire Wire Line
+	2150 6200 1700 6200
+Wire Wire Line
+	1700 6200 1700 5900
+Wire Wire Line
+	1700 5900 1150 5900
+Wire Wire Line
+	1150 5900 1150 6000
+Connection ~ 1150 6000
+Wire Wire Line
+	2150 6300 1650 6300
+Wire Wire Line
+	1650 6300 1650 6100
+Wire Wire Line
+	1650 6100 1150 6100
+Wire Wire Line
+	1150 6100 1150 6200
+Connection ~ 1150 6200
+Wire Wire Line
+	2150 6400 1600 6400
+Wire Wire Line
+	1600 6400 1600 6300
+Wire Wire Line
+	1600 6300 1150 6300
+Wire Wire Line
+	1150 6300 1150 6400
+Connection ~ 1150 6400
+Wire Wire Line
+	3250 4400 3250 2750
+Wire Wire Line
+	3250 2750 4900 2750
+Wire Wire Line
+	4900 2750 4900 3600
+Wire Wire Line
+	4900 3600 5050 3600
+Wire Wire Line
+	6150 4700 2000 4700
+Wire Wire Line
+	2000 4700 2000 5600
+Wire Wire Line
+	2000 5600 2150 5600
+$Comp
+L synkie_symbols:SK6812MINI D1
+U 1 1 5FF14976
+P 6450 1250
+F 0 "D1" H 6550 1500 50  0000 L CNN
+F 1 "SK6812MINI" H 6794 1205 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 6500 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6550 875 50  0001 L TNN
+	1    6450 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF1497C
+P 6450 950
+AR Path="/5E3A4CEA/5FF1497C" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF1497C" Ref="#PWR?"  Part="1" 
+AR Path="/5FF1497C" Ref="#PWR0185"  Part="1" 
+AR Path="/5FF0D8C6/5FF1497C" Ref="#PWR0185"  Part="1" 
+F 0 "#PWR0185" H 6450 800 50  0001 C CNN
+F 1 "VCC" H 6468 1123 50  0000 C CNN
+F 2 "" H 6450 950 50  0001 C CNN
+F 3 "" H 6450 950 50  0001 C CNN
+	1    6450 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0186
+U 1 1 5FF14982
+P 6450 1550
+AR Path="/5FF14982" Ref="#PWR0186"  Part="1" 
+AR Path="/5E3A4CEA/5FF14982" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF14982" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF14982" Ref="#PWR0186"  Part="1" 
+F 0 "#PWR0186" H 6450 1300 50  0001 C CNN
+F 1 "GND" H 6455 1377 50  0000 C CNN
+F 2 "" H 6450 1550 50  0001 C CNN
+F 3 "" H 6450 1550 50  0001 C CNN
+	1    6450 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF1498E
+P 7050 950
+AR Path="/5E3A4CEA/5FF1498E" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF1498E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF1498E" Ref="#PWR0187"  Part="1" 
+AR Path="/5FF0D8C6/5FF1498E" Ref="#PWR0187"  Part="1" 
+F 0 "#PWR0187" H 7050 800 50  0001 C CNN
+F 1 "VCC" H 7068 1123 50  0000 C CNN
+F 2 "" H 7050 950 50  0001 C CNN
+F 3 "" H 7050 950 50  0001 C CNN
+	1    7050 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0188
+U 1 1 5FF14994
+P 7050 1550
+AR Path="/5FF14994" Ref="#PWR0188"  Part="1" 
+AR Path="/5E3A4CEA/5FF14994" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF14994" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF14994" Ref="#PWR0188"  Part="1" 
+F 0 "#PWR0188" H 7050 1300 50  0001 C CNN
+F 1 "GND" H 7055 1377 50  0000 C CNN
+F 2 "" H 7050 1550 50  0001 C CNN
+F 3 "" H 7050 1550 50  0001 C CNN
+	1    7050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF149A0
+P 7650 950
+AR Path="/5E3A4CEA/5FF149A0" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF149A0" Ref="#PWR?"  Part="1" 
+AR Path="/5FF149A0" Ref="#PWR0189"  Part="1" 
+AR Path="/5FF0D8C6/5FF149A0" Ref="#PWR0189"  Part="1" 
+F 0 "#PWR0189" H 7650 800 50  0001 C CNN
+F 1 "VCC" H 7668 1123 50  0000 C CNN
+F 2 "" H 7650 950 50  0001 C CNN
+F 3 "" H 7650 950 50  0001 C CNN
+	1    7650 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0190
+U 1 1 5FF149A6
+P 7650 1550
+AR Path="/5FF149A6" Ref="#PWR0190"  Part="1" 
+AR Path="/5E3A4CEA/5FF149A6" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF149A6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF149A6" Ref="#PWR0190"  Part="1" 
+F 0 "#PWR0190" H 7650 1300 50  0001 C CNN
+F 1 "GND" H 7655 1377 50  0000 C CNN
+F 2 "" H 7650 1550 50  0001 C CNN
+F 3 "" H 7650 1550 50  0001 C CNN
+	1    7650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF149B2
+P 8250 950
+AR Path="/5E3A4CEA/5FF149B2" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF149B2" Ref="#PWR?"  Part="1" 
+AR Path="/5FF149B2" Ref="#PWR0191"  Part="1" 
+AR Path="/5FF0D8C6/5FF149B2" Ref="#PWR0191"  Part="1" 
+F 0 "#PWR0191" H 8250 800 50  0001 C CNN
+F 1 "VCC" H 8268 1123 50  0000 C CNN
+F 2 "" H 8250 950 50  0001 C CNN
+F 3 "" H 8250 950 50  0001 C CNN
+	1    8250 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0192
+U 1 1 5FF149B8
+P 8250 1550
+AR Path="/5FF149B8" Ref="#PWR0192"  Part="1" 
+AR Path="/5E3A4CEA/5FF149B8" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF149B8" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF149B8" Ref="#PWR0192"  Part="1" 
+F 0 "#PWR0192" H 8250 1300 50  0001 C CNN
+F 1 "GND" H 8255 1377 50  0000 C CNN
+F 2 "" H 8250 1550 50  0001 C CNN
+F 3 "" H 8250 1550 50  0001 C CNN
+	1    8250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF73DD4
+P 8850 950
+AR Path="/5E3A4CEA/5FF73DD4" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF73DD4" Ref="#PWR?"  Part="1" 
+AR Path="/5FF73DD4" Ref="#PWR0193"  Part="1" 
+AR Path="/5FF0D8C6/5FF73DD4" Ref="#PWR0193"  Part="1" 
+F 0 "#PWR0193" H 8850 800 50  0001 C CNN
+F 1 "VCC" H 8868 1123 50  0000 C CNN
+F 2 "" H 8850 950 50  0001 C CNN
+F 3 "" H 8850 950 50  0001 C CNN
+	1    8850 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0194
+U 1 1 5FF73DDE
+P 8850 1550
+AR Path="/5FF73DDE" Ref="#PWR0194"  Part="1" 
+AR Path="/5E3A4CEA/5FF73DDE" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF73DDE" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF73DDE" Ref="#PWR0194"  Part="1" 
+F 0 "#PWR0194" H 8850 1300 50  0001 C CNN
+F 1 "GND" H 8855 1377 50  0000 C CNN
+F 2 "" H 8850 1550 50  0001 C CNN
+F 3 "" H 8850 1550 50  0001 C CNN
+	1    8850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF73DF2
+P 9450 950
+AR Path="/5E3A4CEA/5FF73DF2" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF73DF2" Ref="#PWR?"  Part="1" 
+AR Path="/5FF73DF2" Ref="#PWR0195"  Part="1" 
+AR Path="/5FF0D8C6/5FF73DF2" Ref="#PWR0195"  Part="1" 
+F 0 "#PWR0195" H 9450 800 50  0001 C CNN
+F 1 "VCC" H 9468 1123 50  0000 C CNN
+F 2 "" H 9450 950 50  0001 C CNN
+F 3 "" H 9450 950 50  0001 C CNN
+	1    9450 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0196
+U 1 1 5FF73DFC
+P 9450 1550
+AR Path="/5FF73DFC" Ref="#PWR0196"  Part="1" 
+AR Path="/5E3A4CEA/5FF73DFC" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF73DFC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF73DFC" Ref="#PWR0196"  Part="1" 
+F 0 "#PWR0196" H 9450 1300 50  0001 C CNN
+F 1 "GND" H 9455 1377 50  0000 C CNN
+F 2 "" H 9450 1550 50  0001 C CNN
+F 3 "" H 9450 1550 50  0001 C CNN
+	1    9450 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF73E10
+P 10050 950
+AR Path="/5E3A4CEA/5FF73E10" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF73E10" Ref="#PWR?"  Part="1" 
+AR Path="/5FF73E10" Ref="#PWR0197"  Part="1" 
+AR Path="/5FF0D8C6/5FF73E10" Ref="#PWR0197"  Part="1" 
+F 0 "#PWR0197" H 10050 800 50  0001 C CNN
+F 1 "VCC" H 10068 1123 50  0000 C CNN
+F 2 "" H 10050 950 50  0001 C CNN
+F 3 "" H 10050 950 50  0001 C CNN
+	1    10050 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0198
+U 1 1 5FF73E1A
+P 10050 1550
+AR Path="/5FF73E1A" Ref="#PWR0198"  Part="1" 
+AR Path="/5E3A4CEA/5FF73E1A" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF73E1A" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF73E1A" Ref="#PWR0198"  Part="1" 
+F 0 "#PWR0198" H 10050 1300 50  0001 C CNN
+F 1 "GND" H 10055 1377 50  0000 C CNN
+F 2 "" H 10050 1550 50  0001 C CNN
+F 3 "" H 10050 1550 50  0001 C CNN
+	1    10050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF73E2E
+P 10650 950
+AR Path="/5E3A4CEA/5FF73E2E" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF73E2E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF73E2E" Ref="#PWR0199"  Part="1" 
+AR Path="/5FF0D8C6/5FF73E2E" Ref="#PWR0199"  Part="1" 
+F 0 "#PWR0199" H 10650 800 50  0001 C CNN
+F 1 "VCC" H 10668 1123 50  0000 C CNN
+F 2 "" H 10650 950 50  0001 C CNN
+F 3 "" H 10650 950 50  0001 C CNN
+	1    10650 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0200
+U 1 1 5FF73E38
+P 10650 1550
+AR Path="/5FF73E38" Ref="#PWR0200"  Part="1" 
+AR Path="/5E3A4CEA/5FF73E38" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF73E38" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF73E38" Ref="#PWR0200"  Part="1" 
+F 0 "#PWR0200" H 10650 1300 50  0001 C CNN
+F 1 "GND" H 10655 1377 50  0000 C CNN
+F 2 "" H 10650 1550 50  0001 C CNN
+F 3 "" H 10650 1550 50  0001 C CNN
+	1    10650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF85757
+P 6450 2050
+AR Path="/5E3A4CEA/5FF85757" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF85757" Ref="#PWR?"  Part="1" 
+AR Path="/5FF85757" Ref="#PWR0201"  Part="1" 
+AR Path="/5FF0D8C6/5FF85757" Ref="#PWR0201"  Part="1" 
+F 0 "#PWR0201" H 6450 1900 50  0001 C CNN
+F 1 "VCC" H 6468 2223 50  0000 C CNN
+F 2 "" H 6450 2050 50  0001 C CNN
+F 3 "" H 6450 2050 50  0001 C CNN
+	1    6450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0202
+U 1 1 5FF85761
+P 6450 2650
+AR Path="/5FF85761" Ref="#PWR0202"  Part="1" 
+AR Path="/5E3A4CEA/5FF85761" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF85761" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF85761" Ref="#PWR0202"  Part="1" 
+F 0 "#PWR0202" H 6450 2400 50  0001 C CNN
+F 1 "GND" H 6455 2477 50  0000 C CNN
+F 2 "" H 6450 2650 50  0001 C CNN
+F 3 "" H 6450 2650 50  0001 C CNN
+	1    6450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF85775
+P 7050 2050
+AR Path="/5E3A4CEA/5FF85775" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF85775" Ref="#PWR?"  Part="1" 
+AR Path="/5FF85775" Ref="#PWR0203"  Part="1" 
+AR Path="/5FF0D8C6/5FF85775" Ref="#PWR0203"  Part="1" 
+F 0 "#PWR0203" H 7050 1900 50  0001 C CNN
+F 1 "VCC" H 7068 2223 50  0000 C CNN
+F 2 "" H 7050 2050 50  0001 C CNN
+F 3 "" H 7050 2050 50  0001 C CNN
+	1    7050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0204
+U 1 1 5FF8577F
+P 7050 2650
+AR Path="/5FF8577F" Ref="#PWR0204"  Part="1" 
+AR Path="/5E3A4CEA/5FF8577F" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF8577F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF8577F" Ref="#PWR0204"  Part="1" 
+F 0 "#PWR0204" H 7050 2400 50  0001 C CNN
+F 1 "GND" H 7055 2477 50  0000 C CNN
+F 2 "" H 7050 2650 50  0001 C CNN
+F 3 "" H 7050 2650 50  0001 C CNN
+	1    7050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF85793
+P 7650 2050
+AR Path="/5E3A4CEA/5FF85793" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF85793" Ref="#PWR?"  Part="1" 
+AR Path="/5FF85793" Ref="#PWR0205"  Part="1" 
+AR Path="/5FF0D8C6/5FF85793" Ref="#PWR0205"  Part="1" 
+F 0 "#PWR0205" H 7650 1900 50  0001 C CNN
+F 1 "VCC" H 7668 2223 50  0000 C CNN
+F 2 "" H 7650 2050 50  0001 C CNN
+F 3 "" H 7650 2050 50  0001 C CNN
+	1    7650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0206
+U 1 1 5FF8579D
+P 7650 2650
+AR Path="/5FF8579D" Ref="#PWR0206"  Part="1" 
+AR Path="/5E3A4CEA/5FF8579D" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF8579D" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF8579D" Ref="#PWR0206"  Part="1" 
+F 0 "#PWR0206" H 7650 2400 50  0001 C CNN
+F 1 "GND" H 7655 2477 50  0000 C CNN
+F 2 "" H 7650 2650 50  0001 C CNN
+F 3 "" H 7650 2650 50  0001 C CNN
+	1    7650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF857B1
+P 8250 2050
+AR Path="/5E3A4CEA/5FF857B1" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF857B1" Ref="#PWR?"  Part="1" 
+AR Path="/5FF857B1" Ref="#PWR0207"  Part="1" 
+AR Path="/5FF0D8C6/5FF857B1" Ref="#PWR0207"  Part="1" 
+F 0 "#PWR0207" H 8250 1900 50  0001 C CNN
+F 1 "VCC" H 8268 2223 50  0000 C CNN
+F 2 "" H 8250 2050 50  0001 C CNN
+F 3 "" H 8250 2050 50  0001 C CNN
+	1    8250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0208
+U 1 1 5FF857BB
+P 8250 2650
+AR Path="/5FF857BB" Ref="#PWR0208"  Part="1" 
+AR Path="/5E3A4CEA/5FF857BB" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF857BB" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF857BB" Ref="#PWR0208"  Part="1" 
+F 0 "#PWR0208" H 8250 2400 50  0001 C CNN
+F 1 "GND" H 8255 2477 50  0000 C CNN
+F 2 "" H 8250 2650 50  0001 C CNN
+F 3 "" H 8250 2650 50  0001 C CNN
+	1    8250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF857CF
+P 8850 2050
+AR Path="/5E3A4CEA/5FF857CF" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF857CF" Ref="#PWR?"  Part="1" 
+AR Path="/5FF857CF" Ref="#PWR0209"  Part="1" 
+AR Path="/5FF0D8C6/5FF857CF" Ref="#PWR0209"  Part="1" 
+F 0 "#PWR0209" H 8850 1900 50  0001 C CNN
+F 1 "VCC" H 8868 2223 50  0000 C CNN
+F 2 "" H 8850 2050 50  0001 C CNN
+F 3 "" H 8850 2050 50  0001 C CNN
+	1    8850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0210
+U 1 1 5FF857D9
+P 8850 2650
+AR Path="/5FF857D9" Ref="#PWR0210"  Part="1" 
+AR Path="/5E3A4CEA/5FF857D9" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF857D9" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF857D9" Ref="#PWR0210"  Part="1" 
+F 0 "#PWR0210" H 8850 2400 50  0001 C CNN
+F 1 "GND" H 8855 2477 50  0000 C CNN
+F 2 "" H 8850 2650 50  0001 C CNN
+F 3 "" H 8850 2650 50  0001 C CNN
+	1    8850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF857ED
+P 9450 2050
+AR Path="/5E3A4CEA/5FF857ED" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF857ED" Ref="#PWR?"  Part="1" 
+AR Path="/5FF857ED" Ref="#PWR0211"  Part="1" 
+AR Path="/5FF0D8C6/5FF857ED" Ref="#PWR0211"  Part="1" 
+F 0 "#PWR0211" H 9450 1900 50  0001 C CNN
+F 1 "VCC" H 9468 2223 50  0000 C CNN
+F 2 "" H 9450 2050 50  0001 C CNN
+F 3 "" H 9450 2050 50  0001 C CNN
+	1    9450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0212
+U 1 1 5FF857F7
+P 9450 2650
+AR Path="/5FF857F7" Ref="#PWR0212"  Part="1" 
+AR Path="/5E3A4CEA/5FF857F7" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF857F7" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF857F7" Ref="#PWR0212"  Part="1" 
+F 0 "#PWR0212" H 9450 2400 50  0001 C CNN
+F 1 "GND" H 9455 2477 50  0000 C CNN
+F 2 "" H 9450 2650 50  0001 C CNN
+F 3 "" H 9450 2650 50  0001 C CNN
+	1    9450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF8580B
+P 10050 2050
+AR Path="/5E3A4CEA/5FF8580B" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF8580B" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8580B" Ref="#PWR0213"  Part="1" 
+AR Path="/5FF0D8C6/5FF8580B" Ref="#PWR0213"  Part="1" 
+F 0 "#PWR0213" H 10050 1900 50  0001 C CNN
+F 1 "VCC" H 10068 2223 50  0000 C CNN
+F 2 "" H 10050 2050 50  0001 C CNN
+F 3 "" H 10050 2050 50  0001 C CNN
+	1    10050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0214
+U 1 1 5FF85815
+P 10050 2650
+AR Path="/5FF85815" Ref="#PWR0214"  Part="1" 
+AR Path="/5E3A4CEA/5FF85815" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF85815" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF85815" Ref="#PWR0214"  Part="1" 
+F 0 "#PWR0214" H 10050 2400 50  0001 C CNN
+F 1 "GND" H 10055 2477 50  0000 C CNN
+F 2 "" H 10050 2650 50  0001 C CNN
+F 3 "" H 10050 2650 50  0001 C CNN
+	1    10050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF85829
+P 10650 2050
+AR Path="/5E3A4CEA/5FF85829" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF85829" Ref="#PWR?"  Part="1" 
+AR Path="/5FF85829" Ref="#PWR0215"  Part="1" 
+AR Path="/5FF0D8C6/5FF85829" Ref="#PWR0215"  Part="1" 
+F 0 "#PWR0215" H 10650 1900 50  0001 C CNN
+F 1 "VCC" H 10668 2223 50  0000 C CNN
+F 2 "" H 10650 2050 50  0001 C CNN
+F 3 "" H 10650 2050 50  0001 C CNN
+	1    10650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0216
+U 1 1 5FF85833
+P 10650 2650
+AR Path="/5FF85833" Ref="#PWR0216"  Part="1" 
+AR Path="/5E3A4CEA/5FF85833" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF85833" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF85833" Ref="#PWR0216"  Part="1" 
+F 0 "#PWR0216" H 10650 2400 50  0001 C CNN
+F 1 "GND" H 10655 2477 50  0000 C CNN
+F 2 "" H 10650 2650 50  0001 C CNN
+F 3 "" H 10650 2650 50  0001 C CNN
+	1    10650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF9693B
+P 6450 3100
+AR Path="/5E3A4CEA/5FF9693B" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF9693B" Ref="#PWR?"  Part="1" 
+AR Path="/5FF9693B" Ref="#PWR0217"  Part="1" 
+AR Path="/5FF0D8C6/5FF9693B" Ref="#PWR0217"  Part="1" 
+F 0 "#PWR0217" H 6450 2950 50  0001 C CNN
+F 1 "VCC" H 6468 3273 50  0000 C CNN
+F 2 "" H 6450 3100 50  0001 C CNN
+F 3 "" H 6450 3100 50  0001 C CNN
+	1    6450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0218
+U 1 1 5FF96945
+P 6450 3700
+AR Path="/5FF96945" Ref="#PWR0218"  Part="1" 
+AR Path="/5E3A4CEA/5FF96945" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF96945" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF96945" Ref="#PWR0218"  Part="1" 
+F 0 "#PWR0218" H 6450 3450 50  0001 C CNN
+F 1 "GND" H 6455 3527 50  0000 C CNN
+F 2 "" H 6450 3700 50  0001 C CNN
+F 3 "" H 6450 3700 50  0001 C CNN
+	1    6450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF96959
+P 7050 3100
+AR Path="/5E3A4CEA/5FF96959" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF96959" Ref="#PWR?"  Part="1" 
+AR Path="/5FF96959" Ref="#PWR0219"  Part="1" 
+AR Path="/5FF0D8C6/5FF96959" Ref="#PWR0219"  Part="1" 
+F 0 "#PWR0219" H 7050 2950 50  0001 C CNN
+F 1 "VCC" H 7068 3273 50  0000 C CNN
+F 2 "" H 7050 3100 50  0001 C CNN
+F 3 "" H 7050 3100 50  0001 C CNN
+	1    7050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0220
+U 1 1 5FF96963
+P 7050 3700
+AR Path="/5FF96963" Ref="#PWR0220"  Part="1" 
+AR Path="/5E3A4CEA/5FF96963" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF96963" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF96963" Ref="#PWR0220"  Part="1" 
+F 0 "#PWR0220" H 7050 3450 50  0001 C CNN
+F 1 "GND" H 7055 3527 50  0000 C CNN
+F 2 "" H 7050 3700 50  0001 C CNN
+F 3 "" H 7050 3700 50  0001 C CNN
+	1    7050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF96977
+P 7650 3100
+AR Path="/5E3A4CEA/5FF96977" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF96977" Ref="#PWR?"  Part="1" 
+AR Path="/5FF96977" Ref="#PWR0221"  Part="1" 
+AR Path="/5FF0D8C6/5FF96977" Ref="#PWR0221"  Part="1" 
+F 0 "#PWR0221" H 7650 2950 50  0001 C CNN
+F 1 "VCC" H 7668 3273 50  0000 C CNN
+F 2 "" H 7650 3100 50  0001 C CNN
+F 3 "" H 7650 3100 50  0001 C CNN
+	1    7650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0222
+U 1 1 5FF96981
+P 7650 3700
+AR Path="/5FF96981" Ref="#PWR0222"  Part="1" 
+AR Path="/5E3A4CEA/5FF96981" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF96981" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF96981" Ref="#PWR0222"  Part="1" 
+F 0 "#PWR0222" H 7650 3450 50  0001 C CNN
+F 1 "GND" H 7655 3527 50  0000 C CNN
+F 2 "" H 7650 3700 50  0001 C CNN
+F 3 "" H 7650 3700 50  0001 C CNN
+	1    7650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF96995
+P 8250 3100
+AR Path="/5E3A4CEA/5FF96995" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF96995" Ref="#PWR?"  Part="1" 
+AR Path="/5FF96995" Ref="#PWR0223"  Part="1" 
+AR Path="/5FF0D8C6/5FF96995" Ref="#PWR0223"  Part="1" 
+F 0 "#PWR0223" H 8250 2950 50  0001 C CNN
+F 1 "VCC" H 8268 3273 50  0000 C CNN
+F 2 "" H 8250 3100 50  0001 C CNN
+F 3 "" H 8250 3100 50  0001 C CNN
+	1    8250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0224
+U 1 1 5FF9699F
+P 8250 3700
+AR Path="/5FF9699F" Ref="#PWR0224"  Part="1" 
+AR Path="/5E3A4CEA/5FF9699F" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF9699F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF9699F" Ref="#PWR0224"  Part="1" 
+F 0 "#PWR0224" H 8250 3450 50  0001 C CNN
+F 1 "GND" H 8255 3527 50  0000 C CNN
+F 2 "" H 8250 3700 50  0001 C CNN
+F 3 "" H 8250 3700 50  0001 C CNN
+	1    8250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF969B3
+P 8850 3100
+AR Path="/5E3A4CEA/5FF969B3" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF969B3" Ref="#PWR?"  Part="1" 
+AR Path="/5FF969B3" Ref="#PWR0225"  Part="1" 
+AR Path="/5FF0D8C6/5FF969B3" Ref="#PWR0225"  Part="1" 
+F 0 "#PWR0225" H 8850 2950 50  0001 C CNN
+F 1 "VCC" H 8868 3273 50  0000 C CNN
+F 2 "" H 8850 3100 50  0001 C CNN
+F 3 "" H 8850 3100 50  0001 C CNN
+	1    8850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0226
+U 1 1 5FF969BD
+P 8850 3700
+AR Path="/5FF969BD" Ref="#PWR0226"  Part="1" 
+AR Path="/5E3A4CEA/5FF969BD" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF969BD" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF969BD" Ref="#PWR0226"  Part="1" 
+F 0 "#PWR0226" H 8850 3450 50  0001 C CNN
+F 1 "GND" H 8855 3527 50  0000 C CNN
+F 2 "" H 8850 3700 50  0001 C CNN
+F 3 "" H 8850 3700 50  0001 C CNN
+	1    8850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF969D1
+P 9450 3100
+AR Path="/5E3A4CEA/5FF969D1" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF969D1" Ref="#PWR?"  Part="1" 
+AR Path="/5FF969D1" Ref="#PWR0227"  Part="1" 
+AR Path="/5FF0D8C6/5FF969D1" Ref="#PWR0227"  Part="1" 
+F 0 "#PWR0227" H 9450 2950 50  0001 C CNN
+F 1 "VCC" H 9468 3273 50  0000 C CNN
+F 2 "" H 9450 3100 50  0001 C CNN
+F 3 "" H 9450 3100 50  0001 C CNN
+	1    9450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0228
+U 1 1 5FF969DB
+P 9450 3700
+AR Path="/5FF969DB" Ref="#PWR0228"  Part="1" 
+AR Path="/5E3A4CEA/5FF969DB" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF969DB" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF969DB" Ref="#PWR0228"  Part="1" 
+F 0 "#PWR0228" H 9450 3450 50  0001 C CNN
+F 1 "GND" H 9455 3527 50  0000 C CNN
+F 2 "" H 9450 3700 50  0001 C CNN
+F 3 "" H 9450 3700 50  0001 C CNN
+	1    9450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF969EF
+P 10050 3100
+AR Path="/5E3A4CEA/5FF969EF" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF969EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FF969EF" Ref="#PWR0229"  Part="1" 
+AR Path="/5FF0D8C6/5FF969EF" Ref="#PWR0229"  Part="1" 
+F 0 "#PWR0229" H 10050 2950 50  0001 C CNN
+F 1 "VCC" H 10068 3273 50  0000 C CNN
+F 2 "" H 10050 3100 50  0001 C CNN
+F 3 "" H 10050 3100 50  0001 C CNN
+	1    10050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0230
+U 1 1 5FF969F9
+P 10050 3700
+AR Path="/5FF969F9" Ref="#PWR0230"  Part="1" 
+AR Path="/5E3A4CEA/5FF969F9" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF969F9" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF969F9" Ref="#PWR0230"  Part="1" 
+F 0 "#PWR0230" H 10050 3450 50  0001 C CNN
+F 1 "GND" H 10055 3527 50  0000 C CNN
+F 2 "" H 10050 3700 50  0001 C CNN
+F 3 "" H 10050 3700 50  0001 C CNN
+	1    10050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FF96A0D
+P 10650 3100
+AR Path="/5E3A4CEA/5FF96A0D" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF96A0D" Ref="#PWR?"  Part="1" 
+AR Path="/5FF96A0D" Ref="#PWR0231"  Part="1" 
+AR Path="/5FF0D8C6/5FF96A0D" Ref="#PWR0231"  Part="1" 
+F 0 "#PWR0231" H 10650 2950 50  0001 C CNN
+F 1 "VCC" H 10668 3273 50  0000 C CNN
+F 2 "" H 10650 3100 50  0001 C CNN
+F 3 "" H 10650 3100 50  0001 C CNN
+	1    10650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0232
+U 1 1 5FF96A17
+P 10650 3700
+AR Path="/5FF96A17" Ref="#PWR0232"  Part="1" 
+AR Path="/5E3A4CEA/5FF96A17" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FF96A17" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FF96A17" Ref="#PWR0232"  Part="1" 
+F 0 "#PWR0232" H 10650 3450 50  0001 C CNN
+F 1 "GND" H 10655 3527 50  0000 C CNN
+F 2 "" H 10650 3700 50  0001 C CNN
+F 3 "" H 10650 3700 50  0001 C CNN
+	1    10650 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 1800 6100 1800
+Wire Wire Line
+	6100 1800 6100 2350
+Wire Wire Line
+	6100 2350 6150 2350
+Wire Wire Line
+	10950 1250 10950 1800
+Wire Wire Line
+	10950 2350 10950 2900
+Wire Wire Line
+	10950 2900 6150 2900
+Wire Wire Line
+	6150 2900 6150 3400
+Wire Wire Line
+	6150 4400 6150 4700
+$Comp
+L power:VCC #PWR?
+U 1 1 5FFF8B8E
+P 6250 6050
+AR Path="/5E3A4CEA/5FFF8B8E" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FFF8B8E" Ref="#PWR?"  Part="1" 
+AR Path="/5FFF8B8E" Ref="#PWR0241"  Part="1" 
+AR Path="/5FF0D8C6/5FFF8B8E" Ref="#PWR0241"  Part="1" 
+F 0 "#PWR0241" H 6250 5900 50  0001 C CNN
+F 1 "VCC" H 6268 6223 50  0000 C CNN
+F 2 "" H 6250 6050 50  0001 C CNN
+F 3 "" H 6250 6050 50  0001 C CNN
+	1    6250 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0242
+U 1 1 5FFF9242
+P 6250 6350
+AR Path="/5FFF9242" Ref="#PWR0242"  Part="1" 
+AR Path="/5E3A4CEA/5FFF9242" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FFF9242" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FFF9242" Ref="#PWR0242"  Part="1" 
+F 0 "#PWR0242" H 6250 6100 50  0001 C CNN
+F 1 "GND" H 6255 6177 50  0000 C CNN
+F 2 "" H 6250 6350 50  0001 C CNN
+F 3 "" H 6250 6350 50  0001 C CNN
+	1    6250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FFFA8AA
+P 6250 6200
+F 0 "C1" H 6365 6246 50  0000 L CNN
+F 1 "C" H 6365 6155 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6288 6050 50  0001 C CNN
+F 3 "~" H 6250 6200 50  0001 C CNN
+	1    6250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FFFB605
+P 6600 6050
+AR Path="/5E3A4CEA/5FFFB605" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FFFB605" Ref="#PWR?"  Part="1" 
+AR Path="/5FFFB605" Ref="#PWR0243"  Part="1" 
+AR Path="/5FF0D8C6/5FFFB605" Ref="#PWR0243"  Part="1" 
+F 0 "#PWR0243" H 6600 5900 50  0001 C CNN
+F 1 "VCC" H 6618 6223 50  0000 C CNN
+F 2 "" H 6600 6050 50  0001 C CNN
+F 3 "" H 6600 6050 50  0001 C CNN
+	1    6600 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0244
+U 1 1 5FFFB60F
+P 6600 6350
+AR Path="/5FFFB60F" Ref="#PWR0244"  Part="1" 
+AR Path="/5E3A4CEA/5FFFB60F" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FFFB60F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FFFB60F" Ref="#PWR0244"  Part="1" 
+F 0 "#PWR0244" H 6600 6100 50  0001 C CNN
+F 1 "GND" H 6605 6177 50  0000 C CNN
+F 2 "" H 6600 6350 50  0001 C CNN
+F 3 "" H 6600 6350 50  0001 C CNN
+	1    6600 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FFFB619
+P 6600 6200
+F 0 "C2" H 6715 6246 50  0000 L CNN
+F 1 "C" H 6715 6155 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6638 6050 50  0001 C CNN
+F 3 "~" H 6600 6200 50  0001 C CNN
+	1    6600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60004FB3
+P 6950 6050
+AR Path="/5E3A4CEA/60004FB3" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/60004FB3" Ref="#PWR?"  Part="1" 
+AR Path="/60004FB3" Ref="#PWR0245"  Part="1" 
+AR Path="/5FF0D8C6/60004FB3" Ref="#PWR0245"  Part="1" 
+F 0 "#PWR0245" H 6950 5900 50  0001 C CNN
+F 1 "VCC" H 6968 6223 50  0000 C CNN
+F 2 "" H 6950 6050 50  0001 C CNN
+F 3 "" H 6950 6050 50  0001 C CNN
+	1    6950 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0246
+U 1 1 60004FBD
+P 6950 6350
+AR Path="/60004FBD" Ref="#PWR0246"  Part="1" 
+AR Path="/5E3A4CEA/60004FBD" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/60004FBD" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/60004FBD" Ref="#PWR0246"  Part="1" 
+F 0 "#PWR0246" H 6950 6100 50  0001 C CNN
+F 1 "GND" H 6955 6177 50  0000 C CNN
+F 2 "" H 6950 6350 50  0001 C CNN
+F 3 "" H 6950 6350 50  0001 C CNN
+	1    6950 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60004FC7
+P 6950 6200
+F 0 "C3" H 7065 6246 50  0000 L CNN
+F 1 "C" H 7065 6155 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6988 6050 50  0001 C CNN
+F 3 "~" H 6950 6200 50  0001 C CNN
+	1    6950 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6000F140
+P 7650 6050
+AR Path="/5E3A4CEA/6000F140" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6000F140" Ref="#PWR?"  Part="1" 
+AR Path="/6000F140" Ref="#PWR0249"  Part="1" 
+AR Path="/5FF0D8C6/6000F140" Ref="#PWR0249"  Part="1" 
+F 0 "#PWR0249" H 7650 5900 50  0001 C CNN
+F 1 "VCC" H 7668 6223 50  0000 C CNN
+F 2 "" H 7650 6050 50  0001 C CNN
+F 3 "" H 7650 6050 50  0001 C CNN
+	1    7650 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0250
+U 1 1 6000F14A
+P 7650 6350
+AR Path="/6000F14A" Ref="#PWR0250"  Part="1" 
+AR Path="/5E3A4CEA/6000F14A" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6000F14A" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/6000F14A" Ref="#PWR0250"  Part="1" 
+F 0 "#PWR0250" H 7650 6100 50  0001 C CNN
+F 1 "GND" H 7655 6177 50  0000 C CNN
+F 2 "" H 7650 6350 50  0001 C CNN
+F 3 "" H 7650 6350 50  0001 C CNN
+	1    7650 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 6000F154
+P 7650 6200
+F 0 "C5" H 7765 6246 50  0000 L CNN
+F 1 "C" H 7765 6155 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7688 6050 50  0001 C CNN
+F 3 "~" H 7650 6200 50  0001 C CNN
+	1    7650 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6000F15E
+P 8000 6050
+AR Path="/5E3A4CEA/6000F15E" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6000F15E" Ref="#PWR?"  Part="1" 
+AR Path="/6000F15E" Ref="#PWR0251"  Part="1" 
+AR Path="/5FF0D8C6/6000F15E" Ref="#PWR0251"  Part="1" 
+F 0 "#PWR0251" H 8000 5900 50  0001 C CNN
+F 1 "VCC" H 8018 6223 50  0000 C CNN
+F 2 "" H 8000 6050 50  0001 C CNN
+F 3 "" H 8000 6050 50  0001 C CNN
+	1    8000 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0252
+U 1 1 6000F168
+P 8000 6350
+AR Path="/6000F168" Ref="#PWR0252"  Part="1" 
+AR Path="/5E3A4CEA/6000F168" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6000F168" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/6000F168" Ref="#PWR0252"  Part="1" 
+F 0 "#PWR0252" H 8000 6100 50  0001 C CNN
+F 1 "GND" H 8005 6177 50  0000 C CNN
+F 2 "" H 8000 6350 50  0001 C CNN
+F 3 "" H 8000 6350 50  0001 C CNN
+	1    8000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 6000F172
+P 8000 6200
+F 0 "C6" H 8115 6246 50  0000 L CNN
+F 1 "C" H 8115 6155 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8038 6050 50  0001 C CNN
+F 3 "~" H 8000 6200 50  0001 C CNN
+	1    8000 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6000F17C
+P 8350 6050
+AR Path="/5E3A4CEA/6000F17C" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6000F17C" Ref="#PWR?"  Part="1" 
+AR Path="/6000F17C" Ref="#PWR0253"  Part="1" 
+AR Path="/5FF0D8C6/6000F17C" Ref="#PWR0253"  Part="1" 
+F 0 "#PWR0253" H 8350 5900 50  0001 C CNN
+F 1 "VCC" H 8368 6223 50  0000 C CNN
+F 2 "" H 8350 6050 50  0001 C CNN
+F 3 "" H 8350 6050 50  0001 C CNN
+	1    8350 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0254
+U 1 1 6000F186
+P 8350 6350
+AR Path="/6000F186" Ref="#PWR0254"  Part="1" 
+AR Path="/5E3A4CEA/6000F186" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6000F186" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/6000F186" Ref="#PWR0254"  Part="1" 
+F 0 "#PWR0254" H 8350 6100 50  0001 C CNN
+F 1 "GND" H 8355 6177 50  0000 C CNN
+F 2 "" H 8350 6350 50  0001 C CNN
+F 3 "" H 8350 6350 50  0001 C CNN
+	1    8350 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 6000F190
+P 8350 6200
+F 0 "C7" H 8465 6246 50  0000 L CNN
+F 1 "C" H 8465 6155 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8388 6050 50  0001 C CNN
+F 3 "~" H 8350 6200 50  0001 C CNN
+	1    8350 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6000F19A
+P 8700 6050
+AR Path="/5E3A4CEA/6000F19A" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6000F19A" Ref="#PWR?"  Part="1" 
+AR Path="/6000F19A" Ref="#PWR0255"  Part="1" 
+AR Path="/5FF0D8C6/6000F19A" Ref="#PWR0255"  Part="1" 
+F 0 "#PWR0255" H 8700 5900 50  0001 C CNN
+F 1 "VCC" H 8718 6223 50  0000 C CNN
+F 2 "" H 8700 6050 50  0001 C CNN
+F 3 "" H 8700 6050 50  0001 C CNN
+	1    8700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0256
+U 1 1 6000F1A4
+P 8700 6350
+AR Path="/6000F1A4" Ref="#PWR0256"  Part="1" 
+AR Path="/5E3A4CEA/6000F1A4" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6000F1A4" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/6000F1A4" Ref="#PWR0256"  Part="1" 
+F 0 "#PWR0256" H 8700 6100 50  0001 C CNN
+F 1 "GND" H 8705 6177 50  0000 C CNN
+F 2 "" H 8700 6350 50  0001 C CNN
+F 3 "" H 8700 6350 50  0001 C CNN
+	1    8700 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 6000F1AE
+P 8700 6200
+F 0 "C8" H 8815 6246 50  0000 L CNN
+F 1 "C" H 8815 6155 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8738 6050 50  0001 C CNN
+F 3 "~" H 8700 6200 50  0001 C CNN
+	1    8700 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6001CBC8
+P 10100 6050
+AR Path="/5E3A4CEA/6001CBC8" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6001CBC8" Ref="#PWR?"  Part="1" 
+AR Path="/6001CBC8" Ref="#PWR0263"  Part="1" 
+AR Path="/5FF0D8C6/6001CBC8" Ref="#PWR0263"  Part="1" 
+F 0 "#PWR0263" H 10100 5900 50  0001 C CNN
+F 1 "VCC" H 10118 6223 50  0000 C CNN
+F 2 "" H 10100 6050 50  0001 C CNN
+F 3 "" H 10100 6050 50  0001 C CNN
+	1    10100 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0264
+U 1 1 6001CBD2
+P 10100 6350
+AR Path="/6001CBD2" Ref="#PWR0264"  Part="1" 
+AR Path="/5E3A4CEA/6001CBD2" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6001CBD2" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/6001CBD2" Ref="#PWR0264"  Part="1" 
+F 0 "#PWR0264" H 10100 6100 50  0001 C CNN
+F 1 "GND" H 10105 6177 50  0000 C CNN
+F 2 "" H 10100 6350 50  0001 C CNN
+F 3 "" H 10100 6350 50  0001 C CNN
+	1    10100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 6001CBDC
+P 10100 6200
+F 0 "C12" H 10215 6246 50  0000 L CNN
+F 1 "C" H 10215 6155 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10138 6050 50  0001 C CNN
+F 3 "~" H 10100 6200 50  0001 C CNN
+	1    10100 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6001CBE6
+P 10450 6050
+AR Path="/5E3A4CEA/6001CBE6" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6001CBE6" Ref="#PWR?"  Part="1" 
+AR Path="/6001CBE6" Ref="#PWR0265"  Part="1" 
+AR Path="/5FF0D8C6/6001CBE6" Ref="#PWR0265"  Part="1" 
+F 0 "#PWR0265" H 10450 5900 50  0001 C CNN
+F 1 "VCC" H 10468 6223 50  0000 C CNN
+F 2 "" H 10450 6050 50  0001 C CNN
+F 3 "" H 10450 6050 50  0001 C CNN
+	1    10450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0266
+U 1 1 6001CBF0
+P 10450 6350
+AR Path="/6001CBF0" Ref="#PWR0266"  Part="1" 
+AR Path="/5E3A4CEA/6001CBF0" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/6001CBF0" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/6001CBF0" Ref="#PWR0266"  Part="1" 
+F 0 "#PWR0266" H 10450 6100 50  0001 C CNN
+F 1 "GND" H 10455 6177 50  0000 C CNN
+F 2 "" H 10450 6350 50  0001 C CNN
+F 3 "" H 10450 6350 50  0001 C CNN
+	1    10450 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 6001CBFA
+P 10450 6200
+F 0 "C13" H 10565 6246 50  0000 L CNN
+F 1 "C" H 10565 6155 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10488 6050 50  0001 C CNN
+F 3 "~" H 10450 6200 50  0001 C CNN
+	1    10450 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 6009DAAD
+P 1650 7100
+F 0 "H4" H 1750 7149 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1750 7058 50  0000 L CNN
+F 2 "synkie_footprints:MountingHole_3.2mm_M3_DIN965_Pad" H 1650 7100 50  0001 C CNN
+F 3 "~" H 1650 7100 50  0001 C CNN
+	1    1650 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0269
+U 1 1 6009DAB7
+P 1650 7200
+F 0 "#PWR0269" H 1650 6950 50  0001 C CNN
+F 1 "GND" V 1655 7072 50  0000 R CNN
+F 2 "" H 1650 7200 50  0001 C CNN
+F 3 "" H 1650 7200 50  0001 C CNN
+	1    1650 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 6009DAC1
+P 2000 7100
+F 0 "H5" H 2100 7149 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2100 7058 50  0000 L CNN
+F 2 "synkie_footprints:MountingHole_3.2mm_M3_DIN965_Pad" H 2000 7100 50  0001 C CNN
+F 3 "~" H 2000 7100 50  0001 C CNN
+	1    2000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0270
+U 1 1 6009DACB
+P 2000 7200
+F 0 "#PWR0270" H 2000 6950 50  0001 C CNN
+F 1 "GND" V 2005 7072 50  0000 R CNN
+F 2 "" H 2000 7200 50  0001 C CNN
+F 3 "" H 2000 7200 50  0001 C CNN
+	1    2000 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 600A798E
+P 2300 7100
+F 0 "H6" H 2400 7149 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2400 7058 50  0000 L CNN
+F 2 "synkie_footprints:MountingHole_3.2mm_M3_DIN965_Pad" H 2300 7100 50  0001 C CNN
+F 3 "~" H 2300 7100 50  0001 C CNN
+	1    2300 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0271
+U 1 1 600A7998
+P 2300 7200
+F 0 "#PWR0271" H 2300 6950 50  0001 C CNN
+F 1 "GND" V 2305 7072 50  0000 R CNN
+F 2 "" H 2300 7200 50  0001 C CNN
+F 3 "" H 2300 7200 50  0001 C CNN
+	1    2300 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H7
+U 1 1 600A79A2
+P 2650 7100
+F 0 "H7" H 2750 7149 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2750 7058 50  0000 L CNN
+F 2 "synkie_footprints:MountingHole_3.2mm_M3_DIN965_Pad" H 2650 7100 50  0001 C CNN
+F 3 "~" H 2650 7100 50  0001 C CNN
+	1    2650 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0272
+U 1 1 600A79AC
+P 2650 7200
+F 0 "#PWR0272" H 2650 6950 50  0001 C CNN
+F 1 "GND" V 2655 7072 50  0000 R CNN
+F 2 "" H 2650 7200 50  0001 C CNN
+F 3 "" H 2650 7200 50  0001 C CNN
+	1    2650 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H8
+U 1 1 600A79B6
+P 3000 7100
+F 0 "H8" H 3100 7149 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3100 7058 50  0000 L CNN
+F 2 "synkie_footprints:MountingHole_3.2mm_M3_DIN965_Pad" H 3000 7100 50  0001 C CNN
+F 3 "~" H 3000 7100 50  0001 C CNN
+	1    3000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0273
+U 1 1 600A79C0
+P 3000 7200
+F 0 "#PWR0273" H 3000 6950 50  0001 C CNN
+F 1 "GND" V 3005 7072 50  0000 R CNN
+F 2 "" H 3000 7200 50  0001 C CNN
+F 3 "" H 3000 7200 50  0001 C CNN
+	1    3000 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H9
+U 1 1 600A79CA
+P 3350 7100
+F 0 "H9" H 3450 7149 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3450 7058 50  0000 L CNN
+F 2 "synkie_footprints:MountingHole_3.2mm_M3_DIN965_Pad" H 3350 7100 50  0001 C CNN
+F 3 "~" H 3350 7100 50  0001 C CNN
+	1    3350 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0274
+U 1 1 600A79D4
+P 3350 7200
+F 0 "#PWR0274" H 3350 6950 50  0001 C CNN
+F 1 "GND" V 3355 7072 50  0000 R CNN
+F 2 "" H 3350 7200 50  0001 C CNN
+F 3 "" H 3350 7200 50  0001 C CNN
+	1    3350 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D2
+U 1 1 5F5E1CD4
+P 7050 1250
+F 0 "D2" H 7150 1500 50  0000 L CNN
+F 1 "SK6812MINI" H 7394 1205 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 7100 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7150 875 50  0001 L TNN
+	1    7050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D3
+U 1 1 5F5E2064
+P 7650 1250
+F 0 "D3" H 7750 1500 50  0000 L CNN
+F 1 "SK6812MINI" H 7994 1205 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 7700 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7750 875 50  0001 L TNN
+	1    7650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D4
+U 1 1 5F5E2A81
+P 8250 1250
+F 0 "D4" H 8350 1500 50  0000 L CNN
+F 1 "SK6812MINI" H 8594 1205 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 8300 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8350 875 50  0001 L TNN
+	1    8250 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D5
+U 1 1 5F5E4B1F
+P 8850 1250
+F 0 "D5" H 8950 1500 50  0000 L CNN
+F 1 "SK6812MINI" H 9194 1205 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 8900 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8950 875 50  0001 L TNN
+	1    8850 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D6
+U 1 1 5F5E4B29
+P 9450 1250
+F 0 "D6" H 9550 1500 50  0000 L CNN
+F 1 "SK6812MINI" H 9794 1205 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 9500 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9550 875 50  0001 L TNN
+	1    9450 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D7
+U 1 1 5F5E4B33
+P 10050 1250
+F 0 "D7" H 10150 1500 50  0000 L CNN
+F 1 "SK6812MINI" H 10394 1205 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10100 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10150 875 50  0001 L TNN
+	1    10050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D8
+U 1 1 5F5E4B3D
+P 10650 1250
+F 0 "D8" H 10750 1500 50  0000 L CNN
+F 1 "SK6812MINI" H 10994 1205 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10700 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10750 875 50  0001 L TNN
+	1    10650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D10
+U 1 1 5F5F00C6
+P 7050 2350
+F 0 "D10" H 7150 2600 50  0000 L CNN
+F 1 "SK6812MINI" H 7394 2305 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 7100 2050 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7150 1975 50  0001 L TNN
+	1    7050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D11
+U 1 1 5F5F00D0
+P 7650 2350
+F 0 "D11" H 7750 2600 50  0000 L CNN
+F 1 "SK6812MINI" H 7994 2305 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 7700 2050 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7750 1975 50  0001 L TNN
+	1    7650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D12
+U 1 1 5F5F00DA
+P 8250 2350
+F 0 "D12" H 8350 2600 50  0000 L CNN
+F 1 "SK6812MINI" H 8594 2305 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 8300 2050 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8350 1975 50  0001 L TNN
+	1    8250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D13
+U 1 1 5F5F00E4
+P 8850 2350
+F 0 "D13" H 8950 2600 50  0000 L CNN
+F 1 "SK6812MINI" H 9194 2305 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 8900 2050 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8950 1975 50  0001 L TNN
+	1    8850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D14
+U 1 1 5F5F00EE
+P 9450 2350
+F 0 "D14" H 9550 2600 50  0000 L CNN
+F 1 "SK6812MINI" H 9794 2305 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 9500 2050 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9550 1975 50  0001 L TNN
+	1    9450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D15
+U 1 1 5F5F00F8
+P 10050 2350
+F 0 "D15" H 10150 2600 50  0000 L CNN
+F 1 "SK6812MINI" H 10394 2305 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10100 2050 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10150 1975 50  0001 L TNN
+	1    10050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D16
+U 1 1 5F5F0102
+P 10650 2350
+F 0 "D16" H 10750 2600 50  0000 L CNN
+F 1 "SK6812MINI" H 10994 2305 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10700 2050 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10750 1975 50  0001 L TNN
+	1    10650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D17
+U 1 1 5F5FEAE9
+P 6450 3400
+F 0 "D17" H 6550 3650 50  0000 L CNN
+F 1 "SK6812MINI" H 6794 3355 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 6500 3100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6550 3025 50  0001 L TNN
+	1    6450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D18
+U 1 1 5F5FEAF3
+P 7050 3400
+F 0 "D18" H 7150 3650 50  0000 L CNN
+F 1 "SK6812MINI" H 7394 3355 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 7100 3100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7150 3025 50  0001 L TNN
+	1    7050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D19
+U 1 1 5F5FEAFD
+P 7650 3400
+F 0 "D19" H 7750 3650 50  0000 L CNN
+F 1 "SK6812MINI" H 7994 3355 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 7700 3100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 7750 3025 50  0001 L TNN
+	1    7650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D20
+U 1 1 5F5FEB07
+P 8250 3400
+F 0 "D20" H 8350 3650 50  0000 L CNN
+F 1 "SK6812MINI" H 8594 3355 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 8300 3100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8350 3025 50  0001 L TNN
+	1    8250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D21
+U 1 1 5F5FEB11
+P 8850 3400
+F 0 "D21" H 8950 3650 50  0000 L CNN
+F 1 "SK6812MINI" H 9194 3355 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 8900 3100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8950 3025 50  0001 L TNN
+	1    8850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D22
+U 1 1 5F5FEB1B
+P 9450 3400
+F 0 "D22" H 9550 3650 50  0000 L CNN
+F 1 "SK6812MINI" H 9794 3355 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 9500 3100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9550 3025 50  0001 L TNN
+	1    9450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D23
+U 1 1 5F5FEB25
+P 10050 3400
+F 0 "D23" H 10150 3650 50  0000 L CNN
+F 1 "SK6812MINI" H 10394 3355 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10100 3100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10150 3025 50  0001 L TNN
+	1    10050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D24
+U 1 1 5F5FEB2F
+P 10650 3400
+F 0 "D24" H 10750 3650 50  0000 L CNN
+F 1 "SK6812MINI" H 10994 3355 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 10700 3100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10750 3025 50  0001 L TNN
+	1    10650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:SK6812MINI D9
+U 1 1 5F5F00BC
+P 6450 2350
+F 0 "D9" H 6550 2600 50  0000 L CNN
+F 1 "SK6812MINI" H 6794 2305 50  0001 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 6500 2050 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6550 1975 50  0001 L TNN
+	1    6450 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6150 1250 0    50   Input ~ 0
+pix
+Text GLabel 2150 3150 0    50   Input ~ 0
+clk
+Text GLabel 2150 3400 0    50   Input ~ 0
+clk
+Text GLabel 2150 3300 0    50   Input ~ 0
+cs
+Text GLabel 5050 3150 0    50   Input ~ 0
+clk
+Text GLabel 5050 3400 0    50   Input ~ 0
+clk
+Text GLabel 5050 3300 0    50   Input ~ 0
+cs
+Text GLabel 2150 5150 0    50   Input ~ 0
+clk
+Text GLabel 2150 5400 0    50   Input ~ 0
+clk
+Text GLabel 2150 5300 0    50   Input ~ 0
+cs
+Text GLabel 3250 6400 2    50   Input ~ 0
+data
+$Comp
+L power:VCC #PWR?
+U 1 1 5FFF8910
+P 9250 6050
+AR Path="/5E3A4CEA/5FFF8910" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FFF8910" Ref="#PWR?"  Part="1" 
+AR Path="/5FFF8910" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FFF8910" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 9250 5900 50  0001 C CNN
+F 1 "VCC" H 9268 6223 50  0000 C CNN
+F 2 "" H 9250 6050 50  0001 C CNN
+F 3 "" H 9250 6050 50  0001 C CNN
+	1    9250 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FFF891A
+P 9250 6350
+AR Path="/5FFF891A" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A4CEA/5FFF891A" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FFF891A" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FFF891A" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 9250 6100 50  0001 C CNN
+F 1 "GND" H 9255 6177 50  0000 C CNN
+F 2 "" H 9250 6350 50  0001 C CNN
+F 3 "" H 9250 6350 50  0001 C CNN
+	1    9250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C201
+U 1 1 5FFF8924
+P 9250 6200
+F 0 "C201" H 9365 6246 50  0000 L CNN
+F 1 "C" H 9365 6155 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9288 6050 50  0001 C CNN
+F 3 "~" H 9250 6200 50  0001 C CNN
+	1    9250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FFF892E
+P 9600 6050
+AR Path="/5E3A4CEA/5FFF892E" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FFF892E" Ref="#PWR?"  Part="1" 
+AR Path="/5FFF892E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FFF892E" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 9600 5900 50  0001 C CNN
+F 1 "VCC" H 9618 6223 50  0000 C CNN
+F 2 "" H 9600 6050 50  0001 C CNN
+F 3 "" H 9600 6050 50  0001 C CNN
+	1    9600 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FFF8938
+P 9600 6350
+AR Path="/5FFF8938" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A4CEA/5FFF8938" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A6B9C/5FFF8938" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0D8C6/5FFF8938" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 9600 6100 50  0001 C CNN
+F 1 "GND" H 9605 6177 50  0000 C CNN
+F 2 "" H 9600 6350 50  0001 C CNN
+F 3 "" H 9600 6350 50  0001 C CNN
+	1    9600 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C202
+U 1 1 5FFF8942
+P 9600 6200
+F 0 "C202" H 9715 6246 50  0000 L CNN
+F 1 "C" H 9715 6155 50  0000 L CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9638 6050 50  0001 C CNN
+F 3 "~" H 9600 6200 50  0001 C CNN
+	1    9600 6200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
