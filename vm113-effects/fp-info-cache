@@ -1,4 +1,4 @@
-17913385080802510
+17918249259835510
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75558,6 +75558,13 @@ Alps_Tactile_Switch
 4
 2
 synkie_footprints
+BNC_MOLEX_0731000080_Horizontal
+https://www.molex.com/pdm_docs/sd/731000080_sd.pdf
+BNC Amphenol Horizontal
+0
+4
+2
+synkie_footprints
 Bangood-OLED-128x32
 
 
@@ -75655,6 +75662,13 @@ Through hole IDC box header THT 2x05 2.54mm double row
 0
 10
 10
+synkie_footprints
+JAE_USB-C_SJ122205
+
+
+0
+18
+14
 synkie_footprints
 LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm
 https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf
@@ -75843,7 +75857,7 @@ Potentiometer_Alps_RS6011xP_Slide
 
 0
 8
-8
+7
 synkie_footprints
 Potentiometer_Bourns_3296Y_Vertical
 Potentiometer, vertical, Bourns 3296Y, https://www.bourns.com/pdfs/3296.pdf
@@ -75963,6 +75977,13 @@ TEC
 0
 7
 7
+synkie_footprints
+TE_UMCC_2337019-1
+
+
+0
+3
+3
 synkie_footprints
 Teensy32-light
 
