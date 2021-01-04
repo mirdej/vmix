@@ -1296,14 +1296,8 @@ Text GLabel 9050 4900 0    50   Input ~ 0
 edges_bypass
 Text GLabel 8350 1550 0    50   Input ~ 0
 compa_cv
-Text Label 9150 1450 0    50   ~ 0
+Text Label 9300 1450 0    50   ~ 0
 compa_out
-Text Label 8650 2450 2    50   ~ 0
-compa_out
-Text GLabel 9000 2450 2    50   Input ~ 0
-COMPA-OUT
-Wire Wire Line
-	9000 2450 8650 2450
 Wire Wire Line
 	1850 1250 1850 1200
 Connection ~ 1850 1200
@@ -1390,91 +1384,8 @@ F 3 "" H 9300 1700 50  0001 C CNN
 	1    9300 1700
 	1    0    0    -1  
 $EndComp
-$Comp
-L synkie_symbols:GND #PWR0127
-U 1 1 5FF5C7EF
-P 850 5000
-AR Path="/5FF5C7EF" Ref="#PWR0127"  Part="1" 
-AR Path="/5FED65BF/5FF5C7EF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0127" H 850 4750 50  0001 C CNN
-F 1 "GND" H 855 4827 50  0000 C CNN
-F 2 "" H 850 5000 50  0001 C CNN
-F 3 "" H 850 5000 50  0001 C CNN
-	1    850  5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP101
-U 1 1 5FF5D333
-P 1150 5000
-F 0 "JP101" H 1150 5264 50  0000 C CNN
-F 1 "Jumper" H 1150 5173 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1150 5000 50  0001 C CNN
-F 3 "~" H 1150 5000 50  0001 C CNN
-	1    1150 5000
-	1    0    0    -1  
-$EndComp
 Text Notes 1900 5200 0    50   ~ 0
 Check orientation
-Wire Wire Line
-	1450 4550 1450 4750
-Connection ~ 1450 4550
-Wire Wire Line
-	2000 4550 1450 4550
-Wire Wire Line
-	1450 4350 1450 4550
-Connection ~ 1450 4350
-Wire Wire Line
-	2000 4350 1450 4350
-Wire Wire Line
-	1450 4250 1450 4350
-Connection ~ 1450 4250
-Wire Wire Line
-	2000 4250 1450 4250
-Wire Wire Line
-	1450 4050 1450 4250
-Connection ~ 1450 4050
-Wire Wire Line
-	2000 4050 1450 4050
-Wire Wire Line
-	1450 3950 1450 4050
-Connection ~ 1450 3950
-Wire Wire Line
-	2000 3950 1450 3950
-Wire Wire Line
-	1450 3750 1450 3950
-Connection ~ 1450 3750
-Wire Wire Line
-	2000 3750 1450 3750
-Wire Wire Line
-	1450 3550 1450 3750
-Connection ~ 1450 3550
-Wire Wire Line
-	2000 3550 1450 3550
-Wire Wire Line
-	1450 3350 1450 3550
-Connection ~ 1450 3350
-Wire Wire Line
-	2000 3350 1450 3350
-Wire Wire Line
-	2000 3250 1450 3250
-Wire Wire Line
-	2000 3050 1450 3050
-Wire Wire Line
-	2000 2850 1450 2850
-Connection ~ 1450 4750
-Wire Wire Line
-	2000 2550 1450 2550
-Wire Wire Line
-	1450 4750 1450 5000
-Wire Wire Line
-	2000 4750 1450 4750
-Text Label 2000 4450 2    50   ~ 0
-scale
-Text Label 2000 4650 2    50   ~ 0
-bias
-Text Label 2000 2650 2    50   ~ 0
-compa-out
 Text Label 2000 4150 2    50   ~ 0
 to-101
 Text Label 2000 3850 2    50   ~ 0
@@ -1482,13 +1393,13 @@ from-101
 $Comp
 L Connector_Generic:Conn_01x24 J101
 U 1 1 5FEB56F5
-P 2200 3750
-F 0 "J101" H 2280 3742 50  0000 L CNN
-F 1 "To 101" H 2280 3651 50  0000 L CNN
-F 2 "Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal" H 2200 3750 50  0001 C CNN
-F 3 "~" H 2200 3750 50  0001 C CNN
-	1    2200 3750
-	1    0    0    1   
+P 2200 3650
+F 0 "J101" H 2280 3642 50  0000 L CNN
+F 1 "To 101" H 2280 3551 50  0000 L CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal" H 2200 3650 50  0001 C CNN
+F 3 "~" H 2200 3650 50  0001 C CNN
+	1    2200 3650
+	1    0    0    -1  
 $EndComp
 Text GLabel 2000 4850 0    50   Input ~ 0
 dry~wet~
@@ -1514,22 +1425,6 @@ Text GLabel 2000 3650 0    50   Input ~ 0
 hi_clip_1
 Text GLabel 2000 3450 0    50   Input ~ 0
 hi_clip_2
-Connection ~ 1450 2850
-Connection ~ 1450 3050
-Connection ~ 1450 3250
-Wire Wire Line
-	1450 3250 1450 3350
-Wire Wire Line
-	1450 3050 1450 3250
-Wire Wire Line
-	1450 2850 1450 3050
-Wire Wire Line
-	1450 2550 1450 2750
-Wire Wire Line
-	2000 2750 1450 2750
-Connection ~ 1450 2750
-Wire Wire Line
-	1450 2750 1450 2850
 $Comp
 L synkie_symbols:Conn_01x03 J111
 U 1 1 5DCAB59D
@@ -1894,4 +1789,10 @@ F 3 "" H 4700 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4700 5800
+Text GLabel 2000 4650 0    50   Input ~ 0
+BIAS-IN
+Text GLabel 2000 4450 0    50   Input ~ 0
+SCALE-IN
+Text Label 2000 2650 2    50   ~ 0
+compa_out
 $EndSCHEMATC
