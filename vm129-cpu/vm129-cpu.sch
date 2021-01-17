@@ -342,7 +342,7 @@ L Device:R R118
 U 1 1 5FAEE96A
 P 1750 5500
 F 0 "R118" H 1820 5546 50  0000 L CNN
-F 1 "R" H 1820 5455 50  0000 L CNN
+F 1 "4k7" H 1820 5455 50  0000 L CNN
 F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1680 5500 50  0001 C CNN
 F 3 "~" H 1750 5500 50  0001 C CNN
 	1    1750 5500
@@ -366,7 +366,7 @@ L Device:R R119
 U 1 1 5FAF0827
 P 2100 5500
 F 0 "R119" H 2170 5546 50  0000 L CNN
-F 1 "R" H 2170 5455 50  0000 L CNN
+F 1 "4k7" H 2170 5455 50  0000 L CNN
 F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 5500 50  0001 C CNN
 F 3 "~" H 2100 5500 50  0001 C CNN
 	1    2100 5500
@@ -1043,17 +1043,6 @@ Wire Wire Line
 	2100 1850 2100 1250
 Connection ~ 2600 2200
 $Comp
-L power:GND #PWR0117
-U 1 1 60201939
-P 13650 -2900
-F 0 "#PWR0117" H 13650 -3150 50  0001 C CNN
-F 1 "GND" H 13655 -3073 50  0001 C CNN
-F 2 "" H 13650 -2900 50  0001 C CNN
-F 3 "" H 13650 -2900 50  0001 C CNN
-	1    13650 -2900
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0118
 U 1 1 60201219
 P 13650 -3000
@@ -1081,7 +1070,7 @@ Text Label 13650 -2500 2    50   ~ 0
 hsync
 Wire Wire Line
 	14650 -3300 15100 -3300
-Text Label 13600 -3200 2    50   ~ 0
+Text Label 13650 -3200 2    50   ~ 0
 colorburst
 Text Label 13650 -3300 2    50   ~ 0
 synctip
@@ -1137,8 +1126,6 @@ $EndComp
 Text Label 14650 -3600 0    50   ~ 0
 colorburst
 Wire Wire Line
-	12500 -3750 13650 -3750
-Wire Wire Line
 	13650 -3750 13650 -3600
 Connection ~ 11100 -3750
 Wire Wire Line
@@ -1167,42 +1154,6 @@ F 1 "GND" V 13655 -3628 50  0000 R CNN
 F 2 "" H 13650 -3500 50  0001 C CNN
 F 3 "" H 13650 -3500 50  0001 C CNN
 	1    13650 -3500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0143
-U 1 1 601DAB23
-P 12500 -3450
-F 0 "#PWR0143" H 12500 -3700 50  0001 C CNN
-F 1 "GND" H 12505 -3623 50  0000 C CNN
-F 2 "" H 12500 -3450 50  0001 C CNN
-F 3 "" H 12500 -3450 50  0001 C CNN
-	1    12500 -3450
-	1    0    0    -1  
-$EndComp
-Connection ~ 12500 -3750
-$Comp
-L Device:R R101
-U 1 1 601D9A9B
-P 12500 -3600
-F 0 "R101" H 12570 -3554 50  0000 L CNN
-F 1 "560" H 12570 -3645 50  0000 L CNN
-F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12430 -3600 50  0001 C CNN
-F 3 "~" H 12500 -3600 50  0001 C CNN
-	1    12500 -3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12450 -3750 12500 -3750
-$Comp
-L Device:C C101
-U 1 1 601D475F
-P 12300 -3750
-F 0 "C101" V 12048 -3750 50  0000 C CNN
-F 1 "10p" V 12139 -3750 50  0000 C CNN
-F 2 "synkie_footprints:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12338 -3900 50  0001 C CNN
-F 3 "~" H 12300 -3750 50  0001 C CNN
-	1    12300 -3750
 	0    1    1    0   
 $EndComp
 $Comp
@@ -2021,5 +1972,58 @@ F 2 "" H 7650 2300 50  0000 C CNN
 F 3 "" H 7650 2300 50  0000 C CNN
 	1    7650 2300
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C101
+U 1 1 601D475F
+P 12300 -3750
+F 0 "C101" V 12048 -3750 50  0000 C CNN
+F 1 "1u" V 12139 -3750 50  0000 C CNN
+F 2 "synkie_footprints:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12338 -3900 50  0001 C CNN
+F 3 "~" H 12300 -3750 50  0001 C CNN
+	1    12300 -3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R101
+U 1 1 601D9A9B
+P 12850 -4450
+F 0 "R101" H 12920 -4404 50  0000 L CNN
+F 1 "560" H 12920 -4495 50  0000 L CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12780 -4450 50  0001 C CNN
+F 3 "~" H 12850 -4450 50  0001 C CNN
+	1    12850 -4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 601DAB23
+P 13450 -4500
+F 0 "#PWR0143" H 13450 -4750 50  0001 C CNN
+F 1 "GND" H 13455 -4673 50  0000 C CNN
+F 2 "" H 13450 -4500 50  0001 C CNN
+F 3 "" H 13450 -4500 50  0001 C CNN
+	1    13450 -4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 -3750 13050 -3750
+Wire Wire Line
+	13650 -2900 13050 -2900
+Wire Wire Line
+	13050 -2900 13050 -3750
+Connection ~ 13050 -3750
+Wire Wire Line
+	13050 -3750 13650 -3750
+$Comp
+L power:GND #PWR?
+U 1 1 60049DB7
+P 14650 -3000
+F 0 "#PWR?" H 14650 -3250 50  0001 C CNN
+F 1 "GND" V 14655 -3128 50  0000 R CNN
+F 2 "" H 14650 -3000 50  0001 C CNN
+F 3 "" H 14650 -3000 50  0001 C CNN
+	1    14650 -3000
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

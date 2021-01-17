@@ -1,4 +1,4 @@
-#define VERSION "2020-11-24"
+#define VERSION "2021-01-15"
 //----------------------------------------------------------------------------------------
 //
 //  vMix CPU Firmware
@@ -48,19 +48,21 @@ MIDI_CREATE_INSTANCE(HardwareSerial, Serial,     MIDI);
 // ..................................................................................... PIN mapping
 
 
-const int PIN_POT_1             = 36;
-const int PIN_POT_2             = 39;
-const int PIN_AUDIO             = 34;
-const int PIN_ENCODER_PUSH      = 35;
-const int PIN_ENCODER_A         = 32;
-const int PIN_ENCODER_B         = 33;
-const int PIN_TRIGGER_1         = 25;
+
+const int PIN_ENCODER_A         = 36;
+const int PIN_ENCODER_B         = 39;
+
+const int PIN_MUX_3             = 32;
+const int PIN_MUX_4             = 33;
+
+const int PIN_TRIGGER_3         = 25;
 const int PIN_TRIGGER_2         = 26;
-const int PIN_TRIGGER_3         = 02;
+const int PIN_TRIGGER_1         = 02;
 const int PIN_BEATSYNC          = 27;
 const int PIN_PIXELS            = 13;
-//const int PIN_VSYNC             = 16;
-//const int PIN_ODDEVEN           = 17;
+const int PIN_VSYNC             = 16;
+const int PIN_ODDEVEN           = 17;
+
 const int PIN_BTN_LATCH         = 05;
 const int PIN_BTN_CLK           = 18;
 const int PIN_BTN_DATA          = 19;
@@ -73,7 +75,7 @@ const int PIN_MUX_2             = 23;
 
 // ..................................................................................... Constants
 
-const int NUM_PIXELS                = 1;
+const int NUM_PIXELS                = 24;
 
 const int SYNC_MODE_INTERN          = 0;
 const int SYNC_MODE_EXTERN_AUDIO    = 1;
@@ -84,7 +86,7 @@ const int MENU_NONE			        = 0;
 
 const int 	UI_TIMEOUT = 5000;
 
-
+#define NUM_REGISTERS   3
 // ..................................................................................... SCREEN
 
 
@@ -102,7 +104,7 @@ Timer                                   t;
 ESP32Encoder                            encoder;
 CRGB                                    pixels[NUM_PIXELS];
 
-int                                     buttons_raw;
+
 int                                     selected_menu;
 int                                     sync_mode;
 int                                     bpm;
@@ -128,7 +130,9 @@ portMUX_TYPE                            beatClockTimerMux = portMUX_INITIALIZER_
 
 bool                                    display_needs_update;
 
-int                                     pot[2];
+
+byte buttons_raw[NUM_REGISTERS];
+
 //----------------------------------------------------------------------------------------
 //																		Intro
 void intro() {
@@ -141,8 +145,16 @@ void intro() {
 	display.setTextSize(2);				
 	display.println(F("vMIX-20"));
 	display.display();
-	delay(1000);
+	for (int hue = 0; hue < 360; hue++) {
+    	fill_rainbow( pixels, NUM_PIXELS, hue, 7);
+	    delay(3);
+    	FastLED.show(); 
+  	}
 
+	fill_solid(pixels,NUM_PIXELS,CRGB::Black);
+	FastLED.show(); 
+
+/*
 	display.clearDisplay();
 	display.setTextSize(1);		
 	display.setCursor(40,0);		
@@ -151,6 +163,8 @@ void intro() {
 	display.println(F(VERSION));
 	display.display();
 	delay(1000);
+	*/
+
 }
 //----------------------------------------------------------------------------------------
 //																		set all trigger pins to low
@@ -190,55 +204,60 @@ void check_encoder(){
 }
 
 //----------------------------------------------------------------------------------------
-//																		Potentiometers
-void check_ad() {
-    pot[0] = analogRead(PIN_POT1);
-    pot[1] = analogRead(PIN_POT2);
+//																		Buttons
+void check_buttons() {
+    static byte old_buttons[NUM_REGISTERS];
+    bool    something_happened = false;
+    byte temp;
+    
+    SPI.beginTransaction(SPISettings(80000, MSBFIRST, SPI_MODE0));
+    digitalWrite(PIN_BTN_LATCH,LOW);
+    delayMicroseconds(100);
+    digitalWrite(PIN_BTN_LATCH,HIGH);
+    cli();
+    for (int i = 0; i < NUM_REGISTERS; i++) {
+        temp = ~SPI.transfer(0x00);
+        buttons_raw[i] = temp;
+        if (buttons_raw[i] != old_buttons[i]) something_happened = true;
+    }
+    sei();
+    SPI.endTransaction();
+    
+    if (something_happened) {
+        byte triggers;
+        for (int i = 0; i < NUM_REGISTERS; i++) {
+           triggers =  ~old_buttons[i] & buttons_raw[i];
+           if (triggers > 0) {
+
+           }
+        }
+    }
+    
+    for (int i = 0; i < NUM_REGISTERS; i++) {
+        old_buttons[i] = buttons_raw[i];
+    }
+
+    
 }
+
 //----------------------------------------------------------------------------------------
-//																		Audio SYNC In
-void check_audio_in() {
-    static int last_audio_level;
-    static long last_audio_trigger;
-    static long mean_interval;
-    
-    if (sync_mode == SYNC_MODE_EXTERN_MIDI) return;
-    
-    long interval = millis() - last_audio_trigger;
-    
-    
-    int audio_level = analogRead(PIN_AUDIO);
-    if (audio_level > pot[0] + 20) {
-        if (last_audio_level < pot[0]) {
-            
-            last_audio_trigger = millis();
-            
-            mean_interval = (7 * mean_interval + interval) / 8;
-            
-            // 240bpm max = 60000 / 240 = 250ms
-            // 60 bpm min = 1000ms
-            if ((mean_interval >= 249) && (mean_interval <= 1000)){
-                bpm = 60000 / mean_interval;
-                change_bpm();
-                sync_mode = SYNC_MODE_EXTERN_AUDIO;
-//  ???? interruptCounter = 1;       //force tick
-            } else {
-                if (sync_mode == SYNC_MODE_EXTERN_AUDIO) {
-                    sync_mode = SYNC_MODE_INTERN;
-                    display_needs_update = true;
-                }
-            }
-        }
-    }
-    
-    if (interval > 2000) {
-        if (sync_mode == SYNC_MODE_EXTERN_AUDIO) {
-            sync_mode = SYNC_MODE_INTERN;
-            display_needs_update = true;
-        }
-    }
-    last_audio_level = audio;
+//																		Leds
+
+void update_leds() {
+	fill_solid(pixels,NUM_PIXELS,CRGB::Black);
+	
+	for (int n = 0; n < NUM_REGISTERS; n++) {
+	    for (int i = 0; i < 8; i++) {
+	        if (buttons_raw[n] & (1 << i)) {
+	            pixels[n*8 + i] = CRGB::Yellow;
+	        }
+	    }
+	}
+	
+	
+	FastLED.show(); 
 }
+
 
 
 //----------------------------------------------------------------------------------------
@@ -359,13 +378,14 @@ void setup(){
     Serial.begin(115200);
     Serial.println("vMIX20 - SETUP start");
 
+    FastLED.addLeds<NEOPIXEL, PIN_PIXELS>(pixels, NUM_PIXELS);
+	FastLED.setBrightness(20);
+	
 	display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
-	display.setRotation(2); 
+	display.setRotation(0); 
 	intro();
 
-//    FastLED.addLeds<NEOPIXEL, PIN_PIXELS>(pixels, NUM_PIXELS);
-    pinMode(PIN_ENCODER_A, INPUT_PULLUP);
-    pinMode(PIN_ENCODER_B, INPUT_PULLUP);
+    
     pinMode(PIN_TRIGGER_1, OUTPUT);
     pinMode(PIN_TRIGGER_2, OUTPUT);
     pinMode(PIN_TRIGGER_3, OUTPUT);
@@ -386,11 +406,14 @@ void setup(){
     change_bpm();
     
     MIDI.begin();           // Launch MIDI, by default listening to channel 1.
-
-    t.every(4,check_audio_in);    
- //   t.every(100,check_encoder);
-    t.every(20, check_ad);
+    
+    t.every(100,check_encoder);
     t.every(1000, check_ui_timeout);
+
+    // do this on vertical blanking:
+    t.every(20,check_buttons);
+    t.every(20,update_leds);
+
     
     Serial.println("SETUP done");
 }
