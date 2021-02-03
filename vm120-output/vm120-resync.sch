@@ -700,21 +700,6 @@ Wire Wire Line
 	8150 3250 8400 3250
 Wire Wire Line
 	6500 2350 6500 3250
-Wire Wire Line
-	6500 3250 7150 3250
-$Comp
-L synkie_symbols:GND #PWR?
-U 1 1 5FD08BD5
-P 7150 4050
-AR Path="/5FD08BD5" Ref="#PWR?"  Part="1" 
-AR Path="/5FED65BF/5FD08BD5" Ref="#PWR0312"  Part="1" 
-F 0 "#PWR0312" H 7150 3800 50  0001 C CNN
-F 1 "GND" H 7155 3877 50  0000 C CNN
-F 2 "" H 7150 4050 50  0001 C CNN
-F 3 "" H 7150 4050 50  0001 C CNN
-	1    7150 4050
-	0    1    1    0   
-$EndComp
 Text Label 5300 4300 0    50   ~ 0
 clipper_out
 Wire Wire Line
@@ -1080,4 +1065,38 @@ F 3 "" H 1600 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1600 2800 1950 2800
+$Comp
+L synkie_symbols:R R?
+U 1 1 602DFBBE
+P 7000 3250
+AR Path="/602DFBBE" Ref="R?"  Part="1" 
+AR Path="/5FED65BF/602DFBBE" Ref="R?"  Part="1" 
+F 0 "R?" V 7000 3250 50  0000 C CNN
+F 1 "100" V 6884 3250 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6930 3250 50  0001 C CNN
+F 3 "~" H 7000 3250 50  0001 C CNN
+	1    7000 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 3250 6500 3250
+$Comp
+L synkie_symbols:R R?
+U 1 1 602E2B4A
+P 6200 3350
+AR Path="/602E2B4A" Ref="R?"  Part="1" 
+AR Path="/5FED65BF/602E2B4A" Ref="R?"  Part="1" 
+F 0 "R?" V 6200 3350 50  0000 C CNN
+F 1 "200" V 6084 3350 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 3350 50  0001 C CNN
+F 3 "~" H 6200 3350 50  0001 C CNN
+	1    6200 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3350 7150 3350
+Text GLabel 6050 3350 0    50   Input ~ 0
+synkietxt
+Text GLabel 7150 4050 0    50   Input ~ 0
+synkietxt_enable
 $EndSCHEMATC
