@@ -904,12 +904,12 @@ $EndComp
 $Comp
 L synkie_symbols:UMCC J106
 U 1 1 5FF37F16
-P 3450 3050
-F 0 "J106" H 3978 3003 60  0000 L CNN
-F 1 "INPUT from Mixbus" H 3978 2897 60  0000 L CNN
-F 2 "synkie_footprints:TE_UMCC_2337019-1" H 3850 2890 60  0001 C CNN
-F 3 "" H 3450 3050 60  0000 C CNN
-	1    3450 3050
+P 4100 3300
+F 0 "J106" H 4628 3253 60  0000 L CNN
+F 1 "INPUT from Mixbus" H 4628 3147 60  0000 L CNN
+F 2 "synkie_footprints:TE_UMCC_2337019-1" H 4500 3140 60  0001 C CNN
+F 3 "" H 4100 3300 60  0000 C CNN
+	1    4100 3300
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1279,7 +1279,7 @@ Text Label 9200 3800 2    50   ~ 0
 scabi-out
 Text Label 9050 4700 2    50   ~ 0
 scabi-out
-Text Label 3450 3050 0    50   ~ 0
+Text Label 4100 3300 0    50   ~ 0
 scabi_in
 Text Label 3400 2700 0    50   ~ 0
 scabi_in
@@ -1304,4 +1304,130 @@ Wire Wire Line
 	6200 3200 6550 3200
 Wire Wire Line
 	6550 2300 6550 2500
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 603A7424
+P 1550 1800
+F 0 "JP1" H 1550 2012 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 1550 1921 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1550 1800 50  0001 C CNN
+F 3 "~" H 1550 1800 50  0001 C CNN
+	1    1550 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1800 1450 1800
+$Comp
+L synkie_symbols:GND #PWR0124
+U 1 1 603AAD74
+P 1650 1800
+F 0 "#PWR0124" H 1650 1550 50  0001 C CNN
+F 1 "GND" H 1655 1627 50  0000 C CNN
+F 2 "" H 1650 1800 50  0001 C CNN
+F 3 "" H 1650 1800 50  0001 C CNN
+	1    1650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP4
+U 1 1 603AB571
+P 1050 4100
+F 0 "JP4" H 1050 4312 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 1050 4221 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1050 4100 50  0001 C CNN
+F 3 "~" H 1050 4100 50  0001 C CNN
+	1    1050 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3800 1450 3900
+Wire Wire Line
+	1450 3900 1450 4100
+Wire Wire Line
+	1450 4100 1150 4100
+Connection ~ 1450 3900
+$Comp
+L synkie_symbols:GND #PWR0125
+U 1 1 603B2292
+P 950 4100
+F 0 "#PWR0125" H 950 3850 50  0001 C CNN
+F 1 "GND" H 955 3927 50  0000 C CNN
+F 2 "" H 950 4100 50  0001 C CNN
+F 3 "" H 950 4100 50  0001 C CNN
+	1    950  4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2400 1900 2400
+Wire Wire Line
+	1900 3300 1150 3300
+Wire Wire Line
+	1150 3100 1900 3100
+Connection ~ 1900 3100
+Wire Wire Line
+	1900 3100 1900 3300
+Wire Wire Line
+	1150 2800 1900 2800
+Connection ~ 1900 2800
+Wire Wire Line
+	1900 2800 1900 3100
+Wire Wire Line
+	1150 2600 1900 2600
+Wire Wire Line
+	1900 2400 1900 2600
+Connection ~ 1900 2600
+Wire Wire Line
+	1900 2600 1900 2800
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 603C1636
+P 2300 3300
+F 0 "JP2" H 2300 3512 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 2300 3421 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 2300 3300 50  0001 C CNN
+F 3 "~" H 2300 3300 50  0001 C CNN
+	1    2300 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3300 2200 3300
+$Comp
+L synkie_symbols:GND #PWR0126
+U 1 1 603C1641
+P 2400 3300
+F 0 "#PWR0126" H 2400 3050 50  0001 C CNN
+F 1 "GND" H 2405 3127 50  0000 C CNN
+F 2 "" H 2400 3300 50  0001 C CNN
+F 3 "" H 2400 3300 50  0001 C CNN
+	1    2400 3300
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1900 3300
+$Comp
+L Device:Jumper_NC_Small JP3
+U 1 1 603C7DDA
+P 4500 3500
+F 0 "JP3" H 4500 3712 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4500 3621 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 4500 3500 50  0001 C CNN
+F 3 "~" H 4500 3500 50  0001 C CNN
+	1    4500 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR0127
+U 1 1 603C7DE4
+P 4600 3500
+F 0 "#PWR0127" H 4600 3250 50  0001 C CNN
+F 1 "GND" H 4605 3327 50  0000 C CNN
+F 2 "" H 4600 3500 50  0001 C CNN
+F 3 "" H 4600 3500 50  0001 C CNN
+	1    4600 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3500 4100 3500
+Wire Wire Line
+	4100 3500 4100 3400
+Connection ~ 4100 3500
 $EndSCHEMATC
