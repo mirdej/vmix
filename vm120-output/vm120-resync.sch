@@ -1025,38 +1025,12 @@ F 3 "" H 3650 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J202
-U 1 1 6026DE88
-P 5600 3800
-F 0 "J202" H 5680 3792 50  0000 L CNN
-F 1 "Conn_01x02" H 5680 3701 50  0000 L CNN
-F 2 "synkie_footprints:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 5600 3800 50  0001 C CNN
-F 3 "~" H 5600 3800 50  0001 C CNN
-	1    5600 3800
-	1    0    0    -1  
-$EndComp
-Text Label 5400 3800 2    50   ~ 0
-clipper_out
-$Comp
-L synkie_symbols:GND #PWR?
-U 1 1 6026F91B
-P 5400 3900
-AR Path="/6026F91B" Ref="#PWR?"  Part="1" 
-AR Path="/5FED65BF/6026F91B" Ref="#PWR0137"  Part="1" 
-F 0 "#PWR0137" H 5400 3650 50  0001 C CNN
-F 1 "GND" H 5405 3727 50  0000 C CNN
-F 2 "" H 5400 3900 50  0001 C CNN
-F 3 "" H 5400 3900 50  0001 C CNN
-	1    5400 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L synkie_symbols:GND #PWR?
 U 1 1 601C8AC6
 P 1600 2800
 AR Path="/601C8AC6" Ref="#PWR?"  Part="1" 
-AR Path="/5FED65BF/601C8AC6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1600 2550 50  0001 C CNN
+AR Path="/5FED65BF/601C8AC6" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 1600 2550 50  0001 C CNN
 F 1 "GND" H 1605 2627 50  0000 C CNN
 F 2 "" H 1600 2800 50  0001 C CNN
 F 3 "" H 1600 2800 50  0001 C CNN
@@ -1070,8 +1044,8 @@ L synkie_symbols:R R?
 U 1 1 602DFBBE
 P 7000 3250
 AR Path="/602DFBBE" Ref="R?"  Part="1" 
-AR Path="/5FED65BF/602DFBBE" Ref="R?"  Part="1" 
-F 0 "R?" V 7000 3250 50  0000 C CNN
+AR Path="/5FED65BF/602DFBBE" Ref="R5"  Part="1" 
+F 0 "R5" V 7000 3250 50  0000 C CNN
 F 1 "100" V 6884 3250 50  0000 C CNN
 F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6930 3250 50  0001 C CNN
 F 3 "~" H 7000 3250 50  0001 C CNN
@@ -1085,8 +1059,8 @@ L synkie_symbols:R R?
 U 1 1 602E2B4A
 P 6200 3350
 AR Path="/602E2B4A" Ref="R?"  Part="1" 
-AR Path="/5FED65BF/602E2B4A" Ref="R?"  Part="1" 
-F 0 "R?" V 6200 3350 50  0000 C CNN
+AR Path="/5FED65BF/602E2B4A" Ref="R6"  Part="1" 
+F 0 "R6" V 6200 3350 50  0000 C CNN
 F 1 "200" V 6084 3350 50  0000 C CNN
 F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 3350 50  0001 C CNN
 F 3 "~" H 6200 3350 50  0001 C CNN
