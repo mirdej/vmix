@@ -335,22 +335,11 @@ F 3 "" H 9100 2950 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Connection ~ 9100 2950
-Text Label 8000 3150 2    50   ~ 0
+Text Label 3050 1000 0    50   ~ 0
 mux1
-Text Label 8000 3250 2    50   ~ 0
+Text Label 3050 1100 0    50   ~ 0
 mux2
-$Comp
-L synkie_symbols:GND #PWR0110
-U 1 1 601F0A4D
-P 8000 3050
-F 0 "#PWR0110" H 8000 2800 50  0001 C CNN
-F 1 "GND" H 8005 2877 50  0000 C CNN
-F 2 "" H 8000 3050 50  0001 C CNN
-F 3 "" H 8000 3050 50  0001 C CNN
-	1    8000 3050
-	0    1    -1   0   
-$EndComp
-Text Label 8000 3350 2    50   ~ 0
+Text Label 3050 1200 0    50   ~ 0
 mux3
 $Comp
 L synkie_symbols:UMCC J5
@@ -364,30 +353,18 @@ F 3 "" H 1400 3950 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 601F50C9
-P 1500 4150
-F 0 "JP1" H 1850 3950 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 1900 4000 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1500 4150 50  0001 C CNN
-F 3 "~" H 1500 4150 50  0001 C CNN
-	1    1500 4150
-	-1   0    0    -1  
-$EndComp
-$Comp
 L synkie_symbols:GND #PWR0112
 U 1 1 601F50D3
-P 1600 4150
-F 0 "#PWR0112" H 1600 3900 50  0001 C CNN
-F 1 "GND" H 1605 3977 50  0000 C CNN
-F 2 "" H 1600 4150 50  0001 C CNN
-F 3 "" H 1600 4150 50  0001 C CNN
-	1    1600 4150
+P 1400 4150
+F 0 "#PWR0112" H 1400 3900 50  0001 C CNN
+F 1 "GND" H 1405 3977 50  0000 C CNN
+F 2 "" H 1400 4150 50  0001 C CNN
+F 3 "" H 1400 4150 50  0001 C CNN
+	1    1400 4150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1400 4050 1400 4150
-Connection ~ 1400 4150
 Text Label 1400 3950 0    50   ~ 0
 afl1
 $Comp
@@ -402,30 +379,18 @@ F 3 "" H 1400 4750 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP5
-U 1 1 601F7F3C
-P 1500 4950
-F 0 "JP5" H 1850 4750 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 1900 4800 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1500 4950 50  0001 C CNN
-F 3 "~" H 1500 4950 50  0001 C CNN
-	1    1500 4950
-	-1   0    0    -1  
-$EndComp
-$Comp
 L synkie_symbols:GND #PWR0113
 U 1 1 601F7F46
-P 1600 4950
-F 0 "#PWR0113" H 1600 4700 50  0001 C CNN
-F 1 "GND" H 1605 4777 50  0000 C CNN
-F 2 "" H 1600 4950 50  0001 C CNN
-F 3 "" H 1600 4950 50  0001 C CNN
-	1    1600 4950
+P 1400 4950
+F 0 "#PWR0113" H 1400 4700 50  0001 C CNN
+F 1 "GND" H 1405 4777 50  0000 C CNN
+F 2 "" H 1400 4950 50  0001 C CNN
+F 3 "" H 1400 4950 50  0001 C CNN
+	1    1400 4950
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1400 4850 1400 4950
-Connection ~ 1400 4950
 Text Label 1400 4750 0    50   ~ 0
 afl2
 $Comp
@@ -440,30 +405,18 @@ F 3 "" H 1400 5550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP8
-U 1 1 601FB4CF
-P 1500 5750
-F 0 "JP8" H 1850 5550 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 1900 5600 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1500 5750 50  0001 C CNN
-F 3 "~" H 1500 5750 50  0001 C CNN
-	1    1500 5750
-	-1   0    0    -1  
-$EndComp
-$Comp
 L synkie_symbols:GND #PWR0114
 U 1 1 601FB4D9
-P 1600 5750
-F 0 "#PWR0114" H 1600 5500 50  0001 C CNN
-F 1 "GND" H 1605 5577 50  0000 C CNN
-F 2 "" H 1600 5750 50  0001 C CNN
-F 3 "" H 1600 5750 50  0001 C CNN
-	1    1600 5750
+P 1400 5750
+F 0 "#PWR0114" H 1400 5500 50  0001 C CNN
+F 1 "GND" H 1405 5577 50  0000 C CNN
+F 2 "" H 1400 5750 50  0001 C CNN
+F 3 "" H 1400 5750 50  0001 C CNN
+	1    1400 5750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1400 5650 1400 5750
-Connection ~ 1400 5750
 Text Label 1400 5550 0    50   ~ 0
 afl3
 $Comp
@@ -478,30 +431,18 @@ F 3 "" H 1400 6350 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP11
-U 1 1 601FB4F0
-P 1500 6550
-F 0 "JP11" H 1850 6350 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 1900 6400 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1500 6550 50  0001 C CNN
-F 3 "~" H 1500 6550 50  0001 C CNN
-	1    1500 6550
-	-1   0    0    -1  
-$EndComp
-$Comp
 L synkie_symbols:GND #PWR0115
 U 1 1 601FB4FA
-P 1600 6550
-F 0 "#PWR0115" H 1600 6300 50  0001 C CNN
-F 1 "GND" H 1605 6377 50  0000 C CNN
-F 2 "" H 1600 6550 50  0001 C CNN
-F 3 "" H 1600 6550 50  0001 C CNN
-	1    1600 6550
+P 1400 6550
+F 0 "#PWR0115" H 1400 6300 50  0001 C CNN
+F 1 "GND" H 1405 6377 50  0000 C CNN
+F 2 "" H 1400 6550 50  0001 C CNN
+F 3 "" H 1400 6550 50  0001 C CNN
+	1    1400 6550
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1400 6450 1400 6550
-Connection ~ 1400 6550
 Text Label 1400 6350 0    50   ~ 0
 afl4
 $Comp
@@ -516,30 +457,18 @@ F 3 "" H 2400 3950 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP3
-U 1 1 601FF87D
-P 2500 4150
-F 0 "JP3" H 2850 3950 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 2900 4000 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 2500 4150 50  0001 C CNN
-F 3 "~" H 2500 4150 50  0001 C CNN
-	1    2500 4150
-	-1   0    0    -1  
-$EndComp
-$Comp
 L synkie_symbols:GND #PWR0116
 U 1 1 601FF887
-P 2600 4150
-F 0 "#PWR0116" H 2600 3900 50  0001 C CNN
-F 1 "GND" H 2605 3977 50  0000 C CNN
-F 2 "" H 2600 4150 50  0001 C CNN
-F 3 "" H 2600 4150 50  0001 C CNN
-	1    2600 4150
+P 2400 4150
+F 0 "#PWR0116" H 2400 3900 50  0001 C CNN
+F 1 "GND" H 2405 3977 50  0000 C CNN
+F 2 "" H 2400 4150 50  0001 C CNN
+F 3 "" H 2400 4150 50  0001 C CNN
+	1    2400 4150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2400 4050 2400 4150
-Connection ~ 2400 4150
 Text Label 2400 3950 0    50   ~ 0
 pfl1
 $Comp
@@ -554,30 +483,18 @@ F 3 "" H 2400 4750 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP6
-U 1 1 601FF89E
-P 2500 4950
-F 0 "JP6" H 2850 4750 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 2900 4800 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 2500 4950 50  0001 C CNN
-F 3 "~" H 2500 4950 50  0001 C CNN
-	1    2500 4950
-	-1   0    0    -1  
-$EndComp
-$Comp
 L synkie_symbols:GND #PWR0117
 U 1 1 601FF8A8
-P 2600 4950
-F 0 "#PWR0117" H 2600 4700 50  0001 C CNN
-F 1 "GND" H 2605 4777 50  0000 C CNN
-F 2 "" H 2600 4950 50  0001 C CNN
-F 3 "" H 2600 4950 50  0001 C CNN
-	1    2600 4950
+P 2400 4950
+F 0 "#PWR0117" H 2400 4700 50  0001 C CNN
+F 1 "GND" H 2405 4777 50  0000 C CNN
+F 2 "" H 2400 4950 50  0001 C CNN
+F 3 "" H 2400 4950 50  0001 C CNN
+	1    2400 4950
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2400 4850 2400 4950
-Connection ~ 2400 4950
 Text Label 2400 4750 0    50   ~ 0
 pfl2
 $Comp
@@ -592,30 +509,18 @@ F 3 "" H 2400 5550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP9
-U 1 1 601FF8BF
-P 2500 5750
-F 0 "JP9" H 2850 5550 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 2900 5600 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 2500 5750 50  0001 C CNN
-F 3 "~" H 2500 5750 50  0001 C CNN
-	1    2500 5750
-	-1   0    0    -1  
-$EndComp
-$Comp
 L synkie_symbols:GND #PWR0118
 U 1 1 601FF8C9
-P 2600 5750
-F 0 "#PWR0118" H 2600 5500 50  0001 C CNN
-F 1 "GND" H 2605 5577 50  0000 C CNN
-F 2 "" H 2600 5750 50  0001 C CNN
-F 3 "" H 2600 5750 50  0001 C CNN
-	1    2600 5750
+P 2400 5750
+F 0 "#PWR0118" H 2400 5500 50  0001 C CNN
+F 1 "GND" H 2405 5577 50  0000 C CNN
+F 2 "" H 2400 5750 50  0001 C CNN
+F 3 "" H 2400 5750 50  0001 C CNN
+	1    2400 5750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2400 5650 2400 5750
-Connection ~ 2400 5750
 Text Label 2400 5550 0    50   ~ 0
 pfl3
 $Comp
@@ -630,30 +535,18 @@ F 3 "" H 2400 6350 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP12
-U 1 1 601FF8E0
-P 2500 6550
-F 0 "JP12" H 2850 6350 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 2900 6400 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 2500 6550 50  0001 C CNN
-F 3 "~" H 2500 6550 50  0001 C CNN
-	1    2500 6550
-	-1   0    0    -1  
-$EndComp
-$Comp
 L synkie_symbols:GND #PWR0119
 U 1 1 601FF8EA
-P 2600 6550
-F 0 "#PWR0119" H 2600 6300 50  0001 C CNN
-F 1 "GND" H 2605 6377 50  0000 C CNN
-F 2 "" H 2600 6550 50  0001 C CNN
-F 3 "" H 2600 6550 50  0001 C CNN
-	1    2600 6550
+P 2400 6550
+F 0 "#PWR0119" H 2400 6300 50  0001 C CNN
+F 1 "GND" H 2405 6377 50  0000 C CNN
+F 2 "" H 2400 6550 50  0001 C CNN
+F 3 "" H 2400 6550 50  0001 C CNN
+	1    2400 6550
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2400 6450 2400 6550
-Connection ~ 2400 6550
 Text Label 2400 6350 0    50   ~ 0
 pfl4
 $Comp
@@ -667,31 +560,8 @@ F 3 "" H 3400 3950 60  0000 C CNN
 	1    3400 3950
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper_NC_Small JP4
-U 1 1 602073D3
-P 3500 4150
-F 0 "JP4" H 3850 3950 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3900 4000 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 3500 4150 50  0001 C CNN
-F 3 "~" H 3500 4150 50  0001 C CNN
-	1    3500 4150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L synkie_symbols:GND #PWR0120
-U 1 1 602073DD
-P 3600 4150
-F 0 "#PWR0120" H 3600 3900 50  0001 C CNN
-F 1 "GND" H 3605 3977 50  0000 C CNN
-F 2 "" H 3600 4150 50  0001 C CNN
-F 3 "" H 3600 4150 50  0001 C CNN
-	1    3600 4150
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3400 4050 3400 4150
-Connection ~ 3400 4150
 Text Label 3400 3950 0    50   ~ 0
 burst1
 $Comp
@@ -705,33 +575,8 @@ F 3 "" H 3400 4750 60  0000 C CNN
 	1    3400 4750
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper_NC_Small JP7
-U 1 1 602073F4
-P 3500 4950
-F 0 "JP7" H 3850 4750 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3900 4800 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 3500 4950 50  0001 C CNN
-F 3 "~" H 3500 4950 50  0001 C CNN
-	1    3500 4950
-	-1   0    0    -1  
-$EndComp
-$Comp
-L synkie_symbols:GND #PWR0121
-U 1 1 602073FE
-P 3600 4950
-F 0 "#PWR0121" H 3600 4700 50  0001 C CNN
-F 1 "GND" H 3605 4777 50  0000 C CNN
-F 2 "" H 3600 4950 50  0001 C CNN
-F 3 "" H 3600 4950 50  0001 C CNN
-	1    3600 4950
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3400 4850 3400 4950
-Connection ~ 3400 4950
-Text Label 3400 4750 0    50   ~ 0
-burst2
 $Comp
 L synkie_symbols:UMCC J13
 U 1 1 6020740B
@@ -743,33 +588,8 @@ F 3 "" H 3400 5550 60  0000 C CNN
 	1    3400 5550
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper_NC_Small JP10
-U 1 1 60207415
-P 3500 5750
-F 0 "JP10" H 3850 5550 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3900 5600 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 3500 5750 50  0001 C CNN
-F 3 "~" H 3500 5750 50  0001 C CNN
-	1    3500 5750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L synkie_symbols:GND #PWR0122
-U 1 1 6020741F
-P 3600 5750
-F 0 "#PWR0122" H 3600 5500 50  0001 C CNN
-F 1 "GND" H 3605 5577 50  0000 C CNN
-F 2 "" H 3600 5750 50  0001 C CNN
-F 3 "" H 3600 5750 50  0001 C CNN
-	1    3600 5750
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3400 5650 3400 5750
-Connection ~ 3400 5750
-Text Label 3400 5550 0    50   ~ 0
-burst3
 $Comp
 L synkie_symbols:UMCC J16
 U 1 1 6020742C
@@ -781,33 +601,8 @@ F 3 "" H 3400 6350 60  0000 C CNN
 	1    3400 6350
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper_NC_Small JP13
-U 1 1 60207436
-P 3500 6550
-F 0 "JP13" H 3850 6350 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3900 6400 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 3500 6550 50  0001 C CNN
-F 3 "~" H 3500 6550 50  0001 C CNN
-	1    3500 6550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L synkie_symbols:GND #PWR0124
-U 1 1 60207440
-P 3600 6550
-F 0 "#PWR0124" H 3600 6300 50  0001 C CNN
-F 1 "GND" H 3605 6377 50  0000 C CNN
-F 2 "" H 3600 6550 50  0001 C CNN
-F 3 "" H 3600 6550 50  0001 C CNN
-	1    3600 6550
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3400 6450 3400 6550
-Connection ~ 3400 6550
-Text Label 3400 6350 0    50   ~ 0
-burst4
 Text Label 8000 2550 2    50   ~ 0
 afl1
 Text Label 8000 2650 2    50   ~ 0
@@ -1107,28 +902,6 @@ F 3 "~" H 5350 2050 50  0001 C CNN
 $EndComp
 Connection ~ 5200 2050
 $Comp
-L Connector_Generic:Conn_01x01 J1
-U 1 1 6023054B
-P 5650 1450
-F 0 "J1" H 5730 1492 50  0000 L CNN
-F 1 "out" H 5730 1401 50  0000 L CNN
-F 2 "synkie_footprints:Solderpad_1mm" H 5650 1450 50  0001 C CNN
-F 3 "~" H 5650 1450 50  0001 C CNN
-	1    5650 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J2
-U 1 1 60230AA2
-P 5700 2050
-F 0 "J2" H 5780 2092 50  0000 L CNN
-F 1 "out" H 5780 2001 50  0000 L CNN
-F 2 "synkie_footprints:Solderpad_1mm" H 5700 2050 50  0001 C CNN
-F 3 "~" H 5700 2050 50  0001 C CNN
-	1    5700 2050
-	1    0    0    -1  
-$EndComp
-$Comp
 L synkie_symbols:MAX4392 U3
 U 1 1 60231807
 P 4850 2800
@@ -1190,28 +963,6 @@ F 3 "~" H 5300 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 5150 3400
-$Comp
-L Connector_Generic:Conn_01x01 J3
-U 1 1 60231839
-P 5600 2800
-F 0 "J3" H 5680 2842 50  0000 L CNN
-F 1 "out" H 5680 2751 50  0000 L CNN
-F 2 "synkie_footprints:Solderpad_1mm" H 5600 2800 50  0001 C CNN
-F 3 "~" H 5600 2800 50  0001 C CNN
-	1    5600 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J4
-U 1 1 60231843
-P 5650 3400
-F 0 "J4" H 5730 3442 50  0000 L CNN
-F 1 "out" H 5730 3351 50  0000 L CNN
-F 2 "synkie_footprints:Solderpad_1mm" H 5650 3400 50  0001 C CNN
-F 3 "~" H 5650 3400 50  0001 C CNN
-	1    5650 3400
-	1    0    0    -1  
-$EndComp
 $Comp
 L synkie_symbols:MAX4392 U3
 U 3 1 6023465D
@@ -1291,4 +1042,125 @@ F 3 "" H 5800 7450 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Connection ~ 5800 7450
+Text Label 3400 6350 0    50   ~ 0
+burst4
+$Comp
+L synkie_symbols:GND #PWR0124
+U 1 1 60207440
+P 3400 6550
+F 0 "#PWR0124" H 3400 6300 50  0001 C CNN
+F 1 "GND" H 3405 6377 50  0000 C CNN
+F 2 "" H 3400 6550 50  0001 C CNN
+F 3 "" H 3400 6550 50  0001 C CNN
+	1    3400 6550
+	-1   0    0    -1  
+$EndComp
+Text Label 3400 5550 0    50   ~ 0
+burst3
+$Comp
+L synkie_symbols:GND #PWR0122
+U 1 1 6020741F
+P 3400 5750
+F 0 "#PWR0122" H 3400 5500 50  0001 C CNN
+F 1 "GND" H 3405 5577 50  0000 C CNN
+F 2 "" H 3400 5750 50  0001 C CNN
+F 3 "" H 3400 5750 50  0001 C CNN
+	1    3400 5750
+	-1   0    0    -1  
+$EndComp
+Text Label 3400 4750 0    50   ~ 0
+burst2
+$Comp
+L synkie_symbols:GND #PWR0121
+U 1 1 602073FE
+P 3400 4950
+F 0 "#PWR0121" H 3400 4700 50  0001 C CNN
+F 1 "GND" H 3405 4777 50  0000 C CNN
+F 2 "" H 3400 4950 50  0001 C CNN
+F 3 "" H 3400 4950 50  0001 C CNN
+	1    3400 4950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR0120
+U 1 1 602073DD
+P 3400 4150
+F 0 "#PWR0120" H 3400 3900 50  0001 C CNN
+F 1 "GND" H 3405 3977 50  0000 C CNN
+F 2 "" H 3400 4150 50  0001 C CNN
+F 3 "" H 3400 4150 50  0001 C CNN
+	1    3400 4150
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1400 4150
+Connection ~ 1400 4950
+Connection ~ 2400 4150
+Connection ~ 2400 4950
+Connection ~ 3400 4150
+Connection ~ 3400 4950
+Connection ~ 1400 6550
+Connection ~ 2400 6550
+Connection ~ 3400 6550
+Connection ~ 3400 5750
+Connection ~ 2400 5750
+Connection ~ 1400 5750
+$Comp
+L Connector_Generic:Conn_01x04 J19
+U 1 1 602639F0
+P 2850 1100
+F 0 "J19" H 2768 1417 50  0000 C CNN
+F 1 "Conn_01x04" H 2768 1326 50  0000 C CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 2850 1100 50  0001 C CNN
+F 3 "~" H 2850 1100 50  0001 C CNN
+	1    2850 1100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 6026AF60
+P 6400 2200
+F 0 "J1" H 6480 2192 50  0000 L CNN
+F 1 "Conn_01x04" H 6480 2101 50  0000 L CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 6400 2200 50  0001 C CNN
+F 3 "~" H 6400 2200 50  0001 C CNN
+	1    6400 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2100 5850 2100
+Wire Wire Line
+	5850 2100 5850 1450
+Wire Wire Line
+	5850 1450 5500 1450
+Wire Wire Line
+	6200 2200 5500 2200
+Wire Wire Line
+	5500 2200 5500 2050
+Wire Wire Line
+	6200 2300 5450 2300
+Wire Wire Line
+	5450 2300 5450 2800
+Wire Wire Line
+	6200 2400 5550 2400
+Wire Wire Line
+	5550 2400 5550 3400
+Wire Wire Line
+	5550 3400 5450 3400
+Text Label 8000 3150 2    50   ~ 0
+mux1
+Text Label 8000 3250 2    50   ~ 0
+mux2
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 602A1021
+P 8000 3050
+F 0 "#PWR?" H 8000 2800 50  0001 C CNN
+F 1 "GND" H 8005 2877 50  0000 C CNN
+F 2 "" H 8000 3050 50  0001 C CNN
+F 3 "" H 8000 3050 50  0001 C CNN
+	1    8000 3050
+	0    1    -1   0   
+$EndComp
+Text Label 8000 3350 2    50   ~ 0
+mux3
 $EndSCHEMATC
