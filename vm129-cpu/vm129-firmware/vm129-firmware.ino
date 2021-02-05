@@ -104,6 +104,8 @@ const int 	UI_TIMEOUT = 5000;
 #define OLED_RESET		 -1
 Adafruit_SSD1306 		display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
+/* for u8g2 library use : U8G2_SSD1306_128X32_UNIVISION_2_HW_I2C */
+
 
 //========================================================================================
 //----------------------------------------------------------------------------------------
@@ -131,7 +133,7 @@ int                                     tickCounter;
 const int                               beat_divider = 24;      //MIDI CLOCk Ticks per beat
 
 int                                     beatclock_clocks = beat_divider;         // default output beat on trigger out 1 
-int                                     trigger1_clocks = beat_divider * 4 ;      // default output bar on trigger out 1 
+int                                     trigger1_clocks = beat_divider * 4 ;      // default output bar on trigger out 1x 
 int                                     trigger2_clocks = beat_divider ;        // default output beat on trigger out 2
 int                                     trigger3_clocks = beat_divider / 4;     // default output 16ths on trigger out 3
  

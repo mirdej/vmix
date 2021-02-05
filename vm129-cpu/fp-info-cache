@@ -1,4 +1,4 @@
-17982410270513142
+17985633411833142
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75747,6 +75747,13 @@ Potentiometer vertical Bourns 3296Y
 3
 3
 nime_footprints
+Potentiometer_Fader_35mm
+
+
+0
+6
+5
+nime_footprints
 Potentiometer_Uwe_100k
 Potentiometer_Uwe_100k
 Potentiometer Uwe 100k
@@ -75774,6 +75781,13 @@ resistor handsolder
 0
 2
 2
+nime_footprints
+RotaryEncoder_Alps_EC12E_Vertical_H20mm_CircularMountingHoles
+Alps rotary encoder, EC12E..., vertical shaft, mounting holes with circular drills, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC12E/EC12E1240405.html
+rotary encoder
+0
+5
+4
 nime_footprints
 SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.35x2.35mm
 8-Lead Thermally Enhanced Plastic Small Outline (SE) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
