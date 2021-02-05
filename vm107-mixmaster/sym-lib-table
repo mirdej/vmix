@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name vm101-inout-rescue)(type Legacy)(uri /Users/me/Documents/development/vmix/vm101-inout/vm101-inout-rescue.lib)(options "")(descr ""))
+)
