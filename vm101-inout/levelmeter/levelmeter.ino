@@ -31,28 +31,28 @@ void update_leds () {
 		power = volts_pos / 0.7;
 		power = sqrt(power);
 		power *= 255.;
-		pixels[0].green = power;
+		pixels[1].green = power;
 	} else if (volts_pos < 1.4) {
 		power = (volts_pos-0.7) / 0.7;
 		power = sqrt(power);
 		power *= 255.;
-		pixels[0].green = 255;
-		pixels[0].red = power;
+		pixels[1].green = 255;
+		pixels[1].red = power;
 	} else {
-		pixels[0].red = 255;
+		pixels[1].red = 255;
 	}
 	
 	if (volts_neg < 0.7) {
 		power = sqrt(volts_neg / 0.7);
 		power *= 255.;
-		pixels[1].blue = power;
+		pixels[0].blue = power;
 	} else if (volts_neg < 1.4) {
 		power = sqrt((volts_neg-0.7) / 0.7);
 		power *= 255.;
-		pixels[1].red = power;
-		pixels[1].blue = 255;
+		pixels[0].red = power;
+		pixels[0].blue = 255;
 	} else {
-		pixels[1].red = 255;
+		pixels[0].red = 255;
 	}
 	
 	volts_pos = 0.;
