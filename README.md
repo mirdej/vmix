@@ -1,6 +1,6 @@
 # ANYMIX 21
 
-![Product Photo](https://github.com/mirdej/vmix/images/anymix21-promo.png)
+![Product Photo](https://github.com/mirdej/vmix/raw/master/images/anymix21-promo.png)
 
 multichannel modular analog PAL video mixer based on the SYNKIE project
 
