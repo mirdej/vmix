@@ -1,4 +1,4 @@
-17919859047706510
+17985633411833142
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75557,6 +75557,286 @@ solderpad_1.27mm_3
 0
 3
 3
+nime_footprints
+Alps_Tactile_Switch
+
+
+0
+4
+2
+nime_footprints
+ArduinoMicro
+
+
+0
+34
+34
+nime_footprints
+Bangood-OLED-128x32
+
+
+0
+4
+4
+nime_footprints
+CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder
+Tantalum Capacitor SMD Kemet-B (3528-21 Metric), IPC_7351 nominal, (Body size from: http://www.kemet.com/Lists/ProductCatalog/Attachments/253/KEM_TC101_STD.pdf), generated with kicad-footprint-generator
+capacitor tantalum
+0
+2
+2
+nime_footprints
+C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
+2
+nime_footprints
+C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
+2
+nime_footprints
+ESP32_Devboard
+
+
+0
+30
+30
+nime_footprints
+IDC-Header_2x05_P2.54mm_Vertical
+Through hole straight IDC box header, 2x05, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x05 2.54mm double row
+0
+10
+10
+nime_footprints
+Joystick_Button
+
+
+0
+14
+8
+nime_footprints
+LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm
+https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf
+LED RGB NeoPixel
+0
+4
+4
+nime_footprints
+MountingHole_3.2mm_M3_DIN965_Pad
+Mounting Hole 3.2mm, M3, DIN965
+mounting hole 3.2mm m3 din965
+0
+1
+1
+nime_footprints
+PTL20
+
+
+0
+6
+6
+nime_footprints
+PinHeader_1x01_P2.54mm_Vertical
+Through hole straight pin header, 1x01, 2.54mm pitch, single row
+Through hole pin header THT 1x01 2.54mm single row
+0
+1
+1
+nime_footprints
+PinHeader_1x02_P2.54mm_Vertical
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+nime_footprints
+PinHeader_1x03_P2.54mm_Vertical
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+3
+3
+nime_footprints
+PinHeader_1x04_P2.54mm_Vertical
+Through hole straight pin header, 1x04, 2.54mm pitch, single row
+Through hole pin header THT 1x04 2.54mm single row
+0
+4
+4
+nime_footprints
+PinHeader_1x05_P2.54mm_Vertical
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5
+nime_footprints
+PinHeader_1x06_P2.54mm_Vertical
+Through hole straight pin header, 1x06, 2.54mm pitch, single row
+Through hole pin header THT 1x06 2.54mm single row
+0
+6
+6
+nime_footprints
+PinHeader_1x08_P2.54mm_Vertical
+Through hole straight pin header, 1x08, 2.54mm pitch, single row
+Through hole pin header THT 1x08 2.54mm single row
+0
+8
+8
+nime_footprints
+PinHeader_1x10_P2.54mm_Vertical
+Through hole straight pin header, 1x10, 2.54mm pitch, single row
+Through hole pin header THT 1x10 2.54mm single row
+0
+10
+10
+nime_footprints
+Potentiometer_Alps_RK09K_Single_Horizontal
+Potentiometer, horizontal, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html
+Potentiometer horizontal Alps RK09K Single
+0
+5
+3
+nime_footprints
+Potentiometer_Alps_RK09K_Single_Vertical
+Potentiometer, vertical, Alps RK09K Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09K/RK09K_list.html
+Potentiometer vertical Alps RK09K Single
+0
+3
+3
+nime_footprints
+Potentiometer_Alps_RK09L_Single_Horizontal
+Potentiometer, horizontal, Alps RK09L Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09L/RK09L_list.html
+Potentiometer horizontal Alps RK09L Single
+0
+5
+3
+nime_footprints
+Potentiometer_Alps_RK09L_Single_Vertical
+Potentiometer, vertical, Alps RK09L Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09L/RK09L_list.html
+Potentiometer vertical Alps RK09L Single
+0
+3
+3
+nime_footprints
+Potentiometer_Alps_RK09Y11_Single_Horizontal
+Potentiometer, horizontal, Alps RK09Y11 Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK09Y11/RK09Y11_list.html
+Potentiometer horizontal Alps RK09Y11 Single
+0
+3
+3
+nime_footprints
+Potentiometer_Alps_RS6011xP_Slide
+
+
+0
+8
+7
+nime_footprints
+Potentiometer_Bourns_3296Y_Vertical
+Potentiometer, vertical, Bourns 3296Y, https://www.bourns.com/pdfs/3296.pdf
+Potentiometer vertical Bourns 3296Y
+0
+3
+3
+nime_footprints
+Potentiometer_Fader_35mm
+
+
+0
+6
+5
+nime_footprints
+Potentiometer_Uwe_100k
+Potentiometer_Uwe_100k
+Potentiometer Uwe 100k
+0
+3
+3
+nime_footprints
+RK12L123
+
+
+0
+8
+8
+nime_footprints
+R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+resistor handsolder
+0
+2
+2
+nime_footprints
+R_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+resistor handsolder
+0
+2
+2
+nime_footprints
+RotaryEncoder_Alps_EC12E_Vertical_H20mm_CircularMountingHoles
+Alps rotary encoder, EC12E..., vertical shaft, mounting holes with circular drills, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC12E/EC12E1240405.html
+rotary encoder
+0
+5
+4
+nime_footprints
+SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.35x2.35mm
+8-Lead Thermally Enhanced Plastic Small Outline (SE) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+13
+9
+nime_footprints
+SOIC-8_3.9x4.9mm_P1.27mm
+8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+8
+8
+nime_footprints
+SOIC-14_3.9x8.7mm_P1.27mm
+SOIC, 14 Pin (JEDEC MS-012AB, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_14.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+14
+14
+nime_footprints
+SOIC-16_3.9x9.9mm_P1.27mm
+SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+16
+16
+nime_footprints
+Teensy32-light
+
+
+0
+33
+33
+nime_footprints
+Teensy35_36
+
+
+0
+86
+86
+nime_footprints
+Teensy35_36-light
+
+
+0
+48
+48
 synkie_footprints
 Alps_Tactile_Switch
 
@@ -76012,6 +76292,20 @@ Teensy35_36-light
 0
 48
 48
+synkie_footprints
+logo_anyma
+
+
+0
+0
+0
+synkie_footprints
+logo_anyma_tiny
+
+
+0
+0
+0
 synkie_footprints
 testpad-small
 

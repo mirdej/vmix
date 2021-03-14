@@ -111,9 +111,15 @@ const char PIN_BTN[NUM_BTNS] = {PIN_BTN_REC, PIN_BTN_STOP, PIN_BTN_BUS_C, PIN_BT
 #define ERROR_NO_BEAT       1
 #define ERROR_NO_SYNC       2
 
+#define BUTTON_COLOR        CRGB(0,5,10)
+#define SELECTION_COLOR     CRGB::Gray
 
-#define I2C_CALL_START          0xF0
-#define I2C_CALL_STOP           0xF1
+
+#define I2C_CALL_REC            0xF0
+#define I2C_CALL_PLAY           0xF1
+#define I2C_CALL_DUB            0xF2
+#define I2C_CALL_STOP           0xF3
+#define I2C_CALL_CLEAR          0xF4
 #define I2C_CALL_STORE          0xB0
 #define I2C_CALL_RECALL         0xB1
 #define I2C_CALL_BRIGHTNESS     0xB2
@@ -496,7 +502,7 @@ void handle_stop_click() {
 //																				LEDS
 
 void update_leds(){
-    fill_solid(pixels, NUM_PIXELS, CRGB::Black);
+    fill_solid(pixels, NUM_PIXELS, BUTTON_COLOR);
     
     switch(error) {
         case ERROR_NO_BEAT:
@@ -528,19 +534,19 @@ void update_leds(){
             }
     }
     
-    if (bus_c_on) {pixels[2] = CRGB::Yellow;}
-    if (bus_b_on) {pixels[3] = CRGB::Green;}
-    if (bus_a_on) {pixels[4] = CRGB::Red;}
+    if (bus_c_on) {pixels[2] = SELECTION_COLOR;}
+    if (bus_b_on) {pixels[3] = SELECTION_COLOR;}
+    if (bus_a_on) {pixels[4] = SELECTION_COLOR;}
 
-    if (pfl_state) {pixels[5] = CRGB::Yellow;}
-    if (inverter_on) {pixels[6] = CRGB::Yellow;}
-    if (compa_on) {pixels[7] = CRGB::Yellow;}
-    if (edges_on) {pixels[8] = CRGB::Yellow;}
+    if (pfl_state) {pixels[5] =     SELECTION_COLOR;}
+    if (inverter_on) {pixels[6] =   SELECTION_COLOR;}
+    if (compa_on) {pixels[7] =      SELECTION_COLOR;}
+    if (edges_on) {pixels[8] =      SELECTION_COLOR;}
 
     digitalWrite(PIN_INVERT_OUT, inverter_on);
     digitalWrite(PIN_COMPA_OUT, compa_on);
     digitalWrite(PIN_EDGES_OUT, edges_on);
-    digitalWrite(PIN_PREVIEW_OUT, ~pfl_state);
+    digitalWrite(PIN_PREVIEW_OUT, pfl_state);
 }
 
 //----------------------------------------------------------------------------------------
@@ -632,15 +638,25 @@ void requestEvent ()
   
 //----------------------------------------------------------------------------------------
 
+
 void check_i2c(){
  //   if (i2c_new_bytes)  Serial.printf("Received %ld bytes\n", i2c_new_bytes);
     if (i2c_new_bytes == 1) {
         switch (i2c_buf[0]) {
-            case I2C_CALL_START:
-                Serial.println("Received: START");
+            case I2C_CALL_REC:
+                record();
+                break;
+            case I2C_CALL_PLAY:
+                play();
+                break;
+            case I2C_CALL_DUB:
+                overdub();
                 break;
             case I2C_CALL_STOP:
-                Serial.println("Received: STOP");
+                stop();
+                break;
+            case I2C_CALL_CLEAR:
+                clear_buffer();
                 break;
             default:
                 Serial.print("Strange Call Received: ");
@@ -687,13 +703,7 @@ void check_i2c(){
 
 void setup() {
     FastLED.addLeds<SK6812, PIN_PIXELS, GRB>(pixels, NUM_PIXELS);
-    FastLED.setBrightness(20);
-
-    for (int hue = 0; hue < 360; hue++) {
-    	fill_rainbow( pixels, NUM_PIXELS, hue, 7);
-	    delay(3);
-    	FastLED.show(); 
-  	}
+    FastLED.setBrightness(100);
   	
   	for (int i = 0; i < NUM_BTNS; i++) {
   	    pinMode(PIN_BTN[i], INPUT_PULLUP);

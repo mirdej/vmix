@@ -40,6 +40,8 @@ Clock period: fixed at 20ms
 #include <FastLED.h>
 #include <ESP32Encoder.h>
 #include <MIDI.h>
+#include <Wire.h>
+
 
 // Create and bind the MIDI interface to the default hardware Serial port
 //MIDI_CREATE_DEFAULT_INSTANCE();
@@ -51,18 +53,22 @@ MIDI_CREATE_INSTANCE(HardwareSerial, Serial,     MIDI);
 
 const int PIN_ENCODER_A         = 36;
 const int PIN_ENCODER_B         = 39;
-
+const int PIN_HSYNC             = 34;
+const int PIN_VSYNC             = 35;
 const int PIN_MUX_3             = 32;
-const int PIN_MUX_4             = 33;
-
-const int PIN_TRIGGER_3         = 25;
-const int PIN_TRIGGER_2         = 26;
-const int PIN_TRIGGER_1         = 02;
+const int PIN_FOOTPEDAL         = 33;
+const int PIN_FREE              = 25;
+const int PIN_TRIGGER_IN        = 26;
 const int PIN_BEATSYNC          = 27;
+const int PIN_TRIGGER_3         = 14;
+const int PIN_SYNKIETXT_EN      = 12;
 const int PIN_PIXELS            = 13;
-const int PIN_VSYNC             = 16;
-const int PIN_ODDEVEN           = 17;
 
+const int PIN_TRIGGER_2         = 15;
+const int PIN_TRIGGER_1         = 02;
+const int PIN_MUX_1             = 04;
+const int PIN_VIDEO_READ        = 16;
+const int PIN_SYNKIETXT         = 17;
 const int PIN_BTN_LATCH         = 05;
 const int PIN_BTN_CLK           = 18;
 const int PIN_BTN_DATA          = 19;
@@ -70,7 +76,6 @@ const int PIN_SDA               = 21;
 const int PIN_RX                = 03;
 const int PIN_TX                = 01;
 const int PIN_SCL               = 22;
-const int PIN_MUX_1             = 04;
 const int PIN_MUX_2             = 23;
 
 // ..................................................................................... Constants
@@ -105,6 +110,26 @@ const int 	UI_TIMEOUT = 5000;
 Adafruit_SSD1306 		display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 /* for u8g2 library use : U8G2_SSD1306_128X32_UNIVISION_2_HW_I2C */
+
+#define LOOP_STATE_EMPTY    0
+#define LOOP_STATE_REC      1
+#define LOOP_STATE_DUB      2
+#define LOOP_STATE_PLAY     3
+#define LOOP_STATE_STOPPED  4
+
+
+#define BUTTON_COLOR        CRGB(0,5,10)
+#define PIX_LOOP    3
+#define PIX_STOP    2
+
+#define I2C_CALL_REC            0xF0
+#define I2C_CALL_PLAY           0xF1
+#define I2C_CALL_DUB            0xF2
+#define I2C_CALL_STOP           0xF3
+#define I2C_CALL_CLEAR          0xF4
+#define I2C_CALL_STORE          0xB0
+#define I2C_CALL_RECALL         0xB1
+#define I2C_CALL_BRIGHTNESS     0xB2
 
 
 //========================================================================================
@@ -143,6 +168,10 @@ portMUX_TYPE                            beatClockTimerMux = portMUX_INITIALIZER_
 
 bool                                    display_needs_update;
 
+int                                     preview_out_channel;
+int                                     preview_out_afl;
+
+char        loop_state;
 
 long buttons_raw;
 
@@ -152,18 +181,12 @@ void intro() {
 	display.clearDisplay();
 	display.setTextSize(1);				
 	display.setTextColor(WHITE);
-	display.setCursor(26,6);		
+	display.setCursor(22,6);		
 	display.println(F("[ a n y m a ]"));
-	display.setCursor(24,16);		
+	display.setCursor(8,16);		
 	display.setTextSize(2);				
-	display.println(F("vMIX-20"));
+	display.println(F("ANYMIX-21"));
 	display.display();
-	for (int hue = 0; hue < 360; hue++) {
-    	fill_rainbow( pixels, NUM_PIXELS, hue, 7);
-	    delay(3);
-    	FastLED.show(); 
-  	}
-
 	fill_solid(pixels,NUM_PIXELS,CRGB::Black);
 	FastLED.show(); 
 
@@ -179,6 +202,8 @@ void intro() {
 	*/
 
 }
+
+
 //----------------------------------------------------------------------------------------
 //																		set all trigger pins to low
 void release_triggers() {
@@ -224,6 +249,10 @@ void check_encoder(){
             FastLED.setBrightness(brightness);
             FastLED.show();
             display_needs_update = true;
+            Wire.beginTransmission (0);
+            Wire.write (I2C_CALL_BRIGHTNESS);
+            Wire.write (brightness);
+            Wire.endTransmission ();
 		    break;
 		case MENU_BPM:
             bpm +=     encoder.getCount();
@@ -242,8 +271,119 @@ void check_encoder(){
 
 //----------------------------------------------------------------------------------------
 //																		Buttons
+void set_preview_mux(){
+    digitalWrite(PIN_MUX_1, (preview_out_channel & 1));
+    digitalWrite(PIN_MUX_2, (preview_out_channel & 2));
+    digitalWrite(PIN_MUX_3, preview_out_afl);
+}
+
+void preview_press(int n) {
+    if (preview_out_channel == n) {preview_out_afl = ~preview_out_afl;}
+    else {preview_out_channel = n;}
+    set_preview_mux();
+}
+
+//----------------------------------------------------------------------------------------
+//																				PLAY
+void play(){
+    Wire.beginTransmission (0);
+    Wire.write (I2C_CALL_PLAY);
+    Wire.endTransmission ();
+    loop_state = LOOP_STATE_PLAY;
+}
+//----------------------------------------------------------------------------------------
+//																				REC
+void record() {
+    Wire.beginTransmission (0);
+    Wire.write (I2C_CALL_REC);
+    Wire.endTransmission ();
+    loop_state = LOOP_STATE_REC;
+}
+//----------------------------------------------------------------------------------------
+//																				DUB
+void overdub() {
+    switch (loop_state) {
+        case LOOP_STATE_PLAY:
+            Wire.beginTransmission (0);
+            Wire.write (I2C_CALL_DUB);
+            Wire.endTransmission ();        
+            loop_state = LOOP_STATE_DUB;
+            break;
+        
+        default:
+            break;
+        
+    }
+}
+//----------------------------------------------------------------------------------------
+//																				STOP
+void stop() {
+    Wire.beginTransmission (0);
+    Wire.write (I2C_CALL_STOP);
+    Wire.endTransmission ();        
+    loop_state = LOOP_STATE_STOPPED;
+}
+//----------------------------------------------------------------------------------------
+//																				CLEAR
+void clear_buffer() {
+    Wire.beginTransmission (0);
+    Wire.write (I2C_CALL_CLEAR);
+    Wire.endTransmission ();        
+    loop_state = LOOP_STATE_EMPTY;
+}
+
+
+
+//----------------------------------------------------------------------------------------
+//																				REC-BTN
+
+void handle_rec_click() {
+    switch (loop_state) { 
+        case LOOP_STATE_EMPTY:
+            record();
+            break;
+         case LOOP_STATE_REC:
+            play();
+            break;
+         case LOOP_STATE_PLAY:
+            overdub();
+            break;
+         case LOOP_STATE_DUB:
+            play();
+            break;      
+         case LOOP_STATE_STOPPED:
+            play();            
+            break;      
+    }
+}
+
+//----------------------------------------------------------------------------------------
+//																				STOP-BTN
+
+void handle_stop_click() {
+    switch (loop_state) { 
+        case LOOP_STATE_EMPTY:
+            clear_buffer();
+            break;
+         case LOOP_STATE_REC:
+            clear_buffer();
+            break;
+         case LOOP_STATE_PLAY:
+            stop();
+            break;
+         case LOOP_STATE_DUB:
+            stop();
+            break;
+         case LOOP_STATE_STOPPED:
+            clear_buffer();
+            break;      
+    }
+}
+
+
 void check_buttons() {
     static long old_buttons;
+    static int old_footpedal;
 
     byte temp;
     buttons_raw = 0;
@@ -260,6 +400,14 @@ void check_buttons() {
     sei();
     SPI.endTransaction();
     
+    int footpedal = digitalRead(PIN_FOOTPEDAL);
+    if (old_footpedal != footpedal) {
+        if (!footpedal) {
+            handle_rec_click();
+        }
+        old_footpedal = footpedal;
+    }
+    
     if (old_buttons == buttons_raw) return;
     
     
@@ -268,24 +416,44 @@ void check_buttons() {
     for (int i = 0; i < NUM_PIXELS; i++) {
         if (triggers & (1 << i)) {
             switch (i){
+                case 2:
+                    handle_stop_click();
+                    break;
+                case 3:
+                    handle_rec_click();
+                    break;
                 case 12:
                     selected_menu = MENU_BRIGHTNESS;
                     break;
                 case 13:
                     selected_menu = MENU_BPM;
                     break;
-               case 15:
+                case 15:
                     selected_menu = MENU_NONE;
                     break;
-               case 22:
+                case 22:
                     selected_menu = MENU_TRIGGER_1;
                     break;                    
-               case 21:
+                case 21:
                     selected_menu = MENU_TRIGGER_2;
                     break;
-               case 20:
+                case 20:
                     selected_menu = MENU_TRIGGER_3;
                     break;
+
+                case 19:
+                    preview_press(0);
+                    break;
+                case 18:
+                    preview_press(1);
+                    break;
+                case 17:
+                    preview_press(2);
+                    break;
+                case 16:
+                    preview_press(3);
+                    break;
+
                 default:
                     break;
             }
@@ -320,7 +488,7 @@ void check_buttons() {
 //																		Leds
 
 void update_leds() {
-	fill_solid(pixels,NUM_PIXELS,CRGB(0,5,10));
+	fill_solid(pixels,NUM_PIXELS,BUTTON_COLOR);
 	for (int i = 0; i < NUM_PIXELS; i++) {
         if (buttons_raw & (1 << i)) {
 	        pixels[i] = CRGB::Yellow;
@@ -344,6 +512,35 @@ void update_leds() {
 	        pixels[20] = SELECTION_COLOR;
 	        break;
 	}
+	
+   switch (loop_state) { 
+    case LOOP_STATE_EMPTY:
+        break;
+     case LOOP_STATE_REC:
+        pixels[PIX_LOOP] = CRGB::Red;
+        pixels[PIX_STOP] = CRGB::Red;
+        break;
+     case LOOP_STATE_PLAY:
+        pixels[PIX_LOOP] = CRGB::Green;
+        pixels[PIX_STOP] = CRGB::Green;
+        break;
+     case LOOP_STATE_DUB:
+        pixels[PIX_LOOP] = CRGB::Orange;
+        pixels[PIX_STOP] = CRGB::Orange;
+        break;
+     case LOOP_STATE_STOPPED:
+        pixels[PIX_LOOP] = CRGB::Yellow;
+        pixels[PIX_STOP] = CRGB::Yellow;
+        break;      
+
+}
+
+	
+	CRGB preview_color;
+	if (preview_out_afl) preview_color = SELECTION_COLOR;
+	else preview_color = CRGB::Gold;
+	pixels[19-preview_out_channel] = preview_color;
+	
 
     if (digitalRead(PIN_TRIGGER_1)) {pixels[22] = CRGB::Blue;}
     if (digitalRead(PIN_TRIGGER_2)) {pixels[21] = CRGB::Blue;}
@@ -383,6 +580,7 @@ void check_midi(){
 //----------------------------------------------------------------------------------------
 //																		Display
 void update_display() {
+    if (millis() < 6000) return;
     if (!display_needs_update) return;
 	display.clearDisplay();
 	display.setTextSize(1);				
@@ -513,6 +711,8 @@ void setup(){
     Serial.begin(115200);
     Serial.println("vMIX20 - SETUP start");
 
+    Wire.begin ();    
+
     brightness = 100;
 
     FastLED.addLeds<NEOPIXEL, PIN_PIXELS>(pixels, NUM_PIXELS);
@@ -520,7 +720,8 @@ void setup(){
 	
 	display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 	display.setRotation(0); 
-//	intro();
+    intro();
+
 
 
     
@@ -529,13 +730,20 @@ void setup(){
     pinMode(PIN_TRIGGER_3, OUTPUT);
     pinMode(PIN_BEATSYNC, OUTPUT);
     pinMode(PIN_BTN_LATCH, OUTPUT);
-    pinMode(PIN_RX, INPUT_PULLUP);    
+    pinMode(PIN_RX, INPUT_PULLUP);   
+    pinMode(PIN_MUX_1, OUTPUT);
+    pinMode(PIN_MUX_2, OUTPUT);
+    pinMode(PIN_MUX_3, OUTPUT);
+    pinMode(PIN_FOOTPEDAL, INPUT_PULLUP);   
+ 
+    preview_out_channel = 0;
+    set_preview_mux();
     
-    SPI.begin();
+    SPI.begin(PIN_BTN_CLK,PIN_BTN_DATA,PIN_FREE,PIN_BTN_LATCH);
 
     
  //   encoder.attachHalfQuad(PIN_ENCODER_B, PIN_ENCODER_A);
-       encoder.attachSingleEdge(PIN_ENCODER_B, PIN_ENCODER_A);
+    encoder.attachSingleEdge(PIN_ENCODER_B, PIN_ENCODER_A);
      
     bpm = 113;
     sync_mode = SYNC_MODE_INTERN;
