@@ -6,7 +6,8 @@ multichannel modular analog PAL video mixer based on the SYNKIE project
 
 ### Documentation
 
-- Mixer Channel [Flowchart and description](doc/Anymix 21 - Channel.md)
+- Mixer Channel
+[Flowchart and description](doc/Anymix 21 - Channel.md)
 
 
 ### Links
