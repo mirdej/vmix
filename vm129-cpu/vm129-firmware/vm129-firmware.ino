@@ -261,6 +261,24 @@ void check_encoder(){
             display_needs_update = true;
             change_bpm();
 		    break;
+		case MENU_TRIGGER_1:
+		    trigger1_clocks += encoder.getCount();
+		    if (trigger1_clocks < 1 ) trigger1_clocks = 1;
+		    if (trigger1_clocks > 100 ) trigger1_clocks = 100;
+            display_needs_update = true;
+            break;
+		case MENU_TRIGGER_2:
+		    trigger2_clocks += encoder.getCount();
+		    if (trigger2_clocks < 1 ) trigger2_clocks = 1;
+		    if (trigger2_clocks > 100 ) trigger2_clocks = 100;
+            display_needs_update = true;
+            break;
+		case MENU_TRIGGER_3:
+		    trigger3_clocks += encoder.getCount();
+		    if (trigger3_clocks < 1 ) trigger3_clocks = 1;
+		    if (trigger3_clocks > 100 ) trigger3_clocks = 100;
+            display_needs_update = true;
+            break;
 		default:
 		    break;
 	}
@@ -745,7 +763,7 @@ void setup(){
  //   encoder.attachHalfQuad(PIN_ENCODER_B, PIN_ENCODER_A);
     encoder.attachSingleEdge(PIN_ENCODER_B, PIN_ENCODER_A);
      
-    bpm = 113;
+    bpm = 110;
     sync_mode = SYNC_MODE_INTERN;
     
     //precision beatClockTimer for generating midi clock signal when not synched externally

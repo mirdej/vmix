@@ -4,6 +4,12 @@
 
 multichannel modular analog PAL video mixer based on the SYNKIE project
 
-[http://www.synkie.net](https://github.com/mirdej/synkie)
+###Documentation
+
+- Mixer Channel [Flowchart and description](doc/Anymix 21 - Channel.md)
+
+
+###Links
+[http://www.synkie.net](https://www.synkie.net)
 
 [https://github.com/mirdej/synkie](https://github.com/mirdej/synkie)
