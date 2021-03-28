@@ -1,6 +1,6 @@
 # Anymix 21 - Channel
 
-##Signal Flow
+## Signal Flow
 ![Flowchart](img/channel-flowchart.png)
 Standard PAL composite video coming from the backside BNC input is first clamped to ground and then mixed to any signal present on the 2mm banana "SIFF" input. The result is fed to the vm113 effects board.
 
@@ -25,14 +25,14 @@ Colorburst is shifted to match the phase shift of the effects section.
 
 The preview signal is fed to the LCD Monitor, as well as buffered and sent to the BNC preview out at the back of the mixer.
 
-##PCBs
+## PCBs
 
-###vm102 inputs
+### vm102 inputs
 ![vm102](img/vm102.png)
 vm102 just gathers all the signals from/to the 2mm banana jacks into a FFC cable.
 It also hosts the two clip switches and neopixels for the levelmeter
 
-###vm101 in-out
+### vm101 in-out
 ![vm101](img/vm101.png)
 vm101 provides the backporch clamp for the BNC composite input and the mixer for the banana SIFF input. Preview out is resynched for the LCD monitor and the BNC PFL output.
 4 voltage controlled amplifiers set the amount of signal that is sent on either mix bus.
@@ -41,12 +41,12 @@ An Attiny85 controls the levelmeter neopixels on vm102.
 vm1010 connects to vm102 and vm113 through FFC cables.
 SPI signals from vm010 to the DAC come through a 3pin header.
 
-###vm113-effects
+### vm113-effects
 ![vm113](img/vm113.png)
 The different effect blocks are gathered around a MAX4053 analog switch that let's us bypass certain effects. An FFC cable connects to vm101 and the banana plugs on the frontpanel.
 Control signals from vm010 come through a 10pin IDC.
 
-###vm010-control
+### vm010-control
 ![vm010](img/vm010.png)
 User input is sampled by the Atmega1248 at every vertical blanking interval. This microcontroiller has enough RAM to record and playback around 40 seconds of user interaction.
 A MAX5741 generates the control voltages for the vm113 effects board. A second MAX5741 on vm101 is controlled through SPI. Communication with the master controller vm129 takes place through I2C over the 10pin IDC digital bus.
