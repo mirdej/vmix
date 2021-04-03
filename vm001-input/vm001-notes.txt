@@ -1,0 +1,18 @@
+____________
+Nov 17 2020
+
+blacklevel is too high
+input bias on siff input U3A?
+Mixer U3B?
+
+tried to lower R32 to 12k, no change.
+
+scope looks terrible.
+picture does not look too bad though.
+
+also strange color aberrations vertically.
+Colorbars from genlock inout pushing through!!
+
+colorburst is very diminished
+
+

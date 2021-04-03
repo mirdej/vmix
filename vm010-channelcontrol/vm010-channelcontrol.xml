@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/me/Documents/development/vmix/vm010-channelcontrol/vm010-channelcontrol.sch</source>
+    <date>2021 February 25, Thursday 10:03:16</date>
+    <tool>Eeschema (5.1.5-0-10_14)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>vm010-channelcontrol.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <footprint>synkie_footprints:Alps_Tactile_Switch</footprint>
+      <libsource lib="synkie_symbols" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F3FF9DB</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push</value>
+      <footprint>synkie_footprints:Alps_Tactile_Switch</footprint>
+      <libsource lib="synkie_symbols" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F40072F</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>SW_Push</value>
+      <footprint>synkie_footprints:Alps_Tactile_Switch</footprint>
+      <libsource lib="synkie_symbols" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F402781</tstamp>
+    </comp>
+    <comp ref="SW4">
+      <value>SW_Push</value>
+      <footprint>synkie_footprints:Alps_Tactile_Switch</footprint>
+      <libsource lib="synkie_symbols" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F402795</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>R_POT</value>
+      <footprint>synkie_footprints:Potentiometer_Alps_RK09K_Single_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="synkie_symbols" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4053C0</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>R_POT</value>
+      <footprint>synkie_footprints:Potentiometer_Alps_RK09K_Single_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="synkie_symbols" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F408B86</tstamp>
+    </comp>
+    <comp ref="RV3">
+      <value>R_POT</value>
+      <footprint>synkie_footprints:Potentiometer_Alps_RK09K_Single_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="synkie_symbols" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F409CC1</tstamp>
+    </comp>
+    <comp ref="RV4">
+      <value>R_POT</value>
+      <footprint>synkie_footprints:Potentiometer_Alps_RS6011xP_Slide</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="synkie_symbols" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F40AA7C</tstamp>
+    </comp>
+    <comp ref="SW5">
+      <value>SW_Push</value>
+      <footprint>synkie_footprints:Alps_Tactile_Switch</footprint>
+      <libsource lib="synkie_symbols" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F40BE0E</tstamp>
+    </comp>
+    <comp ref="SW6">
+      <value>SW_Push</value>
+      <footprint>synkie_footprints:Alps_Tactile_Switch</footprint>
+      <libsource lib="synkie_symbols" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F40CE26</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>to-eq</value>
+      <footprint>synkie_footprints:IDC-Header_2x05_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="synkie_symbols" part="Conn_01x10" description="Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F40DBDB</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AnymaISP</value>
+      <footprint>synkie_footprints:PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <libsource lib="Anyma_Library" part="AnymaISP" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F41B535</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>SK6812MINI</value>
+      <footprint>LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="synkie_symbols" part="SK6812MINI" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F433658</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>SK6812MINI</value>
+      <footprint>LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="synkie_symbols" part="SK6812MINI" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F436AFA</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>SK6812MINI</value>
+      <footprint>LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="synkie_symbols" part="SK6812MINI" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F437CC0</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>SK6812MINI</value>
+      <footprint>LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="synkie_symbols" part="SK6812MINI" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F437CDE</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>SK6812MINI</value>
+      <footprint>LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="synkie_symbols" part="SK6812MINI" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F43B016</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>SK6812MINI</value>
+      <footprint>LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="synkie_symbols" part="SK6812MINI" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F43B034</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>ADR510</value>
+      <footprint>synkie_footprints:SOT-23</footprint>
+      <libsource lib="synkie_symbols" part="ADR510" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F43E715</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>MAX5741</value>
+      <footprint>Package_SO:MSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://datasheets.maximintegrated.com/en/ds/MAX5741.pdf</datasheet>
+      <libsource lib="synkie_symbols" part="MAX5741" description="Digital to analog, 10 Bit, 4 ch, 2.7 - 5.5 VDD, SPI, uMAX-10"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F441257</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>560</value>
+      <footprint>synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F447DE1</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Supply</value>
+      <footprint>synkie_footprints:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="synkie_symbols" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F44BF7B</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100n</value>
+      <footprint>synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F43EC17</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F43FBAB</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10u</value>
+      <footprint>synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F457A73</tstamp>
+    </comp>
+    <comp ref="SW8">
+      <value>SW_Push</value>
+      <footprint>synkie_footprints:Alps_Tactile_Switch</footprint>
+      <libsource lib="synkie_symbols" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F45FBE0</tstamp>
+    </comp>
+    <comp ref="SW9">
+      <value>SW_Push</value>
+      <footprint>synkie_footprints:Alps_Tactile_Switch</footprint>
+      <libsource lib="synkie_symbols" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F45FBF4</tstamp>
+    </comp>
+    <comp ref="RV5">
+      <value>R_POT</value>
+      <footprint>synkie_footprints:Potentiometer_Alps_RK09K_Single_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="synkie_symbols" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F462B97</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>SK6812MINI</value>
+      <footprint>LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="synkie_symbols" part="SK6812MINI" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F47C5F7</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>SK6812MINI</value>
+      <footprint>LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="synkie_symbols" part="SK6812MINI" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F47C615</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>SK6812MINI</value>
+      <footprint>LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="synkie_symbols" part="SK6812MINI" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F47C633</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>Crystal</value>
+      <footprint>Crystal:Crystal_SMD_HC49-SD</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F48FE27</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10p</value>
+      <footprint>synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F493C5C</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>10p</value>
+      <footprint>synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4941BB</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100n</value>
+      <footprint>synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4A677A</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x04</value>
+      <footprint>synkie_footprints:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4AF5F8</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x02</value>
+      <footprint>synkie_footprints:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4B10EC</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4D31A6</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4D3971</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4D404B</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x02</value>
+      <footprint>synkie_footprints:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4FC2C7</tstamp>
+    </comp>
+    <comp ref="U101">
+      <value>ATmega1284P-MU</value>
+      <footprint>Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf</datasheet>
+      <libsource lib="synkie_symbols" part="ATmega1284P-MU" description="20MHz, 128kB Flash, 16kB SRAM, 4kB EEPROM, JTAG, QFN-44"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB0A586</tstamp>
+    </comp>
+    <comp ref="J101">
+      <value>Serial</value>
+      <footprint>synkie_footprints:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="synkie_symbols" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB4F017</tstamp>
+    </comp>
+    <comp ref="J102">
+      <value>digitalbus</value>
+      <footprint>synkie_footprints:IDC-Header_2x05_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="synkie_symbols" part="Conn_01x10" description="Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB544E8</tstamp>
+    </comp>
+    <comp ref="FB101">
+      <value>Ferrite_Bead</value>
+      <footprint>synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FB7E7FE</tstamp>
+    </comp>
+    <comp ref="C102">
+      <value>100n</value>
+      <footprint>synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBB277C</tstamp>
+    </comp>
+    <comp ref="C101">
+      <value>100n</value>
+      <footprint>synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBB279A</tstamp>
+    </comp>
+    <comp ref="C104">
+      <value>100n</value>
+      <footprint>synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBB50B9</tstamp>
+    </comp>
+    <comp ref="C103">
+      <value>100n</value>
+      <footprint>synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBB50D7</tstamp>
+    </comp>
+    <comp ref="C106">
+      <value>100n</value>
+      <footprint>synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBEE5EA</tstamp>
+    </comp>
+    <comp ref="C105">
+      <value>100n</value>
+      <footprint>synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBEE608</tstamp>
+    </comp>
+    <comp ref="SW7">
+      <value>SW_Push</value>
+      <footprint>synkie_footprints:Alps_Tactile_Switch</footprint>
+      <libsource lib="synkie_symbols" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F45FBCC</tstamp>
+    </comp>
+    <comp ref="R101">
+      <value>560</value>
+      <footprint>synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FCE1BDB</tstamp>
+    </comp>
+    <comp ref="D101">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FCE4322</tstamp>
+    </comp>
+    <comp ref="U102">
+      <value>LOGO</value>
+      <footprint>anyma_footprints:logo_anyma</footprint>
+      <libsource lib="Anyma_Library" part="LOGO" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD4918A</tstamp>
+    </comp>
+    <comp ref="U103">
+      <value>LOGO</value>
+      <footprint>Symbol:OSHW-Logo2_7.3x6mm_SilkScreen</footprint>
+      <libsource lib="Anyma_Library" part="LOGO" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD495B5</tstamp>
+    </comp>
+    <comp ref="R103">
+      <value>220</value>
+      <footprint>synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBA480A</tstamp>
+    </comp>
+    <comp ref="R104">
+      <value>220</value>
+      <footprint>synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBA5994</tstamp>
+    </comp>
+    <comp ref="R105">
+      <value>220</value>
+      <footprint>synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBA5F97</tstamp>
+    </comp>
+    <comp ref="R106">
+      <value>220</value>
+      <footprint>synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBAA5CD</tstamp>
+    </comp>
+    <comp ref="R102">
+      <value>220</value>
+      <footprint>synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBAD4DF</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F440B28</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>220</value>
+      <footprint>synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F43134E</tstamp>
+    </comp>
+    <comp ref="H5">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD45ECA</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Anyma_Library" part="AnymaISP">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AnymaISP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_out"/>
+        <pin num="2" name="VCC" type="power_out"/>
+        <pin num="3" name="~RESET" type="BiDi"/>
+        <pin num="4" name="SCK" type="BiDi"/>
+        <pin num="5" name="MISO" type="BiDi"/>
+        <pin num="6" name="MOSI" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Anyma_Library" part="LOGO">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LOGO</field>
+      </fields>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Ferrite_Bead">
+      <description>Ferrite bead</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">Ferrite_Bead</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="synkie_symbols" part="ADR510">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADR510</field>
+      </fields>
+      <pins>
+        <pin num="1" name="V+" type="input"/>
+        <pin num="2" name="V-" type="input"/>
+        <pin num="3" name="Trim/NC" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="synkie_symbols" part="ATmega164A-MU">
+      <aliases>
+        <alias>ATmega164PA-MU</alias>
+        <alias>ATmega324A-MU</alias>
+        <alias>ATmega324PA-MU</alias>
+        <alias>ATmega644A-MU</alias>
+        <alias>ATmega644PA-MU</alias>
+        <alias>ATmega1284-MU</alias>
+        <alias>ATmega1284P-MU</alias>
+      </aliases>
+      <description>20MHz, 16kB Flash, 1kB SRAM, 512B EEPROM, JTAG, QFN-44</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf</docs>
+      <footprints>
+        <fp>QFN*1EP*7x7mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATmega164A-MU</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PB5|MOSI|5" type="BiDi"/>
+        <pin num="2" name="PB6|PWM|MISO|6" type="BiDi"/>
+        <pin num="3" name="PB7|PWM|SCK|7" type="BiDi"/>
+        <pin num="4" name="~RESET" type="input"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="XTAL2" type="output"/>
+        <pin num="8" name="XTAL1" type="input"/>
+        <pin num="9" name="PD0|RX0|8" type="BiDi"/>
+        <pin num="10" name="PD1|TX0|9" type="BiDi"/>
+        <pin num="11" name="PD2|RX1|INT0|10" type="BiDi"/>
+        <pin num="12" name="PD3|TX1|INT1|11" type="BiDi"/>
+        <pin num="13" name="PD4|PWM|12" type="BiDi"/>
+        <pin num="14" name="PD5|PWM|13" type="BiDi"/>
+        <pin num="15" name="PD6|PWM|14" type="BiDi"/>
+        <pin num="16" name="PD7|PWM|15" type="BiDi"/>
+        <pin num="17" name="VCC" type="passive"/>
+        <pin num="18" name="GND" type="passive"/>
+        <pin num="19" name="PC0|SCL|16" type="BiDi"/>
+        <pin num="20" name="PC1|SDA|17" type="BiDi"/>
+        <pin num="21" name="PC2TCK|18" type="BiDi"/>
+        <pin num="22" name="PC3|TMS|19" type="BiDi"/>
+        <pin num="23" name="PC4|TDO|20" type="BiDi"/>
+        <pin num="24" name="PC5|TDI|21" type="BiDi"/>
+        <pin num="25" name="PC6|22" type="BiDi"/>
+        <pin num="26" name="PC7|23" type="BiDi"/>
+        <pin num="27" name="AVCC" type="power_in"/>
+        <pin num="28" name="GND" type="passive"/>
+        <pin num="29" name="AREF" type="passive"/>
+        <pin num="30" name="PA7|A7|31" type="BiDi"/>
+        <pin num="31" name="PA6|A6|30" type="BiDi"/>
+        <pin num="32" name="PA5|A5|29" type="BiDi"/>
+        <pin num="33" name="PA4|A4|28" type="BiDi"/>
+        <pin num="34" name="PA3|A3|27" type="BiDi"/>
+        <pin num="35" name="PA2|A2|26" type="BiDi"/>
+        <pin num="36" name="PA1|A1|25" type="BiDi"/>
+        <pin num="37" name="PA0|A0|24" type="BiDi"/>
+        <pin num="38" name="VCC" type="passive"/>
+        <pin num="39" name="GND" type="passive"/>
+        <pin num="40" name="PB0|LED_BUILTIN|0" type="BiDi"/>
+        <pin num="41" name="PB1|1" type="BiDi"/>
+        <pin num="42" name="PB2|INT2|AIN0|2" type="BiDi"/>
+        <pin num="43" name="PB3|PWM|AIN1|3" type="BiDi"/>
+        <pin num="44" name="PB4|PWM|SS|4" type="BiDi"/>
+        <pin num="45" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="synkie_symbols" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="synkie_symbols" part="Conn_01x10">
+      <description>Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x10</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="synkie_symbols" part="MAX5741">
+      <description>Digital to analog, 10 Bit, 4 ch, 2.7 - 5.5 VDD, SPI, uMAX-10</description>
+      <docs>https://datasheets.maximintegrated.com/en/ds/MAX5741.pdf</docs>
+      <footprints>
+        <fp>MSOP*3x3mm?P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX5741</field>
+        <field name="Footprint">Package_SO:MSOP-10_3x3mm_P0.5mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~CS~" type="input"/>
+        <pin num="2" name="SCLK" type="input"/>
+        <pin num="3" name="VDD" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="DIN" type="input"/>
+        <pin num="6" name="REF" type="power_in"/>
+        <pin num="7" name="OUTA" type="output"/>
+        <pin num="8" name="OUTB" type="output"/>
+        <pin num="9" name="OUTC" type="output"/>
+        <pin num="10" name="OUTD" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="synkie_symbols" part="R_POT">
+      <description>Potentiometer</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="synkie_symbols" part="SK6812MINI">
+      <description>RGB LED with integrated controller</description>
+      <docs>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</docs>
+      <footprints>
+        <fp>LED*SK6812MINI*PLCC*3.5x3.5mm*P1.75mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SK6812MINI</field>
+        <field name="Footprint">LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DOUT" type="output"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="DIN" type="input"/>
+        <pin num="4" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="synkie_symbols" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Anyma_Library">
+      <uri>/Users/me/Documents/KiCad/Anyma_Library.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/Library/Application Support/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/Library/Application Support/kicad/library/Mechanical.lib</uri>
+    </library>
+    <library logical="synkie_symbols">
+      <uri>/Users/me/Documents/development/synkie(github)/kicad/synkie_symbols.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="SW1" pin="1"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="H5" pin="1"/>
+      <node ref="SW3" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="SW4" pin="1"/>
+      <node ref="D101" pin="1"/>
+      <node ref="SW7" pin="1"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="RV2" pin="3"/>
+      <node ref="RV3" pin="3"/>
+      <node ref="RV4" pin="3"/>
+      <node ref="C105" pin="2"/>
+      <node ref="SW5" pin="1"/>
+      <node ref="C106" pin="2"/>
+      <node ref="SW6" pin="1"/>
+      <node ref="C103" pin="2"/>
+      <node ref="J1" pin="10"/>
+      <node ref="J1" pin="2"/>
+      <node ref="J1" pin="4"/>
+      <node ref="C104" pin="2"/>
+      <node ref="C101" pin="2"/>
+      <node ref="C102" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="J102" pin="8"/>
+      <node ref="J102" pin="6"/>
+      <node ref="J102" pin="4"/>
+      <node ref="J102" pin="2"/>
+      <node ref="J102" pin="10"/>
+      <node ref="J101" pin="3"/>
+      <node ref="U101" pin="6"/>
+      <node ref="U101" pin="45"/>
+      <node ref="U101" pin="39"/>
+      <node ref="U101" pin="28"/>
+      <node ref="U101" pin="18"/>
+      <node ref="J4" pin="2"/>
+      <node ref="H3" pin="1"/>
+      <node ref="H2" pin="1"/>
+      <node ref="H1" pin="1"/>
+      <node ref="J5" pin="2"/>
+      <node ref="D1" pin="2"/>
+      <node ref="J6" pin="4"/>
+      <node ref="C5" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C6" pin="1"/>
+      <node ref="D3" pin="2"/>
+      <node ref="D9" pin="2"/>
+      <node ref="D4" pin="2"/>
+      <node ref="D8" pin="2"/>
+      <node ref="D7" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="RV5" pin="3"/>
+      <node ref="D6" pin="2"/>
+      <node ref="SW9" pin="1"/>
+      <node ref="SW8" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U3" pin="4"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="2" name="/edges">
+      <node ref="U101" pin="13"/>
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="3" name="/compa">
+      <node ref="U101" pin="22"/>
+      <node ref="SW2" pin="2"/>
+    </net>
+    <net code="4" name="/invert">
+      <node ref="U101" pin="23"/>
+      <node ref="SW3" pin="2"/>
+    </net>
+    <net code="5" name="/drywet">
+      <node ref="U101" pin="24"/>
+      <node ref="SW4" pin="2"/>
+    </net>
+    <net code="6" name="VCC">
+      <node ref="C101" pin="1"/>
+      <node ref="RV4" pin="1"/>
+      <node ref="C102" pin="1"/>
+      <node ref="U101" pin="5"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C104" pin="1"/>
+      <node ref="C105" pin="1"/>
+      <node ref="U101" pin="38"/>
+      <node ref="RV2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C103" pin="1"/>
+      <node ref="C106" pin="1"/>
+      <node ref="D6" pin="4"/>
+      <node ref="U101" pin="27"/>
+      <node ref="C2" pin="1"/>
+      <node ref="RV5" pin="1"/>
+      <node ref="D5" pin="4"/>
+      <node ref="D2" pin="4"/>
+      <node ref="RV3" pin="1"/>
+      <node ref="FB101" pin="1"/>
+      <node ref="D7" pin="4"/>
+      <node ref="D4" pin="4"/>
+      <node ref="D8" pin="4"/>
+      <node ref="D1" pin="4"/>
+      <node ref="RV1" pin="1"/>
+      <node ref="D9" pin="4"/>
+      <node ref="D3" pin="4"/>
+      <node ref="U101" pin="17"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="7" name="/compa-level">
+      <node ref="RV1" pin="2"/>
+      <node ref="U101" pin="31"/>
+    </net>
+    <net code="8" name="/bias-level">
+      <node ref="U101" pin="30"/>
+      <node ref="RV2" pin="2"/>
+    </net>
+    <net code="9" name="/scale-level">
+      <node ref="U101" pin="37"/>
+      <node ref="RV3" pin="2"/>
+    </net>
+    <net code="10" name="/mix-level">
+      <node ref="U101" pin="36"/>
+      <node ref="RV4" pin="2"/>
+    </net>
+    <net code="11" name="/rec|play|dub">
+      <node ref="SW5" pin="2"/>
+      <node ref="U101" pin="25"/>
+    </net>
+    <net code="12" name="/stop|clear">
+      <node ref="SW6" pin="2"/>
+      <node ref="U101" pin="26"/>
+    </net>
+    <net code="13" name="/compa_cv">
+      <node ref="J1" pin="3"/>
+      <node ref="U3" pin="8"/>
+    </net>
+    <net code="14" name="Net-(J1-Pad5)">
+      <node ref="J1" pin="5"/>
+      <node ref="R103" pin="1"/>
+    </net>
+    <net code="15" name="Net-(J1-Pad6)">
+      <node ref="R104" pin="1"/>
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="16" name="Net-(J1-Pad7)">
+      <node ref="R105" pin="1"/>
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="17" name="Net-(J1-Pad8)">
+      <node ref="R106" pin="1"/>
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="18" name="/reset">
+      <node ref="U101" pin="4"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="19" name="/sck">
+      <node ref="U1" pin="4"/>
+      <node ref="U3" pin="2"/>
+      <node ref="U101" pin="3"/>
+      <node ref="J6" pin="2"/>
+    </net>
+    <net code="20" name="/miso">
+      <node ref="U101" pin="2"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="21" name="/mosi">
+      <node ref="U3" pin="5"/>
+      <node ref="U1" pin="6"/>
+      <node ref="J6" pin="3"/>
+      <node ref="U101" pin="1"/>
+    </net>
+    <net code="22" name="Net-(D1-Pad1)">
+      <node ref="D2" pin="3"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="23" name="Net-(D2-Pad1)">
+      <node ref="D3" pin="3"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="24" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="D4" pin="3"/>
+    </net>
+    <net code="25" name="Net-(D4-Pad1)">
+      <node ref="D5" pin="3"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="26" name="Net-(D5-Pad1)">
+      <node ref="D5" pin="1"/>
+      <node ref="D6" pin="3"/>
+    </net>
+    <net code="27" name="Net-(D6-Pad1)">
+      <node ref="D7" pin="3"/>
+      <node ref="D6" pin="1"/>
+    </net>
+    <net code="28" name="Net-(U4-Pad3)">
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="29" name="/dac_select">
+      <node ref="U101" pin="33"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="30" name="/extra_cv">
+      <node ref="U3" pin="10"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="31" name="+5V">
+      <node ref="U3" pin="3"/>
+      <node ref="C4" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="FB101" pin="2"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="32" name="Net-(R2-Pad2)">
+      <node ref="U3" pin="6"/>
+      <node ref="U4" pin="1"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="33" name="/scale_cv">
+      <node ref="U3" pin="7"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="34" name="/bias_cv">
+      <node ref="J1" pin="9"/>
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="35" name="-5V">
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="36" name="/bus_b">
+      <node ref="SW8" pin="2"/>
+      <node ref="U101" pin="15"/>
+    </net>
+    <net code="37" name="/bus_c">
+      <node ref="SW9" pin="2"/>
+      <node ref="U101" pin="14"/>
+    </net>
+    <net code="38" name="/aux-level">
+      <node ref="RV5" pin="2"/>
+      <node ref="U101" pin="35"/>
+    </net>
+    <net code="39" name="Net-(D7-Pad1)">
+      <node ref="D8" pin="3"/>
+      <node ref="D7" pin="1"/>
+    </net>
+    <net code="40" name="Net-(D8-Pad1)">
+      <node ref="D9" pin="3"/>
+      <node ref="D8" pin="1"/>
+    </net>
+    <net code="41" name="Net-(D9-Pad1)">
+      <node ref="D9" pin="1"/>
+    </net>
+    <net code="42" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1"/>
+      <node ref="U101" pin="29"/>
+    </net>
+    <net code="43" name="/tx">
+      <node ref="R102" pin="2"/>
+      <node ref="U101" pin="10"/>
+    </net>
+    <net code="44" name="/vsync">
+      <node ref="J102" pin="1"/>
+      <node ref="U101" pin="11"/>
+    </net>
+    <net code="45" name="/quantize_in">
+      <node ref="J102" pin="5"/>
+      <node ref="U101" pin="12"/>
+    </net>
+    <net code="46" name="/dac2_select">
+      <node ref="J6" pin="1"/>
+      <node ref="U101" pin="32"/>
+    </net>
+    <net code="47" name="/preview_bypass">
+      <node ref="J4" pin="1"/>
+      <node ref="U101" pin="42"/>
+      <node ref="R106" pin="2"/>
+    </net>
+    <net code="48" name="Net-(R1-Pad2)">
+      <node ref="U101" pin="44"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="49" name="Net-(C7-Pad1)">
+      <node ref="U101" pin="7"/>
+      <node ref="Y1" pin="2"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="50" name="Net-(C6-Pad2)">
+      <node ref="U101" pin="8"/>
+      <node ref="Y1" pin="1"/>
+      <node ref="C6" pin="2"/>
+    </net>
+    <net code="51" name="/rx">
+      <node ref="U101" pin="9"/>
+      <node ref="J101" pin="2"/>
+    </net>
+    <net code="52" name="Net-(J101-Pad1)">
+      <node ref="J101" pin="1"/>
+      <node ref="R102" pin="1"/>
+    </net>
+    <net code="53" name="/oddeven">
+      <node ref="U101" pin="21"/>
+      <node ref="J102" pin="3"/>
+    </net>
+    <net code="54" name="/sda">
+      <node ref="U101" pin="20"/>
+      <node ref="J102" pin="7"/>
+    </net>
+    <net code="55" name="/scl">
+      <node ref="U101" pin="19"/>
+      <node ref="J102" pin="9"/>
+    </net>
+    <net code="56" name="/bus_a">
+      <node ref="SW7" pin="2"/>
+      <node ref="U101" pin="16"/>
+    </net>
+    <net code="57" name="Net-(D101-Pad2)">
+      <node ref="R101" pin="1"/>
+      <node ref="D101" pin="2"/>
+    </net>
+    <net code="58" name="Net-(R101-Pad2)">
+      <node ref="R101" pin="2"/>
+      <node ref="U101" pin="40"/>
+    </net>
+    <net code="59" name="/edge_bypass">
+      <node ref="R103" pin="2"/>
+      <node ref="U101" pin="43"/>
+    </net>
+    <net code="60" name="/compa_bypass">
+      <node ref="R104" pin="2"/>
+      <node ref="U101" pin="41"/>
+    </net>
+    <net code="61" name="/inverter_bypass">
+      <node ref="R105" pin="2"/>
+      <node ref="U101" pin="34"/>
+    </net>
+    <net code="62" name="/pix">
+      <node ref="R1" pin="1"/>
+      <node ref="D1" pin="3"/>
+    </net>
+  </nets>
+</export>

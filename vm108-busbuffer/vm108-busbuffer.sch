@@ -1,0 +1,176 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5FA997FD
+P 1250 900
+F 0 "J1" H 1550 1200 50  0000 C CNN
+F 1 "Supply" H 1600 1050 50  0000 C CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 1250 900 50  0001 C CNN
+F 3 "~" H 1250 900 50  0001 C CNN
+	1    1250 900 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 5FA99FEB
+P 1600 800
+F 0 "FB1" V 1874 800 50  0000 C CNN
+F 1 "Ferrite_Bead" V 1750 500 50  0000 C CNN
+F 2 "synkie_footprints:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1530 800 50  0001 C CNN
+F 3 "~" H 1600 800 50  0001 C CNN
+	1    1600 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5FA9B06E
+P 1450 900
+F 0 "#PWR03" H 1450 650 50  0001 C CNN
+F 1 "GND" H 1450 600 50  0000 C CNN
+F 2 "" H 1450 900 50  0001 C CNN
+F 3 "" H 1450 900 50  0001 C CNN
+	1    1450 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5FA9C569
+P 1750 800
+F 0 "#PWR01" H 1750 650 50  0001 C CNN
+F 1 "+5V" V 1765 928 50  0000 L CNN
+F 2 "" H 1750 800 50  0001 C CNN
+F 3 "" H 1750 800 50  0001 C CNN
+	1    1750 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 5F4699E1
+P 4200 2750
+F 0 "J8" H 4118 3067 50  0000 C CNN
+F 1 "Sync-Bus" H 4118 2976 50  0000 C CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 4200 2750 50  0001 C CNN
+F 3 "~" H 4200 2750 50  0001 C CNN
+	1    4200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-14800 5500 -14800 -9700
+Wire Wire Line
+	-14800 -9700 -13300 -9700
+Text Label 1450 800  1    50   ~ 0
+supply+
+$Comp
+L 74xx:74HC244 U1
+U 1 1 60242572
+P 3500 3150
+F 0 "U1" H 3500 4131 50  0000 C CNN
+F 1 "74HC244" H 3500 4040 50  0000 C CNN
+F 2 "Package_SO:SO-20_12.8x7.5mm_P1.27mm" H 3500 3150 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf" H 3500 3150 50  0001 C CNN
+	1    3500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 60244131
+P 3500 2350
+F 0 "#PWR0101" H 3500 2200 50  0001 C CNN
+F 1 "+5V" V 3515 2478 50  0000 L CNN
+F 2 "" H 3500 2350 50  0001 C CNN
+F 3 "" H 3500 2350 50  0001 C CNN
+	1    3500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 6024D6A8
+P 2800 2750
+F 0 "J2" H 2718 3067 50  0000 C CNN
+F 1 "Sync-Bus" H 2718 2976 50  0000 C CNN
+F 2 "synkie_footprints:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 2800 2750 50  0001 C CNN
+F 3 "~" H 2800 2750 50  0001 C CNN
+	1    2800 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6024EB35
+P 3500 3950
+F 0 "#PWR0102" H 3500 3700 50  0001 C CNN
+F 1 "GND" H 3500 3650 50  0000 C CNN
+F 2 "" H 3500 3950 50  0001 C CNN
+F 3 "" H 3500 3950 50  0001 C CNN
+	1    3500 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 6024F0CD
+P 3000 3550
+F 0 "#PWR0103" H 3000 3300 50  0001 C CNN
+F 1 "GND" H 3000 3250 50  0000 C CNN
+F 2 "" H 3000 3550 50  0001 C CNN
+F 3 "" H 3000 3550 50  0001 C CNN
+	1    3000 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 6024F698
+P 3000 3650
+F 0 "#PWR0104" H 3000 3500 50  0001 C CNN
+F 1 "+5V" V 3015 3778 50  0000 L CNN
+F 2 "" H 3000 3650 50  0001 C CNN
+F 3 "" H 3000 3650 50  0001 C CNN
+	1    3000 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6025242C
+P 4750 2300
+F 0 "C1" H 4865 2346 50  0000 L CNN
+F 1 "C" H 4865 2255 50  0000 L CNN
+F 2 "synkie_footprints:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4788 2150 50  0001 C CNN
+F 3 "~" H 4750 2300 50  0001 C CNN
+	1    4750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 60252946
+P 4750 2150
+F 0 "#PWR0105" H 4750 2000 50  0001 C CNN
+F 1 "+5V" V 4765 2278 50  0000 L CNN
+F 2 "" H 4750 2150 50  0001 C CNN
+F 3 "" H 4750 2150 50  0001 C CNN
+	1    4750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 60252E07
+P 4750 2450
+F 0 "#PWR0106" H 4750 2200 50  0001 C CNN
+F 1 "GND" H 4750 2150 50  0000 C CNN
+F 2 "" H 4750 2450 50  0001 C CNN
+F 3 "" H 4750 2450 50  0001 C CNN
+	1    4750 2450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
