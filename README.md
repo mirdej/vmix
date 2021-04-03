@@ -14,15 +14,16 @@ Apart from the equalizer, the effects and mix levels are digitally controlled an
 
 ![six channels](./doc/img/6channels.jpg)
 
-Still under construction, the first 6 channels have passed their endurance test running daily for three weeks now at the exhibiton “H.o.Me. – Heim für obsolete Medien” at Kunsthaus Langenthal.
+Still under construction, the first 6 channels have passed their endurance test running daily for weeks at the exhibiton “H.o.Me. – Heim für obsolete Medien” at Kunsthaus Langenthal.
 
 
 ### Documentation
-
+- Architecture [Overview](./doc/architecture.md)
 - Mixer Channel: [Flowchart and description](./doc/channel.md)
 - Master Section: coming soon
 
 ### Links
 - [https://www.anyma.ch](https://www.anyma.ch)
 - [https://www.synkie.net](https://www.synkie.net)
-- [https://github.com/mirdej/synkie](https://github.com/mirdej/synkie)
+- [Videos on Vimeo](https://vimeo.com/showcase/8252873)
+- [Synkie on Github](https://github.com/mirdej/synkie)
