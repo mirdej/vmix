@@ -20,7 +20,7 @@ Still under construction, the first 6 channels have passed their endurance test 
 ### Documentation
 - Architecture [Overview](./doc/architecture.md)
 - Mixer Channel: [Flowchart and description](./doc/channel.md)
-- Master Section: coming soon
+- Master Section: [Flowchart and description](./doc/master.md)
 
 ### Links
 - [https://www.anyma.ch](https://www.anyma.ch)
