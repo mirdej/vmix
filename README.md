@@ -23,6 +23,7 @@ Still under construction, the first 6 channels have passed their endurance test 
 - Master Section: [Flowchart and description](./doc/master.md)
 
 ### Links
+- [Build pictures and notes](https://www.anyma.ch/blogs/research/2021/04/07/building-the-anymix21/) on my blog
 - [https://www.anyma.ch](https://www.anyma.ch)
 - [https://www.synkie.net](https://www.synkie.net)
 - [Videos on Vimeo](https://vimeo.com/showcase/8252873)
