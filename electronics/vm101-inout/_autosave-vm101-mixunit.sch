@@ -1,0 +1,1736 @@
+EESchema Schematic File Version 5
+EELAYER 36 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
+$EndDescr
+Connection ~ 2700 6000
+Connection ~ 3150 6000
+Connection ~ 3750 5850
+Connection ~ 3750 6000
+Connection ~ 3800 4000
+Connection ~ 4600 6100
+Connection ~ 4650 3600
+Connection ~ 5100 2400
+Connection ~ 5400 2400
+Connection ~ 5400 2850
+Connection ~ 5600 2500
+Connection ~ 5600 2850
+Connection ~ 6400 1750
+Connection ~ 6400 1900
+Connection ~ 6400 3000
+Connection ~ 6400 3150
+Connection ~ 6450 5350
+Connection ~ 6650 4750
+Connection ~ 6650 5350
+Connection ~ 6700 1900
+Connection ~ 6700 3150
+Wire Wire Line
+	2650 6000 2700 6000
+Wire Wire Line
+	2700 6000 2750 6000
+Wire Wire Line
+	2700 6050 2700 6000
+Wire Wire Line
+	2850 5400 3750 5400
+Wire Wire Line
+	3050 6000 3150 6000
+Wire Wire Line
+	3350 6000 3150 6000
+Wire Wire Line
+	3500 3450 3500 3500
+Wire Wire Line
+	3500 3800 3500 3850
+Wire Wire Line
+	3500 4200 3500 4150
+Wire Wire Line
+	3500 4500 3500 4550
+Wire Wire Line
+	3650 4000 3800 4000
+Wire Wire Line
+	3650 6000 3750 6000
+Wire Wire Line
+	3750 5400 3750 5500
+Wire Wire Line
+	3750 5800 3750 5850
+Wire Wire Line
+	3750 6000 3750 5850
+Wire Wire Line
+	3750 6050 3750 6000
+Wire Wire Line
+	3750 6350 3750 6400
+Wire Wire Line
+	3800 4000 3950 4000
+Wire Wire Line
+	3800 4100 3800 4000
+Wire Wire Line
+	3800 4300 3800 4400
+Wire Wire Line
+	3900 3600 4650 3600
+Wire Wire Line
+	3900 3800 3900 3600
+Wire Wire Line
+	3900 6200 3950 6200
+Wire Wire Line
+	3900 6250 3900 6200
+Wire Wire Line
+	3950 3800 3900 3800
+Wire Wire Line
+	3950 6000 3750 6000
+Wire Wire Line
+	4150 5850 3750 5850
+Wire Wire Line
+	4450 5850 4600 5850
+Wire Wire Line
+	4550 3900 4650 3900
+Wire Wire Line
+	4550 6100 4600 6100
+Wire Wire Line
+	4600 5850 4600 6100
+Wire Wire Line
+	4600 6100 4650 6100
+Wire Wire Line
+	4650 2400 4650 3600
+Wire Wire Line
+	4650 2400 4750 2400
+Wire Wire Line
+	4650 3600 4650 3900
+Wire Wire Line
+	4850 5400 4850 5450
+Wire Wire Line
+	4850 5750 4850 5900
+Wire Wire Line
+	4850 6300 4850 6400
+Wire Wire Line
+	4850 6400 5850 6400
+Wire Wire Line
+	5050 2400 5100 2400
+Wire Wire Line
+	5100 2400 5400 2400
+Wire Wire Line
+	5100 2600 5100 2400
+Wire Wire Line
+	5100 2800 5100 2850
+Wire Wire Line
+	5100 2850 5400 2850
+Wire Wire Line
+	5200 1950 5050 1950
+Wire Wire Line
+	5200 2250 5200 1950
+Wire Wire Line
+	5200 2250 5900 2250
+Wire Wire Line
+	5350 1650 5600 1650
+Wire Wire Line
+	5400 2400 5400 2500
+Wire Wire Line
+	5400 2800 5400 2850
+Wire Wire Line
+	5400 2850 5600 2850
+Wire Wire Line
+	5600 1650 5600 2500
+Wire Wire Line
+	5600 2500 5900 2500
+Wire Wire Line
+	5600 2800 5600 2850
+Wire Wire Line
+	5600 2850 5600 2900
+Wire Wire Line
+	5850 2650 5900 2650
+Wire Wire Line
+	5850 2750 5850 2650
+Wire Wire Line
+	5850 6400 5850 3050
+Wire Wire Line
+	5900 2400 5400 2400
+Wire Wire Line
+	6400 1700 6400 1750
+Wire Wire Line
+	6400 1750 6400 1900
+Wire Wire Line
+	6400 1900 6400 2100
+Wire Wire Line
+	6400 2850 6400 3000
+Wire Wire Line
+	6400 3000 6400 3150
+Wire Wire Line
+	6400 3150 6400 3200
+Wire Wire Line
+	6450 1750 6400 1750
+Wire Wire Line
+	6450 1900 6400 1900
+Wire Wire Line
+	6450 3000 6400 3000
+Wire Wire Line
+	6450 3150 6400 3150
+Wire Wire Line
+	6450 4750 6450 5350
+Wire Wire Line
+	6650 1750 6700 1750
+Wire Wire Line
+	6650 1900 6700 1900
+Wire Wire Line
+	6650 3000 6700 3000
+Wire Wire Line
+	6650 3150 6700 3150
+Wire Wire Line
+	6700 1750 6700 1900
+Wire Wire Line
+	6700 1900 6700 2000
+Wire Wire Line
+	6700 3000 6700 3150
+Wire Wire Line
+	6700 3150 6700 3200
+Wire Wire Line
+	6900 2250 7450 2250
+Wire Wire Line
+	6900 2500 6950 2500
+Wire Wire Line
+	7750 2250 7800 2250
+Wire Wire Line
+	7800 2250 7800 2300
+Wire Notes Line
+	2150 4900 5150 4900
+Wire Notes Line
+	2150 6750 2150 4900
+Wire Notes Line
+	3200 3050 4800 3050
+Wire Notes Line
+	3200 4800 3200 3050
+Wire Notes Line
+	3800 1100 3800 2950
+Wire Notes Line
+	3800 2950 5450 2950
+Wire Notes Line
+	4800 3050 4800 4800
+Wire Notes Line
+	4800 4800 3200 4800
+Wire Notes Line
+	5150 4900 5150 6750
+Wire Notes Line
+	5150 6750 2150 6750
+Wire Notes Line
+	5450 2950 5450 3600
+Wire Notes Line
+	5450 3600 8150 3600
+Wire Notes Line
+	8150 1100 3800 1100
+Wire Notes Line
+	8150 3600 8150 1100
+Text Notes 4350 4750 0    50   ~ 0
+black level
+Text Notes 4650 6700 0    50   ~ 0
+gain control
+Text Notes 7900 3550 0    50   ~ 0
+video
+Text HLabel 2650 6000 0    50   Input ~ 0
+CV
+Text HLabel 2850 5400 0    50   Input ~ 0
+DAC
+Text HLabel 5050 1650 0    50   Input ~ 0
+Input
+Text HLabel 5050 1950 0    50   Input ~ 0
+Output
+$Comp
+L synkie_symbols:+5V #PWR?
+U 1 1 5DCE4D48
+P 3150 5700
+AR Path="/5FA6FAA9/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCE4D48" Ref="#PWR01016"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCE4D48" Ref="#PWR0716"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCE4D48" Ref="#PWR0816"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCE4D48" Ref="#PWR0916"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCE4D48" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCE4D48" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0916" H 3150 5550 50  0001 C CNN
+F 1 "+5V" H 3150 5850 50  0000 C CNN
+F 2 "" H 3150 5700 50  0001 C CNN
+F 3 "" H 3150 5700 50  0001 C CNN
+	1    3150 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:-5V #PWR?
+U 1 1 5DCE4D49
+P 3150 6300
+AR Path="/5FA6FAA9/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCE4D49" Ref="#PWR01018"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCE4D49" Ref="#PWR0718"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCE4D49" Ref="#PWR0818"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCE4D49" Ref="#PWR0918"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCE4D49" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCE4D49" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0918" H 3150 6400 50  0001 C CNN
+F 1 "-5V" H 3150 6450 50  0000 C CNN
+F 2 "" H 3150 6300 50  0001 C CNN
+F 3 "" H 3150 6300 50  0001 C CNN
+	1    3150 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR?
+U 1 1 5DD6DF03
+P 3500 3450
+AR Path="/5FA6FAA9/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD6DF03" Ref="#PWR01009"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD6DF03" Ref="#PWR0709"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD6DF03" Ref="#PWR0809"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD6DF03" Ref="#PWR0909"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD6DF03" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD6DF03" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0909" H 3500 3300 50  0001 C CNN
+F 1 "+5V" H 3500 3600 50  0000 C CNN
+F 2 "" H 3500 3450 50  0001 C CNN
+F 3 "" H 3500 3450 50  0001 C CNN
+	1    3500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:-5V #PWR?
+U 1 1 5DD6D5AB
+P 3500 4550
+AR Path="/5FA6FAA9/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD6D5AB" Ref="#PWR01011"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD6D5AB" Ref="#PWR0711"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD6D5AB" Ref="#PWR0811"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD6D5AB" Ref="#PWR0911"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD6D5AB" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD6D5AB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0911" H 3500 4650 50  0001 C CNN
+F 1 "-5V" H 3500 4700 50  0000 C CNN
+F 2 "" H 3500 4550 50  0001 C CNN
+F 3 "" H 3500 4550 50  0001 C CNN
+	1    3500 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:-5V #PWR?
+U 1 1 5DE341EF
+P 3750 6400
+AR Path="/5FA6FAA9/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DE341EF" Ref="#PWR01020"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DE341EF" Ref="#PWR0720"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DE341EF" Ref="#PWR0820"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DE341EF" Ref="#PWR0920"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DE341EF" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DE341EF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0920" H 3750 6500 50  0001 C CNN
+F 1 "-5V" H 3750 6550 50  0000 C CNN
+F 2 "" H 3750 6400 50  0001 C CNN
+F 3 "" H 3750 6400 50  0001 C CNN
+	1    3750 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR?
+U 1 1 5DCE76FE
+P 4850 5400
+AR Path="/5FA6FAA9/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCE76FE" Ref="#PWR01015"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCE76FE" Ref="#PWR0715"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCE76FE" Ref="#PWR0815"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCE76FE" Ref="#PWR0915"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCE76FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCE76FE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0915" H 4850 5250 50  0001 C CNN
+F 1 "+5V" H 4850 5550 50  0000 C CNN
+F 2 "" H 4850 5400 50  0001 C CNN
+F 3 "" H 4850 5400 50  0001 C CNN
+	1    4850 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR?
+U 1 1 5DD23A8F
+P 6400 1700
+AR Path="/5FA6FAA9/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD23A8F" Ref="#PWR01001"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD23A8F" Ref="#PWR0701"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD23A8F" Ref="#PWR0801"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD23A8F" Ref="#PWR0901"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD23A8F" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD23A8F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0901" H 6400 1550 50  0001 C CNN
+F 1 "+5V" H 6400 1850 50  0000 C CNN
+F 2 "" H 6400 1700 50  0001 C CNN
+F 3 "" H 6400 1700 50  0001 C CNN
+	1    6400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:-5V #PWR?
+U 1 1 5DD3999C
+P 6400 3200
+AR Path="/5FA6FAA9/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD3999C" Ref="#PWR01007"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD3999C" Ref="#PWR0707"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD3999C" Ref="#PWR0807"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD3999C" Ref="#PWR0907"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD3999C" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD3999C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0907" H 6400 3300 50  0001 C CNN
+F 1 "-5V" H 6400 3350 50  0000 C CNN
+F 2 "" H 6400 3200 50  0001 C CNN
+F 3 "" H 6400 3200 50  0001 C CNN
+	1    6400 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:+5V #PWR?
+U 1 1 5E06DC21
+P 6650 4750
+AR Path="/5FA6FAA9/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5E06DC21" Ref="#PWR01012"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5E06DC21" Ref="#PWR0712"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5E06DC21" Ref="#PWR0812"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5E06DC21" Ref="#PWR0912"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5E06DC21" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5E06DC21" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0912" H 6650 4600 50  0001 C CNN
+F 1 "+5V" H 6650 4900 50  0000 C CNN
+F 2 "" H 6650 4750 50  0001 C CNN
+F 3 "" H 6650 4750 50  0001 C CNN
+	1    6650 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:-5V #PWR?
+U 1 1 5E06D678
+P 6650 5350
+AR Path="/5FA6FAA9/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5E06D678" Ref="#PWR01014"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5E06D678" Ref="#PWR0714"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5E06D678" Ref="#PWR0814"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5E06D678" Ref="#PWR0914"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5E06D678" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5E06D678" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0914" H 6650 5450 50  0001 C CNN
+F 1 "-5V" H 6650 5500 50  0000 C CNN
+F 2 "" H 6650 5350 50  0001 C CNN
+F 3 "" H 6650 5350 50  0001 C CNN
+	1    6650 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 5DCC82F8
+P 2700 6350
+AR Path="/5FA6FAA9/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCC82F8" Ref="#PWR01019"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCC82F8" Ref="#PWR0719"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCC82F8" Ref="#PWR0819"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCC82F8" Ref="#PWR0919"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCC82F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCC82F8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0919" H 2700 6100 50  0001 C CNN
+F 1 "GND" H 2705 6177 50  0000 C CNN
+F 2 "" H 2700 6350 50  0001 C CNN
+F 3 "" H 2700 6350 50  0001 C CNN
+	1    2700 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 5DDC7D47
+P 3800 4400
+AR Path="/5FA6FAA9/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DDC7D47" Ref="#PWR01010"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DDC7D47" Ref="#PWR0710"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DDC7D47" Ref="#PWR0810"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DDC7D47" Ref="#PWR0910"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DDC7D47" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DDC7D47" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0910" H 3800 4150 50  0001 C CNN
+F 1 "GND" H 3700 4250 50  0000 C CNN
+F 2 "" H 3800 4400 50  0001 C CNN
+F 3 "" H 3800 4400 50  0001 C CNN
+	1    3800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 5DCF050F
+P 3900 6250
+AR Path="/5FA6FAA9/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCF050F" Ref="#PWR01017"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCF050F" Ref="#PWR0717"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCF050F" Ref="#PWR0817"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCF050F" Ref="#PWR0917"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCF050F" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCF050F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0917" H 3900 6000 50  0001 C CNN
+F 1 "GND" H 3905 6077 50  0000 C CNN
+F 2 "" H 3900 6250 50  0001 C CNN
+F 3 "" H 3900 6250 50  0001 C CNN
+	1    3900 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 5DD0318B
+P 5600 2900
+AR Path="/5FA6FAA9/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD0318B" Ref="#PWR01005"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD0318B" Ref="#PWR0705"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD0318B" Ref="#PWR0805"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD0318B" Ref="#PWR0905"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD0318B" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD0318B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0905" H 5600 2650 50  0001 C CNN
+F 1 "GND" H 5605 2727 50  0000 C CNN
+F 2 "" H 5600 2900 50  0001 C CNN
+F 3 "" H 5600 2900 50  0001 C CNN
+	1    5600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 5E07399C
+P 6450 5350
+AR Path="/5FA6FAA9/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5E07399C" Ref="#PWR01013"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5E07399C" Ref="#PWR0713"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5E07399C" Ref="#PWR0813"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5E07399C" Ref="#PWR0913"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5E07399C" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5E07399C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0913" H 6450 5100 50  0001 C CNN
+F 1 "GND" H 6350 5200 50  0000 C CNN
+F 2 "" H 6450 5350 50  0001 C CNN
+F 3 "" H 6450 5350 50  0001 C CNN
+	1    6450 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 5DD2E7D2
+P 6700 2000
+AR Path="/5FA6FAA9/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD2E7D2" Ref="#PWR01003"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD2E7D2" Ref="#PWR0703"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD2E7D2" Ref="#PWR0803"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD2E7D2" Ref="#PWR0903"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD2E7D2" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD2E7D2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0903" H 6700 1750 50  0001 C CNN
+F 1 "GND" H 6750 1850 50  0000 C CNN
+F 2 "" H 6700 2000 50  0001 C CNN
+F 3 "" H 6700 2000 50  0001 C CNN
+	1    6700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 5DD3E0A3
+P 6700 3200
+AR Path="/5FA6FAA9/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD3E0A3" Ref="#PWR01008"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD3E0A3" Ref="#PWR0708"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD3E0A3" Ref="#PWR0808"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD3E0A3" Ref="#PWR0908"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD3E0A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD3E0A3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0908" H 6700 2950 50  0001 C CNN
+F 1 "GND" H 6750 3050 50  0000 C CNN
+F 2 "" H 6700 3200 50  0001 C CNN
+F 3 "" H 6700 3200 50  0001 C CNN
+	1    6700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:GND #PWR?
+U 1 1 5DD426CE
+P 7800 2300
+AR Path="/5FA6FAA9/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA6A4E8/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA97FCE/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA999AE/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8FC53/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA9040E/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7B673/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA81498/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA7E734/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA82020/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FA8A96F/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD426CE" Ref="#PWR01004"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD426CE" Ref="#PWR0704"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD426CE" Ref="#PWR0804"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD426CE" Ref="#PWR0904"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD426CE" Ref="#PWR?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD426CE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0904" H 7800 2050 50  0001 C CNN
+F 1 "GND" H 7805 2127 50  0000 C CNN
+F 2 "" H 7800 2300 50  0001 C CNN
+F 3 "" H 7800 2300 50  0001 C CNN
+	1    7800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:LMH6643 U?
+U 3 1 5DCB71E3
+P 6750 5050
+AR Path="/5FA6FAA9/5DCB71E3" Ref="U?"  Part="3" 
+AR Path="/5FA6A4E8/5DCB71E3" Ref="U?"  Part="2" 
+AR Path="/5FA97FCE/5DCB71E3" Ref="U?"  Part="2" 
+AR Path="/5FA999AE/5DCB71E3" Ref="U?"  Part="2" 
+AR Path="/5DCB71E3" Ref="U?"  Part="2" 
+AR Path="/5FA8FC53/5DCB71E3" Ref="U?"  Part="2" 
+AR Path="/5FA9040E/5DCB71E3" Ref="U?"  Part="3" 
+AR Path="/5FA7B673/5DCB71E3" Ref="U?"  Part="2" 
+AR Path="/5FA81498/5DCB71E3" Ref="U?"  Part="2" 
+AR Path="/5FA7E734/5DCB71E3" Ref="U?"  Part="3" 
+AR Path="/5FA82020/5DCB71E3" Ref="U?"  Part="3" 
+AR Path="/5FA8A96F/5DCB71E3" Ref="U?"  Part="3" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCB71E3" Ref="U1002"  Part="3" 
+AR Path="/5FECEEFB/5FA7E734/5DCB71E3" Ref="U702"  Part="3" 
+AR Path="/5FECEEFB/5FA82020/5DCB71E3" Ref="U802"  Part="3" 
+AR Path="/5FECEEFB/5FA8A96F/5DCB71E3" Ref="U902"  Part="3" 
+AR Path="/5FECEEFB/5FEF8D28/5DCB71E3" Ref="U?"  Part="3" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCB71E3" Ref="U?"  Part="3" 
+AR Path="/5FECEEFB/5FEF8D34/5DCB71E3" Ref="U?"  Part="3" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCB71E3" Ref="U?"  Part="3" 
+F 0 "U902" H 6708 5096 50  0000 L CNN
+F 1 "LMH6643" H 6708 5005 50  0000 L CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 6750 5050 50  0001 C CNN
+F 3 "~" H 6750 5050 50  0001 C CNN
+	3    6750 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:CP_Small C?
+U 1 1 5DD211D3
+P 6550 1900
+AR Path="/5FA6FAA9/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FA6A4E8/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FA97FCE/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FA999AE/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FA8FC53/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FA9040E/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FA81498/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FA7E734/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FA82020/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FA8A96F/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD211D3" Ref="C1002"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD211D3" Ref="C702"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD211D3" Ref="C802"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD211D3" Ref="C902"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD211D3" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD211D3" Ref="C?"  Part="1" 
+F 0 "C902" V 6325 1900 50  0000 C CNN
+F 1 "4u7" V 6416 1900 50  0000 C CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 6550 1900 50  0001 C CNN
+F 3 "~" H 6550 1900 50  0001 C CNN
+	1    6550 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L synkie_symbols:CP_Small C?
+U 1 1 5DD2079F
+P 6550 3000
+AR Path="/5FA6FAA9/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FA6A4E8/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FA97FCE/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FA999AE/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FA8FC53/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FA9040E/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FA81498/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FA7E734/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FA82020/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FA8A96F/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD2079F" Ref="C1004"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD2079F" Ref="C704"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD2079F" Ref="C804"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD2079F" Ref="C904"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD2079F" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD2079F" Ref="C?"  Part="1" 
+F 0 "C904" V 6325 3000 50  0000 C CNN
+F 1 "4u7" V 6416 3000 50  0000 C CNN
+F 2 "synkie_footprints:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 6550 3000 50  0001 C CNN
+F 3 "~" H 6550 3000 50  0001 C CNN
+	1    6550 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:C_Small C?
+U 1 1 5DDC04F7
+P 3800 4200
+AR Path="/5FA6FAA9/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FA6A4E8/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FA97FCE/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FA999AE/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FA8FC53/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FA9040E/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FA81498/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FA7E734/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FA82020/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FA8A96F/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DDC04F7" Ref="C1006"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DDC04F7" Ref="C706"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DDC04F7" Ref="C806"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DDC04F7" Ref="C906"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DDC04F7" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DDC04F7" Ref="C?"  Part="1" 
+F 0 "C906" V 3900 4200 50  0000 C CNN
+F 1 "1u" V 4000 4200 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3800 4200 50  0001 C CNN
+F 3 "~" H 3800 4200 50  0001 C CNN
+	1    3800 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:C_Small C?
+U 1 1 5DDA6AA4
+P 5100 2700
+AR Path="/5FA6FAA9/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FA6A4E8/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FA97FCE/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FA999AE/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FA8FC53/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FA9040E/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FA81498/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FA7E734/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FA82020/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FA8A96F/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DDA6AA4" Ref="C1003"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DDA6AA4" Ref="C703"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DDA6AA4" Ref="C803"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DDA6AA4" Ref="C903"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DDA6AA4" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DDA6AA4" Ref="C?"  Part="1" 
+F 0 "C903" V 5200 2700 50  0000 C CNN
+F 1 "1u" V 5300 2700 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5100 2700 50  0001 C CNN
+F 3 "~" H 5100 2700 50  0001 C CNN
+	1    5100 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:C_Small C?
+U 1 1 5DD22C0C
+P 6550 1750
+AR Path="/5FA6FAA9/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FA6A4E8/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FA97FCE/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FA999AE/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FA8FC53/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FA9040E/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FA81498/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FA7E734/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FA82020/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FA8A96F/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD22C0C" Ref="C1001"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD22C0C" Ref="C701"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD22C0C" Ref="C801"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD22C0C" Ref="C901"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD22C0C" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD22C0C" Ref="C?"  Part="1" 
+F 0 "C901" V 6321 1750 50  0000 C CNN
+F 1 "100n" V 6412 1750 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6550 1750 50  0001 C CNN
+F 3 "~" H 6550 1750 50  0001 C CNN
+	1    6550 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:C_Small C?
+U 1 1 5DD2340B
+P 6550 3150
+AR Path="/5FA6FAA9/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FA6A4E8/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FA97FCE/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FA999AE/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FA8FC53/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FA9040E/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FA81498/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FA7E734/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FA82020/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FA8A96F/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD2340B" Ref="C1005"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD2340B" Ref="C705"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD2340B" Ref="C805"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD2340B" Ref="C905"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD2340B" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD2340B" Ref="C?"  Part="1" 
+F 0 "C905" V 6650 3150 50  0000 C CNN
+F 1 "100n" V 6750 3150 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6550 3150 50  0001 C CNN
+F 3 "~" H 6550 3150 50  0001 C CNN
+	1    6550 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:C_Small C?
+U 1 1 5E073355
+P 6550 4750
+AR Path="/5FA6FAA9/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FA6A4E8/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FA97FCE/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FA999AE/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FA8FC53/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FA9040E/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FA81498/5E073355" Ref="C?"  Part="1" 
+AR Path="/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FA7E734/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FA82020/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FA8A96F/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5E073355" Ref="C1007"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5E073355" Ref="C707"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5E073355" Ref="C807"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5E073355" Ref="C907"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5E073355" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5E073355" Ref="C?"  Part="1" 
+F 0 "C907" V 6650 4750 50  0000 C CNN
+F 1 "100n" V 6750 4750 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6550 4750 50  0001 C CNN
+F 3 "~" H 6550 4750 50  0001 C CNN
+	1    6550 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:C_Small C?
+U 1 1 5E06FF97
+P 6550 5350
+AR Path="/5FA6FAA9/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FA6A4E8/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FA97FCE/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FA999AE/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FA8FC53/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FA9040E/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FA7B673/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FA81498/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FA7E734/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FA82020/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FA8A96F/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5E06FF97" Ref="C1008"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5E06FF97" Ref="C708"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5E06FF97" Ref="C808"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5E06FF97" Ref="C908"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5E06FF97" Ref="C?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5E06FF97" Ref="C?"  Part="1" 
+F 0 "C908" V 6650 5350 50  0000 C CNN
+F 1 "100n" V 6750 5350 50  0000 C CNN
+F 2 "synkie_footprints:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6550 5350 50  0001 C CNN
+F 3 "~" H 6550 5350 50  0001 C CNN
+	1    6550 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DCC7045
+P 2700 6200
+AR Path="/5FA6FAA9/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCC7045" Ref="R1017"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCC7045" Ref="R717"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCC7045" Ref="R817"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCC7045" Ref="R917"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCC7045" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCC7045" Ref="R?"  Part="1" 
+F 0 "R917" H 2630 6154 50  0000 R CNN
+F 1 "47k" H 2630 6245 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2630 6200 50  0001 C CNN
+F 3 "~" H 2700 6200 50  0001 C CNN
+	1    2700 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DCC6769
+P 2900 6000
+AR Path="/5FA6FAA9/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCC6769" Ref="R1015"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCC6769" Ref="R715"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCC6769" Ref="R815"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCC6769" Ref="R915"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCC6769" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCC6769" Ref="R?"  Part="1" 
+F 0 "R915" V 2693 6000 50  0000 C CNN
+F 1 "100" V 2784 6000 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 6000 50  0001 C CNN
+F 3 "~" H 2900 6000 50  0001 C CNN
+	1    2900 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DE3508C
+P 3500 3650
+AR Path="/5FA6FAA9/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DE3508C" Ref="R1010"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DE3508C" Ref="R710"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DE3508C" Ref="R810"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DE3508C" Ref="R910"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DE3508C" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DE3508C" Ref="R?"  Part="1" 
+F 0 "R910" H 3650 3700 50  0000 R CNN
+F 1 "3k" H 3650 3800 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3430 3650 50  0001 C CNN
+F 3 "~" H 3500 3650 50  0001 C CNN
+	1    3500 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DE3583B
+P 3500 4350
+AR Path="/5FA6FAA9/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DE3583B" Ref="R1011"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DE3583B" Ref="R711"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DE3583B" Ref="R811"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DE3583B" Ref="R911"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DE3583B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DE3583B" Ref="R?"  Part="1" 
+F 0 "R911" H 3650 4400 50  0000 R CNN
+F 1 "3k" H 3650 4500 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3430 4350 50  0001 C CNN
+F 3 "~" H 3500 4350 50  0001 C CNN
+	1    3500 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DCE4D3B
+P 3500 6000
+AR Path="/5FA6FAA9/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCE4D3B" Ref="R1016"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCE4D3B" Ref="R716"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCE4D3B" Ref="R816"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCE4D3B" Ref="R916"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCE4D3B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCE4D3B" Ref="R?"  Part="1" 
+F 0 "R916" V 3293 6000 50  0000 C CNN
+F 1 "12K" V 3384 6000 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3430 6000 50  0001 C CNN
+F 3 "~" H 3500 6000 50  0001 C CNN
+	1    3500 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DCFBE0A
+P 3750 5650
+AR Path="/5FA6FAA9/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCFBE0A" Ref="R1013"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCFBE0A" Ref="R713"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCFBE0A" Ref="R813"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCFBE0A" Ref="R913"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCFBE0A" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCFBE0A" Ref="R?"  Part="1" 
+F 0 "R913" V 3543 5650 50  0000 C CNN
+F 1 "12K" V 3634 5650 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3680 5650 50  0001 C CNN
+F 3 "~" H 3750 5650 50  0001 C CNN
+	1    3750 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DE34830
+P 3750 6200
+AR Path="/5FA6FAA9/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DE34830" Ref="R1018"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DE34830" Ref="R718"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DE34830" Ref="R818"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DE34830" Ref="R918"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DE34830" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DE34830" Ref="R?"  Part="1" 
+F 0 "R918" H 3900 6250 50  0000 R CNN
+F 1 "22k" H 3900 6350 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3680 6200 50  0001 C CNN
+F 3 "~" H 3750 6200 50  0001 C CNN
+	1    3750 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DCFB76E
+P 4300 5850
+AR Path="/5FA6FAA9/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCFB76E" Ref="R1014"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCFB76E" Ref="R714"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCFB76E" Ref="R814"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCFB76E" Ref="R914"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCFB76E" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCFB76E" Ref="R?"  Part="1" 
+F 0 "R914" V 4093 5850 50  0000 C CNN
+F 1 "20k" V 4184 5850 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4230 5850 50  0001 C CNN
+F 3 "~" H 4300 5850 50  0001 C CNN
+	1    4300 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DCE719B
+P 4850 5600
+AR Path="/5FA6FAA9/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCE719B" Ref="R1012"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCE719B" Ref="R712"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCE719B" Ref="R812"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCE719B" Ref="R912"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCE719B" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCE719B" Ref="R?"  Part="1" 
+F 0 "R912" H 4780 5554 50  0000 R CNN
+F 1 "2k2" H 4780 5645 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4780 5600 50  0001 C CNN
+F 3 "~" H 4850 5600 50  0001 C CNN
+	1    4850 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DD15203
+P 4900 2400
+AR Path="/5FA6FAA9/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD15203" Ref="R1004"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD15203" Ref="R704"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD15203" Ref="R804"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD15203" Ref="R904"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD15203" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD15203" Ref="R?"  Part="1" 
+F 0 "R904" V 4693 2400 50  0000 C CNN
+F 1 "3k" V 4784 2400 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 2400 50  0001 C CNN
+F 3 "~" H 4900 2400 50  0001 C CNN
+	1    4900 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DD09E42
+P 5200 1650
+AR Path="/5FA6FAA9/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD09E42" Ref="R1001"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD09E42" Ref="R701"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD09E42" Ref="R801"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD09E42" Ref="R901"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD09E42" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD09E42" Ref="R?"  Part="1" 
+F 0 "R901" V 4993 1650 50  0000 C CNN
+F 1 "1k" V 5084 1650 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5130 1650 50  0001 C CNN
+F 3 "~" H 5200 1650 50  0001 C CNN
+	1    5200 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DD01004
+P 5400 2650
+AR Path="/5FA6FAA9/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD01004" Ref="R1006"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD01004" Ref="R706"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD01004" Ref="R806"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD01004" Ref="R906"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD01004" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD01004" Ref="R?"  Part="1" 
+F 0 "R906" H 5600 2600 50  0000 R CNN
+F 1 "100" H 5600 2700 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5330 2650 50  0001 C CNN
+F 3 "~" H 5400 2650 50  0001 C CNN
+	1    5400 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DD016EB
+P 5600 2650
+AR Path="/5FA6FAA9/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD016EB" Ref="R1007"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD016EB" Ref="R707"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD016EB" Ref="R807"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD016EB" Ref="R907"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD016EB" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD016EB" Ref="R?"  Part="1" 
+F 0 "R907" H 5530 2604 50  0000 R CNN
+F 1 "100" H 5530 2695 50  0000 R CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5530 2650 50  0001 C CNN
+F 3 "~" H 5600 2650 50  0001 C CNN
+	1    5600 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DCEACBF
+P 5850 2900
+AR Path="/5FA6FAA9/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCEACBF" Ref="R1009"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCEACBF" Ref="R709"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCEACBF" Ref="R809"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCEACBF" Ref="R909"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCEACBF" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCEACBF" Ref="R?"  Part="1" 
+F 0 "R909" V 5643 2900 50  0000 C CNN
+F 1 "1k" V 5734 2900 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5780 2900 50  0001 C CNN
+F 3 "~" H 5850 2900 50  0001 C CNN
+	1    5850 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:R R?
+U 1 1 5DD6272C
+P 7600 2250
+AR Path="/5FA6FAA9/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FA6A4E8/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FA97FCE/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FA999AE/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FA8FC53/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FA9040E/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FA7B673/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FA81498/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FA7E734/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FA82020/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FA8A96F/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD6272C" Ref="R1003"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD6272C" Ref="R703"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD6272C" Ref="R803"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD6272C" Ref="R903"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD6272C" Ref="R?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD6272C" Ref="R?"  Part="1" 
+F 0 "R903" V 7393 2250 50  0000 C CNN
+F 1 "120" V 7484 2250 50  0000 C CNN
+F 2 "synkie_footprints:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7530 2250 50  0001 C CNN
+F 3 "~" H 7600 2250 50  0001 C CNN
+	1    7600 2250
+	0    -1   1    0   
+$EndComp
+$Comp
+L synkie_symbols:R_POT RV?
+U 1 1 5DD8D848
+P 3500 4000
+AR Path="/5FA6FAA9/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FA6A4E8/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FA97FCE/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FA999AE/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FA8FC53/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FA9040E/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FA7B673/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FA81498/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FA7E734/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FA82020/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FA8A96F/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DD8D848" Ref="RV1001"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DD8D848" Ref="RV701"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DD8D848" Ref="RV801"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DD8D848" Ref="RV901"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DD8D848" Ref="RV?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DD8D848" Ref="RV?"  Part="1" 
+F 0 "RV901" H 3431 4046 50  0000 R CNN
+F 1 "500" H 3431 3955 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3006P_Horizontal" H 3500 4000 50  0001 C CNN
+F 3 "~" H 3500 4000 50  0001 C CNN
+	1    3500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:BAT54S D?
+U 1 1 5DCE4D47
+P 3150 6000
+AR Path="/5FA6FAA9/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FA6A4E8/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FA97FCE/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FA999AE/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FA8FC53/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FA9040E/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FA7B673/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FA81498/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FA7E734/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FA82020/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FA8A96F/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCE4D47" Ref="D1001"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCE4D47" Ref="D701"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCE4D47" Ref="D801"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCE4D47" Ref="D901"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCE4D47" Ref="D?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCE4D47" Ref="D?"  Part="1" 
+F 0 "D901" V 3000 5850 50  0000 L CNN
+F 1 "BAT54S" V 2900 5700 50  0000 L CNN
+F 2 "synkie_footprints:SOT-23" H 3225 6125 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 3030 6000 50  0001 C CNN
+	1    3150 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L synkie_symbols:Trans_PNP_Generic Q?
+U 1 1 5DCB5482
+P 4800 6100
+AR Path="/5FA6FAA9/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FA6A4E8/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FA97FCE/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FA999AE/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FA8FC53/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FA9040E/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FA7B673/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FA81498/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FA7E734/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FA82020/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FA8A96F/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCB5482" Ref="Q1001"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCB5482" Ref="Q701"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCB5482" Ref="Q801"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCB5482" Ref="Q901"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCB5482" Ref="Q?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCB5482" Ref="Q?"  Part="1" 
+F 0 "Q901" H 4938 6146 50  0000 L CNN
+F 1 "PNP" H 4938 6055 50  0000 L CNN
+F 2 "synkie_footprints:SOT-23_BEC" H 4800 6100 50  0001 C CNN
+F 3 "" H 4800 6100 50  0001 C CNN
+	1    4800 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L synkie_symbols:LMH6643 U?
+U 1 1 5DCB59FF
+P 4250 3900
+AR Path="/5FA6FAA9/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FA6A4E8/5DCB59FF" Ref="U?"  Part="3" 
+AR Path="/5FA97FCE/5DCB59FF" Ref="U?"  Part="3" 
+AR Path="/5FA999AE/5DCB59FF" Ref="U?"  Part="3" 
+AR Path="/5DCB59FF" Ref="U?"  Part="3" 
+AR Path="/5FA8FC53/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FA9040E/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FA7B673/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FA81498/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FA7E734/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FA82020/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FA8A96F/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCB59FF" Ref="U1002"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCB59FF" Ref="U702"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCB59FF" Ref="U802"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCB59FF" Ref="U902"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCB59FF" Ref="U?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCB59FF" Ref="U?"  Part="1" 
+F 0 "U902" H 4250 4267 50  0000 C CNN
+F 1 "LMH6643" H 4250 4176 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 4250 3900 50  0001 C CNN
+F 3 "~" H 4250 3900 50  0001 C CNN
+	1    4250 3900
+	1    0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:LMH6643 U?
+U 2 1 5DFA5C9B
+P 4250 6100
+AR Path="/5FA6FAA9/5DFA5C9B" Ref="U?"  Part="2" 
+AR Path="/5FA6A4E8/5DFA5C9B" Ref="U?"  Part="1" 
+AR Path="/5FA97FCE/5DFA5C9B" Ref="U?"  Part="1" 
+AR Path="/5FA999AE/5DFA5C9B" Ref="U?"  Part="1" 
+AR Path="/5FA8FC53/5DFA5C9B" Ref="U?"  Part="3" 
+AR Path="/5FA9040E/5DFA5C9B" Ref="U?"  Part="2" 
+AR Path="/5FA7B673/5DFA5C9B" Ref="U?"  Part="3" 
+AR Path="/5FA81498/5DFA5C9B" Ref="U?"  Part="3" 
+AR Path="/5DFA5C9B" Ref="U?"  Part="2" 
+AR Path="/5FA7E734/5DFA5C9B" Ref="U?"  Part="2" 
+AR Path="/5FA82020/5DFA5C9B" Ref="U?"  Part="2" 
+AR Path="/5FA8A96F/5DFA5C9B" Ref="U?"  Part="2" 
+AR Path="/5FECEEFB/5FA6FAA9/5DFA5C9B" Ref="U1002"  Part="2" 
+AR Path="/5FECEEFB/5FA7E734/5DFA5C9B" Ref="U702"  Part="2" 
+AR Path="/5FECEEFB/5FA82020/5DFA5C9B" Ref="U802"  Part="2" 
+AR Path="/5FECEEFB/5FA8A96F/5DFA5C9B" Ref="U902"  Part="2" 
+AR Path="/5FECEEFB/5FEF8D28/5DFA5C9B" Ref="U?"  Part="2" 
+AR Path="/5FECEEFB/5FEF8D2E/5DFA5C9B" Ref="U?"  Part="2" 
+AR Path="/5FECEEFB/5FEF8D34/5DFA5C9B" Ref="U?"  Part="2" 
+AR Path="/5FECEEFB/5FEF8D3A/5DFA5C9B" Ref="U?"  Part="2" 
+F 0 "U902" H 4250 6467 50  0000 C CNN
+F 1 "LMH6643" H 4250 6376 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 4250 6100 50  0001 C CNN
+F 3 "~" H 4250 6100 50  0001 C CNN
+	2    4250 6100
+	1    0    0    1   
+$EndComp
+$Comp
+L synkie_symbols:LT1228 U?
+U 1 1 5DCFCF56
+P 6400 2500
+AR Path="/5FA6FAA9/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FA6A4E8/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FA97FCE/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FA999AE/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FA8FC53/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FA9040E/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FA7B673/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FA81498/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FA7E734/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FA82020/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FA8A96F/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FECEEFB/5FA6FAA9/5DCFCF56" Ref="U1001"  Part="1" 
+AR Path="/5FECEEFB/5FA7E734/5DCFCF56" Ref="U701"  Part="1" 
+AR Path="/5FECEEFB/5FA82020/5DCFCF56" Ref="U801"  Part="1" 
+AR Path="/5FECEEFB/5FA8A96F/5DCFCF56" Ref="U901"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D28/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D2E/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D34/5DCFCF56" Ref="U?"  Part="1" 
+AR Path="/5FECEEFB/5FEF8D3A/5DCFCF56" Ref="U?"  Part="1" 
+F 0 "U901" H 6100 2950 50  0000 C CNN
+F 1 "LT1228" H 6150 2850 50  0000 C CNN
+F 2 "synkie_footprints:SOIC-8_3.9x4.9mm_P1.27mm" H 6850 2800 50  0001 C CNN
+F 3 "" H 6850 2800 50  0001 C CNN
+	1    6400 2500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
