@@ -253,15 +253,15 @@ void play(){
             loop_state = LOOP_STATE_PLAY_WAITING;
             break;
          case LOOP_STATE_PLAY:
-
             break;
          case LOOP_STATE_PLAY_WAITING:
             break;
          case LOOP_STATE_DUB:
+             loop_state = LOOP_STATE_PLAY;
             break;      
 
          case LOOP_STATE_STOPPED:
-
+            loop_state = LOOP_STATE_PLAY;
             break;
         default:
             break;
@@ -282,7 +282,11 @@ void record() {
 //----------------------------------------------------------------------------------------
 //																				DUB
 void overdub() {
-
+    // store start values to see if a pot has actually moved
+   for (int i = 0; i < NUM_POTS; i++) {
+        rec_start_value[i] = pot_value[i];
+    }
+    loop_state = LOOP_STATE_DUB;
 }
 
 //----------------------------------------------------------------------------------------
@@ -416,8 +420,24 @@ void check_tick() {
             
             break;
 
-         case LOOP_STATE_DUB:
-
+        case LOOP_STATE_DUB:
+            rec_idx = playback_idx;
+            
+            // check if pot moved from initial state
+            for (int i = 0; i < NUM_POTS; i++) {    
+                if (abs(rec_start_value[i]- pot_value[i]) > REC_THRESH) {
+                    rec_enabled[i] = 1;
+                    rec_buffer[i][rec_idx] = pot_value[i];
+                }
+                
+                if (rec_enabled[i]) {
+                    out_value[i] = rec_buffer[i][playback_idx];
+                } else {
+                    out_value[i] = pot_value[i];
+                }
+            }
+            playback_idx++;
+            playback_idx %= rec_length;
             break;      
 
         default:                // catches: LOOP_STATE_EMPTY, LOOP_STATE_STOPPED
