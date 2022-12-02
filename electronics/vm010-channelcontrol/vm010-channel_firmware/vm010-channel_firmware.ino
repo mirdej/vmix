@@ -2,7 +2,7 @@
 //
 //	vm010  Firmware		
 //						
-//		Target MCU: ATMEGA1284
+//		Target MCU: ATMEGA1284 @ 20Mhz
 //		Copyright:	2020 Michael Egger, me@anyma.ch
 //		License: 	This is FREE software (as in free speech, not necessarily free beer)
 //					published under gnu GPL v.3
@@ -21,6 +21,12 @@
         -> only do calculations and ad conversion during active video
         -> ad sampling twice, output once for a bit of oversampling/smoothing of values
         -> output lags behind by one field
+        
+        
+    To be able to record and playback automation synchronised to Midi Clock the actual output buffers
+    are only updated every MIDI tick (~30ms @ 80bpm down to ~11ms @ 220bpm -> still fast enough for hand related movements)
+    --> pots are sampled async,  actual decision what is being output happens in the midi tick handler
+        
 
     ODD FIELD: (20ms total)
         write to leds (during blanking)
@@ -101,15 +107,20 @@ const char PIN_POT[NUM_POTS] = {PIN_AD_BIAS, PIN_AD_COMPA,  PIN_AD_SCALE, PIN_AD
 const char PIN_BTN[NUM_BTNS] = {PIN_BTN_REC, PIN_BTN_STOP, PIN_BTN_BUS_C, PIN_BTN_BUS_B, PIN_BTN_BUS_A, PIN_BTN_DRYWET, PIN_BTN_INVERT, PIN_BTN_COMPA, PIN_BTN_EDGES };
 
 
-#define LOOP_STATE_EMPTY    0
-#define LOOP_STATE_REC      1
-#define LOOP_STATE_DUB      2
-#define LOOP_STATE_PLAY     3
-#define LOOP_STATE_STOPPED  4
+#define LOOP_QUANTIZE              24           // quantize loop length to beat
+                                                // TODO: make this parameter selectable from vm129
 
-#define ERROR_NONE          0
-#define ERROR_NO_BEAT       1
-#define ERROR_NO_SYNC       2
+#define LOOP_STATE_EMPTY            0
+#define LOOP_STATE_REC              1
+#define LOOP_STATE_DUB              2
+#define LOOP_STATE_PLAY             3
+#define LOOP_STATE_STOPPED          4
+#define LOOP_STATE_REC_WAITING      5
+#define LOOP_STATE_PLAY_WAITING     6
+
+#define ERROR_NONE                  0
+#define ERROR_NO_BEAT               1
+#define ERROR_NO_SYNC               2
 
 #define BUTTON_COLOR        CRGB(0,5,10)
 #define SELECTION_COLOR     CRGB::Gray
@@ -139,14 +150,8 @@ int         out_value [NUM_POTS];
 
 int         rec_buffer[NUM_POTS][MAX_REC_SLOTS];
 int         rec_idx, playback_idx;
-int         rec_length = MAX_REC_SLOTS;
+int         rec_length = 0;
 
-int         beat_frame_counter = 0;
-int         frames_per_beat = 0;
-int         beat_play_idx = 0;
-int         loop_beat_count = 0;
-int         rec_start_pending_for_frame = -1;
-int         rec_end_pending_for_frame = -1;
 int         rec_start_value [NUM_POTS];
 int         rec_enabled [NUM_POTS];
 
@@ -163,54 +168,15 @@ volatile int    beat_interrupt_flag;
 //----------------------------------------------------------------------------------------
 //																				AD
 
+
 void check_ad(void *context) {
     int temp;
     for (int i = 0; i < NUM_POTS; i++) {
         temp = analogRead(PIN_POT[i]);
         if (i == 4) temp = 1023 - temp;
         pot_value[i] = (3 * pot_value[i] + temp) / 4;
-    }
-    
-    if (digitalRead(PIN_ODDEVEN)) {                 // only on 1 field
-        beat_frame_counter++;
-    
-        for (int i = 0; i < NUM_POTS; i++) {
-            if (loop_state != LOOP_STATE_PLAY) {
-                if (abs(rec_start_value[i]- pot_value[i]) > REC_THRESH) {
-                    rec_enabled[i] = 1;
-                }
-            }
-        
-            // default to thru out
-            out_value[i] = pot_value[i];
 
-            if (loop_state == LOOP_STATE_PLAY) {
-                if (rec_buffer[i][playback_idx] >= 0) {
-                    out_value[i] = rec_buffer[i][playback_idx];     // when playing, only output if values are recorded, otherwise thru out
-                } 
-            }
-
-            if (loop_state == LOOP_STATE_DUB) { // when overdubbing, play back recorded values, unless pot is moved
-                 if (!rec_enabled[i]) {
-                    out_value[i] = rec_buffer[i][playback_idx];
-                } 
-            }
-
-
-            if (rec_enabled[i]) {
-                    rec_buffer[i][rec_idx] = pot_value[i];
-            }
-        }
-
-        if (rec_idx < MAX_REC_SLOTS - 1 ) {
-            rec_idx++;
-        }
-        if (playback_idx < MAX_REC_SLOTS - 1 ) {
-            playback_idx++;
-        }
-        if (loop_state == LOOP_STATE_DUB) {
-            rec_idx = playback_idx;
-        }
+                                    check_tick();
     }
 }
 
@@ -231,6 +197,7 @@ void set_dacs() {
 	
     for (int i = 0; i < 4; i++) 	{
         dac_send(0,i,out_value[i]);
+        check_tick();
 	}
 
     if (bus_a_on) { dac_send (1, 0, out_value[4]);      } else { dac_send (1, 0, 0); }
@@ -275,68 +242,61 @@ void power_on_dacs() {
 //----------------------------------------------------------------------------------------
 //																				PLAY
 void play(){
-    switch (loop_state) {
-        case LOOP_STATE_REC:
-          // start playing immediately if we're a bit late
-            if (beat_frame_counter < frames_per_beat / 2) {
-                playback_idx = beat_frame_counter;
-                beat_play_idx = 0;
-                loop_state = LOOP_STATE_PLAY;
-            } else {
-                rec_end_pending_for_frame = beat_frame_counter;
-            }
+       switch (loop_state) { 
+        case LOOP_STATE_EMPTY:
+            break;
+
+         case LOOP_STATE_REC_WAITING:
             break;
             
-        case LOOP_STATE_DUB:
-            loop_state = LOOP_STATE_PLAY;
-            for (int i = 0; i < NUM_POTS; i++) {
-                rec_enabled[i] = 0;
-            }
+         case LOOP_STATE_REC:
+            loop_state = LOOP_STATE_PLAY_WAITING;
             break;
-            
-        case LOOP_STATE_STOPPED:
-            playback_idx = beat_frame_counter;
-            beat_play_idx = 0;
-            loop_state = LOOP_STATE_PLAY;
+         case LOOP_STATE_PLAY:
+
             break;
-            
+         case LOOP_STATE_PLAY_WAITING:
+            break;
+         case LOOP_STATE_DUB:
+            break;      
+
+         case LOOP_STATE_STOPPED:
+
+            break;
         default:
             break;
     }
+
 }
 //----------------------------------------------------------------------------------------
 //																				REC
 void record() {
-    rec_start_pending_for_frame = beat_frame_counter;
+    // store start values to see if a pot has actually moved
+    for (int i = 0; i < NUM_POTS; i++) {
+        rec_start_value[i] = pot_value[i];
+        rec_enabled[i] = 0;
+    }
+    loop_state = LOOP_STATE_REC_WAITING;
 }
+
 //----------------------------------------------------------------------------------------
 //																				DUB
 void overdub() {
-    switch (loop_state) {
-        case LOOP_STATE_PLAY:
-            loop_state = LOOP_STATE_DUB;
-            for (int i = 0; i < NUM_POTS; i++) {
-                rec_start_value[i] = pot_value[i];
-                rec_enabled[i] = 0;
-            }
-            break;
-        
-        default:
-            break;
-        
-    }
+
 }
+
 //----------------------------------------------------------------------------------------
 //																				STOP
 void stop() {
     loop_state = LOOP_STATE_STOPPED;
 }
+
 //----------------------------------------------------------------------------------------
 //																				CLEAR
 void clear_buffer() {
     for (int p = 0; p< NUM_POTS; p++){
          for (int i = 0; i < MAX_REC_SLOTS; i++) {
-            rec_buffer[p][i] = -1;
+            rec_buffer[p][i] = 0;
         }
     }
     loop_state = LOOP_STATE_EMPTY;
@@ -362,8 +322,11 @@ void check_sync(){
             if (field) {
                 FastLED.show();
             } else {
+                                    check_tick();
                 set_dacs();
+                                    check_tick();
                 check_btns();
+                                    check_tick();
                 update_leds();
             }
         }    
@@ -383,72 +346,87 @@ void beat_interrupt() {
     beat_interrupt_flag++;
 }
 
-//----------------------------------------------------------------------------------------
-//																				BEAT     
-void beat(){
-    frames_per_beat = beat_frame_counter;
-    beat_frame_counter = 0;
+void record_frame(){
+    for (int i = 0; i < NUM_POTS; i++) {    
+        rec_buffer[i][rec_idx] = pot_value[i];
+        if (abs(rec_start_value[i]- pot_value[i]) > REC_THRESH) {
+            rec_enabled[i] = 1;
+        }
+    }
+    
+    if (rec_idx < MAX_REC_SLOTS - 1) {
+        rec_idx++;
+    } else {
+        loop_state = LOOP_STATE_PLAY_WAITING;
+    }
 
-    // not recording yet, but store one beat length in case we'll start recording before next beat
-    if (loop_state == LOOP_STATE_EMPTY) {
-        rec_idx = 0;
-        for (int i = 0; i < NUM_POTS; i++) {
-            rec_start_value[i] = pot_value[i];
-            rec_enabled[i] = 0;
-        }
-    }
-    
-    if (loop_state == LOOP_STATE_REC) {
-        loop_beat_count++;
-    }
-    
-    if (loop_state == LOOP_STATE_PLAY || loop_state == LOOP_STATE_DUB ) {
-        beat_play_idx++;
-        if (beat_play_idx >= loop_beat_count) {
-            beat_play_idx = 0;
-            playback_idx = 0;
-        }
-    }
-    
-    if (rec_start_pending_for_frame >= 0) {
-        loop_state = LOOP_STATE_REC;
-        
-        if (rec_start_pending_for_frame > frames_per_beat / 2) { 
-                                                    // start recording on this beat
-            rec_idx = 0;
-            loop_beat_count = 0;
-        } else {                                    // keep recording for first beat
-            loop_beat_count = 1;
-        }
+}
 
-        rec_start_pending_for_frame = -1;
-    }
-    
-    if (rec_end_pending_for_frame >= 0) {
-        playback_idx = 0;
-        beat_play_idx = 0;
-        rec_end_pending_for_frame = -1;
-        loop_state = LOOP_STATE_PLAY;
+void play_through() {
+    for (int i = 0; i < NUM_POTS; i++) {   
+        out_value[i] = pot_value[i];
     }
 }
 
-void check_beat() {    
-    static long last_beat;
-    long beat_timestamp;
+
+//----------------------------------------------------------------------------------------
+//																				MIDI CLOCK
+
+void check_tick() {    
     
     if (!beat_interrupt_flag) { return;}
-    beat_timestamp = millis();
     beat_interrupt_flag--;
-
-    //keep between approx 60 - 250 bpm
-    if (beat_timestamp - last_beat < 1000 &&  beat_timestamp - last_beat > 200) {
-        if (error == ERROR_NO_BEAT) error = ERROR_NONE;
-        beat();
-    } else {
-        error = ERROR_NO_BEAT;
-    }
     
-    last_beat = beat_timestamp;
+    switch (loop_state) { 
+       
+         case LOOP_STATE_REC_WAITING:               // start recording
+            rec_idx = 0;
+            loop_state = LOOP_STATE_REC;
+            record_frame();
+            play_through();
+            break;
+
+         case LOOP_STATE_REC:                       // record
+            record_frame();
+            play_through();
+            break;
+
+         case LOOP_STATE_PLAY_WAITING:
+            record_frame();
+            play_through();
+            if (rec_idx % LOOP_QUANTIZE == 0) {
+                playback_idx = 0;
+                loop_state = LOOP_STATE_PLAY;    
+                rec_length = rec_idx;
+            }
+            break;
+
+
+         case LOOP_STATE_PLAY:                       // play
+            
+             for (int i = 0; i < NUM_POTS; i++) {   
+                if (rec_enabled[i]) {
+                    out_value[i] = rec_buffer[i][playback_idx];
+                } else {
+                   out_value[i] = pot_value[i];
+                }
+             }
+             playback_idx++;
+             playback_idx %= rec_length;
+            
+            break;
+
+         case LOOP_STATE_DUB:
+
+            break;      
+
+        default:                // catches: LOOP_STATE_EMPTY, LOOP_STATE_STOPPED
+            play_through();
+            break;
+    }
+
+
+
 }
 
 
@@ -460,18 +438,24 @@ void handle_rec_click() {
         case LOOP_STATE_EMPTY:
             record();
             break;
+         case LOOP_STATE_REC_WAITING:
+            break;
          case LOOP_STATE_REC:
             play();
             break;
          case LOOP_STATE_PLAY:
             overdub();
             break;
+         case LOOP_STATE_PLAY_WAITING:
+            break;
          case LOOP_STATE_DUB:
             play();
             break;      
          case LOOP_STATE_STOPPED:
             play();            
-            break;      
+            break;
+        default:
+            break;
     }
 }
 
@@ -483,10 +467,16 @@ void handle_stop_click() {
         case LOOP_STATE_EMPTY:
             clear_buffer();
             break;
+         case LOOP_STATE_REC_WAITING:
+            clear_buffer();
+            break;
          case LOOP_STATE_REC:
             clear_buffer();
             break;
          case LOOP_STATE_PLAY:
+            stop();
+            break;
+         case LOOP_STATE_PLAY_WAITING:
             stop();
             break;
          case LOOP_STATE_DUB:
@@ -494,7 +484,9 @@ void handle_stop_click() {
             break;
          case LOOP_STATE_STOPPED:
             clear_buffer();
-            break;      
+            break;   
+        default:
+            break;   
     }
 }
 
@@ -514,10 +506,16 @@ void update_leds(){
             switch (loop_state) { 
                 case LOOP_STATE_EMPTY:
                     break;
+                 case LOOP_STATE_REC_WAITING:
+                    pixels[0] = CRGB::Red;
+                    pixels[1] = CRGB::Orange;
                  case LOOP_STATE_REC:
                     pixels[0] = CRGB::Red;
                     pixels[1] = CRGB::Red;
                     break;
+                 case LOOP_STATE_PLAY_WAITING:
+                    pixels[0] = CRGB::Green;
+                    pixels[1] = CRGB::Orange;
                  case LOOP_STATE_PLAY:
                     pixels[0] = CRGB::Green;
                     pixels[1] = CRGB::Green;
@@ -558,6 +556,9 @@ void check_btns() {
     
     char leds_changed = 0;
  	for (int i = 0; i < NUM_BTNS; i++) {
+ 	    
+ 	    check_tick();
+ 	    
  	    state = digitalRead(PIN_BTN[i]);
  	    
  	    if (state != old_state[i]) {
@@ -640,7 +641,7 @@ void requestEvent ()
 
 
 void check_i2c(){
- //   if (i2c_new_bytes)  Serial.printf("Received %ld bytes\n", i2c_new_bytes);
+ //   if (i2c_new_bytes)  //Serial.printf("Received %ld bytes\n", i2c_new_bytes);
     if (i2c_new_bytes == 1) {
         switch (i2c_buf[0]) {
             case I2C_CALL_REC:
@@ -659,40 +660,40 @@ void check_i2c(){
                 clear_buffer();
                 break;
             default:
-                Serial.print("Strange Call Received: ");
-                Serial.println(i2c_buf[0], HEX);
+                //Serial.print("Strange Call Received: ");
+                //Serial.println(i2c_buf[0], HEX);
                 break;
         }
-        Serial.println();
+        //Serial.println();
     }
     if (i2c_new_bytes == 2) {
         switch (i2c_buf[0]) {
             case I2C_CALL_STORE:
-                Serial.print("Received: STORE ");
-                Serial.println(i2c_buf[1], DEC);
+                //Serial.print("Received: STORE ");
+                //Serial.println(i2c_buf[1], DEC);
                 break;
             case I2C_CALL_RECALL:
-                Serial.print("Received: RECALL ");
-                Serial.println(i2c_buf[1], DEC);
+                //Serial.print("Received: RECALL ");
+                //Serial.println(i2c_buf[1], DEC);
                 break;
             case I2C_CALL_BRIGHTNESS:
                 FastLED.setBrightness(i2c_buf[1]);
                 FastLED.show();
             default:
-                Serial.print("Strange Call Received: ");
-                Serial.println(i2c_buf[0], HEX);
+                //Serial.print("Strange Call Received: ");
+                //Serial.println(i2c_buf[0], HEX);
                 break;
         }
-        Serial.println();
+        //Serial.println();
     }
     if (i2c_new_bytes == 6) {
-        Serial.print("Received data: ");
+        //Serial.print("Received data: ");
         for (int i=0; i<6; i++) {
-            Serial.print(i2c_buf[i], DEC);
-            Serial.print(" ");
+            //Serial.print(i2c_buf[i], DEC);
+            //Serial.print(" ");
         }
-        Serial.println();
-        Serial.println();
+        //Serial.println();
+        //Serial.println();
     }
     i2c_new_bytes = 0;
 }
@@ -749,6 +750,6 @@ void setup() {
 void loop() {
     t.update();
     check_sync();
-    check_beat();
+    check_tick();
     check_i2c();
 }

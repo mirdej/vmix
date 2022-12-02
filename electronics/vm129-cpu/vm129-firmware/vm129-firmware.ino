@@ -107,7 +107,7 @@ const int 	UI_TIMEOUT = 5000;
 #define SCREEN_WIDTH 128 
 #define SCREEN_HEIGHT 32 
 #define OLED_RESET		 -1
-Adafruit_SSD1306 		display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+Adafruit_SSD1306 		display = Adafruit_SSD1306(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 /* for u8g2 library use : U8G2_SSD1306_128X32_UNIVISION_2_HW_I2C */
 
@@ -207,11 +207,15 @@ void intro() {
 //----------------------------------------------------------------------------------------
 //																		set all trigger pins to low
 void release_triggers() {
-    digitalWrite(PIN_BEATSYNC, LOW);
     digitalWrite(PIN_TRIGGER_1, LOW);
     digitalWrite(PIN_TRIGGER_2, LOW);
     digitalWrite(PIN_TRIGGER_3, LOW);
 }
+
+void release_tick() {
+    digitalWrite(PIN_BEATSYNC, LOW);
+}
+
 
 //----------------------------------------------------------------------------------------
 //																		UI Timeout
@@ -690,12 +694,14 @@ void check_clock(){
         
         MIDI.sendRealTime(midi::Clock);
 
-        if (tickCounter % beatclock_clocks == 0 ) digitalWrite(PIN_BEATSYNC, HIGH);
+        //if (tickCounter % beatclock_clocks == 0 ) 
+        digitalWrite(PIN_BEATSYNC, HIGH);
         if (tickCounter % trigger1_clocks == 0 ) digitalWrite(PIN_TRIGGER_1, HIGH);
         if (tickCounter % trigger2_clocks == 0 ) digitalWrite(PIN_TRIGGER_2, HIGH);
         if (tickCounter % trigger3_clocks == 0 ) digitalWrite(PIN_TRIGGER_3, HIGH);
 
-        t.after(10,release_triggers);
+        t.after(2,  release_tick);
+        t.after(10, release_triggers);
         update_display();           //display update needs a lot of time. do it right after clock tick
                                     // (if necessary) in order to not skew clock timing 
         update_leds();
