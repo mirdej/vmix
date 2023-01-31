@@ -41,7 +41,7 @@ Clock period: fixed at 20ms
 #include <ESP32Encoder.h>
 #include <MIDI.h>
 #include <Wire.h>
-
+#include <WiFi.h>
 
 // Create and bind the MIDI interface to the default hardware Serial port
 //MIDI_CREATE_DEFAULT_INSTANCE();
@@ -734,6 +734,9 @@ void change_bpm(){
 void setup(){
     Serial.begin(115200);
     Serial.println("vMIX20 - SETUP start");
+
+    WiFi.mode(WIFI_MODE_NULL);
+    btStop();
 
     Wire.begin ();    
 
