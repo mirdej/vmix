@@ -5,7 +5,7 @@
 //  Part of the vmix20 analog video mixer by [ a n y m a ]
 //  Based on the Synkie, analog modular video processor, www.synkie.net
 //
-//          Target MCU: DOIT ESP32 DEVKIT V1
+//          Target MCU: ESP32-S3
 //          Copyright:  2020 Michael Egger, me@anyma.ch
 //          License:        This is FREE software (as in free speech, not necessarily free beer)
 //                                  published under gnu GPL v.3
@@ -31,21 +31,15 @@ Clock period: fixed at 20ms
 
 
 */
-
+#include <Arduino.h>
 #include <Preferences.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
-#include <FastLED.h>
-#include <ESP32Encoder.h>
-// #include <MIDI.h>
 #include <Wire.h>
 #include <WiFi.h>
-
-// Create and bind the MIDI interface to the default hardware Serial port
-// MIDI_CREATE_DEFAULT_INSTANCE();
-// MIDI_CREATE_INSTANCE(HardwareSerial, Serial, MIDI);
-// MIDI_CREATE_DEFAULT_INSTANCE();
-// MIDI_CREATE_INSTANCE(HardwareSerial, Serial, MIDI)
+#include <FastLED.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#include <ESP32Encoder.h>
+#include <MIDI.h>
 
 // ..................................................................................... PIN mapping
 
@@ -53,13 +47,13 @@ const int PIN_ENCODER_A = 4;
 const int PIN_ENCODER_B = 5;
 const int PIN_HSYNC = 6;
 const int PIN_VSYNC = 7;
+const int PIN_MUX_4 = 18;
 const int PIN_MUX_3 = 17;
 const int PIN_MUX_2 = 16;
 const int PIN_MUX_1 = 15;
 
 const int PIN_FOOTPEDAL = 1;
 const int PIN_FOOTPEDAL_2 = 2;
-const int PIN_FREE = 38; // unused PIN dummy SPI out PIN for buttons
 const int PIN_TRIGGER_IN = 48;
 const int PIN_BEATSYNC = 42;
 const int PIN_TRIGGER_3 = 11;
@@ -75,8 +69,8 @@ const int PIN_BTN_CLK = 21;
 const int PIN_BTN_DATA = 47;
 const int PIN_SDA = 13;
 const int PIN_SCL = 12;
-const int PIN_RX = 43;
-const int PIN_TX = 44;
+const int PIN_RX = 37;
+const int PIN_TX = 38;
 
 // ..................................................................................... Constants
 
@@ -131,6 +125,9 @@ Adafruit_SSD1306 display = Adafruit_SSD1306(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, 
 //========================================================================================
 //----------------------------------------------------------------------------------------
 //																				GLOBALS
+
+MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, DIN_MIDI);
+
 Preferences preferences;
 ESP32Encoder encoder;
 CRGB pixels[NUM_PIXELS];
@@ -184,7 +181,7 @@ void intro()
     display.setTextSize(2);
     display.println(F("ANYMIX-21"));
     display.display();
-    fill_solid(pixels, NUM_PIXELS, CRGB::Black);
+    fill_solid(pixels, NUM_PIXELS, CRGB::DarkBlue);
     FastLED.show();
 
     /*
@@ -212,6 +209,7 @@ void release_triggers(void *p)
 
 void release_tick(void *p)
 {
+    //log_v("Release");
     vTaskDelay(2);
     digitalWrite(PIN_BEATSYNC, LOW);
     vTaskDelete(NULL);
@@ -242,10 +240,10 @@ void check_clock()
             }
         }
 
-        // MIDI.sendRealTime(midi::Clock);
+        DIN_MIDI.sendRealTime(midi::Clock);
 
-        // if (tickCounter % beatclock_clocks == 0 )
-        digitalWrite(PIN_BEATSYNC, HIGH);
+        //if (tickCounter % beatclock_clocks == 0)
+            digitalWrite(PIN_BEATSYNC, HIGH);
         if (tickCounter % trigger1_clocks == 0)
             digitalWrite(PIN_TRIGGER_1, HIGH);
         if (tickCounter % trigger2_clocks == 0)
@@ -253,8 +251,8 @@ void check_clock()
         if (tickCounter % trigger3_clocks == 0)
             digitalWrite(PIN_TRIGGER_3, HIGH);
 
-        xTaskCreate(release_tick, "release_tick", 1000, NULL, 1, NULL);
-        xTaskCreate(release_triggers, "release_triggers", 1000, NULL, 1, NULL);
+        xTaskCreate(release_tick, "release_tick", 3000, NULL, 1, NULL);
+        xTaskCreate(release_triggers, "release_triggers", 3000, NULL, 1, NULL);
 
         /* t.after(2, release_tick);
         t.after(10, release_triggers); */
@@ -284,109 +282,100 @@ void change_bpm()
 //----------------------------------------------------------------------------------------
 //																		UI Timeout
 
-void check_ui_timeout(void *p)
+void check_ui_timeout()
 {
-    while (1)
-        vTaskDelay(1000);
-    {
-        if (millis() - last_ui_interaction > UI_TIMEOUT)
-        {
-            selected_menu = 0;
-            display_needs_update = true;
-        }
 
-        if (sync_mode == SYNC_MODE_EXTERN_MIDI)
+    if (millis() - last_ui_interaction > UI_TIMEOUT)
+    {
+        selected_menu = 0;
+        display_needs_update = true;
+    }
+
+    if (sync_mode == SYNC_MODE_EXTERN_MIDI)
+    {
+        if (millis() - last_midi_clock > 1000)
         {
-            if (millis() - last_midi_clock > 1000)
-            {
-                Serial.println("Lost MIDI");
-                sync_mode = SYNC_MODE_INTERN;
-                display_needs_update = true;
-                change_bpm(); // restart timer
-            }
+            Serial.println("Lost MIDI");
+            sync_mode = SYNC_MODE_INTERN;
+            display_needs_update = true;
+            change_bpm(); // restart timer
         }
     }
-    vTaskDelete(NULL);
 }
 
 //----------------------------------------------------------------------------------------
 //																		Encoder
-void check_encoder(void *p)
+void check_encoder()
 {
-    while (1)
+    if (encoder.getCount() == 0)
+        return;
+
+    switch (selected_menu)
     {
-        vTaskDelay(100);
-        if (encoder.getCount() == 0)
-            return;
-
-        switch (selected_menu)
-        {
-        case MENU_NONE:
-            break;
-        case MENU_BRIGHTNESS:
-            brightness += encoder.getCount();
-            if (brightness < 5)
-                brightness = 5;
-            if (brightness > 255)
-                brightness = 255;
-            FastLED.setBrightness(brightness);
-            FastLED.show();
-            display_needs_update = true;
-            Wire.beginTransmission(0);
-            Wire.write(I2C_CALL_BRIGHTNESS);
-            Wire.write(brightness);
-            Wire.endTransmission();
-            break;
-        case MENU_BPM:
-            bpm += encoder.getCount();
-            if (bpm < 60)
-                bpm = 60;
-            if (bpm > 240)
-                bpm = 240;
-            display_needs_update = true;
-            change_bpm();
-            break;
-        case MENU_TRIGGER_1:
-            trigger1_clocks += encoder.getCount();
-            if (trigger1_clocks < 1)
-                trigger1_clocks = 1;
-            if (trigger1_clocks > 100)
-                trigger1_clocks = 100;
-            display_needs_update = true;
-            break;
-        case MENU_TRIGGER_2:
-            trigger2_clocks += encoder.getCount();
-            if (trigger2_clocks < 1)
-                trigger2_clocks = 1;
-            if (trigger2_clocks > 100)
-                trigger2_clocks = 100;
-            display_needs_update = true;
-            break;
-        case MENU_TRIGGER_3:
-            trigger3_clocks += encoder.getCount();
-            if (trigger3_clocks < 1)
-                trigger3_clocks = 1;
-            if (trigger3_clocks > 100)
-                trigger3_clocks = 100;
-            display_needs_update = true;
-            break;
-        default:
-            break;
-        }
-
-        last_ui_interaction = millis();
-        encoder.setCount(0);
+    case MENU_NONE:
+        break;
+    case MENU_BRIGHTNESS:
+        brightness += encoder.getCount();
+        if (brightness < 5)
+            brightness = 5;
+        if (brightness > 255)
+            brightness = 255;
+        FastLED.setBrightness(brightness);
+        FastLED.show();
+        display_needs_update = true;
+        Wire.beginTransmission(0);
+        Wire.write(I2C_CALL_BRIGHTNESS);
+        Wire.write(brightness);
+        Wire.endTransmission();
+        break;
+    case MENU_BPM:
+        bpm += encoder.getCount();
+        if (bpm < 60)
+            bpm = 60;
+        if (bpm > 240)
+            bpm = 240;
+        display_needs_update = true;
+        change_bpm();
+        break;
+    case MENU_TRIGGER_1:
+        trigger1_clocks += encoder.getCount();
+        if (trigger1_clocks < 1)
+            trigger1_clocks = 1;
+        if (trigger1_clocks > 100)
+            trigger1_clocks = 100;
+        display_needs_update = true;
+        break;
+    case MENU_TRIGGER_2:
+        trigger2_clocks += encoder.getCount();
+        if (trigger2_clocks < 1)
+            trigger2_clocks = 1;
+        if (trigger2_clocks > 100)
+            trigger2_clocks = 100;
+        display_needs_update = true;
+        break;
+    case MENU_TRIGGER_3:
+        trigger3_clocks += encoder.getCount();
+        if (trigger3_clocks < 1)
+            trigger3_clocks = 1;
+        if (trigger3_clocks > 100)
+            trigger3_clocks = 100;
+        display_needs_update = true;
+        break;
+    default:
+        break;
     }
-    vTaskDelete(NULL);
+
+    last_ui_interaction = millis();
+    encoder.setCount(0);
 }
 
 //----------------------------------------------------------------------------------------
 //																		Buttons
 void set_preview_mux()
 {
-    digitalWrite(PIN_MUX_1, (preview_out_channel & 1));
-    digitalWrite(PIN_MUX_2, (preview_out_channel & 2));
-    digitalWrite(PIN_MUX_3, preview_out_afl);
+    digitalWrite(PIN_MUX_4, (preview_out_channel & 1));
+    digitalWrite(PIN_MUX_3, (preview_out_channel & 2));
+    digitalWrite(PIN_MUX_2, preview_out_afl);
 }
 
 void preview_press(int n)
@@ -406,6 +395,7 @@ void preview_press(int n)
 //																				PLAY
 void play()
 {
+    return;
     Wire.beginTransmission(0);
     Wire.write(I2C_CALL_PLAY);
     Wire.endTransmission();
@@ -415,6 +405,7 @@ void play()
 //																				REC
 void record()
 {
+    return;
     Wire.beginTransmission(0);
     Wire.write(I2C_CALL_REC);
     Wire.endTransmission();
@@ -441,6 +432,7 @@ void overdub()
 //																				STOP
 void stop()
 {
+    return;
     Wire.beginTransmission(0);
     Wire.write(I2C_CALL_STOP);
     Wire.endTransmission();
@@ -450,6 +442,7 @@ void stop()
 //																				CLEAR
 void clear_buffer()
 {
+    return;
     Wire.beginTransmission(0);
     Wire.write(I2C_CALL_CLEAR);
     Wire.endTransmission();
@@ -506,113 +499,97 @@ void handle_stop_click()
     }
 }
 
-void check_buttons(void *p)
+void check_buttons()
 {
-    while (1)
+    static long old_buttons;
+    static int old_footpedal;
+
+    byte temp;
+    buttons_raw = 0;
+
+    SPI.beginTransaction(SPISettings(80000, LSBFIRST, SPI_MODE2));
+    digitalWrite(PIN_BTN_LATCH, LOW);
+    delayMicroseconds(100);
+    digitalWrite(PIN_BTN_LATCH, HIGH);
+    cli();
+    for (int i = 0; i < NUM_REGISTERS; i++)
     {
-        vTaskDelay(20);
-        static long old_buttons;
-        static int old_footpedal;
+        temp = ~SPI.transfer(0x00);
+        buttons_raw |= (temp << (i * 8)); //((temp << 4) & 0xF0 ) | ((temp >> 4) & 0x0F);
+    }
+    sei();
+    SPI.endTransaction();
 
-        byte temp;
-        buttons_raw = 0;
+    // log_v("Buttons_raw: %d", buttons_raw);
 
-        SPI.beginTransaction(SPISettings(80000, LSBFIRST, SPI_MODE2));
-        digitalWrite(PIN_BTN_LATCH, LOW);
-        delayMicroseconds(100);
-        digitalWrite(PIN_BTN_LATCH, HIGH);
-        cli();
-        for (int i = 0; i < NUM_REGISTERS; i++)
+    int footpedal = digitalRead(PIN_FOOTPEDAL);
+    if (old_footpedal != footpedal)
+    {
+        if (!footpedal)
         {
-            temp = ~SPI.transfer(0x00);
-            buttons_raw |= (temp << (i * 8)); //((temp << 4) & 0xF0 ) | ((temp >> 4) & 0x0F);
+            handle_rec_click();
         }
-        sei();
-        SPI.endTransaction();
+        old_footpedal = footpedal;
+    }
 
-        int footpedal = digitalRead(PIN_FOOTPEDAL);
-        if (old_footpedal != footpedal)
+    if (old_buttons == buttons_raw)
+        return;
+
+    long triggers = ~old_buttons & buttons_raw;
+
+    for (int i = 0; i < NUM_PIXELS; i++)
+    {
+        if (triggers & (1 << i))
         {
-            if (!footpedal)
+            switch (i)
             {
+            case 2:
+                handle_stop_click();
+                break;
+            case 3:
                 handle_rec_click();
-            }
-            old_footpedal = footpedal;
-        }
+                break;
+            case 12:
+                selected_menu = MENU_BRIGHTNESS;
+                break;
+            case 13:
+                selected_menu = MENU_BPM;
+                break;
+            case 15:
+                selected_menu = MENU_NONE;
+                break;
+            case 22:
+                selected_menu = MENU_TRIGGER_1;
+                break;
+            case 21:
+                selected_menu = MENU_TRIGGER_2;
+                break;
+            case 20:
+                selected_menu = MENU_TRIGGER_3;
+                break;
 
-        if (old_buttons == buttons_raw)
-            return;
+            case 19:
+                preview_press(0);
+                break;
+            case 18:
+                preview_press(1);
+                break;
+            case 17:
+                preview_press(2);
+                break;
+            case 16:
+                preview_press(3);
+                break;
 
-        long triggers = ~old_buttons & buttons_raw;
-
-        for (int i = 0; i < NUM_PIXELS; i++)
-        {
-            if (triggers & (1 << i))
-            {
-                switch (i)
-                {
-                case 2:
-                    handle_stop_click();
-                    break;
-                case 3:
-                    handle_rec_click();
-                    break;
-                case 12:
-                    selected_menu = MENU_BRIGHTNESS;
-                    break;
-                case 13:
-                    selected_menu = MENU_BPM;
-                    break;
-                case 15:
-                    selected_menu = MENU_NONE;
-                    break;
-                case 22:
-                    selected_menu = MENU_TRIGGER_1;
-                    break;
-                case 21:
-                    selected_menu = MENU_TRIGGER_2;
-                    break;
-                case 20:
-                    selected_menu = MENU_TRIGGER_3;
-                    break;
-
-                case 19:
-                    preview_press(0);
-                    break;
-                case 18:
-                    preview_press(1);
-                    break;
-                case 17:
-                    preview_press(2);
-                    break;
-                case 16:
-                    preview_press(3);
-                    break;
-
-                default:
-                    break;
-                }
+            default:
+                break;
             }
         }
 
         last_ui_interaction = millis();
         old_buttons = buttons_raw;
         display_needs_update = true;
-
-    /*  if (something_happened) {
-          byte triggers;
-          for (int i = 0; i < NUM_REGISTERS; i++) {
-             triggers =  ~old_buttons[i] & buttons_raw[i];
-             if (triggers > 0) {
-              if (triggers & (1 << bit)){
-             }
-          }
-      }
-
-      for (int i = 0; i < NUM_REGISTERS; i++) {
-          old_buttons[i] = buttons_raw[i];
-      }
-  */}
+    }
 }
 
 //----------------------------------------------------------------------------------------
@@ -620,9 +597,6 @@ void check_buttons(void *p)
 
 void update_leds()
 {
-    /*   while (1)
-      {
-          vTaskDelay(20); */
     fill_solid(pixels, NUM_PIXELS, BUTTON_COLOR);
     for (int i = 0; i < NUM_PIXELS; i++)
     {
@@ -636,11 +610,11 @@ void update_leds()
     {
     case MENU_BRIGHTNESS:
         pixels[12] = SELECTION_COLOR;
-        break;
     case MENU_BPM:
-        pixels[13] = SELECTION_COLOR;
         break;
+        pixels[13] = SELECTION_COLOR;
     case MENU_TRIGGER_1:
+        break;
         pixels[22] = SELECTION_COLOR;
         break;
     case MENU_TRIGGER_2:
@@ -694,43 +668,30 @@ void update_leds()
     }
 
     FastLED.show();
-    //  }
 }
 
 //----------------------------------------------------------------------------------------
-//																		MIDI
-void check_midi()
+//																		MIDI Clock
+void handleMIDIClock()
 {
-    /* static int clock_count;
-
-    if (MIDI.read())
+    last_midi_clock = millis();
+    if (sync_mode != SYNC_MODE_EXTERN_MIDI)
     {
-        switch (MIDI.getType())
-        {
-        case midi::Clock:
-            last_midi_clock = millis();
-            if (sync_mode != SYNC_MODE_EXTERN_MIDI)
-            {
-                sync_mode = SYNC_MODE_EXTERN_MIDI;
-                display_needs_update = true;
+        sync_mode = SYNC_MODE_EXTERN_MIDI;
+        display_needs_update = true;
 
-                timerAlarmDisable(beatClockTimer);
-                interruptCounter = 0;
-                tickCounter = 0;
-            }
-
-            interruptCounter++;
-            break;
-
-        default:
-            break;
-        }
+        timerAlarmDisable(beatClockTimer);
+        interruptCounter = 0;
+        tickCounter = 0;
     }
+
+    interruptCounter++;
 }
 //----------------------------------------------------------------------------------------
 //																		Display
 void update_display()
 {
+
     if (millis() < 6000)
         return;
     if (!display_needs_update)
@@ -804,7 +765,7 @@ void update_display()
 
     display.drawLine(0, 8, 128, 8, WHITE);
     display.display();
-    display_needs_update = false; */
+    display_needs_update = false;
 }
 
 //========================================================================================
@@ -813,16 +774,18 @@ void update_display()
 
 void setup()
 {
-    Serial.begin(115200);
-    Serial.println("vMIX20 - SETUP start");
 
+    Serial.begin(115200);
+
+    delay(1000);
+
+    log_v("vMIX20 - SETUP start");
     WiFi.mode(WIFI_MODE_NULL);
     btStop();
 
-    Wire.begin();
+    Wire.begin(PIN_SDA, PIN_SCL);
 
-    brightness = 100;
-
+    brightness = 10;
     FastLED.addLeds<NEOPIXEL, PIN_PIXELS>(pixels, NUM_PIXELS);
     FastLED.setBrightness(brightness);
 
@@ -835,49 +798,54 @@ void setup()
     pinMode(PIN_TRIGGER_3, OUTPUT);
     pinMode(PIN_BEATSYNC, OUTPUT);
     pinMode(PIN_BTN_LATCH, OUTPUT);
-    pinMode(PIN_RX, INPUT_PULLUP);
+    // pinMode(PIN_RX, INPUT_PULLUP); WHY ???????????
     pinMode(PIN_MUX_1, OUTPUT);
     pinMode(PIN_MUX_2, OUTPUT);
     pinMode(PIN_MUX_3, OUTPUT);
+    pinMode(PIN_MUX_4, OUTPUT);
     pinMode(PIN_FOOTPEDAL, INPUT_PULLUP);
 
     preview_out_channel = 0;
     set_preview_mux();
 
-    SPI.begin(PIN_BTN_CLK, PIN_BTN_DATA, PIN_FREE, PIN_BTN_LATCH);
+    SPI.begin(PIN_BTN_CLK, PIN_BTN_DATA, NULL, PIN_BTN_LATCH);
 
-    //   encoder.attachHalfQuad(PIN_ENCODER_B, PIN_ENCODER_A);
+    //  encoder.attachHalfQuad(PIN_ENCODER_B, PIN_ENCODER_A);
     encoder.attachSingleEdge(PIN_ENCODER_B, PIN_ENCODER_A);
-
-    bpm = 110;
-    sync_mode = SYNC_MODE_INTERN;
 
     // precision beatClockTimer for generating midi clock signal when not synched externally
     beatClockTimer = timerBegin(2, 80, true);
     timerAttachInterrupt(beatClockTimer, &onTimer, true);
 
+    bpm = 110;
+    sync_mode = SYNC_MODE_INTERN;
     change_bpm();
 
-    //  MIDI.begin(); // Launch MIDI, by default listening to channel 1.
+    Serial1.begin(31250, SERIAL_8N1, 37, 38);
+    DIN_MIDI.begin(); // Launch MIDI, by default listening to channel 1.
+    DIN_MIDI.setHandleClock(handleMIDIClock);
 
-    xTaskCreate(check_encoder, "check encoder", 1000, NULL, 1, NULL);
-    xTaskCreate(check_ui_timeout, "ui timeout", 1000, NULL, 1, NULL);
-    xTaskCreate(check_buttons, "check buttons", 1000, NULL, 1, NULL);
-
-    /*
-        t.every(100,check_encoder);
-        t.every(1000, check_ui_timeout);
-        t.every(20,check_buttons);
-        t.every(20,update_leds);
-     */
-
-    Serial.println("SETUP done");
+    log_v("SETUP done");
 }
-
-//========================================================================================
-//----------------------------------------------------------------------------------------
-//																				loop
 
 void loop()
 {
+    static long last_button_check, last_ui_check, last_encoder_check;
+    if (millis() - last_button_check > 20)
+    {
+        check_buttons();
+        last_button_check = millis();
+    }
+    if (millis() - last_ui_check > 1000)
+    {
+        check_ui_timeout();
+        last_ui_check = millis();
+    }
+    if (millis() - last_encoder_check > 100)
+    {
+        check_encoder();
+        last_encoder_check = millis();
+    }
+    DIN_MIDI.read();
+    check_clock();
 }
