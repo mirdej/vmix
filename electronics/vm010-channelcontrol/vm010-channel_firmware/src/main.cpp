@@ -48,6 +48,7 @@
 #include <Wire.h>
 
 #include "FastLED.h"
+#include "main.h"
 
 
 const char	NUM_PIXELS				= 9;
@@ -165,6 +166,16 @@ volatile byte   i2c_buf[32];
 volatile int    v_sync_interrupt_flag;
 volatile int    beat_interrupt_flag;
 
+void check_ad(void *context);
+void check_btns();
+void check_sync();
+void check_tick();
+void dac_send(int dac, int channel, int send_val);
+void handle_rec_click();
+void playback_btns();
+void power_on_dacs();
+void set_dacs();
+void update_leds();
 
 //----------------------------------------------------------------------------------------
 //																				AD
