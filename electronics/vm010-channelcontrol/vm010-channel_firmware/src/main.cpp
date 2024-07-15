@@ -31,13 +31,13 @@
     ODD FIELD: (20ms total)
         write to leds (during blanking)
         wait 2ms (let voltage settle)
-        then sample AD and update values;
+        then sample AD 
     EVEN FIELD: (20ms total)
         update DAC (during blanking)
         check buttons (during blanking)
         recalculate leds
         wait 2ms
-        then sample AD, dont update
+        then sample AD
     
     
 */
@@ -53,7 +53,7 @@
 const char	NUM_PIXELS				= 9;
 const char	NUM_BTNS				= 9;
 const char  NUM_POTS                = 5;
-const int   MAX_REC_SLOTS           = 1000; // 25 frames/values per second -> max 40 second loop
+const int   MAX_REC_SLOTS           = 500;
 
 #define PIN_LED_BUILTIN         0
 #define PIN_COMPA_OUT           1
@@ -148,12 +148,13 @@ char        bus_a_on,bus_b_on,bus_c_on;
 int         pot_value [NUM_POTS];
 int         out_value [NUM_POTS];
 
-int         rec_buffer[NUM_POTS][MAX_REC_SLOTS];
+int         rec_buffer[NUM_POTS + 1][MAX_REC_SLOTS];        // one byte more for buttons
 int         rec_idx, playback_idx;
 int         rec_length = 0;
 
 int         rec_start_value [NUM_POTS];
-int         rec_enabled [NUM_POTS];
+int         pot_changed [NUM_POTS];
+char        button_changed;
 
 int         error = ERROR_NONE;
 
@@ -274,8 +275,9 @@ void record() {
     // store start values to see if a pot has actually moved
     for (int i = 0; i < NUM_POTS; i++) {
         rec_start_value[i] = pot_value[i];
-        rec_enabled[i] = 0;
+        pot_changed[i] = 0;
     }
+    button_changed = 0;
     loop_state = LOOP_STATE_REC_WAITING;
 }
 
@@ -350,13 +352,56 @@ void beat_interrupt() {
     beat_interrupt_flag++;
 }
 
+
+void record_btns(){
+
+    int temp = 0;
+    if (bus_c_on)       temp |= (1 << 0);
+    if (bus_b_on)       temp |= (1 << 1);
+    if (bus_a_on)       temp |= (1 << 2);
+    if (pfl_state)      temp |= (1 << 3);
+    if (inverter_on)    temp |= (1 << 4);
+    if (compa_on)       temp |= (1 << 5);
+    if (edges_on)       temp |= (1 << 6);
+    rec_buffer[NUM_POTS][rec_idx] = temp;
+}
+
+void dub_btns() {
+    int temp = 0;
+    if (bus_c_on)       temp |= (1 << 0);
+    if (bus_b_on)       temp |= (1 << 1);
+    if (bus_a_on)       temp |= (1 << 2);
+    if (pfl_state)      temp |= (1 << 3);
+    if (inverter_on)    temp |= (1 << 4);
+    if (compa_on)       temp |= (1 << 5);
+    if (edges_on)       temp |= (1 << 6);
+    rec_buffer[NUM_POTS][rec_idx] = rec_buffer[NUM_POTS][rec_idx] & ~button_changed;    // mask unchanged
+    rec_buffer[NUM_POTS][rec_idx] = rec_buffer[NUM_POTS][rec_idx] | temp;
+    playback_btns();
+}
+
+void playback_btns() {
+
+    int temp = rec_buffer[NUM_POTS][playback_idx];
+
+   if (button_changed & (1 << 0)) {     if (temp & (1 << 0)) bus_c_on = 0xFF;       else bus_c_on = 0;}
+   if (button_changed & (1 << 1)) {     if (temp & (1 << 1)) bus_b_on = 0xFF;       else bus_b_on = 0;}
+   if (button_changed & (1 << 2)) {     if (temp & (1 << 2)) bus_a_on = 0xFF;       else bus_a_on = 0;}
+   if (button_changed & (1 << 3)) {     if (temp & (1 << 3)) pfl_state = 0xFF;      else pfl_state = 0;}
+   if (button_changed & (1 << 4)) {     if (temp & (1 << 4)) inverter_on = 0xFF;    else inverter_on = 0;}
+   if (button_changed & (1 << 5)) {     if (temp & (1 << 5)) compa_on = 0xFF;       else compa_on = 0;}
+   if (button_changed & (1 << 6)) {     if (temp & (1 << 6)) edges_on = 0xFF;       else edges_on = 0;}
+}
+
+
 void record_frame(){
     for (int i = 0; i < NUM_POTS; i++) {    
         rec_buffer[i][rec_idx] = pot_value[i];
         if (abs(rec_start_value[i]- pot_value[i]) > REC_THRESH) {
-            rec_enabled[i] = 1;
+            pot_changed[i] = 1;
         }
     }
+    record_btns();
     
     if (rec_idx < MAX_REC_SLOTS - 1) {
         rec_idx++;
@@ -409,15 +454,16 @@ void check_tick() {
          case LOOP_STATE_PLAY:                       // play
             
              for (int i = 0; i < NUM_POTS; i++) {   
-                if (rec_enabled[i]) {
+                if (pot_changed[i]) {
                     out_value[i] = rec_buffer[i][playback_idx];
                 } else {
                    out_value[i] = pot_value[i];
                 }
              }
+             playback_btns();
+             
              playback_idx++;
              playback_idx %= rec_length;
-            
             break;
 
         case LOOP_STATE_DUB:
@@ -426,16 +472,18 @@ void check_tick() {
             // check if pot moved from initial state
             for (int i = 0; i < NUM_POTS; i++) {    
                 if (abs(rec_start_value[i]- pot_value[i]) > REC_THRESH) {
-                    rec_enabled[i] = 1;
+                    pot_changed[i] = 1;
                     rec_buffer[i][rec_idx] = pot_value[i];
                 }
                 
-                if (rec_enabled[i]) {
+                if (pot_changed[i]) {
                     out_value[i] = rec_buffer[i][playback_idx];
                 } else {
                     out_value[i] = pot_value[i];
                 }
             }
+            dub_btns();
+            
             playback_idx++;
             playback_idx %= rec_length;
             break;      
@@ -577,7 +625,7 @@ void check_btns() {
     char leds_changed = 0;
  	for (int i = 0; i < NUM_BTNS; i++) {
  	    
- 	    check_tick();
+ 	//    check_tick();
  	    
  	    state = digitalRead(PIN_BTN[i]);
  	    
@@ -585,6 +633,10 @@ void check_btns() {
      	    leds_changed = 1;
  	        old_state[i] = state;
  	        if (!state) {
+ 	            if ((loop_state == LOOP_STATE_REC) || (loop_state == LOOP_STATE_DUB)) {
+     	            if (i > 1) button_changed |= (1 << (i-2));
+ 	            }
+ 	            
  	            switch (i) {
  	               case 0:
  	                    handle_rec_click();
@@ -746,11 +798,17 @@ void setup() {
     
     bus_c_on    = EEPROM.read(EEPROM_BUS_C);
     bus_b_on    = EEPROM.read(EEPROM_BUS_B);
-    bus_a_on    = EEPROM.read(EEPROM_BUS_A);           
+    bus_a_on    = EEPROM.read(EEPROM_BUS_A); 
+
+    pfl_state   = 0;
+    inverter_on = 0;
+    compa_on    = 0;
+    edges_on    = 0;
     pfl_state   = EEPROM.read(EEPROM_PFL);
     inverter_on = EEPROM.read(EEPROM_INVERT);
     compa_on    = EEPROM.read(EEPROM_COMPA);
     edges_on    = EEPROM.read(EEPROM_EDGES);
+
     i2c_address = EEPROM.read(EEPROM_I2C_ADDRESS);
     
     Wire.begin ();
