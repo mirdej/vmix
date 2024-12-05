@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name vm113-effects-rescue)(type Legacy)(uri ${KIPRJMOD}/vm113-effects-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "vm113-effects-rescue")(type "KiCad")(uri "${KIPRJMOD}/vm113-effects-rescue.kicad_sym")(options "")(descr ""))
 )

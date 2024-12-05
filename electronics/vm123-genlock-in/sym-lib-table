@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name vm123-genlock-in-rescue)(type Legacy)(uri ${KIPRJMOD}/vm123-genlock-in-rescue.lib)(options "")(descr ""))
+)

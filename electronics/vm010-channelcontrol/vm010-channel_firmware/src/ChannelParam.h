@@ -11,6 +11,7 @@ struct ChannelParam
 public:
     void update(char state, int playback_idx);
     void ad(int ad_val);
+    void set(int val);
     void clear();
     int get();
     void mark();
@@ -26,6 +27,7 @@ private:
     bool pot_connected = true; // does pot control my_value?
     int my_value;              // current value, either set by pot or externally via MIDI or presets
     int out_value;             // outgoing value, either my_value or playback of recorded values in buffer
+    int ext_value;
 
     int rec_buffer[MAX_REC_SLOTS];
     int rec_start_value;

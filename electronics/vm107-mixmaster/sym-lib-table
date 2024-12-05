@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name vm101-inout-rescue)(type Legacy)(uri /Users/me/Documents/development/vmix/vm101-inout/vm101-inout-rescue.lib)(options "")(descr ""))
+  (lib (name "vm101-inout-rescue")(type "Legacy")(uri "/Users/me/Documents/development/vmix/vm101-inout/vm101-inout-rescue.lib")(options "")(descr ""))
+  (lib (name "vm107-mixmaster-rescue")(type "Legacy")(uri "${KIPRJMOD}/vm107-mixmaster-rescue.lib")(options "")(descr ""))
 )

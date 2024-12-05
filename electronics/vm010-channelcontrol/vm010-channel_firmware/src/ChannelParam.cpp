@@ -9,11 +9,20 @@ void ChannelParam::ad(int ad_val)
 }
 
 // ----------------------------------------------------------------
-// return out value 
+// return out value
 int ChannelParam::get(void)
 {
-    //return out_enabled ? out_value : 0;
+    // return out_enabled ? out_value : 0;
+    if (ext_value > out_value)
+        return ext_value;
     return out_value;
+}
+
+// ----------------------------------------------------------------
+// set ext value
+void ChannelParam::set(int val)
+{
+    ext_value = val;
 }
 
 // ----------------------------------------------------------------

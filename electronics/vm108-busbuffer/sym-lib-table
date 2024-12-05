@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "vm108-busbuffer-rescue")(type "Legacy")(uri "${KIPRJMOD}/vm108-busbuffer-rescue.lib")(options "")(descr ""))
+)

@@ -106,7 +106,7 @@ void check_ad(void *context)
         chan[i].ad(analogRead(PIN_POT[i]));
     }
     // LAST POTENTIOMETER (FADER) controls BUS-A, B and C
-    
+
     int temp = analogRead(PIN_AD_MIX);
     temp = 1023 - temp;
     chan[BUS_C].ad(temp);
@@ -741,7 +741,13 @@ void requestEvent()
 
 void check_i2c()
 {
-    //   if (i2c_new_bytes)  //Serial.printf("Received %ld bytes\n", i2c_new_bytes);
+#if DEBUG
+    if (i2c_new_bytes)
+    {
+        Serial.printf("Received %d bytes\n", i2c_new_bytes);
+    }
+#endif
+
     if (i2c_new_bytes == 1)
     {
         switch (i2c_buf[0])
@@ -794,23 +800,53 @@ void check_i2c()
         }
         // Serial.println();
     }
-    if (i2c_new_bytes == 6)
+    if (i2c_new_bytes == 3)
     {
-        // Serial.print("Received data: ");
-        for (int i = 0; i < 6; i++)
+#if DEBUG
+
+        Serial.print("Received data: ");
+        for (int i = 0; i < 3; i++)
         {
-            // Serial.print(i2c_buf[i], DEC);
-            // Serial.print(" ");
+            Serial.print(i2c_buf[i], DEC);
+            Serial.print(" ");
         }
-        // Serial.println();
-        // Serial.println();
+        Serial.println();
+#endif
+
+        if (i2c_buf[0] == I2C_CALL_SET_CHAN)
+        {
+            int ch = i2c_buf[1];
+            int val = i2c_buf[2];
+
+            if (ch > 0 && ch < 7)
+            {
+                ch = 7 - ch;
+                val *= 8;
+                val %= 1024;
+                chan[ch].set(val);
+            }
+            else
+            {
+                if (ch == 7)
+                {
+                    chan[BUS_C].out_enabled = val & (1 << 2);
+                    chan[BUS_B].out_enabled = val & (1 << 1);
+                    chan[BUS_A].out_enabled = val & (1 << 0);
+                    pfl_state = val & (1 << 3);
+                    inverter_on = val & (1 << 4);
+                    chan[COMPA].out_enabled = val & (1 << 5);
+                    edges_on = val & (1 << 6);
+                    update_leds();
+                }
+            }
+        }
+        i2c_new_bytes = 0;
     }
-    i2c_new_bytes = 0;
 }
 
 void debug()
 {
-    Serial.printf("Fader %d\n",    analogRead(PIN_AD_MIX));
+    Serial.printf("Fader %d\n", analogRead(PIN_AD_MIX));
 }
 //========================================================================================
 //----------------------------------------------------------------------------------------
@@ -860,7 +896,10 @@ void setup()
     chan[COMPA].out_enabled = EEPROM.read(EEPROM_COMPA);
     edges_on = EEPROM.read(EEPROM_EDGES);
 
-    i2c_address = 0x01; // EEPROM.read(EEPROM_I2C_ADDRESS);
+    //i2c_address = 0x01;
+ /*    i2c_address = 3;
+    EEPROM.write(EEPROM_I2C_ADDRESS, i2c_address); */
+    i2c_address = EEPROM.read(EEPROM_I2C_ADDRESS);
 
     Wire.begin();
 
@@ -875,7 +914,7 @@ void setup()
     delay(1000);
     Serial.println("SETUP DONE");
     Serial.println("_____________________");
-    t.every(4000, debug, (void *)0);
+    // t.every(4000, debug, (void *)0);
 #endif
 }
 

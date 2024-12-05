@@ -1,4 +1,4 @@
-#define VERSION "2021-01-15"
+#define VERSION "2024-12-03"
 //----------------------------------------------------------------------------------------
 //
 //  vMix CPU Firmware
@@ -41,6 +41,13 @@ Clock period: fixed at 20ms
 #include <ESP32Encoder.h>
 #include <MIDI.h>
 
+#include <WiFi.h>
+#include <WiFiUDP.h>
+#include <ESPmDNS.h>
+#include <AppleMIDI.h>
+USING_NAMESPACE_APPLEMIDI
+
+APPLEMIDI_CREATE_DEFAULTSESSION_INSTANCE();
 // ..................................................................................... PIN mapping
 
 const int PIN_ENCODER_A = 4;
@@ -121,6 +128,8 @@ Adafruit_SSD1306 display = Adafruit_SSD1306(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, 
 #define I2C_CALL_STORE 0xB0
 #define I2C_CALL_RECALL 0xB1
 #define I2C_CALL_BRIGHTNESS 0xB2
+#define I2C_CALL_VOLUME 0xC0
+#define I2C_CALL_SET_CHAN 0xC1
 
 //========================================================================================
 //----------------------------------------------------------------------------------------
@@ -209,7 +218,7 @@ void release_triggers(void *p)
 
 void release_tick(void *p)
 {
-    //log_v("Release");
+    // log_v("Release");
     vTaskDelay(2);
     digitalWrite(PIN_BEATSYNC, LOW);
     vTaskDelete(NULL);
@@ -242,8 +251,8 @@ void check_clock()
 
         DIN_MIDI.sendRealTime(midi::Clock);
 
-        //if (tickCounter % beatclock_clocks == 0)
-            digitalWrite(PIN_BEATSYNC, HIGH);
+        // if (tickCounter % beatclock_clocks == 0)
+        digitalWrite(PIN_BEATSYNC, HIGH);
         if (tickCounter % trigger1_clocks == 0)
             digitalWrite(PIN_TRIGGER_1, HIGH);
         if (tickCounter % trigger2_clocks == 0)
@@ -671,23 +680,6 @@ void update_leds()
 }
 
 //----------------------------------------------------------------------------------------
-//																		MIDI Clock
-void handleMIDIClock()
-{
-    last_midi_clock = millis();
-    if (sync_mode != SYNC_MODE_EXTERN_MIDI)
-    {
-        sync_mode = SYNC_MODE_EXTERN_MIDI;
-        display_needs_update = true;
-
-        timerAlarmDisable(beatClockTimer);
-        interruptCounter = 0;
-        tickCounter = 0;
-    }
-
-    interruptCounter++;
-}
-//----------------------------------------------------------------------------------------
 //																		Display
 void update_display()
 {
@@ -768,6 +760,90 @@ void update_display()
     display_needs_update = false;
 }
 
+//----------------------------------------------------------------------------------------
+//																				MIDI
+
+void test(byte channel, byte pitch, byte velocity)
+{
+    log_v("GOT %d %d", pitch, velocity);
+}
+
+//																		MIDI Clock
+void handleMIDIClock()
+{
+    last_midi_clock = millis();
+    if (sync_mode != SYNC_MODE_EXTERN_MIDI)
+    {
+        sync_mode = SYNC_MODE_EXTERN_MIDI;
+        display_needs_update = true;
+
+        log_v("GOT MIDI CLOCK");
+        timerAlarmDisable(beatClockTimer);
+        interruptCounter = 0;
+        tickCounter = 0;
+    }
+
+    interruptCounter++;
+}
+
+//																		Control changfe
+
+void handleMIDICtlchange(byte channel, byte ctl, byte val)
+{
+    log_v("CTL %d %d", ctl, val);
+
+    int chann = ctl / 10 + 1;
+    ctl %= 10;
+
+    Wire.beginTransmission(chann);
+    Wire.write(I2C_CALL_SET_CHAN);
+    Wire.write(ctl);
+    Wire.write(val);
+    Wire.endTransmission();
+}
+
+void note_on(byte channel, byte pitch, byte velocity)
+{
+    log_v("NOTE %d %d", pitch, velocity);
+    Wire.beginTransmission(1);
+    Wire.write(I2C_CALL_VOLUME);
+    Wire.endTransmission();
+}
+
+void initAppleMIDI()
+{
+    String hostname = "Anymix";
+
+    WiFi.begin("Anymair", "Mot de passe pas complique");
+    while (WiFi.status() != WL_CONNECTED)
+    {
+        delay(250);
+        Serial.print(".");
+    }
+    Serial.print("IP address: ");
+    Serial.println(WiFi.localIP());
+
+    if (!MDNS.begin(hostname.c_str()))
+    {
+        Serial.println("Error setting up MDNS responder!");
+        while (1)
+        {
+            delay(1000);
+        }
+    }
+
+    Serial.print("Hostname: ");
+    Serial.println(hostname);
+
+    MIDI.begin(1); // listen on channel 1
+                   // AppleMIDI.c(OnAppleMidiConnected);
+                   // AppleMIDI.setHandleDisconnected(OnAppleMidiDisconnected);
+    MIDI.setHandleControlChange(handleMIDICtlchange);
+
+    MDNS.addService("apple-midi", "udp", AppleMIDI.getPort());
+    MDNS.addService("http", "tcp", 80);
+    Serial.println("Started AppleMIDI");
+}
 //========================================================================================
 //----------------------------------------------------------------------------------------
 //																				SETUP
@@ -821,9 +897,12 @@ void setup()
     sync_mode = SYNC_MODE_INTERN;
     change_bpm();
 
-    Serial1.begin(31250, SERIAL_8N1, 37, 38);
-    DIN_MIDI.begin(); // Launch MIDI, by default listening to channel 1.
-    DIN_MIDI.setHandleClock(handleMIDIClock);
+    initAppleMIDI();
+    /*  Serial1.begin(31250, SERIAL_8N1, 37, 38);
+     DIN_MIDI.begin(); // Launch MIDI, by default listening to channel 1.
+     DIN_MIDI.setHandleClock(handleMIDIClock);
+     DIN_MIDI.setHandleControlChange(handleMIDICtlchange); */
+    // DIN_MIDI.setHandleNoteOn(note_on);
 
     log_v("SETUP done");
 }
@@ -846,6 +925,7 @@ void loop()
         check_encoder();
         last_encoder_check = millis();
     }
-    DIN_MIDI.read();
+    // DIN_MIDI.read();
+    MIDI.read();
     check_clock();
 }
